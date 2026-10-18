@@ -13,4 +13,6 @@ export const site = {
   },
   // Email subscription form address (Brevo, like SaveAndPlay). Empty = the subscribe block is hidden.
   subscribeFormUrl: '',
+  // Stay22 LetMeAllez ID (script that turns hotel links into affiliate links). Empty = no script.
+  stay22Id: '6ad53d7b7692614b7741ee96',
 };

@@ -7,13 +7,14 @@
 - 17 отелей, 48 категорий номеров с видом. Данные в `src/data/views/*.json`: точные названия номеров, что брать, что не брать, уровень доверия (pictured / listed / reported), источники. Собрано 17–18 октября 2026, ссылки в `docs/research-2026-10.md`.
 - Кнопки «Check prices on Booking.com» ведут через наш адрес `/go/<отель>/` на поиск Booking.com, пока без партнёрки. Сменить на партнёрские ссылки = поправить `src/data/links.json`.
 - Фото: при деплое GitHub сам берёт по одному фото на вид с Wikimedia Commons (только свободные лицензии, автор подписан под фото) и сохраняет их в репозиторий. Фото скачаны 18 октября; ночное Bellagio тёмное, при случае заменить кандидата в JSON. Если фото нет, на его месте рисунок «окно с небом».
-- Без аналитики и без cookie (так и написано в Privacy). Шрифты свои, не Google.
+- Stay22 (18 октября): скрипт LinkSwap стоит на всех страницах, ID в `src/data/site.ts` (`stay22Id`), в панели DeepStruct `/go/`. Privacy и Disclosure обновлены. Проверить в панели Stay22, что статус стал Active и что наши `/go/` ссылки подменяются. Аналитики нет. Шрифты свои, не Google.
 
 ## Что ждёт владельца
 1. Деплой сделан и работает (18 октября, сайт открывается, фото на месте). Переменная `FTP_SERVER_DIR=./` оставлена: защита `scripts/ftp-target.mjs` сама выбирает пустую или нашу папку, saveandplay.com не затронут.
-2. Почта `contact@hotelsviewer.com`: создать ящик или пересылку в cPanel (Email Accounts или Forwarders). Адрес указан на сайте и нужен для заявок.
-3. Заявки в партнёрки, порядок в `docs/partners.md`: сразу Stay22 и Travelpayouts; после выкладки Agoda, Expedia Travel Creator Program (напрямую), GetYourGuide. Booking через CJ позже.
-4. Когда будут соцсети и подписка: ссылки в `src/data/site.ts` (`social`), адрес формы Brevo в `subscribeFormUrl`. Пустые поля на сайте скрыты.
+2. Stay22: после выкладки открыть панель, статус скрипта должен стать Active; сказать Claude, если нет.
+3. Почта `contact@hotelsviewer.com`: создать ящик или пересылку в cPanel (Email Accounts или Forwarders). Адрес указан на сайте и нужен для заявок.
+4. Заявки в партнёрки, порядок в `docs/partners.md`: сразу Stay22 и Travelpayouts; после выкладки Agoda, Expedia Travel Creator Program (напрямую), GetYourGuide. Booking через CJ позже.
+5. Когда будут соцсети и подписка: ссылки в `src/data/site.ts` (`social`), адрес формы Brevo в `subscribeFormUrl`. Пустые поля на сайте скрыты.
 
 ## Где главное
 - `src/data/views/*.json`: все виды и отели. Новый вид = новый файл по образцу.
