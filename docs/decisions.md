@@ -22,3 +22,6 @@ Newest at the bottom. START.md keeps only the result.
 - URL scheme `/destinations/<country>/<city>/` (nested, so cities with the same name in different countries don't clash).
 - City pages carry a Stay22 map of nearby hotels, clearly marked as not checked by us. Needs the Stay22 `aid`.
 - Next: a candidate list of landmarks (Wikidata + Wikipedia pageviews) and a daily view-writer on GitHub, like the SaveAndPlay article writer (owner asked for daily, 18 Oct).
+
+## 18 October 2026: handoff
+- Context of the first session was getting long; state and plan written to START.md and docs/next-steps.md so a new chat or Claude Code can continue from the repository alone.
