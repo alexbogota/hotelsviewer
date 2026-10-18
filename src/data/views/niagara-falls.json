@@ -1,0 +1,145 @@
+{
+  "slug": "niagara-falls",
+  "order": 3,
+  "landmark": "Niagara Falls",
+  "city": "Niagara Falls, Ontario",
+  "country": "Canada",
+  "checked": "2026-10",
+  "title": "Niagara Falls hotels with a falls view: which room to book",
+  "metaDescription": "Five hotels on Fallsview Boulevard with rooms that face Niagara Falls, the exact room category to book, and the river view and city view rooms to skip.",
+  "h1": "Niagara Falls hotels with a falls view, and which room to book",
+  "dek": "Five hotels on the Canadian side, along Fallsview Boulevard. We list the categories that are sold with a view of the falls, and the river view, city view and courtyard rooms to skip.",
+  "teaser": "Which rooms face the Horseshoe Falls, which the American Falls, and which see both.",
+  "photo": {
+    "commons": [
+      { "file": "File:3Falls Niagara.jpg", "alt": "The three waterfalls of Niagara Falls in daylight" },
+      { "file": "File:NiagaraFallsPanorama.jpg", "alt": "A daytime panorama of Niagara Falls" }
+    ]
+  },
+  "shortAnswer": [
+    { "label": "Both falls in one view", "hotel": "hilton-niagara-falls-fallsview", "room": "Room, 1 King Bed, Jetted Tub (Canadian/US Fallsview)" },
+    { "label": "Close to the Horseshoe Falls", "hotel": "niagara-falls-marriott-on-the-falls", "room": "Premier Fallsview King Guest Room" },
+    { "label": "Three-and-a-half-star option", "hotel": "oakes-hotel-overlooking-the-falls", "room": "Tower Room Falls View Two Queens" }
+  ],
+  "decoder": [
+    { "left": "US Fallsview", "right": "Canadian Fallsview", "text": "At the Hilton, “US” rooms face the American Falls, “Canadian” rooms face the Horseshoe Falls, and “Canadian/US” rooms see both." },
+    { "left": "River View", "right": "Falls View", "text": "The Oakes and the Marriott Fallsview both sell river view rooms separately from their falls view rooms." },
+    { "left": "Courtyard", "right": "Tower", "text": "At the Oakes, only the Tower rooms are sold with a falls view. Courtyard rooms carry no view at all." }
+  ],
+  "hotels": [
+    {
+      "id": "hilton-niagara-falls-fallsview",
+      "name": "Hilton Niagara Falls/Fallsview Hotel & Suites",
+      "where": "6361 Fallsview Blvd",
+      "level": "listed",
+      "book": [
+        { "room": "Room, 1 King Bed, Jetted Tub (Canadian/US Fallsview)", "note": "“Canadian/US” means both the Horseshoe Falls and the American Falls." },
+        { "room": "Room, 1 King Bed, Jetted Tub (Premium Canadian/US Fallsview)" },
+        { "room": "Two Queen Room, Whirlpool Tub with Canadian/US Fallsview" },
+        { "room": "Compact King Room, Shower only with Canadian Fallsview", "note": "Canadian only: the Horseshoe Falls." },
+        { "room": "Two Queen Room, Whirlpool Tub with US Fallsview", "note": "US only: the American Falls." }
+      ],
+      "skip": [
+        { "room": "King Room, Jetted Tub with City/Casino View", "note": "Faces the city and the casino." },
+        { "room": "Two Queen Room, No view", "note": "Sold as no view." }
+      ],
+      "sources": [
+        { "label": "Hotels.com" },
+        { "label": "TravelAwaits", "url": "https://travelawaits.com/2891712/best-hotels-niagara-falls-with-a-view" }
+      ],
+      "query": "Hilton Niagara Falls Fallsview Hotel and Suites"
+    },
+    {
+      "id": "niagara-falls-marriott-on-the-falls",
+      "name": "Niagara Falls Marriott on the Falls",
+      "where": "6755 Fallsview Blvd",
+      "level": "listed",
+      "book": [
+        { "room": "Premier Fallsview King Guest Room", "note": "The hotel says its Fallsview rooms have oversized picture windows." },
+        { "room": "Queen/Queen Superior Fallsview Guest Room" },
+        { "room": "Fallsview One-Bedroom Bi-Level Suite" },
+        { "room": "Queen/Queen Fallsview Two-Bedroom Suite" }
+      ],
+      "notes": [
+        "A travel guide notes the hotel sits close to the brink of the Horseshoe Falls."
+      ],
+      "sources": [
+        { "label": "the hotel's rooms page on Marriott.com", "url": "https://www.marriott.com/en-us/hotels/iagmc-niagara-falls-marriott-on-the-falls/rooms/" },
+        { "label": "Culture Trip", "url": "https://theculturetrip.com/canada/articles/hotels-with-views-niagara-falls/" }
+      ],
+      "query": "Niagara Falls Marriott on the Falls"
+    },
+    {
+      "id": "marriott-niagara-falls-fallsview",
+      "name": "Marriott Niagara Falls Fallsview Hotel & Spa",
+      "where": "6740 Fallsview Blvd",
+      "stars": 4,
+      "level": "listed",
+      "book": [
+        { "room": "Superior Room, 2 Queen Beds (Falls)", "note": "The only category with “Falls” in its name on the listing." }
+      ],
+      "skip": [
+        { "room": "Room, 1 King Bed, City View", "note": "A city view." },
+        { "room": "Room, 2 Queen Beds", "note": "Tagged with a river view. The river is not the falls." }
+      ],
+      "notes": [
+        "A travel guide says every room overlooks either the falls or the river, so choose carefully if you want a full view of the falls."
+      ],
+      "sources": [
+        { "label": "Hotels.com" },
+        { "label": "TravelAwaits", "url": "https://travelawaits.com/2891712/best-hotels-niagara-falls-with-a-view" }
+      ],
+      "query": "Marriott Niagara Falls Fallsview Hotel and Spa"
+    },
+    {
+      "id": "hyatt-regency-niagara-falls-fallsview",
+      "name": "Hyatt Regency Niagara Falls Fallsview",
+      "where": "6700 Fallsview Blvd, formerly the Embassy Suites",
+      "stars": 4,
+      "level": "listed",
+      "book": [
+        { "room": "Fallsview | Two Queen Beds" },
+        { "room": "Premium Fallsview | One King Bed" },
+        { "room": "Fallsview Suite | Two King Beds | Air Jetted Tub" },
+        { "room": "Premium Fallsview Suite | Two Queen Beds | High Floor" }
+      ],
+      "skip": [
+        { "room": "City View | One King Bed", "note": "A city view." },
+        { "room": "City View Suite | Three Queen Beds", "note": "A city view, even as a suite." }
+      ],
+      "sources": [
+        { "label": "Hotels.com" }
+      ],
+      "query": "Hyatt Regency Niagara Falls Fallsview"
+    },
+    {
+      "id": "oakes-hotel-overlooking-the-falls",
+      "name": "Oakes Hotel Overlooking the Falls",
+      "where": "6546 Fallsview Blvd",
+      "stars": 3.5,
+      "level": "listed",
+      "book": [
+        { "room": "Tower Room Falls View Two Queens", "note": "Also sold with one king bed." },
+        { "room": "Tower Room Premium Falls View Two Queen" },
+        { "room": "Tower Room Falls View One King Jacuzzi Suite" },
+        { "room": "Tower Room Premium Falls View King Jacuzzi Suite" }
+      ],
+      "skip": [
+        { "room": "Tower Room River View Two Queens", "note": "The same tower, with a river view." },
+        { "room": "Courtyard Room Interior One King", "note": "Courtyard rooms are sold with no view." }
+      ],
+      "sources": [
+        { "label": "Hotels.com" }
+      ],
+      "query": "Oakes Hotel Overlooking the Falls"
+    }
+  ],
+  "alternatives": [
+    { "title": "Book a table instead", "text": "No falls view room in the budget? The Hilton's Watermark restaurant is on the 33rd floor, with floor-to-ceiling views of the falls, according to TravelAwaits." }
+  ],
+  "faq": [
+    { "q": "What do Canadian Fallsview and US Fallsview mean?", "a": "They tell you which falls the room faces. At the Hilton, Canadian rooms face the Horseshoe Falls, US rooms face the American Falls, and Canadian/US rooms see both." },
+    { "q": "Do all rooms in a Fallsview hotel face the falls?", "a": "No. Every hotel on this page also sells city view, river view or courtyard rooms. An address on Fallsview Boulevard is not a promise; the room name is." },
+    { "q": "Which side of the border are these hotels on?", "a": "All five are in Niagara Falls, Ontario, in Canada, on Fallsview Boulevard." }
+  ]
+}

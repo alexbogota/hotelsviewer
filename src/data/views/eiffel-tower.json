@@ -1,0 +1,182 @@
+{
+  "slug": "eiffel-tower",
+  "order": 1,
+  "landmark": "Eiffel Tower",
+  "city": "Paris",
+  "country": "France",
+  "checked": "2026-10",
+  "title": "Hotels with an Eiffel Tower view: which room to book",
+  "metaDescription": "Seven Paris hotels that sell rooms with an Eiffel Tower view, with the exact room category to book and the look-alike rooms that don't come with the view.",
+  "h1": "Hotels with an Eiffel Tower view, and which room to book",
+  "dek": "Seven Paris hotels that sell rooms with the tower in view. For each one we list the exact room category to book, and the ones that sound similar but don't come with the view.",
+  "teaser": "From a rooftop suite across the Seine to a three-star double in the 15th.",
+  "photo": {
+    "commons": [
+      { "file": "File:Eiffel Tower, view from the Trocadero, 1 July 2008.jpg", "alt": "The Eiffel Tower in daylight, seen from the Trocadéro" },
+      { "file": "File:Eiffelturm Blick vom Invalidendom.jpg", "alt": "The Eiffel Tower in daylight, seen from the dome of Les Invalides" }
+    ]
+  },
+  "shortAnswer": [
+    { "label": "Steps from the tower", "hotel": "pullman-paris-tour-eiffel", "room": "Superior Room, 1 Queen Bed, Tower (High Floor, Eiffel Tower View)" },
+    { "label": "Across the Seine", "hotel": "shangri-la-paris", "room": "Eiffel View Room, 1 King Bed" },
+    { "label": "Three-star option", "hotel": "splendid-hotel-paris", "room": "Double Room, Eiffel Tower View" }
+  ],
+  "decoder": [
+    { "left": "Paris View", "right": "Eiffel View", "text": "At the Shangri-La Paris, the “Paris View” suites are sold with a city view. Only the categories with “Eiffel” in the name come with the tower." },
+    { "left": "Balcony view", "right": "room view", "text": "At the Pullman, the Deluxe rooms see the tower from the balcony. For the tower from inside the room, book the Superior Room, Tower (High Floor, Eiffel Tower View)." },
+    { "left": "“Tour Eiffel” in the hotel name", "right": "a view", "text": "None of the room types that Novotel Paris Centre Tour Eiffel lists on Hotels.com mentions an Eiffel Tower view." }
+  ],
+  "hotels": [
+    {
+      "id": "pullman-paris-tour-eiffel",
+      "name": "Pullman Paris Tour Eiffel",
+      "where": "18 Avenue de Suffren, 15th arrondissement",
+      "distance": "3-minute walk to the tower",
+      "stars": 4,
+      "level": "pictured",
+      "book": [
+        { "room": "Superior Room, 1 Queen Bed, Tower (High Floor, Eiffel Tower View)", "note": "Also sold with 2 single beds. The listing photo captioned “View from room” belongs to this category." },
+        { "room": "Deluxe Room, 1 King Bed, Balcony (Eiffel Tower View)", "note": "Also sold as a twin and as a high-floor “Tower” version. Another booking site describes it as a Trocadéro view, with the tower from the balcony." },
+        { "room": "Suite, 1 King Bed with Sofa bed, Balcony (Eiffel Tower View)" }
+      ],
+      "skip": [
+        { "room": "Classic Room, 1 Double Bed, Garden View", "note": "Every Classic category is sold with a garden view, with or without a balcony." }
+      ],
+      "sources": [
+        { "label": "Hotels.com" },
+        { "label": "Travelocity" },
+        { "label": "206 Tours" },
+        { "label": "the hotel's own site", "url": "https://www.accorhotels.com/hotel/7229/index.gb.shtml" }
+      ],
+      "query": "Pullman Paris Tour Eiffel"
+    },
+    {
+      "id": "shangri-la-paris",
+      "name": "Shangri-La Paris",
+      "where": "10 Avenue d'Iéna, 16th arrondissement, across the Seine",
+      "distance": "12-minute walk to the tower",
+      "level": "listed",
+      "book": [
+        { "room": "Eiffel View Room, 1 King Bed", "note": "Also sold with 2 single beds." },
+        { "room": "Terrace Eiffel view room king bed", "note": "France's official tourism site says you can have breakfast on the balcony with the tower behind you." },
+        { "room": "Duplex Eiffel View Suite 1 King" },
+        { "room": "Duplex Terrace Eiffel view suite" }
+      ],
+      "skip": [
+        { "room": "Junior Suite Paris View, 1 King Bed", "note": "“Paris View” categories are sold with a city view, not the tower." },
+        { "room": "Terrace Room, 1 King Bed", "note": "Listed with a garden view." },
+        { "room": "Deluxe Room, 1 King Bed", "note": "No view in the name." }
+      ],
+      "notes": [
+        "Four categories carry “Eiffel” in the name, more than any other hotel on this page."
+      ],
+      "sources": [
+        { "label": "Hotels.com" },
+        { "label": "France.fr", "url": "https://www.france.fr/en/article/a-room-with-a-view/" }
+      ],
+      "query": "Shangri-La Paris"
+    },
+    {
+      "id": "the-peninsula-paris",
+      "name": "The Peninsula Paris",
+      "where": "19 Avenue Kléber, 16th arrondissement, near the Arc de Triomphe",
+      "level": "listed",
+      "book": [
+        { "room": "Suite (Rooftop Eiffel Tower)", "note": "A rooftop suite with its own terrace. The listing photo shows the tower behind the terrace table." },
+        { "room": "Suite (Garden Rooftop)", "note": "A duplex with a garden terrace. France's official tourism site calls it the way to have the tower “in your room”." }
+      ],
+      "skip": [
+        { "room": "Deluxe, Premier and Grand rooms", "note": "No view label on the listing." }
+      ],
+      "sources": [
+        { "label": "Hotels.com" },
+        { "label": "France.fr", "url": "https://www.france.fr/en/article/a-room-with-a-view/" }
+      ],
+      "query": "The Peninsula Paris"
+    },
+    {
+      "id": "le-metropolitan-paris-tour-eiffel",
+      "name": "Le Metropolitan Paris Tour Eiffel",
+      "where": "10 Place de Mexico, 16th arrondissement, near the Trocadéro",
+      "level": "listed",
+      "book": [
+        { "room": "Eiffel View Suite", "note": "About 40 m². The hotel says 6 of its 48 rooms and suites have a panoramic view of the tower." }
+      ],
+      "skip": [
+        { "room": "The other rooms and suites", "note": "The hotel describes the panorama only for its Eiffel View units." }
+      ],
+      "sources": [
+        { "label": "the hotel's rooms page on Marriott.com", "url": "https://www.marriott.com/en-us/hotels/parxt-le-metropolitan-paris-tour-eiffel-a-tribute-portfolio-hotel/rooms/" }
+      ],
+      "query": "Le Metropolitan Paris Tour Eiffel"
+    },
+    {
+      "id": "first-hotel-paris-tour-eiffel",
+      "name": "First Hotel Paris Tour Eiffel",
+      "where": "2 Boulevard Garibaldi, 15th arrondissement",
+      "distance": "16-minute walk to the tower",
+      "stars": 4,
+      "level": "listed",
+      "book": [
+        { "room": "Deluxe Double Room with Eiffel view" },
+        { "room": "Suite with Eiffel view" }
+      ],
+      "skip": [
+        { "room": "Suite Cambronne", "note": "A suite, but sold without a view label." },
+        { "room": "Superior Double Room", "note": "No view in the name." },
+        { "room": "Single Room", "note": "Listed with a city view." }
+      ],
+      "sources": [
+        { "label": "Hotels.com" }
+      ],
+      "query": "First Hotel Paris Tour Eiffel"
+    },
+    {
+      "id": "mercure-paris-centre-tour-eiffel",
+      "name": "Mercure Paris Centre Tour Eiffel",
+      "where": "20 Rue Jean Rey, 15th arrondissement",
+      "distance": "4-minute walk to the tower",
+      "level": "listed",
+      "book": [
+        { "room": "Privilege Room, 1 Double Bed, Upper Floor, Eiffel Tower View", "note": "The only category here sold with the view. One travel guide reports the view as partial." }
+      ],
+      "skip": [
+        { "room": "Privilege Room with 1 double bed and 1 armchair not convertible", "note": "Same Privilege level, but no floor or view in the name." },
+        { "room": "Classic Room, 1 Double Bed", "note": "No view in the name." }
+      ],
+      "sources": [
+        { "label": "Hotels.com" },
+        { "label": "Polka Dot Passport" }
+      ],
+      "query": "Mercure Paris Centre Tour Eiffel"
+    },
+    {
+      "id": "splendid-hotel-paris",
+      "name": "Splendid Hotel",
+      "where": "54 Rue Fondary, 15th arrondissement",
+      "distance": "5-minute drive to the tower",
+      "stars": 3,
+      "level": "listed",
+      "book": [
+        { "room": "Double Room, Eiffel Tower View" },
+        { "room": "Triple Room, Eiffel Tower View" }
+      ],
+      "skip": [
+        { "room": "Double Room", "note": "The same room without the view in the name." },
+        { "room": "Triple Room", "note": "The same room without the view in the name." }
+      ],
+      "sources": [
+        { "label": "Hotels.com" }
+      ],
+      "query": "Splendid Hotel 54 Rue Fondary Paris"
+    }
+  ],
+  "alternatives": [
+    { "title": "Book a table instead", "text": "No view room in the budget? The Peninsula's rooftop restaurant, L'Oiseau Blanc, looks out at the tower, according to France's official tourism site." }
+  ],
+  "faq": [
+    { "q": "Which Paris hotels sell rooms with an Eiffel Tower view?", "a": "Of the hotels we checked in October 2026: Pullman Paris Tour Eiffel, Shangri-La Paris, The Peninsula Paris, Le Metropolitan Paris Tour Eiffel, First Hotel Paris Tour Eiffel, Mercure Paris Centre Tour Eiffel and Splendid Hotel. Each sells specific room categories with the view. Their other rooms don't promise it." },
+    { "q": "Does a hotel next to the tower guarantee the view?", "a": "No. The Pullman is a 3-minute walk from the tower, and its Classic rooms are still sold with a garden view. Book the category that names the view." },
+    { "q": "Which hotel has the most Eiffel view room types?", "a": "Shangri-La Paris, with four: Eiffel View Room, Terrace Eiffel View Room, Duplex Eiffel View Suite and Duplex Terrace Eiffel View Suite." }
+  ]
+}

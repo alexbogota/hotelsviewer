@@ -1,0 +1,72 @@
+---
+// The views as a row of arched windows, like the windows of one facade.
+import ArchPhoto from './ArchPhoto.astro';
+import { photoFor, roomCount, views } from '../lib/views';
+
+interface Props {
+  headingLevel?: 'h2' | 'h3';
+}
+const { headingLevel = 'h3' } = Astro.props;
+const Heading = headingLevel;
+---
+<ul class="windows">
+  {views.map((v) => (
+    <li>
+      <a href={`/views/${v.slug}/`}>
+        <ArchPhoto photo={photoFor(v.slug)} landmark={v.landmark} variant="thumb" />
+        <Heading class="title">{v.landmark}</Heading>
+        <p class="city">{v.city}</p>
+        <p class="teaser">{v.teaser}</p>
+        <p class="count small">{v.hotels.length} hotels, {roomCount(v)} room categories with the view</p>
+      </a>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .windows {
+    list-style: none;
+    margin: 32px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px 32px;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .title {
+    margin-top: 18px;
+    font-size: 1.625rem;
+  }
+  a:hover .title {
+    text-decoration: underline;
+    text-decoration-color: var(--brass);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+  }
+  .city {
+    margin-top: 2px;
+    color: var(--zinc);
+    font-size: 0.9375rem;
+  }
+  .teaser {
+    margin-top: 10px;
+    color: var(--ink-soft);
+  }
+  .count {
+    margin-top: 10px;
+  }
+  @media (max-width: 860px) {
+    .windows {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 48px;
+    }
+    .windows :global(.frame) {
+      aspect-ratio: 4 / 3;
+      border-radius: 50% 50% var(--radius) var(--radius) / 28% 28% var(--radius) var(--radius);
+    }
+  }
+</style>

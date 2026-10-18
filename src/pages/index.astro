@@ -1,0 +1,184 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ViewWindows from '../components/ViewWindows.astro';
+import Decoder from '../components/Decoder.astro';
+import LevelPill from '../components/LevelPill.astro';
+import { levels, type Level } from '../lib/views';
+
+const order: Level[] = ['pictured', 'listed', 'reported'];
+
+const pairs = [
+  {
+    left: 'Paris View',
+    right: 'Eiffel View',
+    text: 'At the Shangri-La Paris, the “Paris View” suites are sold with a city view. Only the categories with “Eiffel” in the name come with the tower.',
+    where: '/views/eiffel-tower/#shangri-la-paris',
+  },
+  {
+    left: 'Terrace',
+    right: 'Fountain View',
+    text: 'At The Cosmopolitan in Las Vegas, terrace rooms are sold with and without the Bellagio fountains. The view is only promised when the name ends in “Fountain View”.',
+    where: '/views/bellagio-fountains/#the-cosmopolitan',
+  },
+  {
+    left: 'US Fallsview',
+    right: 'Canadian Fallsview',
+    text: 'At the Hilton in Niagara Falls, “US” rooms face the American Falls and “Canadian” rooms face the Horseshoe Falls. Rooms marked “Canadian/US” see both.',
+    where: '/views/niagara-falls/#hilton-niagara-falls-fallsview',
+  },
+];
+---
+<Layout
+  title="HotelsViewer: which hotel room actually has the view?"
+  description="Which room to book for a real view of the Eiffel Tower, the Bellagio fountains or Niagara Falls. Exact room category names, the look-alikes to skip, and how sure we are."
+>
+  <section class="hero wrap">
+    <div class="copy">
+      <h1>Which hotel room actually has the view?</h1>
+      <p class="dek">Hotels sell the same view under many names, and some of those names don't mean what they seem. We read the room categories and show you which one to book for the Eiffel Tower, the Bellagio fountains and Niagara Falls.</p>
+      <div class="actions">
+        <a class="btn" href="#views">Browse the three views</a>
+        <a class="btn btn-quiet" href="/about/#how-we-check">How we check a view</a>
+      </div>
+    </div>
+
+    <figure class="exhibit">
+      <p class="lead">One hotel, two rooms, both sold with an Eiffel Tower view:</p>
+      <div class="pair">
+        <p class="room">Superior Room, 1 Queen Bed, <mark>Tower (High Floor</mark>, Eiffel Tower View)</p>
+        <p class="note">The listing photo captioned “View from room” belongs to this one.</p>
+      </div>
+      <div class="pair">
+        <p class="room">Deluxe Room, 1 King Bed, <mark>Balcony</mark> (Eiffel Tower View)</p>
+        <p class="note">Another booking site calls it a Trocadéro view, with the tower from the balcony.</p>
+      </div>
+      <figcaption class="small">
+        Pullman Paris Tour Eiffel, room names as listed on booking sites in October 2026.{' '}
+        <a class="text-link" href="/views/eiffel-tower/#pullman-paris-tour-eiffel">See both rooms</a>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section id="views" class="views wrap" aria-labelledby="views-heading">
+    <h2 id="views-heading">Three views, checked room by room</h2>
+    <ViewWindows />
+  </section>
+
+  <section class="check wrap" aria-labelledby="check-heading">
+    <h2 id="check-heading">How sure we are</h2>
+    <p class="dek measure">Every hotel carries one of three labels, so you know what stands behind a view before you pay for it.</p>
+    <dl class="levels">
+      {order.map((l) => (
+        <div class="level">
+          <dt><LevelPill level={l} /></dt>
+          <dd>{levels[l].text}</dd>
+        </div>
+      ))}
+    </dl>
+    <p class="small more">Each hotel also shows the month we checked it and where the room names came from. <a class="text-link" href="/about/#how-we-check">More about how we check</a></p>
+  </section>
+
+  <div class="wrap">
+    <Decoder heading="Room names that don't mean what they seem" pairs={pairs} />
+  </div>
+</Layout>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+    gap: 48px;
+    align-items: center;
+    padding-top: 72px;
+    padding-bottom: 24px;
+  }
+  .copy h1 {
+    max-width: 13ch;
+  }
+  .copy .dek {
+    margin-top: 20px;
+    max-width: 52ch;
+  }
+  .actions {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .exhibit {
+    margin: 0;
+    padding: 28px 28px 24px;
+    background: var(--panel);
+    border-radius: var(--radius);
+    border: 1px solid var(--line-soft);
+  }
+  .lead {
+    color: var(--ink-soft);
+    font-size: 0.9375rem;
+  }
+  .pair {
+    margin-top: 18px;
+    padding-left: 14px;
+    border-left: 3px solid var(--brass);
+  }
+  .pair .room {
+    font-size: 1.25rem;
+  }
+  mark {
+    background: none;
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--brass);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+  .note {
+    margin-top: 6px;
+    font-size: 0.9375rem;
+    color: var(--zinc);
+  }
+  figcaption {
+    margin-top: 22px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line-soft);
+  }
+  .views {
+    margin-top: 72px;
+  }
+  .check {
+    margin-top: 88px;
+  }
+  .check .dek {
+    margin-top: 12px;
+  }
+  .levels {
+    margin: 28px 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px 40px;
+  }
+  .level dt {
+    margin-bottom: 10px;
+  }
+  .level dd {
+    margin: 0;
+    color: var(--ink-soft);
+    max-width: 36ch;
+  }
+  .more {
+    margin-top: 24px;
+  }
+  @media (max-width: 860px) {
+    .hero {
+      grid-template-columns: minmax(0, 1fr);
+      padding-top: 40px;
+      gap: 32px;
+    }
+    .levels {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .exhibit {
+      padding: 22px 18px 18px;
+    }
+  }
+</style>

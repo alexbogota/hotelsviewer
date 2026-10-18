@@ -1,0 +1,269 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ArchPhoto from '../../components/ArchPhoto.astro';
+import Decoder from '../../components/Decoder.astro';
+import HotelEntry from '../../components/HotelEntry.astro';
+import {
+  views,
+  getView,
+  hotelName,
+  monthLabel,
+  photoFor,
+  pricesProvider,
+  roomCount,
+  type View,
+} from '../../lib/views';
+
+export function getStaticPaths() {
+  return views.map((v) => ({ params: { slug: v.slug } }));
+}
+
+const view = getView(Astro.params.slug as string) as View;
+const photo = photoFor(view.slug);
+const others = views.filter((v) => v.slug !== view.slug);
+const month = monthLabel(view.checked);
+---
+<Layout
+  title={`${view.title} | HotelsViewer`}
+  description={view.metaDescription}
+  ogImage={photo?.src}
+  ogImageAlt={photo?.alt}
+>
+  <div class="wrap">
+    <nav class="crumbs small" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="/views/">Views</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{view.landmark}</span>
+    </nav>
+
+    <section class="intro">
+      <div class="text">
+        <h1>{view.h1}</h1>
+        <p class="dek">{view.dek}</p>
+        <p class="checked small">Checked in {month}. {view.hotels.length} hotels and {roomCount(view)} room categories sold with the view.</p>
+      </div>
+      <div class="pic">
+        <ArchPhoto photo={photo} landmark={view.landmark} credit eager />
+      </div>
+    </section>
+
+    <section class="short" aria-labelledby="short-heading">
+      <h2 id="short-heading">The short answer</h2>
+      <ul>
+        {view.shortAnswer.map((s) => (
+          <li>
+            <p class="label">{s.label}</p>
+            <p class="room"><a href={`#${s.hotel}`}>{s.room}</a></p>
+            <p class="small">at {hotelName(view, s.hotel)}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <Decoder pairs={view.decoder} />
+
+    <section class="hotels" aria-labelledby="hotels-heading">
+      <div class="hotels-head">
+        <h2 id="hotels-heading">{view.hotels.length} hotels, room by room</h2>
+        <p class="measure">Room names are copied exactly as the hotels sell them, so you can find the same category on any booking site. The buttons open a search on {pricesProvider}. Some links may earn us a commission; it never changes which rooms we list.</p>
+      </div>
+      {view.hotels.map((h) => <HotelEntry hotel={h} checked={view.checked} />)}
+    </section>
+
+    {view.askAtDesk && (
+      <section class="aside" aria-labelledby="ask-heading">
+        <h2 id="ask-heading">{view.askAtDesk.title}</h2>
+        <ul>
+          {view.askAtDesk.items.map((i) => (
+            <li><strong>{i.name}.</strong> {i.text}</li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {view.alternatives && view.alternatives.map((a) => (
+      <section class="aside" aria-label={a.title}>
+        <h2>{a.title}</h2>
+        <p class="measure">{a.text}</p>
+      </section>
+    ))}
+
+    <section class="faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Questions</h2>
+      <div class="qs">
+        {view.faq.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <section class="more" aria-labelledby="more-heading">
+      <h2 id="more-heading">Other views</h2>
+      <ul>
+        {others.map((o) => (
+          <li>
+            <a href={`/views/${o.slug}/`}>{o.landmark}</a>
+            <span class="small">{o.city}. {o.teaser}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .crumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    padding-top: 22px;
+  }
+  .crumbs a {
+    color: var(--zinc);
+  }
+  .intro {
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+    gap: 48px;
+    align-items: center;
+    padding-top: 28px;
+  }
+  .intro h1 {
+    max-width: 16ch;
+  }
+  .intro .dek {
+    margin-top: 18px;
+    max-width: 56ch;
+  }
+  .checked {
+    margin-top: 16px;
+  }
+  .short {
+    margin-top: 64px;
+  }
+  .short ul {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px 36px;
+  }
+  .short li {
+    padding-top: 14px;
+    border-top: 3px solid var(--ink);
+  }
+  .short .label {
+    font-weight: 600;
+    font-size: 0.9375rem;
+  }
+  .short .room {
+    margin-top: 8px;
+  }
+  .short .room a {
+    text-decoration: underline;
+    text-decoration-color: var(--brass);
+    text-underline-offset: 4px;
+  }
+  .short .small {
+    margin-top: 6px;
+  }
+  .hotels {
+    margin-top: 80px;
+  }
+  .hotels-head {
+    margin-bottom: 28px;
+  }
+  .hotels-head p {
+    margin-top: 12px;
+    color: var(--ink-soft);
+  }
+  .aside {
+    margin-top: 48px;
+    padding: 28px;
+    background: var(--sky);
+    border-radius: var(--radius);
+  }
+  .aside h2 {
+    font-size: 1.5rem;
+  }
+  .aside p,
+  .aside ul {
+    margin-top: 12px;
+  }
+  .aside ul {
+    padding-left: 1.2em;
+    max-width: 70ch;
+  }
+  .aside li + li {
+    margin-top: 8px;
+  }
+  .faq {
+    margin-top: 72px;
+  }
+  .qs {
+    margin-top: 16px;
+    border-top: 1px solid var(--line);
+    max-width: 76ch;
+  }
+  details {
+    border-bottom: 1px solid var(--line);
+  }
+  summary {
+    cursor: pointer;
+    padding: 18px 0;
+    font-family: var(--font-serif);
+    font-optical-sizing: auto;
+    font-weight: 560;
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+  details p {
+    padding: 0 0 20px;
+    color: var(--ink-soft);
+  }
+  .more {
+    margin-top: 72px;
+  }
+  .more ul {
+    list-style: none;
+    margin: 16px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .more li {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .more a {
+    font-family: var(--font-serif);
+    font-optical-sizing: auto;
+    font-weight: 560;
+    font-size: 1.375rem;
+    text-decoration-color: var(--brass);
+    text-underline-offset: 4px;
+  }
+  @media (max-width: 860px) {
+    .intro {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 28px;
+    }
+    .pic {
+      max-width: 420px;
+    }
+    .short ul {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .aside {
+      padding: 22px 18px;
+    }
+  }
+</style>

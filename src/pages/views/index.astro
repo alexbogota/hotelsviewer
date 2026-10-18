@@ -1,0 +1,17 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ViewWindows from '../../components/ViewWindows.astro';
+import { views } from '../../lib/views';
+---
+<Layout
+  title="All views: hotels with rooms that face the landmark | HotelsViewer"
+  description="Every view we have checked so far: the Eiffel Tower, the Bellagio fountains and Niagara Falls, with the exact room categories to book."
+>
+  <div class="wrap">
+    <header class="page-head">
+      <h1>Views</h1>
+      <p class="dek measure">Each page lists the hotels that sell rooms with the view, the exact room category to book, and the look-alike rooms to skip. {views.length} views so far, with more on the way.</p>
+    </header>
+    <ViewWindows headingLevel="h2" />
+  </div>
+</Layout>

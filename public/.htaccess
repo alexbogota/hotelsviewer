@@ -1,0 +1,29 @@
+# HotelsViewer: main server settings (LiteSpeed / Apache).
+# If this file ever causes a server error after a deploy, delete it: the site itself does not depend on it.
+
+# Never show a list of files in a folder ("Index of /").
+Options -Indexes
+
+# Our own "page not found".
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Always use https.
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  # www.hotelsviewer.com -> hotelsviewer.com
+  RewriteCond %{HTTP_HOST} ^www\.hotelsviewer\.com$ [NC]
+  RewriteRule ^ https://hotelsviewer.com%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Let browsers keep fonts, pictures and built CSS/JS (their names change when they change).
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+</IfModule>

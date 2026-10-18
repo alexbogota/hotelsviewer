@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+# Redirects to booking sites: nothing to index there.
+Disallow: /go/
+
+Sitemap: https://hotelsviewer.com/sitemap.xml

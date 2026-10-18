@@ -1,0 +1,114 @@
+---
+import Logo from './Logo.astro';
+import { site } from '../data/site';
+import { views } from '../lib/views';
+
+const socials = [
+  { href: site.social.pinterest, label: 'Pinterest' },
+  { href: site.social.bluesky, label: 'Bluesky' },
+  { href: site.social.mastodon, label: 'Mastodon' },
+  { href: site.social.telegram, label: 'Telegram' },
+].filter((s) => s.href);
+
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap top">
+    <div class="about">
+      <Logo size={26} />
+      <p>We show which hotel room actually has the view. Room names change, so check the category on the booking page before you pay.</p>
+      <p class="aff">Some links may earn us a commission, at no extra cost to you. It never changes which rooms we list. <a class="text-link" href="/disclosure/">Affiliate disclosure</a></p>
+    </div>
+    <nav aria-label="Views">
+      <p class="head">Views</p>
+      {views.map((v) => <a href={`/views/${v.slug}/`}>{v.landmark}</a>)}
+    </nav>
+    <nav aria-label="Site">
+      <p class="head">HotelsViewer</p>
+      <a href="/about/">About</a>
+      <a href="/about/#how-we-check">How we check</a>
+      <a href="/contact/">Contact</a>
+      {socials.map((s) => <a href={s.href} rel="me noopener">{s.label}</a>)}
+    </nav>
+    <nav aria-label="Legal">
+      <p class="head">Legal</p>
+      <a href="/disclosure/">Affiliate disclosure</a>
+      <a href="/privacy/">Privacy policy</a>
+      <a href="/terms/">Terms of use</a>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <p>© {year} HotelsViewer. Hotel names and room category names belong to their owners and are quoted to identify what to book. Photos are credited where they appear.</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: 96px;
+    border-top: 1px solid var(--line);
+    background: var(--sky);
+  }
+  .top {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 40ch;
+  }
+  .about p {
+    font-size: 0.9375rem;
+    color: var(--ink-soft);
+  }
+  .about .aff {
+    font-size: 0.875rem;
+    color: var(--zinc);
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .head {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+  nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    font-size: 0.9375rem;
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .legal {
+    padding-bottom: 32px;
+  }
+  .legal p {
+    font-size: 0.8125rem;
+    color: var(--zinc);
+    max-width: 90ch;
+    border-top: 1px solid var(--sky-deep);
+    padding-top: 16px;
+  }
+  @media (max-width: 860px) {
+    .top {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .about {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

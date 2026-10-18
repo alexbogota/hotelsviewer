@@ -1,0 +1,6 @@
+{
+  "_comment": "Where the 'Check prices' buttons lead. Every button goes to our own /go/<hotel-id>/ address first; scripts/build-go.mjs turns this template into redirects. To switch to an affiliate link (Stay22, Booking via CJ, Expedia), change only this file. {query} is the hotel's 'query' from the view data, URL-encoded.",
+  "provider": "Booking.com",
+  "buttonLabel": "Check prices on Booking.com",
+  "template": "https://www.booking.com/searchresults.html?ss={query}"
+}

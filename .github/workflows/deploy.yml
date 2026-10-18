@@ -1,0 +1,71 @@
+name: Deploy to hosting
+
+# Runs on every push to main, and can also be started by hand
+# (GitHub -> Actions -> "Deploy to hosting" -> Run workflow).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# One deploy at a time, so two uploads never overlap.
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+# contents: write lets the run save newly downloaded photos back into the repository.
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install packages
+        run: npm ci
+
+      # Photos come from Wikimedia Commons with their licence and author (scripts/fetch-photos.mjs).
+      # Only missing photos are downloaded. If anything goes wrong, the page keeps its plain sky picture.
+      - name: Fetch missing photos
+        run: npm run photos
+        continue-on-error: true
+
+      - name: Save new photos to the repository
+        continue-on-error: true
+        run: |
+          if [ -n "$(git status --porcelain public/photos src/data/photo-credits.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public/photos src/data/photo-credits.json
+            git commit -m "Add photos from Wikimedia Commons"
+            git push
+          else
+            echo "No new photos."
+          fi
+
+      - name: Build the site into dist/
+        run: npm run build
+
+      - name: Check the built site
+        run: npm run check:site
+
+      - name: Upload dist/ to the hosting over FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          protocol: ftps
+          local-dir: ./dist/
+          # Folder of hotelsviewer.com on the server (cPanel -> Domains -> Document Root).
+          # Set it without editing code: GitHub -> Settings -> Secrets and variables -> Actions -> Variables -> FTP_SERVER_DIR
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'hotelsviewer.com/' }}

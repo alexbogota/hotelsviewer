@@ -1,0 +1,160 @@
+{
+  "slug": "bellagio-fountains",
+  "order": 2,
+  "landmark": "Bellagio fountains",
+  "city": "Las Vegas",
+  "country": "United States",
+  "checked": "2026-10",
+  "title": "Rooms with a Bellagio fountain view: which category to book",
+  "metaDescription": "Five Las Vegas hotels where you can watch the Bellagio fountain show from your room, with the exact room category to book and the look-alikes to skip.",
+  "h1": "Rooms with a Bellagio fountain view, and which category to book",
+  "dek": "Five Las Vegas hotels where the fountain show can be seen from the room. We list the exact categories that come with the view, and the ones that only sound like they do.",
+  "teaser": "Bellagio itself, plus four neighbours with rooms that face the show.",
+  "photo": {
+    "commons": [
+      { "file": "File:Bellagio fountains from Mon Ami Gabi.jpg", "alt": "The Bellagio fountains seen from Mon Ami Gabi, across the Strip" },
+      { "file": "File:The Bellagio Fountains.jpg", "alt": "The fountains in front of the Bellagio in Las Vegas" }
+    ]
+  },
+  "shortAnswer": [
+    { "label": "In front of the show", "hotel": "bellagio", "room": "Fountain View King" },
+    { "label": "With a terrace", "hotel": "the-cosmopolitan", "room": "Terrace Studio Fountain View" },
+    { "label": "Four-star option", "hotel": "planet-hollywood", "room": "Ultra Hip Premium Room, 1 King Bed, Non Smoking, Fountain View" }
+  ],
+  "decoder": [
+    { "left": "Terrace", "right": "Fountain View", "text": "At The Cosmopolitan, terrace rooms are sold both with and without the fountains. Look for “Fountain View” at the end of the name." },
+    { "left": "Strip View", "right": "Fountain View", "text": "At Bellagio, the Strip View categories are tagged with a city view. The Fountain View ones are tagged with a lake view." },
+    { "left": "Assigned on arrival", "right": "any view", "text": "Caesars Palace, Planet Hollywood and Paris Las Vegas all sell a “Room Type Assigned on Arrival”. It costs less and promises no view at all." }
+  ],
+  "hotels": [
+    {
+      "id": "bellagio",
+      "name": "Bellagio",
+      "where": "3600 Las Vegas Blvd S, behind the fountain lake",
+      "stars": 5,
+      "level": "listed",
+      "book": [
+        { "room": "Fountain View King", "note": "Also sold as Fountain View Two Queen. Every Fountain View category is tagged with a lake view on the listing." },
+        { "room": "Tower Fountain View King" },
+        { "room": "Fountain View Bellagio Suite" },
+        { "room": "Salone Fountain View Suite" },
+        { "room": "Fountain View Penthouse Suite" }
+      ],
+      "skip": [
+        { "room": "Resort Tower King", "note": "No view in the name." },
+        { "room": "Premier King", "note": "No view in the name." },
+        { "room": "Strip View Spa King", "note": "Tagged with a city view, not the lake." }
+      ],
+      "notes": [
+        "A Las Vegas guide notes that one whole side of the main tower faces the fountains, and rooms on the back don't see them."
+      ],
+      "sources": [
+        { "label": "Expedia" },
+        { "label": "Las Vegas Then and Now", "url": "https://lasvegasthenandnow.com/las-vegas-hotels-with-a-bellagio-fountain-view/" }
+      ],
+      "query": "Bellagio Las Vegas"
+    },
+    {
+      "id": "the-cosmopolitan",
+      "name": "The Cosmopolitan of Las Vegas",
+      "where": "3708 Las Vegas Blvd S",
+      "distance": "3-minute walk to the fountains",
+      "level": "listed",
+      "book": [
+        { "room": "Terrace Studio Fountain View", "note": "Also sold with two queen beds. A Las Vegas guide says the terrace makes the show better to watch and to hear." },
+        { "room": "Terrace One Bedroom Suite Fountain View" },
+        { "room": "Terrace Suite Fountain View" },
+        { "room": "Wraparound Terrace Suite Fountain View" }
+      ],
+      "skip": [
+        { "room": "Terrace Studio", "note": "The same terrace room without “Fountain View” in the name." },
+        { "room": "Wraparound Terrace Suite", "note": "Also sold without the fountain view." },
+        { "room": "City Room", "note": "A city view." }
+      ],
+      "sources": [
+        { "label": "Hotels.com" },
+        { "label": "Las Vegas Then and Now", "url": "https://lasvegasthenandnow.com/las-vegas-hotels-with-a-bellagio-fountain-view/" }
+      ],
+      "query": "The Cosmopolitan of Las Vegas"
+    },
+    {
+      "id": "caesars-palace",
+      "name": "Caesars Palace",
+      "where": "3570 Las Vegas Blvd S",
+      "distance": "3-minute walk to the fountains",
+      "level": "listed",
+      "book": [
+        { "room": "Augustus Premium Room, 1 King Bed, Non Smoking, Fountain View", "note": "Also sold with two queen beds." },
+        { "room": "Octavius Executive Fountain View Suite King" }
+      ],
+      "skip": [
+        { "room": "Augustus Premium Room, 1 King Bed, Non Smoking", "note": "The same tower and room, without the view in the name." },
+        { "room": "Augustus Premium Room, 1 King Bed, Non Smoking, Strip View", "note": "A Strip view instead of the fountains." }
+      ],
+      "notes": [
+        "The fountain view rooms are in the Augustus Tower, plus one suite category in Octavius."
+      ],
+      "sources": [
+        { "label": "Hotels.com" },
+        { "label": "Las Vegas Then and Now", "url": "https://lasvegasthenandnow.com/las-vegas-hotels-with-a-bellagio-fountain-view/" }
+      ],
+      "query": "Caesars Palace Las Vegas"
+    },
+    {
+      "id": "planet-hollywood",
+      "name": "Planet Hollywood Resort & Casino",
+      "where": "3667 Las Vegas Blvd S",
+      "distance": "2-minute walk to the fountains",
+      "stars": 4,
+      "level": "listed",
+      "book": [
+        { "room": "Ultra Hip Premium Room, 1 King Bed, Non Smoking, Fountain View" },
+        { "room": "Ultra Hip Room, 2 Queen Beds, Non Smoking, Fountain View" }
+      ],
+      "skip": [
+        { "room": "Ultra Hip Room, 1 King Bed, Pool View Non Smoking", "note": "Pool, city and mountain view rooms are sold separately." },
+        { "room": "Room (Room Type Assigned on Arrival)", "note": "No view promised." }
+      ],
+      "notes": [
+        "A Las Vegas guide got only a partial fountain view from a room assigned at random, so book the labelled category."
+      ],
+      "sources": [
+        { "label": "Hotels.com" },
+        { "label": "Las Vegas Then and Now", "url": "https://lasvegasthenandnow.com/las-vegas-hotels-with-a-bellagio-fountain-view/" }
+      ],
+      "query": "Planet Hollywood Resort Casino Las Vegas"
+    },
+    {
+      "id": "paris-las-vegas",
+      "name": "Paris Las Vegas",
+      "where": "3655 Las Vegas Blvd S, across the Strip from Bellagio",
+      "distance": "1-minute walk to the fountains",
+      "stars": 4,
+      "level": "reported",
+      "book": [
+        { "room": "Bordeaux Eiffel View Room King", "note": "No category here is named “Fountain View”. A Las Vegas guide says the Eiffel View rooms look across the street at the fountain show." },
+        { "room": "Versailles Balcony Room King", "note": "The same guide says the front-facing Versailles Tower rooms have balconies with a fountain view. Ask for one when you book." }
+      ],
+      "skip": [
+        { "room": "Versailles Pool View Room King", "note": "Faces the pool." }
+      ],
+      "sources": [
+        { "label": "Travelocity" },
+        { "label": "Las Vegas Then and Now", "url": "https://lasvegasthenandnow.com/las-vegas-hotels-with-a-bellagio-fountain-view/" }
+      ],
+      "query": "Paris Las Vegas"
+    }
+  ],
+  "askAtDesk": {
+    "title": "Can't book it, but you can ask",
+    "items": [
+      { "name": "Horseshoe Las Vegas", "text": "A Las Vegas guide suggests booking a Strip View room and asking for a fountain view at check-in. There's no guarantee." },
+      { "name": "Flamingo", "text": "Some rooms see the fountains, but they can't be booked in advance. Ask at the front desk." }
+    ]
+  },
+  "faq": [
+    { "q": "Do all Bellagio rooms face the fountains?", "a": "No. Only the categories with “Fountain View” in the name are sold with the lake. A Las Vegas guide notes that rooms on the back of the main tower don't see the fountains." },
+    { "q": "Which other hotels sell fountain view rooms?", "a": "The Cosmopolitan, Caesars Palace (in the Augustus Tower) and Planet Hollywood each sell categories named “Fountain View”. Paris Las Vegas doesn't name one, but guides report the view from its Eiffel View rooms and its front-facing balcony rooms." },
+    { "q": "Can I hear the music from my room?", "a": "A Las Vegas guide says a balcony makes the show much better to watch and to hear, which is why The Cosmopolitan's terrace rooms with a fountain view stand out." }
+  ]
+}
