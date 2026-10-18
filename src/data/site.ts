@@ -16,5 +16,5 @@ export const site = {
   // Stay22 LetMeAllez ID (script that turns hotel links into affiliate links). Empty = no script.
   stay22Id: '6ad53d7b7692614b7741ee96',
   // Stay22 affiliate ID ("aid") for the hotel map on city pages. Empty = the map is hidden.
-  stay22Aid: '',
+  stay22Aid: 'hotelsviewer',
 };
