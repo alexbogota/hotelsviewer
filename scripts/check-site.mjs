@@ -91,7 +91,7 @@ for (const p of needed) {
   const ok = p.endsWith('.html') ? existsSync(join(dist, p)) : existsSync(join(dist, p, 'index.html'));
   if (!ok) errors.push(`missing page ${p}`);
 }
-for (const f of ['.htaccess', 'robots.txt', 'sitemap.xml', 'favicon.svg', 'og-image.png', 'go/.htaccess']) {
+for (const f of ['.htaccess', 'robots.txt', 'sitemap.xml', 'favicon.svg', 'og-image.png', 'go/.htaccess', 'hotelsviewer-site.txt']) {
   if (!existsSync(join(dist, f))) errors.push(`missing file ${f}`);
 }
 

@@ -57,7 +57,20 @@ jobs:
       - name: Check the built site
         run: npm run check:site
 
+      # Safety: the FTP login is shared with saveandplay.com. This step finds the hotelsviewer.com folder
+      # (FTP_SERVER_DIR first, then hotelsviewer.com/) and accepts it only if it is empty or already has
+      # our marker file. Otherwise it stops here and nothing is uploaded (scripts/ftp-target.mjs).
+      - name: Find the hotelsviewer.com folder on the hosting
+        id: target
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_SERVER_DIR: ${{ vars.FTP_SERVER_DIR }}
+        run: node scripts/ftp-target.mjs
+
       - name: Upload dist/ to the hosting over FTPS
+        if: steps.target.outputs.dir != ''
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -66,6 +79,4 @@ jobs:
           port: 21
           protocol: ftps
           local-dir: ./dist/
-          # Folder of hotelsviewer.com on the server (cPanel -> Domains -> Document Root).
-          # Set it without editing code: GitHub -> Settings -> Secrets and variables -> Actions -> Variables -> FTP_SERVER_DIR
-          server-dir: ${{ vars.FTP_SERVER_DIR || 'hotelsviewer.com/' }}
+          server-dir: ${{ steps.target.outputs.dir }}

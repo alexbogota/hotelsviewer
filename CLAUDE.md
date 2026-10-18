@@ -15,7 +15,8 @@ First goal (October 2026): get approved by affiliate programs. Order and status:
 - `src/data/site.ts`: email, social links, subscribe form address. Empty values are hidden on the site.
 - Photos: `scripts/fetch-photos.mjs` runs on GitHub during the deploy, downloads one photo per view from Wikimedia Commons (licence checked) into `public/photos/`, writes the credit into `src/data/photo-credits.json`, and commits both. The chat workspace can't reach Wikimedia, so look at new photos after `git pull`.
 - Fonts are self-hosted (`@fontsource-variable/newsreader`, `@fontsource-variable/public-sans`): no requests to Google.
-- Deploy: `.github/workflows/deploy.yml`. Push to `main` → fetch missing photos → build → `npm run check:site` → FTPS upload. Secrets `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`; variable `FTP_SERVER_DIR` (folder of hotelsviewer.com on the host, must end with `/`).
+- Deploy: `.github/workflows/deploy.yml`. Push to `main` → fetch missing photos → build → `npm run check:site` → find the upload folder → FTPS upload. Secrets `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD` are the same FTP login as saveandplay.com; variable `FTP_SERVER_DIR` (optional).
+- Upload safety (`scripts/ftp-target.mjs`): the FTP login is shared with saveandplay.com, whose files sit in `./`. Before uploading, the run tries `FTP_SERVER_DIR`, then `hotelsviewer.com/`, then `public_html/hotelsviewer.com/`, and accepts a folder only if it holds our marker `hotelsviewer-site.txt` or is empty. Otherwise it stops and prints what the FTP login sees. Never remove this step or the marker file, and never point the upload at a folder with another site in it.
 - Checks before every deploy: `npm run build && npm run check:site` (title, description, one h1, alt text, links and anchors, /go/ links, no unfinished text).
 
 ## Content rules
