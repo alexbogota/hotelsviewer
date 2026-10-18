@@ -25,3 +25,13 @@ Newest at the bottom. START.md keeps only the result.
 
 ## 18 October 2026: handoff
 - Context of the first session was getting long; state and plan written to START.md and docs/next-steps.md so a new chat or Claude Code can continue from the repository alone.
+
+## 18 October 2026: list of view candidates
+- `data/view-candidates.json` is built weekly on GitHub (`.github/workflows/candidates.yml`, `scripts/build-candidates.mjs`): landmarks from Wikidata (31 kinds: towers, skyscrapers, bridges, waterfalls, castles, palaces, cathedrals, temples, mountains, volcanoes, lakes, beaches, squares, statues, archaeological sites and so on) with coordinates and an English Wikipedia article, ranked by English Wikipedia page views over the last 12 full months. Only the best-known places by number of language editions get page views (cost).
+- A candidate is only a name on a list. Whether hotels sell rooms with that view is for the view writer to research; if it finds nothing to verify, the place becomes `rejected` with a reason in `note`.
+- Countries, political territories, administrative areas and settlements are left out (the first run put 62 island countries in the top 200). Done in a second, light query on the places already found: a filter inside the per-kind queries made the run take over 20 minutes and was cancelled.
+- Every Wikidata id used is checked against its English name at the start of each run; a kind that does not match is skipped with a warning (annotation on the run page).
+- The status of each place survives the weekly rebuild. The commit says `[skip ci]` and the bot's push does not start a deploy; the site does not change.
+- 11 obviously unsuitable places were set to `rejected` by hand (a shipwreck, a destroyed statue, whole seas and whole islands, a statue inside a museum).
+- The run log of GitHub is not reachable from the chat workspace (403); problems are therefore also printed as annotations (`::warning::`, `::error::`), which the API returns.
+
