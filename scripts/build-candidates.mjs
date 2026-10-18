@@ -186,12 +186,36 @@ export function mergeCandidates({ fresh, previous, publishedViews, keep = KEEP }
   const rank = (a, b) => (b.views12m ?? -1) - (a.views12m ?? -1) || b.sitelinks - a.sitelinks || a.qid.localeCompare(b.qid);
   const worked = list.filter((c) => c.status !== 'new');
   const fresh_new = list.filter((c) => c.status === 'new' && c.views12m !== null).sort(rank).slice(0, keep);
-  return [...worked, ...fresh_new].sort(rank);
+  const result = [...worked, ...fresh_new].sort(rank);
+  makeSlugsUnique(result, publishedViews);
+  return result;
+}
+
+// A slug is a suggested file name for the view (src/data/views/<slug>.json), so every candidate needs its own.
+// Published places keep theirs; then places already worked on; the rest by rank. A clash gets the country, then the id.
+export function makeSlugsUnique(list, publishedViews = []) {
+  const taken = new Set(publishedViews.map((v) => v.slug));
+  const priority = (c) => (c.status === 'published' ? 0 : c.status === 'new' ? 2 : 1);
+  const order = [...list].sort((a, b) => priority(a) - priority(b)); // stable: rank order inside each group
+  for (const c of order) {
+    if (c.status === 'published') {
+      taken.add(c.slug);
+      continue;
+    }
+    const base = c.slug || slugify(c.name) || c.qid.toLowerCase();
+    const options = [base, `${base}-${slugify(c.country)}`.replace(/-$/, ''), `${base}-${c.qid.toLowerCase()}`];
+    c.slug = options.find((s) => s && !taken.has(s)) || `${c.qid.toLowerCase()}`;
+    taken.add(c.slug);
+  }
 }
 
 // ---------- network (GitHub only) ----------
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// "::warning::" lines show up as annotations on the GitHub run page; locally they are just printed.
+const warn = (msg) => console.warn(process.env.GITHUB_ACTIONS ? `::warning::${msg}` : `WARNING: ${msg}`);
+const notice = (msg) => console.log(process.env.GITHUB_ACTIONS ? `::notice::${msg}` : msg);
 
 async function sparql(query, attempts = 2) {
   let lastError;
@@ -233,7 +257,7 @@ async function checkedClasses() {
   for (const c of CLASSES) {
     const got = labels.get(c.q);
     if (got && c.labels.includes(got)) ok.push(c);
-    else console.warn(`WARNING: ${c.q} is "${got ?? 'unknown'}" in Wikidata, expected ${c.labels.join(' / ')}: kind skipped.`);
+    else warn(`${c.q} is "${got ?? 'unknown'}" in Wikidata, expected ${c.labels.join(' / ')}: kind skipped.`);
   }
   return ok;
 }
@@ -245,7 +269,7 @@ async function fetchClass(c) {
       console.log(`${c.labels[0]}: ${rows.length} rows (min ${min} language editions)`);
       return rows;
     } catch (e) {
-      console.warn(`WARNING: ${c.labels[0]} with min ${min} failed: ${e.message}`);
+      warn(`${c.labels[0]} with min ${min} failed: ${e.message}`);
     }
   }
   return [];
@@ -289,7 +313,7 @@ async function addViews(items, period) {
     }
   };
   await Promise.all(Array.from({ length: 5 }, worker));
-  if (failed) console.warn(`WARNING: page views missing for ${failed} places.`);
+  if (failed) warn(`page views missing for ${failed} places.`);
 }
 
 // ---------- files ----------
@@ -326,6 +350,7 @@ async function main() {
 
   const items = collect(rowsByClass);
   console.log(`Places found: ${items.length}`);
+  notice(`Places found: ${items.length}. Rows per kind: ${rowsByClass.map((r) => `${r.cls} ${r.rows.length}`).join(', ')}`);
   if (items.length < 100) throw new Error('Far too few places came back from Wikidata. The old file is left as it is.');
 
   const best = [...items].sort((a, b) => b.sitelinks - a.sitelinks).slice(0, FETCH_VIEWS_FOR);

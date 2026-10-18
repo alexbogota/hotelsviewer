@@ -63,6 +63,8 @@ for (const [i, c] of (data.candidates || []).entries()) {
 if (problems.length) {
   console.error(`check-candidates: ${problems.length} problem(s):`);
   for (const p of problems.slice(0, 30)) console.error(' - ' + p);
+  // Also as annotations on the GitHub run page (the run log is not always reachable).
+  if (process.env.GITHUB_ACTIONS) for (const p of problems.slice(0, 9)) console.error(`::error::${p}`);
   process.exit(1);
 }
 const count = (s) => data.candidates.filter((c) => c.status === s).length;

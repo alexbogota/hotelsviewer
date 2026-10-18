@@ -148,6 +148,28 @@ test('merge: places with no page views (unknown) are not listed, but an earlier 
   assert.ok(!out.some((c) => c.qid === 'Q31'));
 });
 
+test('merge: two places with the same name get different slugs, the better-known keeps the plain one', () => {
+  const a = { ...item('Q40', 'Cathedral', 900), country: 'Spain' };
+  const b = { ...item('Q41', 'Cathedral', 100), country: 'Italy' };
+  const c = { ...item('Q42', 'Cathedral', 50), country: 'Italy' };
+  const out = mergeCandidates({ fresh: [a, b, c], previous: null, publishedViews: [] });
+  const slugs = out.map((x) => x.slug);
+  assert.equal(new Set(slugs).size, 3, slugs.join(', '));
+  assert.equal(out.find((x) => x.qid === 'Q40').slug, 'cathedral');
+  assert.equal(out.find((x) => x.qid === 'Q41').slug, 'cathedral-italy');
+  assert.equal(out.find((x) => x.qid === 'Q42').slug, 'cathedral-q42');
+});
+
+test('merge: a name with no Latin letters still gets a usable slug, and no slug equals a published view', () => {
+  const out = mergeCandidates({
+    fresh: [item('Q50', '東京タワー', 800), item('Q51', 'Eiffel Tower', 700)],
+    previous: null,
+    publishedViews: [{ slug: 'eiffel-tower', landmark: 'Eiffel Tower' }].map((v) => ({ ...v, coords: { lat: 0, lng: 0 } })),
+  });
+  assert.equal(out.find((x) => x.qid === 'Q50').slug, 'q50');
+  assert.equal(out.find((x) => x.qid === 'Q51').slug, 'eiffel-tower'); // it IS the published view
+});
+
 test('viewsPeriod: 12 full months before the current one', () => {
   const p = viewsPeriod(new Date('2026-10-18T12:00:00Z'));
   assert.equal(p.start, '20251001');
