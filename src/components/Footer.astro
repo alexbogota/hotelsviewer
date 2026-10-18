@@ -1,7 +1,10 @@
 ---
 import Logo from './Logo.astro';
 import { site } from '../data/site';
-import { views } from '../lib/views';
+import { countries, countryHref } from '../lib/places';
+
+// The footer lists countries, not every view, so it stays short as the catalogue grows.
+const footerCountries = countries.slice(0, 8);
 
 const socials = [
   { href: site.social.pinterest, label: 'Pinterest' },
@@ -19,9 +22,11 @@ const year = new Date().getFullYear();
       <p>We show which hotel room actually has the view. Room names change, so check the category on the booking page before you pay.</p>
       <p class="aff">Some links may earn us a commission, at no extra cost to you. It never changes which rooms we list. <a class="text-link" href="/disclosure/">Affiliate disclosure</a></p>
     </div>
-    <nav aria-label="Views">
-      <p class="head">Views</p>
-      {views.map((v) => <a href={`/views/${v.slug}/`}>{v.landmark}</a>)}
+    <nav aria-label="Destinations">
+      <p class="head">Destinations</p>
+      {footerCountries.map((c) => <a href={countryHref(c)}>{c.name}</a>)}
+      <a href="/destinations/">All destinations</a>
+      <a href="/views/">All views</a>
     </nav>
     <nav aria-label="Site">
       <p class="head">HotelsViewer</p>

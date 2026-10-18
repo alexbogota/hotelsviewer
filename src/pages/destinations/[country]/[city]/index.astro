@@ -1,0 +1,52 @@
+---
+// One city: its checked views, then the Stay22 map of other hotels nearby (hidden until site.stay22Aid is set).
+import Layout from '../../../../layouts/Layout.astro';
+import Crumbs from '../../../../components/Crumbs.astro';
+import ViewWindows from '../../../../components/ViewWindows.astro';
+import HotelMap from '../../../../components/HotelMap.astro';
+import { cities, countryHref, type City } from '../../../../lib/places';
+import { landmarkInText } from '../../../../lib/views';
+
+export function getStaticPaths() {
+  return cities.map((c) => ({ params: { country: c.country.slug, city: c.slug }, props: { city: c } }));
+}
+
+const { city } = Astro.props as { city: City };
+const views = city.views;
+const listText = (items: string[]) =>
+  items.length <= 1 ? items.join('') : `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
+const landmarks = listText(views.map(landmarkInText));
+const hotels = views.reduce((n, v) => n + v.hotels.length, 0);
+const where = city.region ? `${city.name}, ${city.region}` : `${city.name}, ${city.country.name}`;
+---
+<Layout
+  title={`${city.name} hotels with a view: which room to book | HotelsViewer`}
+  description={`Hotels in ${where} with rooms that face ${landmarks}: the exact room category to book, the look-alikes to skip, and a map of other hotels nearby.`}
+>
+  <div class="wrap">
+    <Crumbs
+      items={[
+        { href: '/', label: 'Home' },
+        { href: '/destinations/', label: 'Destinations' },
+        { href: countryHref(city.country), label: city.country.name },
+        { label: city.name },
+      ]}
+    />
+    <header class="page-head">
+      <h1>{city.name} hotels with a view</h1>
+      <p class="dek measure">
+        In {city.name} we have checked {hotels} hotels with rooms that face {landmarks}.
+        Open a view to see the exact room category to book and the look-alike rooms to skip.
+      </p>
+    </header>
+
+    <ViewWindows items={views} headingLevel="h2" />
+
+    <HotelMap
+      lat={city.coords.lat}
+      lng={city.coords.lng}
+      near={landmarkInText(views[0])}
+      campaign={`city-${city.slug}`}
+    />
+  </div>
+</Layout>

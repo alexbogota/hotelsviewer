@@ -1,0 +1,61 @@
+---
+// One country: its cities and their views. Exists only when the country has at least one view.
+import Layout from '../../../layouts/Layout.astro';
+import Crumbs from '../../../components/Crumbs.astro';
+import ViewWindows from '../../../components/ViewWindows.astro';
+import { cityHref, countries, type Country } from '../../../lib/places';
+import { landmarkInText } from '../../../lib/views';
+
+export function getStaticPaths() {
+  return countries.map((c) => ({ params: { country: c.slug }, props: { country: c } }));
+}
+
+const { country } = Astro.props as { country: Country };
+const views = country.views;
+const cityNames = country.cities.map((c) => c.name);
+const listText = (items: string[]) =>
+  items.length <= 1 ? items.join('') : `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
+const landmarks = listText(views.map(landmarkInText));
+---
+<Layout
+  title={`Hotels with a view in ${country.name}: which room to book | HotelsViewer`}
+  description={`Hotels in ${country.name} with rooms that face ${landmarks}: the exact room category to book and the look-alikes to skip.`}
+>
+  <div class="wrap">
+    <Crumbs items={[{ href: '/', label: 'Home' }, { href: '/destinations/', label: 'Destinations' }, { label: country.name }]} />
+    <header class="page-head">
+      <h1>Hotels with a view in {country.name}</h1>
+      <p class="dek measure">
+        We have checked {views.length === 1 ? 'one view' : `${views.length} views`} in {listText(cityNames)}: {landmarks}.
+        Each page names the hotels that sell rooms with the view, the exact room category to book, and the look-alike rooms to skip.
+      </p>
+    </header>
+
+    {country.cities.map((city) => (
+      <section class="city" aria-labelledby={`city-${city.slug}`}>
+        <h2 id={`city-${city.slug}`}>
+          <a href={cityHref(city)}>{city.name}</a>
+          {city.region && <span class="region small">{city.region}</span>}
+        </h2>
+        <ViewWindows items={city.views} />
+      </section>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .city {
+    margin-top: 48px;
+    padding-top: 22px;
+    border-top: 3px solid var(--ink);
+  }
+  .city h2 a {
+    color: inherit;
+    text-decoration-color: var(--brass);
+    text-underline-offset: 5px;
+  }
+  .region {
+    margin-left: 12px;
+    font-family: var(--font-sans);
+  }
+</style>

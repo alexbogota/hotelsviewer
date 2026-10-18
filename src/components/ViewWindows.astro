@@ -1,21 +1,23 @@
 ---
 // The views as a row of arched windows, like the windows of one facade.
 import ArchPhoto from './ArchPhoto.astro';
-import { photoFor, roomCount, views } from '../lib/views';
+import { photoFor, roomCount, views, type View } from '../lib/views';
+import { placeLabel } from '../lib/places';
 
 interface Props {
   headingLevel?: 'h2' | 'h3';
+  items?: View[]; // default: every view
 }
-const { headingLevel = 'h3' } = Astro.props;
+const { headingLevel = 'h3', items = views } = Astro.props;
 const Heading = headingLevel;
 ---
 <ul class="windows">
-  {views.map((v) => (
+  {items.map((v) => (
     <li>
       <a href={`/views/${v.slug}/`}>
         <ArchPhoto photo={photoFor(v.slug)} landmark={v.landmark} variant="thumb" />
         <Heading class="title">{v.landmark}</Heading>
-        <p class="city">{v.city}</p>
+        <p class="city">{placeLabel(v)}</p>
         <p class="teaser">{v.teaser}</p>
         <p class="count small">{v.hotels.length} hotels, {roomCount(v)} room categories with the view</p>
       </a>

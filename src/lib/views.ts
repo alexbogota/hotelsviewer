@@ -32,8 +32,11 @@ export interface View {
   slug: string;
   order: number;
   landmark: string;
-  city: string;
+  landmarkInText?: string; // the landmark inside a sentence, e.g. "the Eiffel Tower" (default: landmark)
+  city: string; // city or town name only, e.g. "Niagara Falls"
+  region?: string; // state, province or region, e.g. "Ontario"
   country: string;
+  coords: { lat: number; lng: number }; // the landmark itself; centres the hotel map on the city page
   checked: string; // YYYY-MM
   title: string;
   metaDescription: string;
@@ -127,4 +130,9 @@ export function photoFor(slug: string): Photo | null {
 
 export function hotelName(view: View, id: string): string {
   return view.hotels.find((h) => h.id === id)?.name ?? id;
+}
+
+// "the Eiffel Tower" for use inside a sentence.
+export function landmarkInText(view: View): string {
+  return view.landmarkInText ?? view.landmark;
 }

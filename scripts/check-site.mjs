@@ -86,7 +86,7 @@ for (const file of htmlFiles) {
   }
 }
 
-const needed = ['/', '/views/', '/about/', '/contact/', '/disclosure/', '/privacy/', '/terms/', '/404.html'];
+const needed = ['/', '/views/', '/destinations/', '/about/', '/contact/', '/disclosure/', '/privacy/', '/terms/', '/404.html'];
 for (const p of needed) {
   const ok = p.endsWith('.html') ? existsSync(join(dist, p)) : existsSync(join(dist, p, 'index.html'));
   if (!ok) errors.push(`missing page ${p}`);

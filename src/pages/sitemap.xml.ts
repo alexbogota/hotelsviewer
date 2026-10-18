@@ -1,6 +1,7 @@
 // sitemap.xml for search engines. New views appear here by themselves.
 import type { APIRoute } from 'astro';
 import { views } from '../lib/views';
+import { cities, cityHref, countries, countryHref } from '../lib/places';
 
 export const GET: APIRoute = ({ site }) => {
   const base = site ?? new URL('https://hotelsviewer.com');
@@ -8,6 +9,9 @@ export const GET: APIRoute = ({ site }) => {
     { path: '/' },
     { path: '/views/' },
     ...views.map((v) => ({ path: `/views/${v.slug}/`, lastmod: `${v.checked}-01` })),
+    { path: '/destinations/' },
+    ...countries.map((c) => ({ path: countryHref(c) })),
+    ...cities.map((c) => ({ path: cityHref(c) })),
     { path: '/about/' },
     { path: '/contact/' },
     { path: '/disclosure/' },

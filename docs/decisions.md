@@ -16,3 +16,9 @@ Newest at the bottom. START.md keeps only the result.
 
 ## 18 October 2026: first deploy
 - Pushed to alexbogota/hotelsviewer; Actions run green; site live at hotelsviewer.com. The shared FTP login is protected by `scripts/ftp-target.mjs` (empty or marker-file folders only). Photos fetched from Wikimedia and committed by the bot.
+
+## 18 October 2026: destinations
+- Catalogue grows from views, not from a list of cities: country and city pages are generated from view data and exist only when they hold a checked view (no thin pages).
+- URL scheme `/destinations/<country>/<city>/` (nested, so cities with the same name in different countries don't clash).
+- City pages carry a Stay22 map of nearby hotels, clearly marked as not checked by us. Needs the Stay22 `aid`.
+- Next: a candidate list of landmarks (Wikidata + Wikipedia pageviews) and a daily view-writer on GitHub, like the SaveAndPlay article writer (owner asked for daily, 18 Oct).

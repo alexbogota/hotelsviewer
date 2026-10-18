@@ -11,6 +11,7 @@ First goal (October 2026): get approved by affiliate programs. Order and status:
 ## Stack
 - Astro, static output. No database, no admin panel.
 - One JSON file per view: `src/data/views/<slug>.json`. Pages, the sitemap and the /go/ redirects are generated from these files. A new view = a new JSON file, no code changes.
+- Destinations (18 Oct 2026): `src/lib/places.ts` groups views by `country` and `city` (fields in each view JSON, plus optional `region`, `coords` of the landmark and `landmarkInText`). Pages `/destinations/`, `/destinations/<country>/`, `/destinations/<country>/<city>/` exist only when they hold at least one view: never create empty country or city pages. City pages show the Stay22 hotel map (`components/HotelMap.astro`) when `site.stay22Aid` is set, with a note that those hotels are not checked.
 - `src/data/links.json`: where the "Check prices" buttons go. Every button links to our own `/go/<hotel-id>/`; `scripts/build-go.mjs` writes `dist/go/.htaccess` from the template after `astro build`. Switching to an affiliate network = changing this one file.
 - `src/data/site.ts`: email, social links, subscribe form address. Empty values are hidden on the site.
 - Photos: `scripts/fetch-photos.mjs` runs on GitHub during the deploy, downloads one photo per view from Wikimedia Commons (licence checked) into `public/photos/`, writes the credit into `src/data/photo-credits.json`, and commits both. The chat workspace can't reach Wikimedia, so look at new photos after `git pull`.

@@ -13,6 +13,7 @@ import {
   roomCount,
   type View,
 } from '../../lib/views';
+import { cityHref, cityOf, countryHref, placeLabel } from '../../lib/places';
 
 export function getStaticPaths() {
   return views.map((v) => ({ params: { slug: v.slug } }));
@@ -20,7 +21,13 @@ export function getStaticPaths() {
 
 const view = getView(Astro.params.slug as string) as View;
 const photo = photoFor(view.slug);
-const others = views.filter((v) => v.slug !== view.slug);
+const city = cityOf(view);
+// Other views: same city first, then same country, then the rest. Six at most, so the list stays short.
+const rank = (v: View) => (v.city === view.city ? 0 : v.country === view.country ? 1 : 2);
+const others = views
+  .filter((v) => v.slug !== view.slug)
+  .sort((a, b) => rank(a) - rank(b) || a.order - b.order)
+  .slice(0, 6);
 const month = monthLabel(view.checked);
 ---
 <Layout
@@ -33,7 +40,11 @@ const month = monthLabel(view.checked);
     <nav class="crumbs small" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span aria-hidden="true">/</span>
-      <a href="/views/">Views</a>
+      <a href="/destinations/">Destinations</a>
+      <span aria-hidden="true">/</span>
+      <a href={countryHref(city.country)}>{city.country.name}</a>
+      <span aria-hidden="true">/</span>
+      <a href={cityHref(city)}>{city.name}</a>
       <span aria-hidden="true">/</span>
       <span aria-current="page">{view.landmark}</span>
     </nav>
@@ -108,15 +119,19 @@ const month = monthLabel(view.checked);
         {others.map((o) => (
           <li>
             <a href={`/views/${o.slug}/`}>{o.landmark}</a>
-            <span class="small">{o.city}. {o.teaser}</span>
+            <span class="small">{placeLabel(o)}. {o.teaser}</span>
           </li>
         ))}
       </ul>
+      <p class="all small"><a class="text-link" href="/views/">All views</a> · <a class="text-link" href="/destinations/">All destinations</a></p>
     </section>
   </div>
 </Layout>
 
 <style>
+  .more .all {
+    margin-top: 20px;
+  }
   .crumbs {
     display: flex;
     flex-wrap: wrap;
