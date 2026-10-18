@@ -13,3 +13,6 @@ Newest at the bottom. START.md keeps only the result.
 - Photos: Wikimedia Commons only, downloaded on GitHub during deploy with a licence check (CC0, public domain, CC BY, CC BY-SA) and saved with credits. No night Eiffel Tower photos (SETE copyright on the lights). Hotel photos later from affiliate content (Agoda feed, Expedia Creator Toolbox) or hotels' permission.
 - No analytics and no cookies on the site for now. Fonts self-hosted.
 - Design: mist / slate / brass palette, Newsreader + Public Sans, arched-window frames, "≠" pairs of look-alike room names.
+
+## 18 October 2026: first deploy
+- Pushed to alexbogota/hotelsviewer; Actions run green; site live at hotelsviewer.com. The shared FTP login is protected by `scripts/ftp-target.mjs` (empty or marker-file folders only). Photos fetched from Wikimedia and committed by the bot.
