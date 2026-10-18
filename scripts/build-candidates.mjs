@@ -232,9 +232,10 @@ async function sparql(query, attempts = 2) {
   let lastError;
   for (let i = 1; i <= attempts; i++) {
     try {
-      const url = 'https://query.wikidata.org/sparql?format=json&query=' + encodeURIComponent(query);
-      const res = await fetch(url, {
-        headers: { 'User-Agent': UA, Accept: 'application/sparql-results+json' },
+      const res = await fetch('https://query.wikidata.org/sparql', {
+        method: 'POST',
+        headers: { 'User-Agent': UA, Accept: 'application/sparql-results+json', 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ query, format: 'json' }),
         signal: AbortSignal.timeout(80000),
       });
       if (res.status === 429 || res.status >= 500) throw new Error(`Wikidata answered ${res.status}`);
@@ -248,20 +249,41 @@ async function sparql(query, attempts = 2) {
   throw lastError;
 }
 
-function classQuery(q, min, excluded) {
+function classQuery(q, min) {
   return `SELECT ?item ?itemLabel ?sitelinks ?coord ?countryLabel ?areaLabel ?title WHERE {
   ?item wdt:P31 ?cls . ?cls wdt:P279* wd:${q} .
   ?item wikibase:sitelinks ?sitelinks . FILTER(?sitelinks >= ${min})
   ?item wdt:P625 ?coord .
   ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?title .
-  FILTER NOT EXISTS {
-    ?item wdt:P31 ?type . ?type wdt:P279* ?notALandmark .
-    VALUES ?notALandmark { ${excluded.map((e) => 'wd:' + e.q).join(' ')} }
-  }
   OPTIONAL { ?item wdt:P17 ?country . }
   OPTIONAL { ?item wdt:P131 ?area . }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 } LIMIT 1500`;
+}
+
+// Which of these places are countries, administrative areas or settlements? Asked only for the places already
+// found (a few hundred), in small groups: that is light work for Wikidata, unlike a filter inside the big queries.
+export function exclusionQuery(qids, excluded) {
+  return `SELECT DISTINCT ?item WHERE {
+  VALUES ?item { ${qids.map((q) => 'wd:' + q).join(' ')} }
+  ?item wdt:P31 ?type . ?type wdt:P279* ?bad .
+  VALUES ?bad { ${excluded.map((e) => 'wd:' + e.q).join(' ')} }
+}`;
+}
+
+export function chunk(list, size) {
+  const out = [];
+  for (let i = 0; i < list.length; i += size) out.push(list.slice(i, i + size));
+  return out;
+}
+
+async function notLandmarks(qids, excluded) {
+  const bad = new Set();
+  for (const part of chunk(qids, 100)) {
+    const rows = await sparql(exclusionQuery(part, excluded), 3);
+    for (const r of rows) bad.add(r.item.value.split('/').pop());
+  }
+  return bad;
 }
 
 // Asks Wikidata for the English names of all ids we use and keeps only those that match what we expect.
@@ -280,10 +302,10 @@ async function checkedIds() {
   return { classes: keep(CLASSES), excluded: keep(EXCLUDED_TYPES) };
 }
 
-async function fetchClass(c, excluded) {
+async function fetchClass(c) {
   for (const min of [c.min, c.min * 2]) {
     try {
-      const rows = await sparql(classQuery(c.q, min, excluded));
+      const rows = await sparql(classQuery(c.q, min));
       console.log(`${c.labels[0]}: ${rows.length} rows (min ${min} language editions)`);
       return rows;
     } catch (e) {
@@ -365,14 +387,17 @@ async function main() {
   const { classes, excluded } = await checkedIds();
   if (excluded.length < EXCLUDED_TYPES.length) throw new Error('A type to exclude was not recognised, so countries and cities would leak into the list. Nothing is saved.');
   const rowsByClass = [];
-  for (const c of classes) rowsByClass.push({ cls: c.labels[0], rows: await fetchClass(c, excluded) });
+  for (const c of classes) rowsByClass.push({ cls: c.labels[0], rows: await fetchClass(c) });
 
   const items = collect(rowsByClass);
   console.log(`Places found: ${items.length}`);
   notice(`Places found: ${items.length}. Rows per kind: ${rowsByClass.map((r) => `${r.cls} ${r.rows.length}`).join(', ')}`);
   if (items.length < 100) throw new Error('Far too few places came back from Wikidata. The old file is left as it is.');
 
-  const best = [...items].sort((a, b) => b.sitelinks - a.sitelinks).slice(0, FETCH_VIEWS_FOR);
+  const pool = [...items].sort((a, b) => b.sitelinks - a.sitelinks).slice(0, FETCH_VIEWS_FOR + 300);
+  const notLandmark = await notLandmarks(pool.map((i) => i.qid), excluded);
+  const best = pool.filter((i) => !notLandmark.has(i.qid)).slice(0, FETCH_VIEWS_FOR);
+  notice(`Left out as countries, administrative areas or settlements: ${notLandmark.size} of ${pool.length}. Kept for page views: ${best.length}`);
   await addViews(best, period);
   const withViews = best.filter((i) => i.views12m !== null || previous?.candidates?.some((c) => c.qid === i.qid)).length;
   if (withViews < best.length / 2) throw new Error('Page views are missing for more than half of the places. The old file is left as it is.');

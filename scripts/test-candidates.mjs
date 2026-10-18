@@ -1,7 +1,9 @@
 // Tests of the candidate list logic with made-up data (no network). Run: npm run test:candidates
 import assert from 'node:assert/strict';
 import {
+  chunk,
   collect,
+  exclusionQuery,
   distanceKm,
   mergeCandidates,
   normalize,
@@ -174,6 +176,18 @@ test('merge: a name with no Latin letters still gets a usable slug, and no slug 
   });
   assert.equal(out.find((x) => x.qid === 'Q50').slug, 'q50');
   assert.equal(out.find((x) => x.qid === 'Q51').slug, 'eiffel-tower'); // it IS the published view
+});
+
+test('chunk splits a list in groups of the given size', () => {
+  assert.deepEqual(chunk([1, 2, 3, 4, 5], 2), [[1, 2], [3, 4], [5]]);
+  assert.deepEqual(chunk([], 3), []);
+});
+
+test('exclusionQuery lists the places and the excluded types', () => {
+  const q = exclusionQuery(['Q1', 'Q2'], [{ q: 'Q6256' }, { q: 'Q486972' }]);
+  assert.ok(q.includes('VALUES ?item { wd:Q1 wd:Q2 }'));
+  assert.ok(q.includes('VALUES ?bad { wd:Q6256 wd:Q486972 }'));
+  assert.ok(q.includes('wdt:P31 ?type . ?type wdt:P279* ?bad'));
 });
 
 test('viewsPeriod: 12 full months before the current one', () => {
