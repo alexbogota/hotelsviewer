@@ -54,6 +54,12 @@ test('rowToItem refuses rows without a name, an article or coordinates', () => {
   assert.equal(rowToItem(row('Q4', 'Name', 'Name', 50, 'Point(1 1)', 'Q5', 'Q6'), 'tower').country, ''); // unlabelled ids are dropped
 });
 
+test('rowToItem drops a place that carries the name of its own country', () => {
+  assert.equal(rowToItem(row('Q17', 'Japan', 'Japan', 419, 'Point(138 36)', 'Japan', ''), 'island'), null);
+  assert.equal(rowToItem(row('Q1011', 'Cape Verde', 'Cape Verde', 290, 'Point(-23.7 15.3)', 'Cape Verde', ''), 'island'), null);
+  assert.ok(rowToItem(row('Q243', 'Eiffel Tower', 'Eiffel Tower', 191, 'Point(2.29 48.86)', 'France', 'Paris'), 'tower'));
+});
+
 test('collect merges a place that comes back as two kinds and fills empty fields', () => {
   const a = row('Q243', 'Eiffel Tower', 'Eiffel Tower', 200, 'Point(2.2945 48.8584)', '', '');
   const b = row('Q243', 'Eiffel Tower', 'Eiffel Tower', 200, 'Point(2.2945 48.8584)', 'France', 'Paris');

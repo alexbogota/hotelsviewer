@@ -60,6 +60,16 @@ export const CLASSES = [
   { q: 'Q570116', labels: ['tourist attraction'], min: 100 },
 ];
 
+// A place that is one of these (or a kind of one) is not a landmark you can see from a window:
+// countries and other political territories, administrative areas, cities, towns and villages.
+// Island nations, Greenland, Athens and ancient cities all fall out here.
+export const EXCLUDED_TYPES = [
+  { q: 'Q6256', labels: ['country'] },
+  { q: 'Q1048835', labels: ['political territorial entity'] },
+  { q: 'Q56061', labels: ['administrative territorial entity'] },
+  { q: 'Q486972', labels: ['human settlement'] },
+];
+
 // ---------- small pure helpers (tested in scripts/test-candidates.mjs) ----------
 
 export function parseCoord(wkt) {
@@ -111,6 +121,7 @@ export function rowToItem(row, cls) {
   const coords = parseCoord(row.coord?.value);
   const sitelinks = Number(row.sitelinks?.value);
   if (!isQid(qid) || !name || !enwiki || !coords || !Number.isFinite(sitelinks)) return null;
+  if (normalize(name) === normalize(val(row, 'countryLabel'))) return null; // "Japan" in Japan: a country, not a landmark
   return { qid, name, enwiki, coords, sitelinks, country: val(row, 'countryLabel'), area: val(row, 'areaLabel'), classes: [cls] };
 }
 
@@ -237,35 +248,42 @@ async function sparql(query, attempts = 2) {
   throw lastError;
 }
 
-function classQuery(q, min) {
+function classQuery(q, min, excluded) {
   return `SELECT ?item ?itemLabel ?sitelinks ?coord ?countryLabel ?areaLabel ?title WHERE {
   ?item wdt:P31 ?cls . ?cls wdt:P279* wd:${q} .
   ?item wikibase:sitelinks ?sitelinks . FILTER(?sitelinks >= ${min})
   ?item wdt:P625 ?coord .
   ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?title .
+  FILTER NOT EXISTS {
+    ?item wdt:P31 ?type . ?type wdt:P279* ?notALandmark .
+    VALUES ?notALandmark { ${excluded.map((e) => 'wd:' + e.q).join(' ')} }
+  }
   OPTIONAL { ?item wdt:P17 ?country . }
   OPTIONAL { ?item wdt:P131 ?area . }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 } LIMIT 1500`;
 }
 
-async function checkedClasses() {
-  const query = `SELECT ?c ?cLabel WHERE { VALUES ?c { ${CLASSES.map((c) => 'wd:' + c.q).join(' ')} } SERVICE wikibase:label { bd:serviceParam wikibase:language "en". } }`;
+// Asks Wikidata for the English names of all ids we use and keeps only those that match what we expect.
+async function checkedIds() {
+  const all = [...CLASSES, ...EXCLUDED_TYPES];
+  const query = `SELECT ?c ?cLabel WHERE { VALUES ?c { ${all.map((c) => 'wd:' + c.q).join(' ')} } SERVICE wikibase:label { bd:serviceParam wikibase:language "en". } }`;
   const rows = await sparql(query);
   const labels = new Map(rows.map((r) => [r.c.value.split('/').pop(), (r.cLabel?.value || '').toLowerCase()]));
-  const ok = [];
-  for (const c of CLASSES) {
-    const got = labels.get(c.q);
-    if (got && c.labels.includes(got)) ok.push(c);
-    else warn(`${c.q} is "${got ?? 'unknown'}" in Wikidata, expected ${c.labels.join(' / ')}: kind skipped.`);
-  }
-  return ok;
+  const keep = (list) =>
+    list.filter((c) => {
+      const got = labels.get(c.q);
+      if (got && c.labels.includes(got)) return true;
+      warn(`${c.q} is "${got ?? 'unknown'}" in Wikidata, expected ${c.labels.join(' / ')}: skipped.`);
+      return false;
+    });
+  return { classes: keep(CLASSES), excluded: keep(EXCLUDED_TYPES) };
 }
 
-async function fetchClass(c) {
+async function fetchClass(c, excluded) {
   for (const min of [c.min, c.min * 2]) {
     try {
-      const rows = await sparql(classQuery(c.q, min));
+      const rows = await sparql(classQuery(c.q, min, excluded));
       console.log(`${c.labels[0]}: ${rows.length} rows (min ${min} language editions)`);
       return rows;
     } catch (e) {
@@ -344,9 +362,10 @@ async function main() {
   const period = viewsPeriod();
   console.log(`Page views period: ${period.label}. Views on the site: ${publishedViews.map((v) => v.slug).join(', ')}`);
 
-  const classes = await checkedClasses();
+  const { classes, excluded } = await checkedIds();
+  if (excluded.length < EXCLUDED_TYPES.length) throw new Error('A type to exclude was not recognised, so countries and cities would leak into the list. Nothing is saved.');
   const rowsByClass = [];
-  for (const c of classes) rowsByClass.push({ cls: c.labels[0], rows: await fetchClass(c) });
+  for (const c of classes) rowsByClass.push({ cls: c.labels[0], rows: await fetchClass(c, excluded) });
 
   const items = collect(rowsByClass);
   console.log(`Places found: ${items.length}`);
