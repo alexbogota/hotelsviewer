@@ -95,7 +95,7 @@ const known = views.map((v) => ({
       if (hasPoint) {
         params.set('lat', plat.toFixed(5));
         params.set('lng', plng.toFixed(5));
-        params.set('zoom', kind === 'city' ? '12' : kind === 'country' ? '6' : kind === 'state' ? '8' : '13');
+        params.set('zoom', kind === 'country' ? '6' : kind === 'state' ? '8' : '11'); // 12 was too close: no hotels in Valencia, Venezuela (owner, 19 Oct 2026); 10-11 shows them
       } else {
         params.set('address', q);
       }
