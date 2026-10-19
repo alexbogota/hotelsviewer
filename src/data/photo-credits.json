@@ -119,5 +119,115 @@
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Burj_Khalifa_(16260269606).jpg"
+  },
+  "alhambra": {
+    "file": "File:The whole Alhambra Granada Spain.jpg",
+    "src": "/photos/alhambra.jpg",
+    "width": 1600,
+    "height": 902,
+    "alt": "The Alhambra palace complex in Granada in daylight",
+    "author": "Jebulon",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:The_whole_Alhambra_Granada_Spain.jpg"
+  },
+  "arc-de-triomphe": {
+    "file": "File:Arc de Triomphe daytime.jpg",
+    "src": "/photos/arc-de-triomphe.jpg",
+    "width": 1600,
+    "height": 2142,
+    "alt": "Arc de Triomphe in Paris in daylight",
+    "author": "Hcallas",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_daytime.jpg"
+  },
+  "brooklyn-bridge": {
+    "file": "File:Brooklyn Bridge and the Lower Manhattan skyline from Pebble Beach, New York.jpg",
+    "src": "/photos/brooklyn-bridge.jpg",
+    "width": 1600,
+    "height": 533,
+    "alt": "The Brooklyn Bridge and the Lower Manhattan skyline in daylight",
+    "author": "Christian David",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Brooklyn_Bridge_and_the_Lower_Manhattan_skyline_from_Pebble_Beach,_New_York.jpg"
+  },
+  "chrysler-building": {
+    "file": "File:Chrysler Building September 2024.jpg",
+    "src": "/photos/chrysler-building.jpg",
+    "width": 1600,
+    "height": 3558,
+    "alt": "The Chrysler Building in New York City, seen from the street",
+    "author": "Kidfly182",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chrysler_Building_September_2024.jpg"
+  },
+  "cologne-cathedral": {
+    "file": "File:Kölner Dom von Osten.jpg",
+    "src": "/photos/cologne-cathedral.jpg",
+    "width": 1600,
+    "height": 2517,
+    "alt": "Cologne Cathedral in Cologne in daylight",
+    "author": "Thomas Wolf , www.foto-tw.de",
+    "license": "CC BY-SA 3.0 de",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:K%C3%B6lner_Dom_von_Osten.jpg"
+  },
+  "empire-state-building": {
+    "file": "File:Empire State Building July 2023.jpg",
+    "src": "/photos/empire-state-building.jpg",
+    "width": 1600,
+    "height": 2133,
+    "alt": "The Empire State Building in New York in daylight",
+    "author": "MrMimikyu1998",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Empire_State_Building_July_2023.jpg"
+  },
+  "golden-gate-bridge": {
+    "file": "File:Golden Gate Bridge Above the Fog from Battery Spencer.jpg",
+    "src": "/photos/golden-gate-bridge.jpg",
+    "width": 1600,
+    "height": 1067,
+    "alt": "Golden Gate Bridge in San Francisco above the fog, seen from Battery Spencer",
+    "author": "Dongmin03",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_Above_the_Fog_from_Battery_Spencer.jpg"
+  },
+  "milan-cathedral": {
+    "file": "File:Milan Cathedral from Piazza del Duomo.jpg",
+    "src": "/photos/milan-cathedral.jpg",
+    "width": 1600,
+    "height": 1202,
+    "alt": "Milan Cathedral in daylight, seen from Piazza del Duomo",
+    "author": "Jiuguang Wang",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Milan_Cathedral_from_Piazza_del_Duomo.jpg"
+  },
+  "pantheon": {
+    "file": "File:Pantheon (Rome) - Exterior 01.jpg",
+    "src": "/photos/pantheon.jpg",
+    "width": 1600,
+    "height": 1067,
+    "alt": "The Pantheon in Rome in daylight",
+    "author": "John Samuel",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_-_Exterior_01.jpg"
+  },
+  "taipei-101": {
+    "file": "File:Taipei101-DayExt.JPG",
+    "src": "/photos/taipei-101.jpg",
+    "width": 1600,
+    "height": 2133,
+    "alt": "Taipei 101 tower in Taipei in daylight",
+    "author": "mailer_diablo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Taipei101-DayExt.JPG"
   }
 }
