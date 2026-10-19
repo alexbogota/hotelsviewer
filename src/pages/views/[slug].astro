@@ -12,9 +12,10 @@ import {
   hotelName,
   landmarkInText,
   liveExtras,
+  goHref,
   monthLabel,
   photoFor,
-  pricesProvider,
+  pricesButton,
   roomCount,
   type View,
 } from '../../lib/views';
@@ -58,39 +59,38 @@ const month = monthLabel(view.checked);
       <div class="text">
         <h1>{view.h1}</h1>
         <p class="dek">{view.dek}</p>
-        <p class="checked small">Checked in {month}. {view.hotels.length} hotels and {roomCount(view)} room categories sold with the view.</p>
+        <ul class="facts" aria-label="At a glance">
+          <li><strong>{view.hotels.length}</strong> hotels</li>
+          <li><strong>{roomCount(view)}</strong> room categories to book</li>
+          <li>Checked {month}</li>
+        </ul>
       </div>
       <div class="pic">
         <ArchPhoto photo={photo} landmark={view.landmark} credit eager />
       </div>
     </section>
 
-    <section class="short" aria-labelledby="short-heading">
-      <h2 id="short-heading">The short answer</h2>
+    <section class="picks" aria-labelledby="short-heading">
+      <h2 id="short-heading">Book one of these</h2>
       <ul>
         {view.shortAnswer.map((s) => (
           <li>
             <p class="label">{s.label}</p>
             <p class="room"><a href={`#${s.hotel}`}>{s.room}</a></p>
             <p class="small">at {hotelName(view, s.hotel)}</p>
+            <a class="btn" href={goHref(s.hotel)} rel="sponsored nofollow noopener" target="_blank">{pricesButton}</a>
           </li>
         ))}
       </ul>
+      <p class="small disclose">Some links may earn us a commission; it never changes which rooms we list. Room names are copied exactly as the hotels sell them, so you can find the same category on any booking site.</p>
+    </section>
+
+    <section class="hotels" aria-labelledby="hotels-heading">
+      <h2 id="hotels-heading">{view.hotels.length} hotels, room by room</h2>
+      {view.hotels.map((h, i) => <HotelEntry hotel={h} checked={view.checked} n={i + 1} />)}
     </section>
 
     <Decoder pairs={view.decoder} />
-
-    {view.coords && (
-      <HotelMap lat={view.coords.lat} lng={view.coords.lng} near={landmarkInText(view)} campaign={`view-${view.slug}-photos`} mode="listview" />
-    )}
-
-    <section class="hotels" aria-labelledby="hotels-heading">
-      <div class="hotels-head">
-        <h2 id="hotels-heading">{view.hotels.length} hotels, room by room</h2>
-        <p class="measure">Room names are copied exactly as the hotels sell them, so you can find the same category on any booking site. The buttons open a search on {pricesProvider}. Some links may earn us a commission; it never changes which rooms we list.</p>
-      </div>
-      {view.hotels.map((h) => <HotelEntry hotel={h} checked={view.checked} />)}
-    </section>
 
     {view.askAtDesk && (
       <section class="aside" aria-labelledby="ask-heading">
@@ -110,11 +110,11 @@ const month = monthLabel(view.checked);
       </section>
     ))}
 
-    <TripExtras items={liveExtras(view)} />
-
     {view.coords && (
-      <HotelMap lat={view.coords.lat} lng={view.coords.lng} near={landmarkInText(view)} campaign={`view-${view.slug}`} />
+      <HotelMap lat={view.coords.lat} lng={view.coords.lng} near={landmarkInText(view)} campaign={`view-${view.slug}-photos`} mode="listview" />
     )}
+
+    <TripExtras items={liveExtras(view)} />
 
     <section class="elsewhere" aria-label="Find hotels somewhere else">
       <HotelSearch id="view-search" />
@@ -162,60 +162,93 @@ const month = monthLabel(view.checked);
   }
   .intro {
     display: grid;
-    grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
-    gap: 48px;
+    grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+    gap: 56px;
     align-items: center;
-    padding-top: 28px;
+    padding-top: 20px;
   }
   .intro h1 {
     max-width: 16ch;
   }
   .intro .dek {
     margin-top: 18px;
-    max-width: 56ch;
+    max-width: 52ch;
   }
-  .checked {
-    margin-top: 16px;
-  }
-  .short {
-    margin-top: 64px;
-  }
-  .short ul {
+  .facts {
     list-style: none;
-    margin: 20px 0 0;
+    margin: 24px 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .facts li {
+    padding: 8px 14px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--panel);
+    font-size: 0.9375rem;
+    color: var(--ink-soft);
+  }
+  .facts strong {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    color: var(--ink);
+  }
+  .picks {
+    margin-top: 40px;
+    padding: 28px 32px 24px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--brass);
+    border-radius: var(--radius);
+  }
+  .picks ul {
+    list-style: none;
+    margin: 22px 0 0;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px 36px;
+    gap: 28px 36px;
   }
-  .short li {
+  .picks li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding-top: 14px;
     border-top: 3px solid var(--ink);
   }
-  .short .label {
+  .picks .label {
     font-weight: 600;
     font-size: 0.9375rem;
+    color: var(--zinc);
   }
-  .short .room {
+  .picks .room {
     margin-top: 8px;
+    font-size: 1.5rem;
+    line-height: 1.2;
   }
-  .short .room a {
+  .picks .room a {
     text-decoration: underline;
     text-decoration-color: var(--brass);
     text-underline-offset: 4px;
   }
-  .short .small {
+  .picks li .small {
     margin-top: 6px;
   }
+  .picks .btn {
+    margin-top: 18px;
+    align-self: stretch;
+  }
+  .picks .disclose {
+    margin-top: 22px;
+    max-width: 70ch;
+  }
   .hotels {
-    margin-top: 80px;
+    margin-top: 72px;
   }
-  .hotels-head {
-    margin-bottom: 28px;
-  }
-  .hotels-head p {
-    margin-top: 12px;
-    color: var(--ink-soft);
+  .hotels > h2 {
+    margin-bottom: 20px;
   }
   .aside {
     margin-top: 48px;
@@ -297,7 +330,10 @@ const month = monthLabel(view.checked);
     .pic {
       max-width: 420px;
     }
-    .short ul {
+    .picks {
+      padding: 24px 18px 20px;
+    }
+    .picks ul {
       grid-template-columns: minmax(0, 1fr);
     }
     .aside {

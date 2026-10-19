@@ -5,9 +5,10 @@ import { goHref, monthLabel, pricesButton, starsLabel, type Hotel } from '../lib
 interface Props {
   hotel: Hotel;
   checked: string;
+  n: number;
 }
 
-const { hotel, checked } = Astro.props;
+const { hotel, checked, n } = Astro.props;
 const facts = [hotel.distance, starsLabel(hotel.stars)].filter(Boolean).join(', ');
 
 // "a, b and c" with official sources linked.
@@ -16,14 +17,17 @@ const lastIndex = sources.length - 1;
 ---
 <article class="hotel" id={hotel.id} aria-labelledby={`${hotel.id}-name`}>
   <header class="head">
-    <h3 id={`${hotel.id}-name`}>{hotel.name}</h3>
-    <LevelPill level={hotel.level} />
+    <p class="num" aria-hidden="true">{n}</p>
+    <div class="who">
+      <h3 id={`${hotel.id}-name`}>{hotel.name}</h3>
+      <p class="where">
+        {hotel.where}{facts && <><br /><span class="facts">{facts.charAt(0).toUpperCase() + facts.slice(1)}</span></>}
+      </p>
+      <LevelPill level={hotel.level} />
+    </div>
   </header>
-  <p class="where">
-    {hotel.where}{facts && <><br /><span class="facts">{facts.charAt(0).toUpperCase() + facts.slice(1)}</span></>}
-  </p>
 
-  <div class="lists">
+  <div class="body">
     <section class="book" aria-label={`Rooms to book at ${hotel.name}`}>
       <h4>Book one of these</h4>
       <ul>
@@ -34,11 +38,12 @@ const lastIndex = sources.length - 1;
           </li>
         ))}
       </ul>
+      <a class="btn" href={goHref(hotel.id)} rel="sponsored nofollow noopener" target="_blank">{pricesButton}</a>
     </section>
 
     {hotel.skip && hotel.skip.length > 0 && (
-      <section class="skip" aria-label={`Rooms to skip at ${hotel.name}`}>
-        <h4>Not these</h4>
+      <details class="skip">
+        <summary>Not these ({hotel.skip.length}): look-alike rooms</summary>
         <ul>
           {hotel.skip.map((r) => (
             <li>
@@ -47,18 +52,15 @@ const lastIndex = sources.length - 1;
             </li>
           ))}
         </ul>
-      </section>
+      </details>
     )}
-  </div>
 
-  {hotel.notes && hotel.notes.length > 0 && (
-    <div class="notes">
-      {hotel.notes.map((n) => <p>{n}</p>)}
-    </div>
-  )}
+    {hotel.notes && hotel.notes.length > 0 && (
+      <div class="notes">
+        {hotel.notes.map((n) => <p>{n}</p>)}
+      </div>
+    )}
 
-  <div class="foot">
-    <a class="btn" href={goHref(hotel.id)} rel="sponsored nofollow noopener" target="_blank">{pricesButton}</a>
     <p class="small sources">
       Sources:{' '}
       {sources.map((s, i) => (
@@ -73,39 +75,54 @@ const lastIndex = sources.length - 1;
 
 <style>
   .hotel {
+    display: grid;
+    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+    gap: 20px 48px;
     padding: 36px 0 40px;
     border-top: 1px solid var(--line);
     scroll-margin-top: 16px;
   }
   .head {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px 16px;
+    gap: 16px;
+    align-items: flex-start;
   }
-  .head h3 {
+  .num {
+    flex: none;
+    width: 40px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 4px 4px;
+    background: var(--ink);
+    color: #fff;
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .who h3 {
     font-size: clamp(1.5rem, 1.3rem + 0.8vw, 1.875rem);
   }
   .where {
-    margin-top: 8px;
+    margin: 8px 0 14px;
     color: var(--ink-soft);
   }
   .facts {
     color: var(--zinc);
   }
-  .lists {
-    margin-top: 24px;
-    display: grid;
-    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-    gap: 24px 48px;
-    align-items: start;
+  .book {
+    padding: 22px 24px 24px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
   }
   h4 {
     font-family: var(--font-sans);
     font-size: 0.9375rem;
     font-weight: 600;
     color: var(--zinc);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
   ul {
     list-style: none;
@@ -118,6 +135,28 @@ const lastIndex = sources.length - 1;
   .book li {
     padding-left: 14px;
     border-left: 3px solid var(--brass);
+  }
+  .book .room {
+    font-size: 1.375rem;
+  }
+  .book .btn {
+    margin-top: 22px;
+  }
+  .skip {
+    margin-top: 16px;
+  }
+  .skip summary {
+    cursor: pointer;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--zinc);
+  }
+  .skip ul {
+    margin-top: 6px;
   }
   .skip li {
     padding-left: 14px;
@@ -134,29 +173,28 @@ const lastIndex = sources.length - 1;
     max-width: 62ch;
   }
   .notes {
-    margin-top: 22px;
+    margin-top: 16px;
     max-width: 66ch;
     color: var(--ink-soft);
   }
   .notes p + p {
     margin-top: 8px;
   }
-  .foot {
-    margin-top: 26px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 14px 24px;
-  }
   .sources {
-    flex: 1 1 280px;
-    max-width: 60ch;
+    margin-top: 16px;
+    max-width: 66ch;
+  }
+  @media (max-width: 860px) {
+    .hotel {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+    }
   }
   @media (max-width: 760px) {
-    .lists {
-      grid-template-columns: minmax(0, 1fr);
+    .book {
+      padding: 18px 16px 20px;
     }
-    .foot .btn {
+    .book .btn {
       width: 100%;
     }
   }
