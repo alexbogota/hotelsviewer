@@ -1,0 +1,282 @@
+{
+  "date": "2026-10-19",
+  "slug": "notre-dame-de-paris",
+  "fetched": [
+    {
+      "url": "https://www.hotels.com/ho282321",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://ph.trip.com/hotels/paris-hotel-detail-729865/les-rives-de-notre-dame",
+      "chars": 184,
+      "blocked": false,
+      "head": "\"Superior Room\" \"Junior Penthouse\" \"Classic Double Room\" **Street address:** 15 Quai Saint-Michel, 5th arrondissement-Pantheon, Paris, Ile-de-France, 75005, France **Star rating:**"
+    },
+    {
+      "url": "https://ms.hotels.com/en/ho134233/hotel-le-notre-dame-saint-michel-paris-france",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://zh.hotels.com/en/ho462754/hotel-les-degres-de-notre-dame-paris-france",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.dorchestercollection.com/en/paris/le-meurice/rooms-suites/belle-etoile-suite/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.esprit-de-france.com/en/booking/which-4-star-hotel-to-choose-near-notre-dame",
+      "chars": 659,
+      "blocked": false,
+      "head": "1. **Hôtel du Parc Saint-Séverin**: \"this 4-star hotel near Notre Dame de Paris offers rooms with views of the Cathedral and Eiffel Tower.\" *(Sentence begins \"Located in the heart "
+    },
+    {
+      "url": "https://ph.trip.com/hotels/paris-hotel-detail-729865/les-rives-de-notre-dame",
+      "chars": 1296,
+      "blocked": false,
+      "head": "**Room names:** The text next to Superior Room, Junior Penthouse, and Classic Double Room contains no view wording. Those listings give bed types and features only. The Superior Ro"
+    },
+    {
+      "url": "https://ca.hotels.com/ho282321",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.oyster.com/paris/hotels/hotel-le-notre-dame",
+      "chars": 834,
+      "blocked": false,
+      "head": "**Pros:** - \"Top-floor rooms have stunning views of Notre Dame and the Seine\" **Cons:** - \"Some rooms have poor views of a courtyard\" **Bottom Line:** - \"Street-facing rooms can be"
+    },
+    {
+      "url": "https://www.lastminute.com/hotels/france/paris/hotel-les-rives-de-notre-dame_hid-2627223",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://uk.hotels.com/ho541597/hotel-esmeralda-paris-france/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://za.hotels.com/ho134233",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.travelocity.com/Paris-Hotels-Hotel-Le-Notre-Dame-Saint-Michel.h110086.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.hotelnotredameparis.com/",
+      "chars": 725,
+      "blocked": false,
+      "head": "**Room categories:** \"Rooms With A View\" \"Double Or Twin Room\" \"Room Notre Dame\" The page also has an \"Overview\" link under \"Rooms & Suites,\" but it is a navigation link, not a roo"
+    },
+    {
+      "url": "https://m.booking.com/hotel/fr/les-rives-de-notre-dame.html",
+      "chars": 852,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://m.booking.com/hotel/fr/les-rives-de-notre-dame.html Redirect URL (from "
+    },
+    {
+      "url": "https://www.hotelnotredameparis.com/",
+      "chars": 608,
+      "blocked": false,
+      "head": "The page content doesn't include any room descriptions. It names three room categories, \"Rooms With A View,\" \"Double Or Twin Room,\" and \"Room Notre Dame,\" but gives no text under o"
+    },
+    {
+      "url": "https://www.hotels.com/ho541597",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.booking.com/hotel/fr/les-rives-de-notre-dame.html",
+      "chars": 303,
+      "blocked": false,
+      "head": "The web page content you provided appears to be empty. There is nothing between the markers, so I can't find any room category names, view wording, or sentences about what the room"
+    },
+    {
+      "url": "https://www.hotelnotredameparis.com/en/rooms-with-a-view.html",
+      "chars": 288,
+      "blocked": false,
+      "head": "\"Rooms With A View\" - View: \"These very comfortable rooms offer a magnificent view of the Seine or Notre-Dame.\" \"Double Or Twin Room\" - View: No description on this page. \"Room Not"
+    },
+    {
+      "url": "https://www.hotelnotredameparis.com/en/room-notre-dame.html",
+      "chars": 353,
+      "blocked": false,
+      "head": "**Room category names listed on this page:** - \"Rooms With A View\" - \"Double Or Twin Room\" - \"Room Notre Dame\" The page also has an \"Overview\" link, but it points to the general ro"
+    },
+    {
+      "url": "https://www.hotels.com/ho541597/hotel-esmeralda-paris-france",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://intltravelnews.com/node/4154.html",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.expedia.com/Paris-Hotels-Hotel-Esmeralda.h11958430.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://en.hoteles.com/ho541597/hotel-esmeralda-paris-francia",
+      "chars": 873,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://en.hoteles.com/ho541597/hotel-esmeralda-paris-francia Redirect URL (fro"
+    },
+    {
+      "url": "https://www.oyster.com/paris/hotels/hotel-esmeralda/",
+      "chars": 908,
+      "blocked": false,
+      "head": "**Views-related sentences (exact quotes):** 1. Overview, Pros: \"Quirky rooms with private bathrooms; some with Notre Dame and Seine views\" 2. Full Review, Scene: \"Views of the cath"
+    },
+    {
+      "url": "https://www.hoteles.com/ho541597/hotel-esmeralda-paris-francia/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.timeout.com/paris/en/hotels/hotel-esmeralda-1",
+      "chars": 226,
+      "blocked": false,
+      "head": "The page has one sentence about room views: \"Most rooms offer a view of the Seine and Notre-Dame.\" The page also says the hotel is \"opposite Notre-Dame Cathedral,\" but that describ"
+    },
+    {
+      "url": "https://www.hoteles.com/go/france/hotels-with-view-paris",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://th.hotels.com/en/ho541597/hotel-esmeralda-paris-france",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://ae.trip.com/hotels/paris-hotel-detail-4355358/htel-les-degrs-de-notre-dame",
+      "chars": 383,
+      "blocked": false,
+      "head": "\"Standard Double Room\" - View: none stated (feature listed: \"Has window\") \"Superior Double Room with Notre Dame View\" - View: \"Notre Dame View\" \"Superior Double Room\" - View: none "
+    },
+    {
+      "url": "https://ca.hotels.com/ho462754/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.france-voyage.com/hotels-guide/hotel-paris-54396.htm",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://kr.hotels.com/ho541597",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://ca.hotels.com/ho541597/hotel-esmeralda-paris-france/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.travelocity.com/Paris-Hotels-Hotel-Esmeralda.h11958430.Hotel-Reviews",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://es.hoteles.com/ho541597/hotel-esmeralda-paris-francia/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.expedia.com/Paris-Hotels-Hotel-Esmeralda.h11958430.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.hotelesmeralda.com/",
+      "chars": 983,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.hotelesmeralda.com/ Redirect URL (from the server's Location header"
+    },
+    {
+      "url": "https://www.lesrivesdenotredame.com/",
+      "chars": 49,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.lesrivesdenotredame.com"
+    },
+    {
+      "url": "https://www.hotel-parc-saint-severin.com/",
+      "chars": 54,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.hotel-parc-saint-severin.com"
+    },
+    {
+      "url": "https://www.hotel-lesdegresdenotredame.com/",
+      "chars": 56,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.hotel-lesdegresdenotredame.com"
+    },
+    {
+      "url": "https://www.melia.com/en/hotels/france/paris/maison-colbert-paris-melia-collection",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    }
+  ],
+  "searches": [
+    "hotels with Notre-Dame de Paris view room",
+    "Notre-Dame view room hotel Paris rooftop terrace suite",
+    "Les Rives de Notre Dame hotel Paris official site rooms",
+    "Hôtel du Parc Saint-Séverin Paris rooms Notre-Dame view category",
+    "Hotel Le Notre-Dame Saint-Michel Paris official site room categories view cathedral",
+    "Hotel Notre-Dame Paris \"Notre-Dame view\" room category booking",
+    "Hotel Esmeralda Paris room \"Notre-Dame\" view category",
+    "Paris hotel room \"Notre Dame view\" named room category Quai Saint-Michel",
+    "Hotel Le Notre Dame Saint Michel Christian Lacroix rooms Double Room Notre Dame view",
+    "Hôtel Esmeralda Paris official website rooms Notre-Dame view",
+    "Hôtel Parc Saint-Séverin official website chambres vue Notre-Dame room types",
+    "\"Notre Dame View\" room Paris hotel Ile de la Cite category",
+    "Hôtel les Degrés de Notre Dame Paris rooms view cathedral official",
+    "Maison Colbert Meliá Collection Notre-Dame Paris room categories Notre Dame view superior room",
+    "Hotel Esmeralda Paris trip.com room Notre Dame Cathedral view double room"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 62,
+    "error": false
+  },
+  "outcome": "unverified",
+  "reason": "Only two hotels could be proved with pages opened in this run: Hotel Le Notre Dame Saint-Michel (own site: \"Rooms With A View\", \"Room Notre Dame\") and Les Degrés de Notre Dame (Trip.com: \"Superior Double Room with Notre Dame View\"). Hôtel Esmeralda sells Notre-Dame view categories on Hotels.com, but every Hotels.com fetch timed out, and Expedia, Booking.com and Travelocity returned 429 or timed out. Les Rives de Notre Dame and Hôtel du Parc Saint-Séverin: no official site opened and no view category named. Le Meurice (Belle Etoile suite) returned 403."
+}
