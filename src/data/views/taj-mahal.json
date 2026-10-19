@@ -1,0 +1,303 @@
+{
+  "slug": "taj-mahal",
+  "order": 6,
+  "landmark": "Taj Mahal",
+  "landmarkInText": "the Taj Mahal",
+  "city": "Agra",
+  "region": "Uttar Pradesh",
+  "country": "India",
+  "coords": {
+    "lat": 27.1751,
+    "lng": 78.0421
+  },
+  "checked": "2026-10",
+  "title": "Hotels with a Taj Mahal view: which room to book",
+  "metaDescription": "Five Agra hotels that sell rooms with a Taj Mahal view, the exact room category to book, and the pool, city and garden view rooms that don't come with it.",
+  "h1": "Hotels with a Taj Mahal view, and which room to book",
+  "dek": "Five Agra hotels that sell rooms with the Taj Mahal in view. For each one we list the exact room category to book, and the look-alikes with a pool, city or garden view.",
+  "teaser": "From a hotel where every room faces the monument to rooms that need a careful read.",
+  "photo": {
+    "commons": [
+      {
+        "file": "File:Taj Mahal (Edited).jpeg",
+        "alt": "The Taj Mahal in Agra in daylight, seen from the front"
+      },
+      {
+        "file": "File:Taj Mahal in March 2004.jpg",
+        "alt": "The Taj Mahal in Agra in daylight with its long reflecting pool"
+      },
+      {
+        "file": "File:Taj Mahal, Agra, India edit2.jpg",
+        "alt": "The Taj Mahal in Agra in daylight"
+      }
+    ]
+  },
+  "shortAnswer": [
+    {
+      "label": "Every room has the view",
+      "hotel": "the-oberoi-amarvilas",
+      "room": "Premier Room with Balcony"
+    },
+    {
+      "label": "On Fatehabad Road",
+      "hotel": "radisson-hotel-agra",
+      "room": "Superior Room (Taj View)"
+    },
+    {
+      "label": "Near the East Gate",
+      "hotel": "taj-hotel-convention-centre-agra",
+      "room": "Taj Club Room Taj Mahal View King Bed"
+    }
+  ],
+  "decoder": [
+    {
+      "left": "Pool View",
+      "right": "Taj Mahal View",
+      "text": "At Tajview, the Executive Room and the Junior Suite are each sold two ways. Book the one with “Taj Mahal View” in the name, not the one with “Pool View”."
+    },
+    {
+      "left": "Executive Room, City View",
+      "right": "Executive Room (Taj View)",
+      "text": "At the Radisson Hotel Agra, the same Executive Room is sold with a city view or with a Taj view. Only the second one is for the monument."
+    },
+    {
+      "left": "City view (the site's label)",
+      "right": "Taj Mahal View (the room name)",
+      "text": "Hotels.com tags the Taj Club Room Taj Mahal View as a city view. The tag is generic and the room name is the promise, so book by the name."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "the-oberoi-amarvilas",
+      "name": "The Oberoi Amarvilās",
+      "where": "Taj East Gate Road",
+      "stars": 5,
+      "level": "listed",
+      "book": [
+        {
+          "room": "Premier Room with Balcony",
+          "note": "A travel guide recommends this one for the best view, with the balcony."
+        },
+        {
+          "room": "Premier Room"
+        },
+        {
+          "room": "Deluxe Suite with Balcony"
+        },
+        {
+          "room": "Deluxe Suite"
+        },
+        {
+          "room": "Luxury Suite"
+        },
+        {
+          "room": "Kohinoor Suite"
+        }
+      ],
+      "notes": [
+        "The hotel lists a Taj Mahal view for every room and suite, so there is no category to skip. Expedia tags every category with a garden view, so go by the hotel's own description."
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.oberoihotels.com/hotels-in-agra-amarvilas-resort/rooms-suites/"
+        },
+        {
+          "label": "Expedia"
+        },
+        {
+          "label": "Fleewinter",
+          "url": "https://www.fleewinter.com/india/accommodation/oberoi_amarvilas"
+        },
+        {
+          "label": "Culture Trip",
+          "url": "https://theculturetrip.com/asia/india/articles/the-best-hotels-in-agra-india"
+        }
+      ],
+      "query": "The Oberoi Amarvilas Agra"
+    },
+    {
+      "id": "radisson-hotel-agra",
+      "name": "Radisson Hotel Agra",
+      "where": "C-1, C-2, Taj Nagari Phase 1, Fatehabad Road",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Superior Room (Taj View)"
+        },
+        {
+          "room": "Executive Room (Taj View)"
+        },
+        {
+          "room": "Presidential Suite (Taj View)"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Executive Room, City View",
+          "note": "Sold with a city view."
+        },
+        {
+          "room": "Deluxe Room",
+          "note": "Described with a view of the city."
+        }
+      ],
+      "notes": [
+        "Culture Trip describes floor-to-ceiling windows with views of the Taj Mahal and puts the monument under 2 km away."
+      ],
+      "sources": [
+        {
+          "label": "Hotels.com"
+        },
+        {
+          "label": "Culture Trip",
+          "url": "https://theculturetrip.com/asia/india/articles/the-7-best-budget-hotels-in-agra-india"
+        }
+      ],
+      "query": "Radisson Hotel Agra"
+    },
+    {
+      "id": "tajview-agra",
+      "name": "Tajview, Agra – IHCL SeleQtions",
+      "where": "Taj Ganj, Fatehabad Road",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Executive Room, 1 King Bed (Taj Mahal View)"
+        },
+        {
+          "room": "Junior Suite, 1 King Bed (Taj Mahal View)"
+        },
+        {
+          "room": "SeleQtions Suite, 1 King Bed (Taj Mahal View)"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Executive Room, 1 King Bed, Pool View",
+          "note": "Sold with a pool view."
+        },
+        {
+          "room": "Junior Suite, 1 King Bed, Pool View",
+          "note": "Sold with a pool view."
+        },
+        {
+          "room": "Deluxe Room, 1 King Bed",
+          "note": "Listed with a city view."
+        }
+      ],
+      "notes": [
+        "Audley Travel puts the hotel about 3 km from the Taj Mahal, and Fodor's says only some rooms have the view."
+      ],
+      "sources": [
+        {
+          "label": "Hotels.com"
+        },
+        {
+          "label": "Fodor's",
+          "url": "https://www.fodors.com/world/asia/india/side-trips-from-delhi/places/agra-and-environs/agra/hotels"
+        },
+        {
+          "label": "Audley Travel",
+          "url": "https://www.audleytravel.com/us/india/accommodation/taj-view"
+        }
+      ],
+      "query": "Tajview Agra IHCL SeleQtions"
+    },
+    {
+      "id": "taj-hotel-convention-centre-agra",
+      "name": "Taj Hotel & Convention Centre, Agra",
+      "where": "Taj East Gate Road",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Taj Club Room Taj Mahal View King Bed"
+        },
+        {
+          "room": "Taj Club Room Taj Mahal View Twin Bed"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Taj Club, Club Room, 1 King Bed",
+          "note": "Sold without the view named."
+        },
+        {
+          "room": "Deluxe Room, 1 King Bed",
+          "note": "Sold without the view named."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Hotels.com"
+        },
+        {
+          "label": "Trip101",
+          "url": "https://trip101.com/article/hotels-with-views-of-the-taj-mahal-agra-india"
+        }
+      ],
+      "query": "Taj Hotel and Convention Centre Agra"
+    },
+    {
+      "id": "hotel-clarks-shiraz",
+      "name": "Hotel Clarks Shiraz",
+      "where": "54 Taj Road",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Premium Room, 1 King Bed (Taj View)"
+        },
+        {
+          "room": "Premium Twin Room (Taj View) (2 Twin Beds)"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Premium Room, 1 King Bed (1 King Bed)",
+          "note": "The same room without “Taj View” in the name."
+        },
+        {
+          "room": "Premium Twin Room (2 Twin Beds)",
+          "note": "The same room without “Taj View” in the name."
+        }
+      ],
+      "notes": [
+        "Santorini Dave says the Taj Mahal is more than 2 km away, that some rooms only claim a Taj view, and that most rooms face the gardens."
+      ],
+      "sources": [
+        {
+          "label": "Expedia"
+        },
+        {
+          "label": "Santorini Dave",
+          "url": "https://santorinidave.com/hotel-clarks-shiraz-agra"
+        }
+      ],
+      "query": "Hotel Clarks Shiraz Agra"
+    }
+  ],
+  "alternatives": [
+    {
+      "title": "No view room? Try a rooftop",
+      "text": "Trip101 lists the Crystal Sarovar Premiere and the DoubleTree by Hilton Agra as places with Taj Mahal views from a rooftop terrace, pool or dining area. It does not tie the views to any room."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which Agra hotels sell rooms with a Taj Mahal view?",
+      "a": "Of the hotels we checked in October 2026: The Oberoi Amarvilās, Radisson Hotel Agra, Tajview Agra, Taj Hotel & Convention Centre and Hotel Clarks Shiraz. Each sells specific room categories with the view in the name or description."
+    },
+    {
+      "q": "Does every room at The Oberoi Amarvilās face the Taj Mahal?",
+      "a": "The hotel says so for every category it lists: Premier Room, Premier Room with Balcony, Deluxe Suite, Deluxe Suite with Balcony, Luxury Suite and Kohinoor Suite. Culture Trip and Fodor's say the same."
+    },
+    {
+      "q": "Why does Hotels.com say “City view” for a Taj Mahal View room?",
+      "a": "The view tag on a booking site is a generic label and doesn't always match the room name. At the Taj Hotel & Convention Centre, the Taj Club Room Taj Mahal View is tagged as a city view. The room name is the promise."
+    },
+    {
+      "q": "How far are these hotels from the Taj Mahal?",
+      "a": "Audley Travel puts Tajview about 3 km away, Culture Trip puts the Radisson under 2 km away, and Santorini Dave puts Clarks Shiraz more than 2 km away. A hotel can be some way off and still have rooms that face the monument."
+    }
+  ]
+}
