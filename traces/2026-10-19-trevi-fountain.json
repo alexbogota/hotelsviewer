@@ -1,0 +1,195 @@
+{
+  "date": "2026-10-19",
+  "slug": "trevi-fountain",
+  "fetched": [
+    {
+      "url": "https://www.oyster.com/rome/hotels/hotel-fontana/",
+      "chars": 864,
+      "blocked": false,
+      "head": "**Room categories:** \"Double Room\" \"Single Room\" \"Superior Double Room\" \"Triple Room\" **Street address:** Piazza di Trevi 96, Rome, Italy **Text about the fountain or Trevi view:**"
+    },
+    {
+      "url": "https://it.hotels.com/ho298387",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.bedandbreakfast.eu/a/EAoscyJpaBS0/trevi-ab-aeterno-amazing-view-of-the-trevi-fountain",
+      "chars": 228,
+      "blocked": false,
+      "head": "\"Superior Apartment\" **Street address:** \"Piazza di Trevi Building no 100,Flat 4\", 00187 Rome, Italy **Fountain view text:** - Title: \"Trevi Ab Aeterno - Amazing View of the Trevi "
+    },
+    {
+      "url": "https://romevacationtips.com/hotels-with-a-view-of-the-trevi-fountain/",
+      "chars": 391,
+      "blocked": false,
+      "head": "The page names three hotels said to have a view of the Trevi Fountain: 1. **Hotel Fontana**: \"slap bang front and center of the entire fountain\" 2. **Trevi Ab Aeterno**: \"It offers"
+    },
+    {
+      "url": "https://visitrome.com/hotels/relais-fontana-di-trevi-hotel/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.oyster.com/?p=94725",
+      "chars": 424,
+      "blocked": false,
+      "head": "The page doesn't mention the Trevi Fountain or any hotel with a view of it. It lists article teasers (such as \"Best Hotels in Montreal for a Long Weekend\" and \"Best Hotels in Denve"
+    },
+    {
+      "url": "https://www.hotelfontana-trevi.com/en/rooms/",
+      "chars": 890,
+      "blocked": false,
+      "head": "**Room categories** (as written on the page): - \"ROOMS FOR 1 PERSON\" - \"ROOMS FOR PEOPLE\" - \"ROOMS FOR PEOPLE\" (the page repeats this heading for two categories) **Street address:*"
+    },
+    {
+      "url": "https://www.hotelfontana-trevi.com/en/hotel/",
+      "chars": 744,
+      "blocked": false,
+      "head": "**Fountain (Trevi Fountain)** - \"Not only does it lay claim to being the hotel with the premier view of the Trevi Fountain,\" - \"the Trevi Fountain has also gained the appreciation "
+    },
+    {
+      "url": "https://hoteltrevirome.com/en/",
+      "chars": 615,
+      "blocked": false,
+      "head": "**Room category names (exact text):** \"Camera Deluxe tripla o quadrupla\" \"Camera Standard Interna\" These appear only in image alt text. The page body doesn't name room categories, "
+    },
+    {
+      "url": "https://www.expedia.com/Rome-Hotels-Stunning-View-Of-The-Trevi-Fountain.h29487075.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.hotelfontana-trevi.com/en/rooms/",
+      "chars": 964,
+      "blocked": false,
+      "head": "**Room titles on the page:** - \"ROOMS FOR 1 PERSON\" (Garden View) - \"ROOMS FOR PEOPLE\" (Deluxe) - \"ROOMS FOR PEOPLE\" (Family Room) The page repeats \"ROOMS FOR PEOPLE\" for the Delux"
+    },
+    {
+      "url": "https://www.relaisfontanaditrevi.com/",
+      "chars": 368,
+      "blocked": false,
+      "head": "**Room or suite categories:** None are listed on this page. The page only links to a separate Rooms page. **Street address:** Via del Lavatore, 44 - 00187 Rome - Italy **Star ratin"
+    },
+    {
+      "url": "https://www.trivago.com/en-US/oar/hotel-relais-fontana-di-trevi-rome?search=100-748656",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.relaisfontanaditrevi.com/en/rooms/",
+      "chars": 364,
+      "blocked": false,
+      "head": "The page doesn't list any room or suite category names. It only has a \"Rooms\" navigation link pointing to rooms.php. The only sentence that mentions a view of the Trevi Fountain is"
+    },
+    {
+      "url": "https://www.hotelfontana-trevi.com/en/rooms/superior-double-room/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://it.hotels.com/ho298387",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.relaisfontanaditrevi.com/rooms.php",
+      "chars": 427,
+      "blocked": false,
+      "head": "\"CLASSIC ROOM\" \"Superior Room\" \"Superior Deluxe Room\" \"JUNIOR SUITE\" Note: \"NON SMOKING ROOMS\" is a section heading covering the room types, so I didn't list it as a category. View"
+    },
+    {
+      "url": "https://www.hotelfontana-trevi.com/en/rooms/",
+      "chars": 333,
+      "blocked": false,
+      "head": "**Room card titles:** - \"ROOMS FOR 1 PERSON\" - \"ROOMS FOR PEOPLE\" - \"ROOMS FOR PEOPLE\" **Link text naming room types:** - \"Rooms for 1 person\" - \"Rooms for 2 people\" - \"Rooms for 3"
+    },
+    {
+      "url": "https://www.relaisfontanaditrevi.com/rooms.php",
+      "chars": 676,
+      "blocked": false,
+      "head": "**Paragraph 1: Non-smoking rooms section (general, not a specific room)** \"The Relais Fontana di Trevi has three room types available to guests: Matrimonial, Superior and Junior Su"
+    },
+    {
+      "url": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-la-ville/rooms-suites/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://hoteltrevirome.com/en/rooms/",
+      "chars": 342,
+      "blocked": false,
+      "head": "\"Single Room\" \"Standard Room\" \"Superior Double Room\" \"Superior Double Room with View\" \"Standard Triple Room\" \"Standard Quadruple Room\" Sentences mentioning a view: - \"Internal or e"
+    },
+    {
+      "url": "https://www.boutiquehoteltrevi.com/en/",
+      "chars": 48,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.boutiquehoteltrevi.com"
+    },
+    {
+      "url": "https://www.harrysbartrevi.com/",
+      "chars": 38,
+      "blocked": true,
+      "head": "unable to verify the first certificate"
+    },
+    {
+      "url": "https://www.hotelfontana-trevi.com/en/hotel/rooftop-lounge/",
+      "chars": 690,
+      "blocked": false,
+      "head": "The page has four sentences that mention a view, the fountain, or the rooftop. Quotes are verbatim, and each stays under 125 characters. 1. \"The rooftop lounge, an enchanting and u"
+    },
+    {
+      "url": "https://www.trevipalace.com/en/",
+      "chars": 527,
+      "blocked": false,
+      "head": "**Room categories:** \"Classic Room\" \"Deluxe Rooms\" \"Junior Suites\" \"Suite\" \"Superior Suite\" \"Master Suite\" **Street address:** Via del Lavatore 30, 000187. Rome (Italy) **Sentences"
+    },
+    {
+      "url": "https://www.trevipalace.com/en/rooms/",
+      "chars": 505,
+      "blocked": false,
+      "head": "\"Classic Rooms\" \"Deluxe Triple Rooms\" \"Junior Suites\" \"Suites\" \"Superior Suites\" \"Master Suites\" Sentences mentioning a view or the Trevi Fountain: - \"Featuring a large terrace wit"
+    },
+    {
+      "url": "https://www.hotelaccademia.com/en/",
+      "chars": 523,
+      "blocked": false,
+      "head": "**Room category names:** None. The page says the hotel has \"28 rooms in 9 different types\" but does not name any of the categories. **Sentences mentioning a view:** One. The page s"
+    }
+  ],
+  "searches": [
+    "hotels with Trevi Fountain view rooms",
+    "Trevi Fountain view room hotel suite official site",
+    "Hotel Fontana Rome Trevi Fountain official site rooms",
+    "Relais Fontana di Trevi rooms fountain view",
+    "Trevi Ab Aeterno hotel rooms fountain view",
+    "Hotel de la Ville Rome Trevi Fountain view room",
+    "Hotel Fontana Piazza di Trevi 96 Roma sito ufficiale camere",
+    "Relais Fontana di Trevi official website rooms and suites",
+    "hotel with Trevi Fountain view room category \"Trevi Fountain view\" Rome hotel rooms",
+    "Hotel Trevi Roma Vicolo del Babbuccio rooms view",
+    "Rome hotel room \"Trevi Fountain view\" category booking Piazza di Trevi hotel near fountain",
+    "Hotel Bellavista Trevi Rome rooms fountain view or hotel near Trevi Fountain with fountain view room",
+    "Harry's Bar Trevi Hotel Rome rooms Trevi Fountain view room category",
+    "Suite Fontana di Trevi Rome Junior Suite fountain view hotel",
+    "Harry's Bar Trevi Hotel official site rooms",
+    "Boutique Hotel Trevi Rome official site rooms",
+    "Hotel de la Ville Rocco Forte rooms and suites official site",
+    "hotel rooms overlooking Trevi Fountain Rome room with fountain view which hotels"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 50,
+    "error": false
+  },
+  "outcome": "unverified",
+  "reason": "only two hotels could be proved in this run. Hotel Fontana (Piazza di Trevi 96) sells a Superior Double Room with unique view of the Trevi Fountain on its own site. Relais Fontana di Trevi (Via del Lavatore, 44) describes its Junior Suite with a view over the Trevi Fountain on its own site. Hotel Trevi, Trevi Palace and Hotel Accademia name no room with the fountain view. No official site was found for Harry's Bar Trevi or Boutique Hotel Trevi, and the Hotel de la Ville rooms page returned 403. Trevi Ab Aeterno is an apartment, not a hotel. Retry with those sites."
+}
