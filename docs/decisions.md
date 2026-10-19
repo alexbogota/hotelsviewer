@@ -60,3 +60,10 @@ Newest at the bottom. START.md keeps only the result.
 - Mastodon on mastodon.social (open sign-up, no rules against business accounts). Bluesky gets a domain handle later. Quora is manual only and has the strictest promotion rules: no affiliate links there.
 - Texts, limits with sources and next steps: `docs/social-profiles.md`. The accounts themselves are created by the owner.
 
+
+## 18 October 2026: Google Analytics (replaces "no analytics")
+- Owner asked for Google Analytics 4. Measurement ID `G-KNJLEMRVNP` (not a secret) is `gaId` in `src/data/site.ts`; empty value = no analytics and no banner.
+- Consent first: `components/AnalyticsConsent.astro` shows a small bottom bar on every page. Nothing is requested from Google and no cookies are set until the visitor clicks "Allow analytics". The choice is kept in the browser (`localStorage` key `hv-analytics`). "Analytics settings" in the footer reopens the bar; "No thanks" after a "yes" sets the `ga-disable` flag and deletes the `_ga` cookies.
+- Why this way: GA sets cookies and the site has EU/UK visitors, so a "yes" is needed before loading. Loading nothing until then (not even cookieless pings) keeps the Privacy page honest. Cost: visitors who ignore the bar are not counted, so the numbers show a part of the traffic only.
+- Privacy page updated the same day. The GA snippet pasted by the owner was not used as is (it loads Google on every visit); same ID, loaded after consent.
+- Tested in a simulated browser (first visit, Allow, No thanks, return visits, withdrawal); the real look of the bar is to be seen on a phone.
