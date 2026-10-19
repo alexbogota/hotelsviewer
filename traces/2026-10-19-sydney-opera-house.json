@@ -1,0 +1,277 @@
+{
+  "date": "2026-10-19",
+  "slug": "sydney-opera-house",
+  "fetched": [
+    {
+      "url": "https://www.hyatt.com/en-US/hotel/australia/park-hyatt-sydney/sydph/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.sydney.intercontinental.com/room-type/opera-house-view-suite/",
+      "chars": 394,
+      "blocked": false,
+      "head": "**Room category names:** - \"Opera House View Suite\" **Street address:** 16 Phillip Street, Sydney, New South Wales 2000 Australia **Star rating:** The page does not state a star ra"
+    },
+    {
+      "url": "https://www.fourseasons.com/sydney/accommodations/suites/sydney-harbour-studio-club-suite/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.expedia.com/Sydney-Hotels-Shangri-La-Sydney.h11974.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.hyatt.com/park-hyatt/en-US/sydph-park-hyatt-sydney/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.hyatt.com/en-US/hotel/australia/park-hyatt-sydney/sydph/rooms/suites/OPRA",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/sydhb-sydney-harbour-marriott-hotel-at-circular-quay/rooms/",
+      "chars": 234,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. Retry-After: 28800 The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub"
+    },
+    {
+      "url": "https://www.shangri-la.com/sydney/shangrila/rooms/",
+      "chars": 862,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.shangri-la.com/sydney/shangrila/rooms/ Redirect URL (from the serve"
+    },
+    {
+      "url": "https://www.fourseasons.com/sydney/index.html",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.hotels.com/ho111573/sydney-harbour-marriott-hotel-at-circular-quay-sydney-australia/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.starsdesk.com/blog/four-seasons-hotel-sydney-review-opera-view-rooms-explained",
+      "chars": 656,
+      "blocked": false,
+      "head": "\"Deluxe City Room\" \"Superior City Room\" \"Deluxe Partial Harbour Room\" \"Deluxe Full Harbour Room\" \"Sydney City Studio Suite\" \"Sydney Partial Harbour Studio Suite\" \"Sydney Opera Stud"
+    },
+    {
+      "url": "http://www.shangri-la.com/sydney/shangrila/rooms/",
+      "chars": 862,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.shangri-la.com/sydney/shangrila/rooms/ Redirect URL (from the serve"
+    },
+    {
+      "url": "https://www.fourseasons.com/sydney/accommodations/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://sydney.com/destinations/sydney/sydney-city/city-centre/accommodation/sydney-harbour-marriott-hotel-circular-quay",
+      "chars": 543,
+      "blocked": false,
+      "head": "**Room categories:** None are listed on this page. The only room-related text is the image label \"Room\" and the phrase \"Spacious rooms with stunning harbour views,\" which are not c"
+    },
+    {
+      "url": "https://www.sydney.intercontinental.com/?p=10035",
+      "chars": 32,
+      "blocked": true,
+      "head": "Too many redirects (exceeded 10)"
+    },
+    {
+      "url": "https://www.asmallworld.com/collection/hotels/park-hyatt-sydney",
+      "chars": 1495,
+      "blocked": false,
+      "head": "**Room categories (as written on the page):** \"King Bed with Harbour View\" \"Twin Beds with Harbour View\" \"King Bed with Opera View\" \"Two Double Beds Deluxe\" \"King Bed with Opera Vi"
+    },
+    {
+      "url": "https://uk.hotels.com/ho111573/sydney-harbour-marriott-hotel-at-circular-quay-sydney-australia/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://hotels.travelonline.com/hotel/au/sydney-habour-marriott.html",
+      "chars": 790,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://hotels.travelonline.com/hotel/au/sydney-habour-marriott.html Redirect U"
+    },
+    {
+      "url": "https://sydneyexpert.com/hotels-rooms-with-a-view-of-sydney-harbour/",
+      "chars": 766,
+      "blocked": false,
+      "head": "**Hotel names on the page** (no street addresses are given for any of them): 1. Park Hyatt Sydney 2. Shangri-La Hotel Sydney 3. InterContinental Hotel Sydney 4. Four Seasons Hotel "
+    },
+    {
+      "url": "https://www.sydney.intercontinental.com/rooms/",
+      "chars": 264,
+      "blocked": false,
+      "head": "\"Guest Rooms\" \"Sophisticated Suites\" \"Signature Harbour Suites\" \"Elite Suites\" The first two are the page's section headings. The last two appear in the text describing the suites "
+    },
+    {
+      "url": "https://www.hyatt.com/en-US/hotel/australia/park-hyatt-sydney/sydph",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.marriott.com/hotels/travel/sydhb-sydney-harbour-marriott-hotel-at-circular-quay/",
+      "chars": 234,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. Retry-After: 28800 The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub"
+    },
+    {
+      "url": "https://www.shangri-la.com/sydney/shangrilasydney/",
+      "chars": 862,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.shangri-la.com/sydney/shangrilasydney/ Redirect URL (from the serve"
+    },
+    {
+      "url": "https://www.fourseasons.com/sydney/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.sydney.intercontinental.com/",
+      "chars": 32,
+      "blocked": true,
+      "head": "Too many redirects (exceeded 10)"
+    },
+    {
+      "url": "http://www.shangri-la.com/sydney/shangrila/rooms/",
+      "chars": 798,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.shangri-la.com/sydney/shangrila/rooms/ Redirect URL (from the serve"
+    },
+    {
+      "url": "https://www.hotels.com/ho111573/sydney-harbour-marriott-hotel-at-circular-quay-sydney-australia/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://thatch.co/guide/1d2xzdjr3uq89/view",
+      "chars": 813,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.thatch.co/guide/1d2xzdjr3uq89/view Redirect URL (from the server's "
+    },
+    {
+      "url": "https://www.expedia.com/Sydney-Hotels-Sydney-Harbour-Marriott-Hotel-At-Circular-Quay.h18811.Informacion-Hotel",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://mindtrip.ai/inspiration/sydney-hotels-harbour-views/in-603pnWuq?tm=ce24af89e6d29859c7f0443784269508",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://sydney.com/destinations/sydney/sydney-city/city-centre/accommodation/park-hyatt-sydney",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.sydney.intercontinental.com/room-type/opera-house-view-suite/",
+      "chars": 348,
+      "blocked": false,
+      "head": "**Room and suite names on the page:** - \"Opera House View Suite\" (page title and heading) - \"Opera House Suite\" (body text) - \"Premium Suite\" (Explore Suites section) **Room catego"
+    },
+    {
+      "url": "https://www.starsdesk.com/blog/four-seasons-hotel-sydney-review-opera-view-rooms-explained",
+      "chars": 279,
+      "blocked": false,
+      "head": "The page doesn't give a street address for Four Seasons Hotel Sydney. It lists only the location as \"Circular Quay.\" The page describes the Opera-view rooms this way: \"Opera House "
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/sydhb-sydney-harbour-marriott-hotel-at-circular-quay/overview/",
+      "chars": 234,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. Retry-After: 28800 The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub"
+    },
+    {
+      "url": "https://www.expedia.com/Sydney-Hotels-Shangri-La-Sydney.h11974.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.asmallworld.com/collection/hotels/intercontintal-sydney",
+      "chars": 739,
+      "blocked": false,
+      "head": "\"Classic Room\" \"King Classic Heritage View\" \"Two Queen Classic Heritage View\" \"TWO QUEEN CLASSIC EAST HARBOUR VIEW\" \"One King Classic Club Lounge Access\" \"One King One Bedroom Suit"
+    },
+    {
+      "url": "https://www.asmallworld.com/collection/hotels/shangri-la-sydney",
+      "chars": 1455,
+      "blocked": false,
+      "head": "**Room categories (as listed; the page content was truncated, so this list may be incomplete):** \"Executive Opera House City View Room King\" \"Executive Sydney Harbour Room King\" \"E"
+    },
+    {
+      "url": "https://www.asmallworld.com/collection/hotels/four-seasons-hotel-sydney",
+      "chars": 1990,
+      "blocked": false,
+      "head": "\"Deluxe City View Accessible Room - Queen Bed\" \"Deluxe City View Room - King Bed\" \"Deluxe City View Room - Twin Beds\" \"Deluxe Full Harbour Accessible Queen Room\" \"Deluxe Full Harbo"
+    },
+    {
+      "url": "https://www.asmallworld.com/collection/hotels/sydney-harbour-marriott-hotel-at-circular-quay",
+      "chars": 363,
+      "blocked": false,
+      "head": "**Room categories:** None. The page doesn't name any room categories. It mentions \"Room upgrade to a better category,\" but that is a VIP benefit, not a named category. **Street add"
+    },
+    {
+      "url": "https://www.asmallworld.com/collection/hotels/pullman-quay-grand-sydney-harbour",
+      "chars": 479,
+      "blocked": false,
+      "head": "**Room categories:** None. The page does not name any room categories. It mentions only a \"Room upgrade to a better category\" benefit, which is not a category name. **Street addres"
+    },
+    {
+      "url": "https://www.sydney.intercontinental.com/room-type/opera-house-view-suite/",
+      "chars": 189,
+      "blocked": false,
+      "head": "**Hotel name:** \"InterContinental\" (the full name in the page title and footer is \"InterContinental Sydney\") **Street address:** \"16 Phillip Street, Sydney, New South Wales 2000 Au"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=20&format=json&srsearch=Sydney%20Opera%20House%20daylight",
+      "chars": 2097,
+      "blocked": false,
+      "head": "File:Sydney Opera House (217697617).jpeg File:A pair of shoes (IA pairofshoes00rose).pdf File:Agricultural conference. Hearings before the Committee on agriculture, House of repres"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Sydney_Opera_House",
+      "chars": 5154,
+      "blocked": false,
+      "head": "**Caveats:** The page content is truncated, so this covers only the visible portion of the category. I inferred daylight from filenames, since I can't view the images. I excluded f"
+    }
+  ],
+  "searches": [
+    "hotels with Sydney Opera House view rooms",
+    "Sydney Opera House view room suite hotel official site",
+    "Opera House view hotel Circular Quay room category",
+    "Sydney hotels with harbour and Opera House views guide"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 55,
+    "error": false
+  },
+  "outcome": "failed",
+  "reason": "Started by hand for Sydney Opera House."
+}
