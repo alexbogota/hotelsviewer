@@ -54,8 +54,12 @@ const known = views.map((v) => ({
     {site.stay22Aid && (
       <section id="results" class="results" hidden aria-labelledby="results-heading">
         <h2 id="results-heading">Hotels in <span id="place"></span></h2>
-        <p class="measure note">This map comes from our partner Stay22 and shows hotels with current prices from several booking sites. We haven't checked these hotels for a view. Bookings made through the map may earn us a commission.</p>
-        <iframe id="map" title="Map of hotels, from Stay22" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <p class="measure note">Hotels with photos and current prices from our partner Stay22, from several booking sites. We haven't checked these hotels for a view. Bookings made here may earn us a commission.</p>
+        <div class="modes" role="group" aria-label="Show hotels as">
+          <button type="button" class="btn" data-mode="listview" aria-pressed="true">Photos</button>
+          <button type="button" class="btn btn-quiet" data-mode="map" aria-pressed="false">Map</button>
+        </div>
+        <iframe id="map" title="Hotels, from Stay22" referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </section>
     )}
 
@@ -113,8 +117,22 @@ const known = views.map((v) => ({
       } else {
         params.set('address', q);
       }
-      map.src = 'https://www.stay22.com/embed/gm?' + params.toString();
-      map.title = 'Map of hotels in ' + q + ', from Stay22';
+      // First the hotels as photo cards (Stay22 list view, tried by the owner on 19 Oct 2026), the map one tap away.
+      params.set('limit', '30');
+      var show = function (mode) {
+        params.set('viewmode', mode);
+        map.src = 'https://www.stay22.com/embed/gm?' + params.toString();
+        map.title = (mode === 'map' ? 'Map of hotels in ' : 'Hotels in ') + q + ', from Stay22';
+        document.querySelectorAll('.modes button').forEach(function (b) {
+          var on = b.getAttribute('data-mode') === mode;
+          b.setAttribute('aria-pressed', String(on));
+          b.className = on ? 'btn' : 'btn btn-quiet';
+        });
+      };
+      document.querySelectorAll('.modes button').forEach(function (b) {
+        b.addEventListener('click', function () { show(b.getAttribute('data-mode')); });
+      });
+      show('listview');
       document.getElementById('place').textContent = q;
       document.getElementById('results').hidden = false;
       document.title = 'Hotels in ' + q + ' | HotelsViewer';
@@ -167,18 +185,23 @@ const known = views.map((v) => ({
     margin-top: 8px;
     color: var(--ink-soft);
   }
+  .modes {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+  }
   iframe {
     display: block;
     width: 100%;
-    height: 560px;
-    margin-top: 24px;
+    height: 760px;
+    margin-top: 16px;
     border: 1px solid var(--line);
     border-radius: var(--radius);
     background: var(--sky);
   }
   @media (max-width: 640px) {
     iframe {
-      height: 460px;
+      height: 620px;
     }
     .cards li {
       grid-template-columns: minmax(0, 1fr);
