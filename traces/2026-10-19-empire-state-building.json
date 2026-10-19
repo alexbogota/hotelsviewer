@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-19",
+  "slug": "empire-state-building",
+  "fetched": [
+    {
+      "url": "https://langhamhotels.com/en/the-langham/new-york/stay/suites/junior-suite-with-empire-state-building-view",
+      "chars": 215,
+      "blocked": false,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.hyatt.com/hyatt-place/en-US/nyczm-hyatt-place-new-york-midtown-south/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.marriott.com/luxury/explore-luxury-suites/ritz-carlton-nomad",
+      "chars": 505,
+      "blocked": false,
+      "head": "\"Madison Suite\" \"The Ritz-Carlton Suite\" \"Liberty Suite\" \"Two-Bedroom Executive Penthouse\" \"Two-Bedroom Fifth Avenue Penthouse\" \"One-Bedroom Penthouse\" Empire State Building mentio"
+    },
+    {
+      "url": "https://www.oyster.com/articles/hotels-with-amazing-empire-state-building-views/",
+      "chars": 2175,
+      "blocked": false,
+      "head": "**Note:** The page does not state street addresses for any hotel. 1. **The Archer** - Address: Not stated - Views: \"the city skyline views here -- with the Empire State Building as"
+    },
+    {
+      "url": "https://langhamhotels.com/en/the-langham/new-york/stay/suites/one-bedroom-empire-state-view-suite",
+      "chars": 215,
+      "blocked": false,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.langhamhotels.com/en/the-langham/new-york/stay/suites/club-junior-empire-state-view-suite//",
+      "chars": 333,
+      "blocked": false,
+      "head": "\"CLUB JUNIOR EMPIRE STATE VIEW SUITE\" \"CLUB ONE-BEDROOM EMPIRE STATE VIEW SUITE\" \"TWO-BEDROOM EMPIRE STATE PENTHOUSE\" Address: 400 Fifth Avenue, New York, NY 10018 Stars: Not state"
+    },
+    {
+      "url": "https://archerhotel.com/new-york/rooms",
+      "chars": 333,
+      "blocked": false,
+      "head": "- \"Classic Queen\": no view named - \"Classic Queen With Tub\": no view named - \"Classic King\": no view named - \"Double Double\": no view named - \"Archer King\": no view named - \"Double"
+    },
+    {
+      "url": "https://archerhotel.com/new-york/room/archer-king-empire-view",
+      "chars": 273,
+      "blocked": false,
+      "head": "**Room name:** \"Archer King Empire View\" **Sentence about the Empire State Building:** \"Play peek-a-boo with the Empire State Building each morning and be lulled to sleep by the be"
+    },
+    {
+      "url": "https://www.langhamhotels.com/en/the-langham/new-york/stay/suites/",
+      "chars": 1041,
+      "blocked": false,
+      "head": "\"SUPERIOR ROOM\": no view mentioned \"SUPERIOR CITY VIEW ROOM\": view in name; \"charming street views\" \"DELUXE ROOM\": no view mentioned \"DELUXE ROOM WITH TERRACE\": no view mentioned \""
+    },
+    {
+      "url": "https://www.hyatt.com/hyatt-hotels/en-US/nychh-hyatt-herald-square-new-york/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.hyatt.com/en-US/hotel/new-york/the-grayson/nycub/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.langhamhotels.com/en/the-langham/new-york/stay/suites/",
+      "chars": 999,
+      "blocked": false,
+      "head": "**Room and suite names** (as they appear in body text; some appear in all caps in the page headings): - \"Club Junior Empire State View Suite\" - \"Club One-Bedroom Empire State View "
+    },
+    {
+      "url": "https://www.ritzcarlton.com/en/hotels/nycnm-the-ritz-carlton-new-york-nomad/accommodations/",
+      "chars": 215,
+      "blocked": false,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://luxury.marriott.com/signature-accommodations/ritz-carlton-nomad",
+      "chars": 751,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://luxury.marriott.com/signature-accommodations/ritz-carlton-nomad Redirec"
+    },
+    {
+      "url": "https://www.suiteness.com/suites/united-states/new-york/new-york/the-new-york-edition/madison-suite/amp",
+      "chars": 215,
+      "blocked": false,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.hyatt.com/hyatt-place/en-US/lgazc-hyatt-place-new-york-chelsea/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://timeout.com/newyork/hotels/the-ritz-carlton-new-york-nomad",
+      "chars": 418,
+      "blocked": false,
+      "head": "**Address:** \"25 W 28th St.\" New York 10001 **Views:** - From the hotel description: \"...oversized windows with jaw-dropping views from the Empire State Building down to the Statue"
+    },
+    {
+      "url": "https://www.marriott.com/luxury/explore-luxury-suites/ritz-carlton-nomad",
+      "chars": 891,
+      "blocked": false,
+      "head": "**Madison Suite** - Entry (quoted): \"The Madison Suite offers stunning views of downtown Manhattan and into the heart of NoMad, down Broadway.\" - View line (quoted): \"Downtown Manh"
+    },
+    {
+      "url": "https://oyster.com/new-york-city/hotels/hampton-inn-manhattan-35th-st-empire-state-building",
+      "chars": 318,
+      "blocked": false,
+      "head": "**Room types:** - Accessible Double Room - Accessible King Room - Double Room - King Room **Address:** 59 W. 35th Street, New York City, New York, United States **Empire State Buil"
+    },
+    {
+      "url": "https://megivorera.com/best-nyc-hotels-with-empire-state-building-views/",
+      "chars": 2313,
+      "blocked": false,
+      "head": "**Note:** The page gives no street addresses for any hotel. Only the Executive Hotel Le Soleil entry names a room category (\"Empire View Queen Room\"). For the others, the page desc"
+    },
+    {
+      "url": "https://www.redburynyc.com/h/hotel-executive-le-soleil.html",
+      "chars": 748,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.redburynyc.com/h/hotel-executive-le-soleil.html Redirect URL (from "
+    },
+    {
+      "url": "https://expedia.com/West-Village-hotels-Executive-Hotel-Le-Soleil-New-York.h10948924.Hotel-information",
+      "chars": 223,
+      "blocked": false,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=20&format=json&srsearch=Empire State Building daytime jpg",
+      "chars": 1204,
+      "blocked": false,
+      "head": "The search returned 18 file titles: 1. File:NYC - Looking toward Empire State Building - daytime.jpg 2. File:NEW YORK CITY SKYSCRAPER, DAYTIME, CLOUDS.jpg 3. File:RIT NandE 1973 Ap"
+    },
+    {
+      "url": "https://executive-hotel-le-soleil.hotelinewyork.com/en/",
+      "chars": 488,
+      "blocked": false,
+      "head": "**Room categories:** The page does not list any named room categories. The Rooms section describes rooms only generally. Guest reviews mention a \"junior suite\" and a \"5 persons sui"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=30&format=json&srsearch=Empire State Building from Top of the Rock OR facade Manhattan",
+      "chars": 2441,
+      "blocked": false,
+      "head": "There are 29 `.jpg` file titles in the results. I included `File:Top Of The Rock Empire State View.JPG` because its extension is uppercase, and I excluded `File:Empire State From T"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Empire_State_Building",
+      "chars": 1247,
+      "blocked": false,
+      "head": "The page text doesn't show what time of day each photo was taken, so I can't confirm which are daytime shots. Based on the file names, these JPGs appear to be exterior views of the"
+    }
+  ],
+  "searches": [
+    "hotels with Empire State Building view room suite New York",
+    "\"Empire State Building View\" room hotel official site rooms suites",
+    "Archer Hotel New York \"Empire View\" room king official site",
+    "Hyatt Centric Midtown 5th Avenue New York room \"Empire State\" view king",
+    "New York hotel \"Empire State Building View\" king room official rooms page Midtown",
+    "Innside New York NoMad Terrace Suite Empire State Building view official rooms",
+    "Kimpton Hotel Eventi room Empire State Building view king official site",
+    "Hotel Metro New York \"Empire State Building\" view room category official site",
+    "The Ritz-Carlton New York NoMad address 1185 Avenue of the Americas OR \"Broadway\" 28th Street official",
+    "Westin New York Grand Central suite Empire State Building view room name official; Hyatt Herald Square \"Empire State Building View\" room",
+    "ModernHaus SoHo OR \"Gansevoort Park\" OR \"Hotel Chelsea\" OR \"Freehand\" room \"Empire State Building view\" official rooms",
+    "hotel New York rooms page \"Empire State Building View\" King OR Queen OR Suite -Langham -Archer",
+    "Executive Hotel Le Soleil New York \"Empire View\" Queen Room official"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 47,
+    "error": false
+  },
+  "outcome": "drafted",
+  "reason": "Started by hand for Empire State Building."
+}

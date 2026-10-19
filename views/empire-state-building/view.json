@@ -1,0 +1,134 @@
+{
+  "slug": "empire-state-building",
+  "order": 12,
+  "landmark": "Empire State Building",
+  "landmarkInText": "the Empire State Building",
+  "city": "New York",
+  "region": "New York",
+  "country": "United States",
+  "coords": { "lat": 40.7484, "lng": -73.9857 },
+  "checked": "2026-10",
+  "title": "Hotels with an Empire State Building view: which room to book",
+  "metaDescription": "Three Manhattan hotels with Empire State Building view rooms, the exact room category to book at each, and the look-alike rooms to skip.",
+  "h1": "Hotels with an Empire State Building view, and which room to book",
+  "dek": "Three hotels in Manhattan. For each one we list the exact room categories sold with the view, and the look-alike rooms that are sold without it.",
+  "teaser": "From a plain king room named for the view to suites that list it only in a view line.",
+  "photo": {
+    "commons": [
+      { "file": "File:Empire State Building July 2023.jpg", "alt": "The Empire State Building in New York in daylight" },
+      { "file": "File:Empire State Building 2022.jpg", "alt": "The Empire State Building in New York in daylight" },
+      { "file": "File:NYC - Looking toward Empire State Building - daytime.jpg", "alt": "The Empire State Building seen across Manhattan in daylight" }
+    ]
+  },
+  "shortAnswer": [
+    { "label": "Most view categories", "hotel": "the-langham-new-york", "room": "Club One-Bedroom Empire State View Suite" },
+    { "label": "A king room, named for it", "hotel": "archer-hotel-new-york", "room": "Archer King Empire View" },
+    { "label": "View listed for the suite", "hotel": "ritz-carlton-new-york-nomad", "room": "Madison Suite" }
+  ],
+  "decoder": [
+    {
+      "left": "Archer King",
+      "right": "Archer King Empire View",
+      "text": "The Archer Hotel sells a king room twice. Only the one with Empire View in the name is the view room; the plain Archer King has no view named on the hotel's rooms page."
+    },
+    {
+      "left": "Junior Suite",
+      "right": "Club Junior Empire State View Suite",
+      "text": "At The Langham the plain Junior Suite is described with views of Fifth Avenue and Midtown Manhattan. The Club Junior suite is the one that names the building."
+    },
+    {
+      "left": "Liberty Suite",
+      "right": "Madison Suite",
+      "text": "At The Ritz-Carlton NoMad, Marriott's view line for the Madison Suite names the Empire State Building. The Liberty Suite's view line says only Downtown Manhattan."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "the-langham-new-york",
+      "name": "The Langham, New York",
+      "where": "400 Fifth Avenue",
+      "level": "listed",
+      "book": [
+        { "room": "Club Junior Empire State View Suite" },
+        { "room": "Club One-Bedroom Empire State View Suite" },
+        { "room": "Empire State Presidential Suite" }
+      ],
+      "skip": [
+        { "room": "Superior Room", "note": "Sold without a view named." },
+        { "room": "Deluxe Room", "note": "Sold without a view named." },
+        { "room": "Junior Suite", "note": "Described with views of Fifth Avenue and Midtown Manhattan." }
+      ],
+      "notes": [
+        "Megi Vorera says the hotel has 14 suites with up-close Empire State Building views."
+      ],
+      "sources": [
+        { "label": "the hotel's own site", "url": "https://www.langhamhotels.com/en/the-langham/new-york/stay/suites/" },
+        { "label": "Megi Vorera", "url": "https://megivorera.com/best-nyc-hotels-with-empire-state-building-views/" }
+      ],
+      "query": "The Langham New York Fifth Avenue"
+    },
+    {
+      "id": "archer-hotel-new-york",
+      "name": "Archer Hotel New York",
+      "where": "45 West 38th Street",
+      "level": "listed",
+      "book": [
+        { "room": "Archer King Empire View" },
+        { "room": "Double Double Empire View" }
+      ],
+      "skip": [
+        { "room": "Archer King", "note": "Sold without a view named." },
+        { "room": "Classic King", "note": "Sold without a view named." },
+        { "room": "Classic Queen", "note": "Sold without a view named." },
+        { "room": "Double Double", "note": "Sold without a view named." }
+      ],
+      "sources": [
+        { "label": "the hotel's own site", "url": "https://archerhotel.com/new-york/rooms" },
+        { "label": "Megi Vorera", "url": "https://megivorera.com/best-nyc-hotels-with-empire-state-building-views/" }
+      ],
+      "query": "Archer Hotel New York"
+    },
+    {
+      "id": "ritz-carlton-new-york-nomad",
+      "name": "The Ritz-Carlton New York, NoMad",
+      "where": "25 W 28th St.",
+      "level": "listed",
+      "book": [
+        { "room": "Madison Suite" },
+        { "room": "Two-Bedroom Fifth Avenue Penthouse" },
+        { "room": "The Ritz-Carlton Suite", "note": "Marriott's description speaks of views from the Empire State Building, but its view line says only Downtown Manhattan. Ask the hotel." }
+      ],
+      "skip": [
+        { "room": "Liberty Suite", "note": "Marriott's view line says Downtown Manhattan." },
+        { "room": "Two-Bedroom Executive Penthouse", "note": "Marriott's view line names One World Trade and the Statue of Liberty." },
+        { "room": "One-Bedroom Penthouse", "note": "Marriott's view line names One World Trade and the Statue of Liberty." }
+      ],
+      "sources": [
+        { "label": "Marriott", "url": "https://www.marriott.com/luxury/explore-luxury-suites/ritz-carlton-nomad" },
+        { "label": "Time Out", "url": "https://timeout.com/newyork/hotels/the-ritz-carlton-new-york-nomad" },
+        { "label": "Megi Vorera", "url": "https://megivorera.com/best-nyc-hotels-with-empire-state-building-views/" }
+      ],
+      "query": "The Ritz-Carlton New York NoMad"
+    }
+  ],
+  "alternatives": [
+    {
+      "title": "No view room? Try a rooftop",
+      "text": "Oyster names the rooftop bar at Hotel Metro for close views of the Empire State Building, and says it is only open seasonally. It is a shared space, not a room."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which New York hotels sell rooms with an Empire State Building view?",
+      "a": "Of the hotels we checked in October 2026: The Langham sells suites with Empire State View in the name, the Archer Hotel sells two Empire View rooms, and The Ritz-Carlton NoMad lists the building in the view line of its Madison Suite."
+    },
+    {
+      "q": "Does every room at these hotels see the Empire State Building?",
+      "a": "No. At the Archer only the two Empire View categories are named for it, and at The Langham the Superior, Deluxe and plain Junior Suite categories do not name it. Book the exact category listed above."
+    },
+    {
+      "q": "Is a Fifth Avenue or Midtown view the same as an Empire State Building view?",
+      "a": "No. The Langham describes its plain Junior Suite with views of Fifth Avenue and Midtown Manhattan, and sells the Empire State View suites as separate categories."
+    }
+  ]
+}

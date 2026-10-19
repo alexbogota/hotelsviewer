@@ -1,4 +1,13 @@
 {
-  "drafts": [],
+  "drafts": [
+    {
+      "date": "2026-10-19",
+      "slug": "empire-state-building",
+      "qid": "Q9188",
+      "title": "Hotels with an Empire State Building view, and which room to book",
+      "hotels": 3,
+      "rooms": 8
+    }
+  ],
   "attempts": {}
 }
