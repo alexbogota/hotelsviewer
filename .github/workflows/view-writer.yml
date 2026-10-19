@@ -18,7 +18,7 @@ on:
   workflow_dispatch:
     inputs:
       slug:
-        description: 'Place to write (slug from data/view-candidates.json). Empty = the next place by page views.'
+        description: 'Places to write, separated by commas (slugs from data/view-candidates.json). Empty = the next place by page views.'
         required: false
         default: ''
         type: string
@@ -32,9 +32,27 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # One place or a batch: "a,b,c" becomes one job per place, run one after another (each reads the state the previous one saved).
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      slugs: ${{ steps.list.outputs.slugs }}
+    steps:
+      - id: list
+        env:
+          SLUGS: ${{ inputs.slug }}
+        run: |
+          echo "slugs=$(node -e 'const s=(process.env.SLUGS||"").split(",").map(x=>x.trim()).filter(Boolean);console.log(JSON.stringify(s.length?s:[""]))')" >> "$GITHUB_OUTPUT"
+
   view:
+    needs: plan
     runs-on: ubuntu-latest
     timeout-minutes: 75
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        slug: ${{ fromJSON(needs.plan.outputs.slugs) }}
     steps:
       - name: Get the code
         uses: actions/checkout@v4
@@ -57,7 +75,7 @@ jobs:
       - name: Is there a place to write, and which?
         id: gate
         env:
-          ONLY_SLUG: ${{ inputs.slug }}
+          ONLY_SLUG: ${{ matrix.slug }}
         run: node scripts/view-tools.mjs gate
 
       - name: Check the subscription token
@@ -133,7 +151,7 @@ jobs:
         if: always() && steps.gate.outputs.run == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: view-draft
+          name: view-draft-${{ matrix.slug || 'next' }}
           retention-days: 3
           path: |
             drafts/views/
