@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-19",
+  "slug": "st-peter-s-basilica",
+  "fetched": [
+    {
+      "url": "https://www.expedia.com/Rome-Hotels-Hotel-Gravina-San-Pietro.h4443663.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.expedia.com/Rome-Hotels-St-Peters-View.h8115370.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.bed-and-breakfast.it/en/amp/latium/vatican-vista-bed-and-breakfast-roma/22929",
+      "chars": 472,
+      "blocked": false,
+      "head": "**Room category names:** The page does not name any room categories. It describes \"Individual rooms\" and an \"apartment\" but gives no formal category names. **Street address:** Piaz"
+    },
+    {
+      "url": "https://www.starhotels.com/en/hotels/rome/starhotels-michelangelo",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.oyster.com/rome/hotels/residenza-paolo-vi/",
+      "chars": 1359,
+      "blocked": false,
+      "head": "**Room categories (as written on the page):** - \"Maderno Deluxe Room\" - \"Standard Rooms\" - \"Junior Suites\" - \"Deluxe Superior Rooms\" **Street address:** Via Paolo VI 29, Vaticano-P"
+    },
+    {
+      "url": "https://hotels.com/ho381260/hotel-gravina-san-pietro-rome-italy",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://ca.hotels.com/ho456864",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://ca.hotels.com/es/ho284039/residenza-paolo-vi-roma-italia",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.travelocity.com/Rome-Hotels-Hotel-Gravina-San-Pietro.h4443663.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.expedia.com/Rome-Hotels-St-Peters-View.h8115370.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://insidethevatican.com/magazine/culture/friar-tuck/staying-and-eating-near-the-most-famous-basilica-in-the-world/",
+      "chars": 626,
+      "blocked": false,
+      "head": "**Hotel named on the page:** Relais Vatican View - **Street address:** Not given. The page gives only the website, www.vaticanview.com. - **Rooms or terraces facing St. Peter's or "
+    },
+    {
+      "url": "https://www.oyster.com/rome/hotels/starhotels-michelangelo-rome/",
+      "chars": 765,
+      "blocked": false,
+      "head": "**Room categories:** \"Classic\" \"Superior\" \"Deluxe\" \"Executive\" \"Junior Suites\" \"Suites\" **Street address:** Via della Stazione di San Pietro 14, Rome, Italy **Star count:** None st"
+    },
+    {
+      "url": "https://www.oyster.com/rome/hotels/hotel-atlante-star/",
+      "chars": 679,
+      "blocked": false,
+      "head": "**Room categories:** The page does not name any room categories. It mentions \"suites\" only in general terms, as in \"suites add jetted tubs.\" **Address:** Via Giovanni Vitelleschi n"
+    },
+    {
+      "url": "https://www.vaticanview.com",
+      "chars": 38,
+      "blocked": true,
+      "head": "unable to get local issuer certificate"
+    },
+    {
+      "url": "https://www.oyster.com/rome/hotels/relais-vatican-view",
+      "chars": 481,
+      "blocked": false,
+      "head": "**Room categories:** The page does not name any room categories. It mentions only \"rooms and suites\" in general terms. **Street address:** Via del Mascherino, 34, Rome, Italy **Sta"
+    }
+  ],
+  "searches": [
+    "hotels with St. Peter's Basilica view room Vatican",
+    "hotel room with view of St Peter's Basilica dome Rome",
+    "Hotel Gravina San Pietro official site rooms junior suite St. Peter view",
+    "Residenza Paolo VI official site rooms St. Peter's Square",
+    "Starhotels Michelangelo Rome official site rooms St. Peter's view",
+    "Relais Vatican View Rome official site rooms",
+    "Hotel Gravina San Pietro Via della Cava Aurelia 17 Rome hotel website rooms",
+    "Starhotels Michelangelo Rome room categories dome view Superior Deluxe",
+    "Rome hotel room \"Dome View\" St. Peter's Basilica room category book",
+    "Hotel Bramante Rome St. Peter's dome view room terrace official site",
+    "Hotel Atlante Star Vatican rooms St. Peter's view official site"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 32,
+    "error": false
+  },
+  "outcome": "unverified",
+  "reason": "few hotels here could be proved. Relais Vatican View: insidethevatican.com says its deluxe suite alone has a view of St. Peter's cupola (reported only, no category name confirmed). Residenza Paolo VI, Starhotels Michelangelo, Hotel Atlante Star and Vatican Vista B&B say some rooms see the dome but name no view category. Hotel Gravina San Pietro lists a Junior Suite (St. Peter View), but only on booking sites that blocked the fetch (HTTP 429, timeouts); its own site was not found. St Peter's View was blocked too. Retry later."
+}
