@@ -1,0 +1,11 @@
+{
+  "about": "Настройки автора видов: workflow «View writer» (.github/workflows/view-writer.yml), программа scripts/view-tools.mjs, правила для автора docs/view-writer.md. Автор берёт следующее место со статусом new из data/view-candidates.json, исследует отели и кладёт черновик вида на ветку drafts. Сайт он не трогает: публикует только Claude после вашего «ок». Поля: enabled = включён ли автор (false: программа ничего не пишет); maxPending = сколько черновиков может ждать вашего «ок», если ждут столько или больше, новый не пишется (экономит лимит подписки); expireDays = через сколько дней невыложенный черновик перестаёт считаться ждущим; model = модель Claude: sonnet (по умолчанию), haiku (проще и дешевле по лимиту) или opus (сильнее, дороже); maxTurns = потолок шагов автора за один запуск; branch = ветка для черновиков; skipNear = пропускать места рядом с уже готовым видом (true); maxAttempts = сколько раз пробовать одно место, после этого оно получает status rejected с причиной (так одно трудное место не съедает весь лимит). Токен подписки Claude (не API, платить за запросы не нужно) лежит в секрете GitHub CLAUDE_CODE_OAUTH_TOKEN. Как часто запускать: расписание в .github/workflows/view-writer.yml (сейчас только кнопкой).",
+  "enabled": true,
+  "maxPending": 2,
+  "expireDays": 14,
+  "model": "sonnet",
+  "maxTurns": 90,
+  "branch": "drafts",
+  "skipNear": true,
+  "maxAttempts": 2
+}

@@ -4,7 +4,7 @@ import { mkdtempSync, mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { checkView, checkEvidence, parseTranscript, urlKey, norm, isBookingHost, isBookingLabel, hostOf } from './lib/view-check.mjs';
-import { buildPrompt, checkDraft, gateDecision, notesProblems, patchCandidateText, patchPublishedViews, pickCandidate, readSiteViews, researchSection, verifyPhotos, waitingDrafts } from './view-tools.mjs';
+import { buildPrompt, checkDraft, gateDecision, lastResult, notesProblems, resultHint, patchCandidateText, patchPublishedViews, pickCandidate, readSiteViews, researchSection, verifyPhotos, waitingDrafts } from './view-tools.mjs';
 
 let n = 0;
 const tests = [];
@@ -255,6 +255,17 @@ test('helpers: booking hosts and labels, normalisation', () => {
   assert.ok(isBookingLabel('Hotels.com') && isBookingLabel('Trip.com') && !isBookingLabel('Trip101') && !isBookingLabel('Oyster'));
   assert.equal(hostOf('https://www.Oyster.com/x'), 'oyster.com');
   assert.equal(norm('  “Fountain”  View — King *'), '"fountain" view - king');
+});
+
+test('lastResult and resultHint read how the writer run ended', () => {
+  const ok = [{ type: 'assistant' }, { type: 'result', subtype: 'success', is_error: false, num_turns: 41, result: 'Angkor Wat, 5 hotels' }].map((l) => JSON.stringify(l)).join('\n');
+  assert.equal(lastResult(ok).num_turns, 41);
+  assert.equal(resultHint(lastResult(ok)), '');
+  assert.ok(resultHint(lastResult(JSON.stringify({ type: 'result', subtype: 'error_max_turns', is_error: true }))).includes('maxTurns'));
+  assert.ok(resultHint({ type: 'result', subtype: 'success', is_error: true, result: 'Invalid OAuth token' }).includes('setup-token'));
+  assert.ok(resultHint({ type: 'result', subtype: 'error', is_error: true, result: 'Usage limit reached' }).includes('лимит'));
+  assert.ok(resultHint(null).includes('не вернул итог'));
+  assert.equal(lastResult('not json\n'), null);
 });
 
 // ---- the gate and the list ----

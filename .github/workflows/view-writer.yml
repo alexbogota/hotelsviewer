@@ -1,0 +1,150 @@
+name: View writer
+
+# By hand: GitHub -> Actions -> "View writer" -> Run workflow. Leave "slug" empty to take the next place (the most viewed one with status new
+# in data/view-candidates.json), or type a slug to write that place.
+# Claude (the owner's subscription token, no paid API) researches the hotels of ONE place and writes a draft view: view.json, evidence.json
+# (every room name, address, star count and distance with the quote it was copied from) and notes.md for the owner.
+# Rules for the writer: docs/view-writer.md. Checks, the next place and the state: scripts/view-tools.mjs (no AI in it).
+# Nothing is published and the site is not touched: the draft is saved on the "drafts" branch (a separate branch, so no deploy).
+#
+# To read it: open the run, scroll down to "Summary". To publish: tell Claude in the chat «ок, вид <slug>» (it runs `node scripts/view-tools.mjs take <slug>`).
+#
+# One-time setup: the secret CLAUDE_CODE_OAUTH_TOKEN (GitHub -> Settings -> Secrets and variables -> Actions): run `claude setup-token` on your computer.
+#
+# Daily running (not switched on yet, on purpose: first look at a few drafts). To switch it on, remove the # in front of the next two lines:
+# on:
+#   schedule: [{ cron: '40 11 * * *' }] # 11:40 UTC = 06:40 Bogota
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Place to write (slug from data/view-candidates.json). Empty = the next place by page views.'
+        required: false
+        default: ''
+        type: string
+
+# Writing is needed to save the draft on the "drafts" branch and the place's status in data/view-candidates.json (a commit with [skip ci]).
+permissions:
+  contents: write
+
+concurrency:
+  group: view-writer
+  cancel-in-progress: false
+
+jobs:
+  view:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+        with:
+          # Always the newest main.
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # No packages to install: the scripts use only what Node.js brings. If the checks themselves are broken, nothing is written.
+      - name: Test the checks
+        run: npm run test:views
+
+      - name: Get the state of earlier drafts
+        run: bash scripts/view-branch.sh load
+
+      - name: Is there a place to write, and which?
+        id: gate
+        env:
+          ONLY_SLUG: ${{ inputs.slug }}
+        run: node scripts/view-tools.mjs gate
+
+      - name: Check the subscription token
+        if: steps.gate.outputs.run == 'true'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+            echo "::error::The secret CLAUDE_CODE_OAUTH_TOKEN is not set (GitHub -> Settings -> Secrets and variables -> Actions)."
+            exit 1
+          fi
+
+      - name: Install Claude Code
+        if: steps.gate.outputs.run == 'true'
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Build the instructions for the writer
+        if: steps.gate.outputs.run == 'true'
+        run: node scripts/view-tools.mjs prompt
+
+      # The whole conversation goes to drafts/views-transcript.jsonl: the checks use it to prove that every quote in evidence.json
+      # is in a page the writer really opened. If the writer stops with an error, the next steps still run and report it.
+      - name: Write the draft with Claude
+        id: writer
+        if: steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        timeout-minutes: 55
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          MODEL: ${{ steps.gate.outputs.model }}
+          MAX_TURNS: ${{ steps.gate.outputs.maxTurns }}
+        run: |
+          claude -p "$(cat drafts/views-prompt.txt)" \
+            --model "$MODEL" \
+            --max-turns "$MAX_TURNS" \
+            --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(node scripts/view-tools.mjs check:*)" \
+            --output-format stream-json --verbose \
+            > drafts/views-transcript.jsonl
+
+      - name: What the writer run reported
+        if: always() && steps.gate.outputs.run == 'true'
+        run: node scripts/view-tools.mjs result
+
+      # The strict check: shape, rules, every quote found on a page the writer opened, photos, nothing changed outside drafts/.
+      - name: Check the draft and write the Summary
+        id: finish
+        if: always() && steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        run: node scripts/view-tools.mjs finish
+
+      - name: Save the draft on the drafts branch
+        if: always() && steps.gate.outputs.run == 'true'
+        run: bash scripts/view-branch.sh save
+
+      # drafted / rejected (or given up after several tries) is written into the place's status; the commit has [skip ci], so no deploy starts.
+      - name: Mark the place in the candidate list
+        if: always() && steps.gate.outputs.run == 'true'
+        run: |
+          node scripts/view-tools.mjs mark
+          if [ -n "$(git status --porcelain data/view-candidates.json)" ]; then
+            npm run check:candidates
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/view-candidates.json
+            git commit -m "View writer: update the status of a place [skip ci]"
+            git pull --rebase origin ${{ github.event.repository.default_branch }}
+            git push origin HEAD:${{ github.event.repository.default_branch }}
+          else
+            echo "The candidate list did not change."
+          fi
+
+      - name: Keep the files for download
+        if: always() && steps.gate.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: view-draft
+          retention-days: 3
+          path: |
+            drafts/views/
+            drafts/views-run.json
+            drafts/views-state.json
+            drafts/views-transcript.jsonl
+          if-no-files-found: ignore
+
+      # The run is red when the draft did not pass the checks, so it is not missed.
+      - name: Stop with red if the draft failed
+        if: always() && steps.gate.outputs.run == 'true' && steps.finish.outcome == 'failure'
+        run: |
+          echo "::error::The draft did not pass the checks: see the Summary of this run."
+          exit 1

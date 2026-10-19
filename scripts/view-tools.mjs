@@ -8,6 +8,7 @@
 //   node scripts/view-tools.mjs check <dir> [--transcript file]
 //                                                  checks a draft folder: prints OK or the problems (exit 1). With a transcript it also proves
 //                                                  that every quote was found on a page the writer really opened.
+//   node scripts/view-tools.mjs result             after the writer: what the run itself reported (turns, errors) with a hint in the Summary
 //   node scripts/view-tools.mjs finish             after the writer: full check, photo check, state, text for the run Summary
 //   node scripts/view-tools.mjs mark               puts the result (drafted / rejected) into data/view-candidates.json
 //   node scripts/view-tools.mjs list               drafts waiting on the "drafts" branch
@@ -252,6 +253,31 @@ export function patchPublishedViews(text, slugs) {
   return text.replace(/^(\s*"publishedViews": ).*$/m, `$1${JSON.stringify([...slugs].sort())},`);
 }
 
+// The last line of `claude -p --output-format stream-json` is a "result" object: how the run ended.
+export function lastResult(text) {
+  let last = null;
+  for (const line of String(text).split('\n')) {
+    const t = line.trim();
+    if (!t.startsWith('{')) continue;
+    try {
+      const o = JSON.parse(t);
+      if (o?.type === 'result') last = o;
+    } catch {}
+  }
+  return last;
+}
+
+// Plain-Russian hint for the owner when the writer itself stopped with an error.
+export function resultHint(r) {
+  if (!r) return 'Автор не вернул итог запуска: он не стартовал или процесс оборвался. Откройте шаг «Write the draft with Claude» и прочитайте последние строки.';
+  const text = `${r.subtype ?? ''} ${typeof r.result === 'string' ? r.result : ''}`;
+  if (r.subtype === 'error_max_turns') return 'Автору не хватило шагов (maxTurns в data/view-writer.json). Место остаётся в очереди, запуск можно повторить.';
+  if (!r.is_error && r.subtype === 'success') return '';
+  if (/authenticat|log ?in|oauth|401|invalid.*token|expired/i.test(text)) return 'Похоже, токен подписки устарел или неверный. Выполните `claude setup-token` на своём компьютере и замените секрет CLAUDE_CODE_OAUTH_TOKEN.';
+  if (/limit|usage|quota|429|rate/i.test(text)) return 'Похоже, лимит подписки на сегодня исчерпан. Запуск можно повторить позже.';
+  return `Автор закончил с ошибкой (${r.subtype ?? 'неизвестно'}). Подробности в шаге «Write the draft with Claude».`;
+}
+
 // ---------- commands ----------
 
 async function cmdGate() {
@@ -286,6 +312,16 @@ async function cmdPrompt() {
 function flag(name) {
   const i = process.argv.indexOf(name);
   return i >= 0 ? process.argv[i + 1] : '';
+}
+
+async function cmdResult() {
+  const tfile = join(ROOT, 'drafts/views-transcript.jsonl');
+  const text = existsSync(tfile) ? await readFile(tfile, 'utf8') : '';
+  const r = lastResult(text);
+  if (r) console.log(`The writer ended with: ${r.subtype}, turns ${r.num_turns ?? '?'}, error ${Boolean(r.is_error)}${typeof r.result === 'string' ? ', last words: ' + r.result.replace(/\s+/g, ' ').slice(0, 300) : ''}`);
+  else console.log('The transcript has no result line.');
+  const hint = resultHint(r);
+  if (hint) summary(`## Автор видов: что сказал сам запуск\n\n${hint}`);
 }
 
 async function cmdCheck() {
@@ -499,10 +535,10 @@ async function cmdTake() {
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const commands = { gate: cmdGate, prompt: cmdPrompt, check: cmdCheck, finish: cmdFinish, mark: cmdMark, list: cmdList, take: cmdTake };
+  const commands = { gate: cmdGate, prompt: cmdPrompt, check: cmdCheck, result: cmdResult, finish: cmdFinish, mark: cmdMark, list: cmdList, take: cmdTake };
   const cmd = commands[process.argv[2]];
   if (!cmd) {
-    console.error('Usage: node scripts/view-tools.mjs gate|prompt|check|finish|mark|list|take');
+    console.error('Usage: node scripts/view-tools.mjs gate|prompt|check|result|finish|mark|list|take');
     process.exit(2);
   }
   cmd().catch((e) => {
