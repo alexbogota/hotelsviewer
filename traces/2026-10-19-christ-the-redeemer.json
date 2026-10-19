@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-19",
+  "slug": "christ-the-redeemer",
+  "fetched": [
+    {
+      "url": "https://mgallery.accor.com/en/hotels/A1X5/rooms.html",
+      "chars": 957,
+      "blocked": false,
+      "head": "**Room categories (as written on the page):** 1. \"SUPERIOR ROOM - 1 king size bed, view of Santa Teresa or garden\" 2. \"DELUXE SERENITY - 1 king-size bed, bathtub, views of Santa Te"
+    },
+    {
+      "url": "https://www.greatsmallhotels.com/rio-de-janeiro-boutique-hotels/hotel-santa-teresa",
+      "chars": 975,
+      "blocked": false,
+      "head": "**Room categories:** \"Superior Rooms\" \"Deluxe Rooms\" \"Junior Suite\" \"Master Suite\" \"Loft Suite\" The gallery captions also use \"Superior Room\" and \"Deluxe Room with balcony.\" **Stre"
+    },
+    {
+      "url": "https://www.theworlds50best.com/discovery/Establishments/Brazil/Rio-de-Janeiro/Janeiro-Hotel.html",
+      "chars": 1018,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.theworlds50best.com/discovery/Establishments/Brazil/Rio-de-Janeiro/"
+    },
+    {
+      "url": "https://www.greatsmallhotels.com/rio-de-janeiro-boutique-hotels/hotel-santa-teresa",
+      "chars": 2939,
+      "blocked": false,
+      "head": "The page doesn't mention Corcovado. It mentions Christ the Redeemer twice. Several sentences exceed the 125-character limit, so I've split them into exact excerpts, marked with ell"
+    },
+    {
+      "url": "https://uk.hotels.com/de1646870/hotels-near-christ-the-redeemer-alto-da-boa-vista-brazil/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.the50.com/discovery/Establishments/Brazil/Rio-de-Janeiro/Janeiro-Hotel.html",
+      "chars": 462,
+      "blocked": false,
+      "head": "**Room categories:** The page doesn't list any room category names. It only states \"Rooms: 51\" and that there are \"just five rooms per floor.\" **Street address:** Av. Delfim Moreir"
+    },
+    {
+      "url": "https://mgallery.accor.com/en/hotels/A1X5/rooms.html",
+      "chars": 238,
+      "blocked": false,
+      "head": "The page contains only one match, for the **Royal Suite**: > \"ROYAL SUITE - 1 king size bed, living room, and balcony with panoramic view\" The page does not mention the statue of C"
+    },
+    {
+      "url": "https://i-escape.com/hotel-santa-teresa",
+      "chars": 1335,
+      "blocked": false,
+      "head": "**Room and suite names:** - \"Superior Rooms\" - \"Deluxe Rooms\" - \"Junior Suites\" - \"Design Loft Suites\" - \"Royal Suite\" **Sentences on Christ the Redeemer, Corcovado, or room views:"
+    },
+    {
+      "url": "https://www.hilton.com/en/hotels/riobrhi-hilton-rio-de-janeiro-copacabana/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.expedia.com/Christ-The-Redeemer-Rio-de-Janeiro.d502459.Vacation-Attraction",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.janeirohotel.com/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://m.booking.com/hotel/br/casa-caminho-do-corcovado.en-gb.html",
+      "chars": 891,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://m.booking.com/hotel/br/casa-caminho-do-corcovado.en-gb.html Redirect UR"
+    },
+    {
+      "url": "https://www.jojohotels.com/rio-de-janeiro",
+      "chars": 40,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.jojohotels.com"
+    },
+    {
+      "url": "https://www.mrandmrssmith.com/luxury-hotels/janeiro-hotel",
+      "chars": 1153,
+      "blocked": false,
+      "head": "**Room and suite names:** - \"Ocean Front Suite\" - \"Master Suite\" - \"Deluxe Room\" - \"Deluxe Rooms\" **Street address:** Avenida Delfim Moreira 696, Leblon, Rio de Janeiro 22441-000, "
+    },
+    {
+      "url": "https://guide.michelin.com/mo/en/hotels-stays/rio-de-janeiro/janeiro-hotel-15278",
+      "chars": 364,
+      "blocked": false,
+      "head": "The web page content didn't come through. The section between the markers is empty, so I have no sentences to check for mentions of Christ the Redeemer, the statue, Corcovado, or a"
+    },
+    {
+      "url": "https://www.expedia.com/h25026439.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.expedia.co.kr/Rio-De-Janeiro-Hotels-Santa-Teresa-Hotel-RJ-MGallery.h2226944.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.booking.com/hotel/br/casa-caminho-do-corcovado.en-gb.html",
+      "chars": 286,
+      "blocked": false,
+      "head": "The page content you provided appears to be empty, so I can't find any room type names, sentences about Christ the Redeemer, Corcovado, the statue, or a view, or a street address. "
+    },
+    {
+      "url": "https://www.janeirohotel.com/",
+      "chars": 363,
+      "blocked": false,
+      "head": "The web page content you included appears to be empty; only the separators came through. Please paste the page text and I'll list the room or suite names exactly as written, quote "
+    },
+    {
+      "url": "https://www.santateresahotel.com.br/",
+      "chars": 49,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.santateresahotel.com.br"
+    },
+    {
+      "url": "https://www.portobay.com/en/hotels/rio-de-janeiro/porto-bay-rio-internacional/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.praiaipanemahotel.com.br/",
+      "chars": 50,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.praiaipanemahotel.com.br"
+    },
+    {
+      "url": "https://www.lesjardinsderio.com/",
+      "chars": 366,
+      "blocked": false,
+      "head": "**Room categories:** None appear on this page. **Christ the Redeemer, statue, or Corcovado:** Not mentioned. **Sentences mentioning a view:** - \"Nous proposons des terrains constru"
+    },
+    {
+      "url": "https://www.riobutiquesuites.com/",
+      "chars": 46,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.riobutiquesuites.com"
+    }
+  ],
+  "searches": [
+    "hotels with Christ the Redeemer view room Rio de Janeiro",
+    "Christ the Redeemer view suite hotel Rio Corcovado room",
+    "Hotel Santa Teresa Rio Christ the Redeemer view room category",
+    "Rio de Janeiro hotel room \"Christ the Redeemer view\" category name Santa Teresa Cosme Velho Corcovado hotel rooms",
+    "Janeiro Hotel Leblon rooms Christ the Redeemer view room type",
+    "Jo&Joe Rio de Janeiro Largo do Boticario rooms Christ the Redeemer",
+    "Casa Caminho do Corcovado rooms suite view Christ the Redeemer official site",
+    "Rio hotel Cosme Velho Corcovado view room \"Christ the Redeemer\" suite category booking"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 38,
+    "error": false
+  },
+  "outcome": "unverified",
+  "reason": "Two hotels could be checked: Hotel Santa Teresa (MGallery, Rua Almirante Alexandrino 660; greatsmallhotels.com ties its Loft Suite to a view of the Christ the Redeemer statue) and Janeiro Hotel (Leblon; Mr & Mrs Smith names a Master Suite with a bath view of the statue). Blocked or unusable: Hilton Copacabana (429), Expedia (429), Booking.com (empty page), Janeiro's own rooms page (404), Porto Bay (404), Praia Ipanema and Rio Boutique Suites (no site found), Jo&Joe and Casa Caminho (no official site; listings name no statue view)."
+}
