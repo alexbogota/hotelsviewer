@@ -97,3 +97,7 @@ Newest at the bottom. START.md keeps only the result.
 - The checks prove that the writer SAW a name on a page; the page text itself is what a small model read for the writer. A mis-copied name would pass if the small model mis-copied it. The spot check above is the way to measure this: do it for each of the first drafts.
 - Cost: one run is about 5 minutes and one subscription session of Claude Code; with `maxPending: 2` the queue stops at two drafts waiting for the owner's ok, so a daily schedule cannot run away.
 
+
+## 19 October 2026: new home page, search for any place, public repository
+- The site is now "find a hotel anywhere, and the room with the view where we know it". Search for any place (Photon suggestions, Stay22 map by coordinates, zoom 11), our views shown when they are within 40 km. No page per city. Home: search on the left, panel of our views on the right, filtered while typing, plus the visitor's own recent searches kept in their browser only.
+- The free GitHub Actions minutes of the account (shared with saveandplay) ran out on 19 October; runs were blocked, nothing was charged. The owner made the repositories public, where Actions minutes are free. Rule: no long runs in private repositories; think of saveandplay's minutes before adding any scheduled or long workflow. The view writer stays manual.
