@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-19",
+  "slug": "arc-de-triomphe",
+  "fetched": [
+    {
+      "url": "https://www.hotelsbarriere.com/en/paris/le-fouquets/exception-suites/arc-de-triomphe-suite.html",
+      "chars": 667,
+      "blocked": false,
+      "head": "**Room and suite names:** \"Arc de Triomphe Signature Suite\" \"Our Harcourt Paris Suite\" **Street address:** The page does not state a street address. It gives only the location \"Par"
+    },
+    {
+      "url": "https://www.hotelsbarriere.com/en/paris/le-fouquets/exception-suites/harcourt-paris-suite.html",
+      "chars": 174,
+      "blocked": false,
+      "head": "\"Harcourt Paris Suite\" The page's view-related sentence is: \"The charming bedroom offers the most beautiful view of the Arc de Triomphe from a prominent bull's-eye window.\""
+    },
+    {
+      "url": "https://www.marriott.com/hotels/hotel-rooms/parwg-renaissance-paris-arc-de-triomphe-hotel/",
+      "chars": 828,
+      "blocked": false,
+      "head": "**Room category names** (as written on the page): - \"Roooms, Family Rooms, Suites\" (page heading, as written) - \"New rooms\" - \"Suites With a View\" - \"Family & Friends Room\" - \"Fami"
+    },
+    {
+      "url": "https://www.travelguys.fr/en/2022/04/04/renaissance-paris-arc-de-triomphe-almost-a-faultless-performance/",
+      "chars": 474,
+      "blocked": false,
+      "head": "**Arc de Triomphe Suite (with terrace):** - \"During one of my stays, I had the pleasure of being upgraded to the Arc de Triomphe Suite with terrace.\" - \"The suite is located on the"
+    },
+    {
+      "url": "https://www.leadersmag.com/issues/2013.2_Apr/PDFs/LEADERS-Hotel-Raphael-Paris.pdf",
+      "chars": 664,
+      "blocked": false,
+      "head": "I couldn't find any of the requested text in the content you provided. It's a raw, compressed PDF file (binary streams, font tables, and image data), and it's truncated before the "
+    },
+    {
+      "url": "https://www.hotelsbarriere.com/en/paris/le-fouquets.html",
+      "chars": 895,
+      "blocked": false,
+      "head": "**Street address:** 46, Avenue George V, 75008 Paris The page states the address in the Practical Informations section, with the street number and street on one line and the postco"
+    },
+    {
+      "url": "https://www.raphael-paris.com/en/rooms-and-suites/",
+      "chars": 43,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.raphael-paris.com"
+    },
+    {
+      "url": "https://www.raphael-hotel.com/en/pagex/.443.html",
+      "chars": 473,
+      "blocked": false,
+      "head": "**Room and suite category names (exactly as written):** - \"Suite Parisienne\" - \"Suite Baverez\" The page names no other room or suite categories. It mentions \"connecting rooms\" and "
+    },
+    {
+      "url": "https://www.sofitel-paris-arc-de-triomphe.com/en/rooms-suites",
+      "chars": 59,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.sofitel-paris-arc-de-triomphe.com"
+    },
+    {
+      "url": "https://www.hotel-laventure.com/",
+      "chars": 15,
+      "blocked": true,
+      "head": "read ECONNRESET"
+    },
+    {
+      "url": "https://whatahotel.com/hotels/4878/Sofitel-Paris-Arc-de-Triomphe.html",
+      "chars": 351,
+      "blocked": false,
+      "head": "**Room request:** \"Request a room facing the Arc de Triomphe for stunning views, especially during the evening illumination.\" **Room categories:** Luxury Rooms, Junior Suites, Prem"
+    },
+    {
+      "url": "https://www.hotel-laventure.com/en/",
+      "chars": 37,
+      "blocked": true,
+      "head": "connect ECONNREFUSED 213.186.33.5:443"
+    },
+    {
+      "url": "https://www.raphael-hotel.com/en/",
+      "chars": 600,
+      "blocked": false,
+      "head": "**Room and suite category names:** - \"Rooms with Parisian charm\" - \"Unique suites\" **Sentence mentioning the Arc de Triomphe** (truncated to stay under the 125-character limit; the"
+    },
+    {
+      "url": "https://www.journalduluxe.fr/fr/lifestyle/le-rooftop-du-raphael-accueille-la-maison-lanson",
+      "chars": 467,
+      "blocked": false,
+      "head": "The article names the suite and its terrace view in one sentence, which exceeds the 125-character limit. I've split it into two exact quotes, each under the limit: - \"La suite la p"
+    },
+    {
+      "url": "https://www.hotel-napoleon.com/en/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.expedia.com/Paris-Hotels-Renaissance-Paris-Arc-De-Triomphe-Hotel.h2431617.Hotel-Reviews?rm1=a2",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.parisinsidersguide.com/hotel-napoleon-paris.html",
+      "chars": 460,
+      "blocked": false,
+      "head": "**Imperial Suite and terrace (Hotel Napoleon Paris):** \"the top‑floor Imperial Suite has a private terrace with sweeping views of the Arc de Triomphe and the Eiffel Tower.\" **Stree"
+    },
+    {
+      "url": "https://www.travelocity.com/Paris-Hotels-Hotel-Napoleon.h13819.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://oyster.com/paris/hotels/hotel-napoleon-paris",
+      "chars": 476,
+      "blocked": false,
+      "head": "**Street address:** \"40 avenue de Friedland, Paris, France\" The page doesn't include a postcode, so I can't provide one. **Imperial Suite:** \"the Imperial Suite also has a dining a"
+    },
+    {
+      "url": "https://www.hotels.com/ho110405",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=20&format=json&srsearch=Arc de Triomphe Paris daytime",
+      "chars": 1773,
+      "blocked": false,
+      "head": "\"File:Arc de Triomphe daytime.jpg\" \"File:Arch of triumph Paris France.jpg\" \"File:Erica (Thorp) de Berry to Thorp family, 7 July 1918 (9e2fc6f5-51b5-43a5-8f48-49e00ae06fe8).jpg\" \"Fi"
+    },
+    {
+      "url": "https://www.marriott.com/hotels/hotel-rooms/parwg-renaissance-paris-arc-de-triomphe-hotel/",
+      "chars": 245,
+      "blocked": false,
+      "head": "**Hotel name:** \"Renaissance Paris Arc de Triomphe Hotel\" **5-star statement:** The page says, \"At our 5-star Parisian hotel,\" in its pet-friendly section. The full sentence is lon"
+    }
+  ],
+  "searches": [
+    "hotels with Arc de Triomphe view room",
+    "Arc de Triomphe view room suite hotel Paris",
+    "Hotel Raphael Paris Arc de Triomphe suite terrace 17 avenue Kléber",
+    "Paris hotel room facing Arc de Triomphe avenue Foch Wagram window view rooms",
+    "Sofitel Paris Arc de Triomphe rooms Luxury Room view Arc de Triomphe Prestige Suite rue de Presbourg",
+    "Hôtel L'Aventure Paris Arc de Triomphe rooms view window Vincent Darré",
+    "Paris luxury hotel suite with Arc de Triomphe view room category name booking",
+    "Hotel Napoleon Paris Imperial Suite Arc de Triomphe view rooms list"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 38,
+    "error": false
+  },
+  "outcome": "drafted",
+  "reason": "Started by hand for Arc de Triomphe."
+}

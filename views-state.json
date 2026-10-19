@@ -39,6 +39,14 @@
       "title": "Hotels with a Golden Gate Bridge view, and which room to book",
       "hotels": 4,
       "rooms": 4
+    },
+    {
+      "date": "2026-10-19",
+      "slug": "arc-de-triomphe",
+      "qid": "Q64436",
+      "title": "Hotels with an Arc de Triomphe view, and which room to book",
+      "hotels": 3,
+      "rooms": 4
     }
   ],
   "attempts": {
