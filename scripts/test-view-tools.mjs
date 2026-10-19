@@ -412,16 +412,16 @@ test('checkDraft end to end: a good draft, a rejected one, and tampering', async
 
 test('buildTrace tells opened pages from blocked ones, and traceLine says it in Russian', () => {
   const lines = [
-    { type: 'assistant', message: { content: [{ type: 'tool_use', id: 'a', name: 'WebFetch', input: { url: 'https://www.langhamhotels.com/rooms' } }, { type: 'tool_use', id: 'b', name: 'WebFetch', input: { url: 'https://www.expedia.com/h' } }, { type: 'tool_use', id: 'c', name: 'WebFetch', input: { url: 'https://www.hotels.com/ho1' } }, { type: 'tool_use', id: 'd', name: 'WebSearch', input: { query: 'hotels with empire state building view' } }] } },
-    { type: 'user', message: { content: [{ type: 'tool_result', tool_use_id: 'a', content: 'Deluxe Room with Empire State Building View. '.repeat(20) }, { type: 'tool_result', tool_use_id: 'b', content: 'Request failed with status code 403', is_error: true }, { type: 'tool_result', tool_use_id: 'c', content: 'Access denied. Please verify you are a human. '.repeat(10) }] } },
+    { type: 'assistant', message: { content: [{ type: 'tool_use', id: 'a', name: 'WebFetch', input: { url: 'https://www.langhamhotels.com/rooms' } }, { type: 'tool_use', id: 'b', name: 'WebFetch', input: { url: 'https://www.expedia.com/h' } }, { type: 'tool_use', id: 'c', name: 'WebFetch', input: { url: 'https://www.hotels.com/ho1' } }, { type: 'tool_use', id: 'd', name: 'WebSearch', input: { query: 'hotels with empire state building view' } }, { type: 'tool_use', id: 'e', name: 'WebFetch', input: { url: 'https://www.langhamhotels.com/gone' } }] } },
+    { type: 'user', message: { content: [{ type: 'tool_result', tool_use_id: 'a', content: 'Deluxe Room with Empire State Building View. '.repeat(20) }, { type: 'tool_result', tool_use_id: 'b', content: 'Request failed with status code 403', is_error: true }, { type: 'tool_result', tool_use_id: 'c', content: 'Access denied. Please verify you are a human. '.repeat(10) }, { type: 'tool_result', tool_use_id: 'e', content: 'The server returned HTTP 404 Not Found. The response body was not retrieved. '.repeat(3) }] } },
     { type: 'result', subtype: 'success', num_turns: 12, is_error: false },
   ];
   const trace = buildTrace(lines.map((l) => JSON.stringify(l)).join('\n'));
-  assert.deepEqual(trace.fetched.map((f) => f.blocked), [false, true, true]);
+  assert.deepEqual(trace.fetched.map((f) => f.blocked), [false, true, true, true]);
   assert.deepEqual(trace.searches, ['hotels with empire state building view']);
   assert.equal(trace.ended.turns, 12);
   const line = traceLine(trace);
-  assert.ok(line.includes('открыл страниц: 3') && line.includes('прочитано 1') && line.includes('expedia.com') && line.includes('hotels.com') && !line.includes('langhamhotels'));
+  assert.ok(line.includes('открыл страниц: 4') && line.includes('прочитано 1') && line.includes('expedia.com') && line.includes('hotels.com') && line.includes('langhamhotels.com'));
 });
 
 test('researchSection lists every page of every hotel', () => {

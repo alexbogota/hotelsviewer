@@ -353,7 +353,7 @@ export function buildTrace(text) {
   const fetched = parseTranscript(text).slice(0, 80).map((f) => ({
     url: f.url,
     chars: f.text.length,
-    blocked: f.error || f.text.trim().length < 150 || /\b(403|forbidden|access denied|captcha|blocked|timed? ?out|unable to fetch|request failed|ECONN\w*)\b/i.test(f.text.slice(0, 400)),
+    blocked: f.error || f.text.trim().length < 150 || /\b(HTTP [45]\d\d|40[0-9]|429|forbidden|access denied|captcha|blocked|timed? ?out|unable to fetch|request failed|ECONN\w*)\b/i.test(f.text.slice(0, 400)),
     head: f.text.replace(/\s+/g, ' ').slice(0, 180),
   }));
   const r = lastResult(text);
