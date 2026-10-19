@@ -1,0 +1,187 @@
+{
+  "slug": "brooklyn-bridge",
+  "order": 12,
+  "landmark": "Brooklyn Bridge",
+  "landmarkInText": "the Brooklyn Bridge",
+  "city": "New York",
+  "region": "New York",
+  "country": "United States",
+  "coords": {
+    "lat": 40.7057,
+    "lng": -73.9963
+  },
+  "checked": "2026-10",
+  "title": "Hotels with a Brooklyn Bridge view: which room to book",
+  "metaDescription": "Three New York hotels with Brooklyn Bridge view rooms, the exact room category to book at each, and the city view and Manhattan view rooms to skip.",
+  "h1": "Hotels with a Brooklyn Bridge view, and which room to book",
+  "dek": "Three hotels in New York City and Brooklyn. For each one we list the exact room category sold with the bridge in view, and the city, Manhattan and Brooklyn view rooms that look elsewhere.",
+  "teaser": "From a suite named for the bridge to a room named Brooklyn View that does not name the bridge.",
+  "photo": {
+    "commons": [
+      {
+        "file": "File:Brooklyn Bridge and the Lower Manhattan skyline from Pebble Beach, New York.jpg",
+        "alt": "The Brooklyn Bridge and the Lower Manhattan skyline in daylight"
+      },
+      {
+        "file": "File:Brooklyn Bridge 3627 (2623080685).jpg",
+        "alt": "The Brooklyn Bridge in New York City"
+      }
+    ]
+  },
+  "shortAnswer": [
+    {
+      "label": "Most view categories",
+      "hotel": "33-hotel-seaport",
+      "room": "Brooklyn Bridge-View Room - One King Bed"
+    },
+    {
+      "label": "One category, named for it",
+      "hotel": "m-social-hotel-new-york-downtown",
+      "room": "Panoramic Corner King - Brooklyn Bridge View"
+    },
+    {
+      "label": "A suite with a bridge view",
+      "hotel": "1-hotel-brooklyn-bridge",
+      "room": "Bridge Studio Suite"
+    }
+  ],
+  "decoder": [
+    {
+      "left": "Premier King - Brooklyn View",
+      "right": "Panoramic Corner King - Brooklyn Bridge View",
+      "text": "At M Social Hotel New York Downtown the Premier King is named Brooklyn View, not Brooklyn Bridge View. Only the Panoramic Corner King names the bridge."
+    },
+    {
+      "left": "Front Street-View Room - One King Bed",
+      "right": "Brooklyn Bridge-View Room - One King Bed",
+      "text": "At 33 Hotel the Front Street-View and Courtyard-View rooms are sold next to the Brooklyn Bridge-View room. Costco Travel describes the bridge room's arched window as facing the bridge."
+    },
+    {
+      "left": "Skyline 1 Bedroom Suite",
+      "right": "Bridge Studio Suite",
+      "text": "At 1 Hotel Brooklyn Bridge the Skyline 1 Bedroom Suite is sold with unobstructed views of Manhattan. The Bridge Studio Suite is the one the hotel describes as overlooking the Brooklyn Bridge."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "1-hotel-brooklyn-bridge",
+      "name": "1 Hotel Brooklyn Bridge",
+      "where": "60 Furman Street, Brooklyn",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Bridge Studio Suite"
+        },
+        {
+          "room": "Neighboring Bridge Suite & King",
+          "note": "The hotel's own page says it has views of the iconic bridge."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Skyline 1 Bedroom Suite",
+          "note": "Sold with unobstructed views of Manhattan, not the bridge."
+        }
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://1hotels.com/brooklyn-bridge/hotel-rooms"
+        }
+      ],
+      "query": "1 Hotel Brooklyn Bridge New York"
+    },
+    {
+      "id": "m-social-hotel-new-york-downtown",
+      "name": "M Social Hotel New York Downtown",
+      "where": "55 Church St, New York",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Panoramic Corner King - Brooklyn Bridge View"
+        },
+        {
+          "room": "Skyline Suite",
+          "note": "Its view tag reads Overlooking Manhattan and Brooklyn Bridges, so the name does not promise the bridge. Ask which way it faces."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Premier King - Brooklyn View",
+          "note": "Named Brooklyn View, not Brooklyn Bridge View."
+        },
+        {
+          "room": "Deluxe King - City View",
+          "note": "Sold with a city view."
+        },
+        {
+          "room": "Corner King Junior Suite - Hudson River View",
+          "note": "Sold with a Hudson River view."
+        }
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.msocial.com/en/new-york/m-social-hotel-new-york-downtown/rooms"
+        }
+      ],
+      "query": "M Social Hotel New York Downtown"
+    },
+    {
+      "id": "33-hotel-seaport",
+      "name": "33 Hotel",
+      "where": "33 Peck Slip, New York",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Brooklyn Bridge-View Room - One King Bed"
+        },
+        {
+          "room": "Brooklyn Bridge-View Room - Two Queen Beds"
+        },
+        {
+          "room": "Brooklyn Bridge-View Suite with Terrace - One King Bed",
+          "note": "The name says Brooklyn Bridge-View and Terrace."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Front Street-View Room - One King Bed",
+          "note": "Sold with a Front Street view."
+        },
+        {
+          "room": "Courtyard-View Room - One King Bed",
+          "note": "Sold with a courtyard view."
+        },
+        {
+          "room": "Peck Slip Street-View Room - One King Bed",
+          "note": "Sold with a Peck Slip Street view."
+        }
+      ],
+      "notes": [
+        "Costco Travel describes the bridge room as having an arched window with views of the Brooklyn Bridge."
+      ],
+      "sources": [
+        {
+          "label": "Costco Travel"
+        }
+      ],
+      "query": "33 Hotel New York City Seaport"
+    }
+  ],
+  "alternatives": [],
+  "faq": [
+    {
+      "q": "Which hotels sell rooms with a Brooklyn Bridge view?",
+      "a": "Of the hotels we checked in October 2026: 1 Hotel Brooklyn Bridge, M Social Hotel New York Downtown and 33 Hotel. Each sells at least one room category with the bridge named in its name or in its own description."
+    },
+    {
+      "q": "Why is a Premier King at M Social not a bridge view?",
+      "a": "The hotel's own room list names it Premier King - Brooklyn View, not Brooklyn Bridge View. Only the Panoramic Corner King - Brooklyn Bridge View names the bridge at that hotel, so book that name."
+    },
+    {
+      "q": "Does 1 Hotel Brooklyn Bridge sell a room with the bridge in view?",
+      "a": "Yes. The Bridge Studio Suite is described on the hotel's own page as overlooking the Brooklyn Bridge, and the Neighboring Bridge Suite & King is described as having views of the iconic bridge. The Skyline 1 Bedroom Suite is sold with views of Manhattan instead."
+    }
+  ]
+}

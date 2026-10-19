@@ -55,6 +55,14 @@
       "title": "Hotels with an Alhambra view, and which room to book",
       "hotels": 3,
       "rooms": 6
+    },
+    {
+      "date": "2026-10-19",
+      "slug": "brooklyn-bridge",
+      "qid": "Q125006",
+      "title": "Hotels with a Brooklyn Bridge view, and which room to book",
+      "hotels": 3,
+      "rooms": 7
     }
   ],
   "attempts": {

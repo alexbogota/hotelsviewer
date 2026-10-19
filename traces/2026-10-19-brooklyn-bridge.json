@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-19",
+  "slug": "brooklyn-bridge",
+  "fetched": [
+    {
+      "url": "https://1hotels.com/brooklyn-bridge/hotel-rooms",
+      "chars": 296,
+      "blocked": false,
+      "head": "\"Dumbo King\" \"Dumbo 2 Beds\" \"Park King\" \"Liberty King\" \"Bridge King\" \"Harbor 2 Beds\" \"Liberty Studio Suite\" \"Bridge Studio Suite\" \"Skyline 1 Bedroom Suite\" \"Riverhouse\" **Address:*"
+    },
+    {
+      "url": "https://1hotels.com/brooklyn-bridge/hotel-rooms/neighboring-bridge-suite-king",
+      "chars": 250,
+      "blocked": false,
+      "head": "**Room category:** \"Neighboring Bridge Suite & King\" **Bridge view sentence:** The full sentence is longer than the 125-character limit, so here is the opening portion: \"With views"
+    },
+    {
+      "url": "https://www.suiteness.com/suites/united-states/new-york/new-york/1-hotel-brooklyn-bridge/bridge-studio-suite",
+      "chars": 260,
+      "blocked": false,
+      "head": "**Room category name:** \"Bridge Studio Suite\" **Bridge view sentence:** \"Enjoy spectacular Brooklyn Bridge views and relax in the luxurious mahogany, glass, and marble master bathr"
+    },
+    {
+      "url": "https://triptins.com/hotels-brooklyn-bridge-view/",
+      "chars": 1934,
+      "blocked": false,
+      "head": "**Note:** The page does not give street addresses for any hotel. 1. **33 Seaport Hotel**: Address not given. \"The best ones have terraces that look out onto the Seaport, or command"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=20&format=json&srsearch=Brooklyn Bridge daytime",
+      "chars": 1561,
+      "blocked": false,
+      "head": "File:Brooklyn Bridge and the Lower Manhattan skyline from Pebble Beach, New York.jpg File:Brooklyn medical journal. (IA brooklynmedicalj6189medi).pdf File:Report of Brigadier-Gener"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/nycbb-new-york-marriott-at-the-brooklyn-bridge/rooms/",
+      "chars": 234,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. Retry-After: 28800 The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub"
+    },
+    {
+      "url": "https://www.msocialhotels.com/new-york-downtown/rooms",
+      "chars": 384,
+      "blocked": false,
+      "head": "The web page content didn't come through. Only the label \"Web page content:\" appears, with nothing after it, so I can't find any room categories, a street address, or a sentence me"
+    },
+    {
+      "url": "https://1hotels.com/brooklyn-bridge/hotel-rooms/skyline-1-bedroom-suite",
+      "chars": 149,
+      "blocked": true,
+      "head": "The sentence describing the view is: \"Welcome to your retreat with unobstructed views of Manhattan.\" The room category is \"Skyline 1 Bedroom Suite.\""
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Brooklyn_Bridge",
+      "chars": 1666,
+      "blocked": false,
+      "head": "File:Brooklyn_Bridge_and_the_Lower_Manhattan_skyline_from_Pebble_Beach,_New_York.jpg File:New_York_City_03.jpg File:Pont_de_Brooklyn_de_nuit_-_Octobre_2008_edit.jpg File:Snowy_Broo"
+    },
+    {
+      "url": "https://www.msocial.com/en/new-york/m-social-hotel-new-york-downtown/rooms",
+      "chars": 1081,
+      "blocked": false,
+      "head": "\"Panoramic Corner King - Brooklyn Bridge View\" (View: \"Brooklyn Bridge View\") \"Deluxe King - City View\" (View: \"City View\") \"Deluxe Corner King - City View\" (View: \"City View\") \"De"
+    },
+    {
+      "url": "https://www.costcotravel.com/hotels/new-york/new-york-city/NewYork33Seaport",
+      "chars": 853,
+      "blocked": false,
+      "head": "**Room categories:** \"Courtyard-View Room - One King Bed\" \"Front Street-View Room - One King Bed\" \"Front Street-View Room - Two Queen Beds\" \"Brooklyn Bridge-View Room - One King Be"
+    },
+    {
+      "url": "https://www.travelocity.com/es/New-York-Hoteles-33-Hotel.h20868143.Opiniones-Hotel",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.costcotravel.com/hotels/new-york/new-york-city/NewYork33Seaport",
+      "chars": 52,
+      "blocked": true,
+      "head": "The hotel is **\"33 Hotel, New York City, Seaport\"**."
+    },
+    {
+      "url": "https://1hotels.com/brooklyn-bridge/hotel-rooms/bridge-studio-suite",
+      "chars": 140,
+      "blocked": true,
+      "head": "The sentence describing the view is: \"Welcome to your retreat overlooking the Brooklyn Bridge.\" The room category is \"Bridge Studio Suite.\""
+    },
+    {
+      "url": "https://1hotels.com/brooklyn-bridge/hotel-rooms",
+      "chars": 75,
+      "blocked": true,
+      "head": "The hotel is **\"1 Hotel Brooklyn Bridge\"**, as shown in the page's heading."
+    },
+    {
+      "url": "https://www.msocial.com/en/new-york/m-social-hotel-new-york-downtown/rooms",
+      "chars": 52,
+      "blocked": true,
+      "head": "The hotel is **\"M Social Hotel New York Downtown\"**."
+    }
+  ],
+  "searches": [
+    "hotels with Brooklyn Bridge view room",
+    "Brooklyn Bridge view room hotel Brooklyn Bridge view suite",
+    "M Social New York Downtown rooms Brooklyn Bridge view king junior suite",
+    "Moxy New York Downtown rooms Brooklyn Bridge view king room",
+    "33 Seaport Hotel rooms Brooklyn Bridge view room category"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 34,
+    "error": false
+  },
+  "outcome": "drafted",
+  "reason": "Started by hand for Brooklyn Bridge."
+}
