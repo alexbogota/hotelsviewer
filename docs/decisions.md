@@ -35,3 +35,13 @@ Newest at the bottom. START.md keeps only the result.
 - 11 obviously unsuitable places were set to `rejected` by hand (a shipwreck, a destroyed statue, whole seas and whole islands, a statue inside a museum).
 - The run log of GitHub is not reachable from the chat workspace (403); problems are therefore also printed as annotations (`::warning::`, `::error::`), which the API returns.
 
+## 18 October 2026: a wide first batch instead of one view a day
+- The owner's reasoning: with few countries on the site, a visitor is unlikely to find the place they are looking for. So eight views in seven new countries were built at once (Colosseum, Acropolis, Taj Mahal, Mount Fuji, Burj Khalifa, Sagrada Família, Hagia Sophia, Pyramids of Giza), kept on branch `drafts` until the owner says ok.
+- Same rules as before: a room name is only copied from a listing or an official page, never inferred. Where a booking site's view tag and the room name disagree (Hotels.com "City view" for a Hagia Sophia room, Expedia "Garden view" for a pyramid room), the name is the promise and the page says so.
+- A hotel with no category sold with the view, but a guide that says its rooms have it, is `reported`, never `listed` (Palace Downtown, Four Seasons Sultanahmet, Le Méridien Pyramids, Hostemplo Sagrada Familia, Konansou).
+- Star counts are shown only when a page states a number of stars. "Property class" on Expedia and Hotels.com is not treated as stars.
+- Where there are few honest hotels (Sagrada Família: three), the page has three hotels. Hotels that see the landmark only from a rooftop go to the "No view room? Try a rooftop" block, not to the list.
+- Apartments and rentals are not listed; they are not hotel room categories.
+- The page slug follows the wording hotels sell: `pyramids-of-giza` for the candidate "Great Pyramid of Giza", `acropolis` for "Parthenon".
+- The home page no longer says how many views there are.
+
