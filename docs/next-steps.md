@@ -31,6 +31,8 @@ Room names exactly as sold, no invented data, no prices, booking sites named but
 - "Coming next" block on the home page, to show the site is growing (useful for affiliate applications).
 - Replace the Booking search links in `src/data/links.json` with affiliate links when a programme approves.
 - Telegram channel and email subscription (`site.ts` fields exist).
+- Search with a fallback (owner's idea, 18 Oct: "don't lose a visitor who looks for Bogotá"): a "Where are you going?" box on the home page. City we have: go to its city page. City we don't have: send the visitor to the booking site's search for that city with our referral code, built from the same `template` in `src/data/links.json` (so it follows any provider switch), labelled "not checked by us". Client-side only: no new indexed pages. Do NOT create pages for cities without a verified view (thin pages, against the rule in CLAUDE.md). Optional later: count the cities people type, to choose the next views. Build after the first affiliate approvals so it uses the best link.
+- Visitors from Google who search "hotels in <city>" cannot be caught without a page for that city. That only works where a verified view exists (city page + Stay22 map).
 
 ## Opening prompt for a new chat or Claude Code
 "Продолжаем проект hotelsviewer.com (репозиторий alexbogota/hotelsviewer). Прочитай START.md и docs/next-steps.md и скажи, что делаем следующим шагом: следующий шаг: ежедневный автор видов (список кандидатов уже готов)."
