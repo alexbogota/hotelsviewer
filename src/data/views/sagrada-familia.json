@@ -1,0 +1,179 @@
+{
+  "slug": "sagrada-familia",
+  "order": 9,
+  "landmark": "Sagrada Família",
+  "landmarkInText": "the Sagrada Família",
+  "city": "Barcelona",
+  "region": "Catalonia",
+  "country": "Spain",
+  "coords": { "lat": 41.4036, "lng": 2.1744 },
+  "checked": "2026-10",
+  "title": "Hotels with a Sagrada Família view: which room to book",
+  "metaDescription": "Three Barcelona hotels with Sagrada Família view rooms, the exact room category to book, and the courtyard, terrace and city rooms that don't come with it.",
+  "h1": "Hotels with a Sagrada Família view, and which room to book",
+  "dek": "Three Barcelona hotels near the Sagrada Família. For each one we list the exact room category sold with the view, and the courtyard, terrace and city rooms to skip.",
+  "teaser": "Few rooms see the church, and some hotels named after it only see it from the roof.",
+  "photo": {
+    "commons": [
+      { "file": "File:Sagrada Familia 01.jpg", "alt": "The Sagrada Família in Barcelona in daylight" },
+      { "file": "File:Sagrada Familia 02.jpg", "alt": "The Sagrada Família in Barcelona in daylight" },
+      { "file": "File:Sagrada Familia March 2015-10a.jpg", "alt": "The Sagrada Família in Barcelona in daylight" }
+    ]
+  },
+  "shortAnswer": [
+    { "label": "View in the room name", "hotel": "sercotel-rosellon", "room": "Classic Double Room (Sagrada Familia View)" },
+    { "label": "Across the Diagonal", "hotel": "eurostars-monumental", "room": "Double or Twin Sagrada Familia View" },
+    { "label": "Ask for the upper floor", "hotel": "boutique-hostemplo-sagrada-familia", "room": "Junior Suite" }
+  ],
+  "decoder": [
+    {
+      "left": "Classic Double Room",
+      "right": "Classic Double Room (Sagrada Familia View)",
+      "text": "At the Sercotel Rosellón the Classic Double is sold two ways. Only the one with the view in its name is for the church. The Basic rooms look onto an inner courtyard."
+    },
+    {
+      "left": "Double Room, Terrace",
+      "right": "Double or Twin Sagrada Familia View",
+      "text": "At the Eurostars Monumental a terrace is not the view. Hotels.com lists one Double Room, Terrace with a city view, and the church only in the two categories that name it."
+    },
+    {
+      "left": "Hotel Sagrada Familia",
+      "right": "a room with the view",
+      "text": "The Hotel Sagrada Familia on Carrer de Còrsega sells Single, Double, Triple and Superior rooms, none with a view named. The hotel puts the church behind its rooftop terrace."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "sercotel-rosellon",
+      "name": "Sercotel Rosellón",
+      "where": "Carrer del Rosselló 390",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Classic Double Room (Sagrada Familia View)",
+          "note": "The hotel's own site sells it as “Classic Double with Sagrada Familia Views”."
+        },
+        {
+          "room": "Classic Twin Room (Sagrada Familia View)",
+          "note": "The hotel's own site sells it as “Classic Twin with Sagrada Familia Views”."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Basic Room",
+          "note": "Sold with a view of an inner courtyard."
+        },
+        {
+          "room": "Classic Double Room",
+          "note": "Sold without the church in the name."
+        },
+        {
+          "room": "Classic Twin Room",
+          "note": "Sold without the church in the name."
+        }
+      ],
+      "notes": [
+        "The hotel says many of its rooms have views of the Sagrada Família, but its room list names the view for only the two Classic categories. Third Eye Traveller advises booking a “Sagrada View” room or asking for that side of the building."
+      ],
+      "sources": [
+        { "label": "the hotel's own site", "url": "https://www.sercotelhoteles.com/en/sercotel/hotel-rosellon" },
+        { "label": "Hotels.com" },
+        { "label": "Third Eye Traveller", "url": "https://thirdeyetraveller.com/sercotel-rosellon-barcelona-review/" }
+      ],
+      "query": "Sercotel Rosellon Barcelona"
+    },
+    {
+      "id": "eurostars-monumental",
+      "name": "Eurostars Monumental",
+      "where": "Carrer del Consell de Cent 498-500",
+      "stars": 4,
+      "level": "listed",
+      "book": [
+        { "room": "Double or Twin Sagrada Familia View" },
+        {
+          "room": "Double or Twin room Sacred Family View (Individual Use)",
+          "note": "Sacred Family is Hotels.com's translation of the church's name."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Double Room, Terrace",
+          "note": "Hotels.com lists one with a city view, and another with no view named."
+        },
+        {
+          "room": "Standard Double or Twin Room",
+          "note": "Sold without the church in the name."
+        },
+        {
+          "room": "Double or Twin Room (with extra bed)",
+          "note": "Sold without the church in the name."
+        }
+      ],
+      "notes": [
+        "Barcelona Turisme puts the hotel about 400 m from the church, across the Diagonal. Forever Barcelona describes three suites with a private terrace overlooking the church, and What to Do in Barcelona recommends a Superior Room. Neither is a category on Hotels.com, so ask the hotel before booking one."
+      ],
+      "sources": [
+        { "label": "Hotels.com" },
+        { "label": "Barcelona Turisme", "url": "https://www.bcn.travel/?p=222922" },
+        { "label": "Forever Barcelona", "url": "https://www.foreverbarcelona.com/?p=13439" },
+        { "label": "What to Do in Barcelona", "url": "https://whattodoinbarcelona.com/best-hotels-near-la-sagrada-familia/" }
+      ],
+      "query": "Eurostars Monumental Barcelona"
+    },
+    {
+      "id": "boutique-hostemplo-sagrada-familia",
+      "name": "Boutique Hostemplo Sagrada Familia",
+      "where": "Passatge Gaiola 19",
+      "level": "reported",
+      "book": [
+        {
+          "room": "Junior Suite",
+          "note": "No category here is sold with the church in the name. What to Do in Barcelona says the Junior Suites on the upper level see it from the balcony, and a Hotels.com guest review mentions a view of the Sagrada Família for the suites. Ask which floor you will get."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Double or Twin Room, Balcony",
+          "note": "A balcony, with no view named."
+        },
+        {
+          "room": "Double or Twin Room, Terrace",
+          "note": "A terrace, with no view named."
+        },
+        {
+          "room": "Standard Double Room",
+          "note": "Sold without a view named."
+        }
+      ],
+      "sources": [
+        { "label": "Hotels.com" },
+        { "label": "What to Do in Barcelona", "url": "https://whattodoinbarcelona.com/best-hotels-near-la-sagrada-familia/" }
+      ],
+      "query": "Boutique Hostemplo Sagrada Familia"
+    }
+  ],
+  "alternatives": [
+    {
+      "title": "No view room? Try a rooftop",
+      "text": "The Hotel Sagrada Familia says its rooftop terrace has the Sagrada Família as a backdrop. What to Do in Barcelona says the same of the Radisson Blu 1882 and adds that neither hotel's bedrooms have the view."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which Barcelona hotels sell rooms with a Sagrada Família view?",
+      "a": "Of the hotels we checked in October 2026: Sercotel Rosellón and Eurostars Monumental sell categories with the Sagrada Familia in the name. The Boutique Hostemplo Sagrada Familia sells no such category, but a guide says its upper-level Junior Suites see the church from the balcony."
+    },
+    {
+      "q": "Does a hotel with “Sagrada Familia” in its name have the view?",
+      "a": "Not necessarily. The Hotel Sagrada Familia on Carrer de Còrsega sells Single, Double, Triple and Superior rooms with no view named, and shows the church from its rooftop terrace."
+    },
+    {
+      "q": "Which hotels see the church only from the roof?",
+      "a": "The Hotel Sagrada Familia and the Radisson Blu 1882. What to Do in Barcelona says their bedrooms don't have the view and the rooftop terraces do."
+    },
+    {
+      "q": "Is the Eurostars Monumental next to the church?",
+      "a": "No. Barcelona Turisme puts it about 400 m away, and Forever Barcelona says you cross the Diagonal to reach the church."
+    }
+  ]
+}
