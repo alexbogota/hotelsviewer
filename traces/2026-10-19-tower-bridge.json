@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-19",
+  "slug": "tower-bridge",
+  "fetched": [
+    {
+      "url": "https://thistle.com/the-tower/rooms",
+      "chars": 767,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.thistle.com/the-tower/rooms Redirect URL (from the server's Locatio"
+    },
+    {
+      "url": "https://www.fourseasons.com/towerbridge/accommodations/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.conferencehotelgroup.com/hotels/1524/The-Tower-Hotel",
+      "chars": 695,
+      "blocked": false,
+      "head": "\"Beaufort Suite\" \"Belfast Suite\" \"Bounty Suite\" \"Bridge Suite 1\" \"Bridge Suite 2\" \"Bridge Suites\" \"Britannia Suite\" \"Cutty Sark Suite\" \"Discovery Suite\" \"Fearless Suite\" \"Golden Hi"
+    },
+    {
+      "url": "https://www.towerhotellondon.com/rooms",
+      "chars": 231,
+      "blocked": false,
+      "head": "\"Standard Rooms\" \"Deluxe Rooms\" \"Superior Rooms\" \"Executive Bridge View Rooms\" \"Suites\" \"Family Rooms\" \"Accessible Double Room\" Address: St Katharine’s Way, London, E1W 1LD The pag"
+    },
+    {
+      "url": "https://fourseasons.com/tentrinity/accommodations",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.citizenm.com/hotels/europe/london/citizenm-tower-of-london",
+      "chars": 808,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.citizenm.com/hotels/europe/london/citizenm-tower-of-london Redirect"
+    },
+    {
+      "url": "https://lookup.hotels.com/ho224174/the-tower-hotel-london-united-kingdom",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.premierinn.com/gb/en/business-booker/hotels/england/greater-london/london/london-tower-bridge.html",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.fourseasons.com/preferredpartner/towerbridge/accommodations/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.marriott.com/brands/citizenm.mi",
+      "chars": 414,
+      "blocked": false,
+      "head": "No. The page doesn't list a citizenM hotel near the Tower of London, so I can't give a name or address. It also has no sentence about Tower Bridge views. The only hint is an image "
+    },
+    {
+      "url": "https://www.hilton.com/en/hotels/lonhhdt-doubletree-london-tower-of-london/rooms/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://uk.hotels.com/ho624374",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://guide.michelin.com/gb/en/hotels-stays/london/four-seasons-hotel-london-at-tower-bridge-10211",
+      "chars": 269,
+      "blocked": false,
+      "head": "The web page content you provided appears to be empty, so I can't find any sentences about views from the rooms or suites, a street address, or a star count. If you paste the page "
+    },
+    {
+      "url": "https://uk.hotels.com/ho224174/the-tower-hotel-london-united-kingdom",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.timeout.com/london/hotels/the-best-hotels-near-tower-bridge",
+      "chars": 771,
+      "blocked": false,
+      "head": "**Hotels on the page** (the page gives neighborhood labels, not street addresses): 1. The Chamberlain: Aldgate 2. DoubleTree by Hilton Hotel London - Tower of London: Tower Hill 3."
+    },
+    {
+      "url": "https://expedia.com/London-hotels-Tower-Suites-by-Blue-Orchid.h41549669.Hotel-information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.expedia.com/London-Hotels-The-Tower-Hotel.h2479.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.cityam.com/tower-suites/",
+      "chars": 276,
+      "blocked": false,
+      "head": "**Rooms overlook:** \"with sweeping room views spanning over the Tower of London and Tower Bridge.\" **Hotel name:** Tower Suites **Address:** The page doesn't give a street address."
+    },
+    {
+      "url": "https://www.grangehotels.com/grange-tower-bridge-hotel/",
+      "chars": 227,
+      "blocked": true,
+      "head": "The server returned HTTP 500 Internal Server Error. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an"
+    },
+    {
+      "url": "https://www.citizenm.com/destinations/london/tower-of-london-hotel",
+      "chars": 896,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.citizenm.com/destinations/london/tower-of-london-hotel Redirect URL"
+    },
+    {
+      "url": "https://www.thechamberlainhotel.com/rooms",
+      "chars": 38,
+      "blocked": true,
+      "head": "connect ECONNREFUSED 52.210.75.115:443"
+    },
+    {
+      "url": "https://www.towerhotellondon.com/",
+      "chars": 1345,
+      "blocked": false,
+      "head": "**Sentences mentioning views:** 1. \"Explore unrivalled views of Tower Bridge and discover London from a new perspective at The Tower Hotel.\" 2. \"Your authentic London experience be"
+    },
+    {
+      "url": "https://www.towerhotellondon.com/rooms",
+      "chars": 709,
+      "blocked": false,
+      "head": "**Room view sentences:** 1. Standard Double Room with Tower Bridge View (image caption): \"Wake up to a view of Tower Bridge\" 2. Executive Twin Tower Bridge View Room: \"Experience l"
+    },
+    {
+      "url": "https://www.fourseasons.com/content/fshr/pages/en/properties/tentrinity/accommodations.html",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://bookitbutton.booking.com/hotel/gb/tower-suites-by-blue-orchid-london.en-gb.html",
+      "chars": 966,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://bookitbutton.booking.com/hotel/gb/tower-suites-by-blue-orchid-london.en"
+    },
+    {
+      "url": "https://www.booking.com/hotel/gb/tower-suites-by-blue-orchid-london.en-gb.html",
+      "chars": 242,
+      "blocked": false,
+      "head": "The web page content didn't come through. Only the separator lines were included, so I can't find any room category names, street address, or star rating. Please paste the page tex"
+    }
+  ],
+  "searches": [
+    "hotels with Tower Bridge view room London",
+    "Tower Bridge view room hotel London official rooms suites",
+    "DoubleTree by Hilton Tower of London hotel rooms Tower Bridge view",
+    "London hotels Tower Bridge view rooms list guide",
+    "Four Seasons Hotel London at Tower Bridge Executive Bridge Suite rooms names",
+    "The Tower A Guoman Hotel London St Katharine's Way rooms bridge view room names",
+    "\"Tower Bridge view\" room London hotel category",
+    "Tower Suites London Tower Bridge view apartments hotel official site rooms",
+    "Grange Tower Bridge Hotel rooms view names Tower Bridge",
+    "Hotel Indigo London Tower Hill rooms view",
+    "DoubleTree London Tower of London official hilton page rooms view names",
+    "Tower Suites by Blue Orchid official website Minories suites Tower Bridge view names"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 45,
+    "error": false
+  },
+  "outcome": "unverified",
+  "reason": "Only one hotel could be proved. The Tower Hotel (St Katharine Way) names Tower Bridge View rooms on its own rooms page. Four Seasons at Tower Bridge blocked its own site (403) and booking pages timed out. Tower Suites by Blue Orchid has no own site in reach; Expedia gave 429. DoubleTree by Hilton blocked its own site (403). Hotel Indigo, Grange Tower Bridge and The Chamberlain gave no Tower Bridge room names."
+}
