@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-19",
+  "slug": "golden-gate-bridge",
+  "fetched": [
+    {
+      "url": "https://www.fairmont-san-francisco.com/accommodations/signature-golden-gate-suite/",
+      "chars": 357,
+      "blocked": false,
+      "head": "\"Signature Golden Gate Suite\" \"Penthouse Suite\" \"Fairmont Suite\" \"Tony Bennett Suite\" The page also lists these accommodation categories in its navigation menu: \"Guestrooms\" \"Suite"
+    },
+    {
+      "url": "https://www.argonauthotel.com/san-francisco-hotel-suites",
+      "chars": 229,
+      "blocked": false,
+      "head": "\"King One-Bedroom Suite\" \"Bay View One-Bedroom Suite\" \"Alcatraz Suite\" \"Argonaut Golden Gate One-Bedroom Suite\" **Address:** Argonaut Hotel, 495 Jefferson Street, San Francisco, CA"
+    },
+    {
+      "url": "https://www.suiteness.com/suites/us/san-francisco/loews-regency-san-francisco/golden-gate-suite",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.inspirato.com/destinations/san-francisco-california/residences/cavallo-point-contemporary-king-suite-golden-gate-view",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/rooms",
+      "chars": 404,
+      "blocked": false,
+      "head": "\"Bayview\" \"Bridgeview\" \"Windsor\" \"Pacific\" \"Union Square\" \"Golden Gate\" \"Chairman's Suite\" \"State Suite\" \"MacArthur Suite\" \"Studio Suite\" The page also names \"One-Bedroom Parkview "
+    },
+    {
+      "url": "https://www.choicehotels.com/hotel/CA004",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.fairmont-san-francisco.com/accommodations/signature-golden-gate-suite/",
+      "chars": 309,
+      "blocked": false,
+      "head": "The suite is on floors 10 through 23 of the Tower Building. The page describes its view in two places: - \"Take in the panoramic views of San Francisco landmarks like the Golden Gat"
+    },
+    {
+      "url": "https://www.argonauthotel.com/san-francisco-hotel-suites",
+      "chars": 511,
+      "blocked": false,
+      "head": "**Argonaut Golden Gate One-Bedroom Suite:** - \"Panoramic San Francisco Bay, Golden Gate Bridge, and Alcatraz Island views surround this oversized\" - \"Oversized bathroom with Jacuzz"
+    },
+    {
+      "url": "https://marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/rooms",
+      "chars": 613,
+      "blocked": false,
+      "head": "The page describes the Bridgeview Suite's view of the Golden Gate Bridge in this passage (quoted in two parts to stay under the 125-character limit): > \"Its premium corner location"
+    },
+    {
+      "url": "https://www.loewshotels.com/san-francisco-hotel/rooms-suites",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.cavallopoint.com/rooms/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.lodgeatthepresidio.com/rooms",
+      "chars": 774,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.lodgeatthepresidio.com/rooms Redirect URL (from the server's Locati"
+    },
+    {
+      "url": "https://www.presidiolodging.com/lodge-at-the-presidio/rooms",
+      "chars": 515,
+      "blocked": false,
+      "head": "**Room categories:** \"Standard Queen Room\" \"2 Queen Beds\" \"2 Queen Suite\" \"Standard King\" \"Deluxe King\" \"View King\" \"Junior King Suite\" **Golden Gate Bridge view references** (exce"
+    },
+    {
+      "url": "https://www.loewshotels.com/san-francisco-hotel",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.choicehotels.com/california/san-francisco/comfort-inn-hotels/ca004",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.cavallopoint.com/",
+      "chars": 285,
+      "blocked": false,
+      "head": "\"Contemporary Lodging\" \"Historic Lodging\" Golden Gate Bridge view sentence (shortened to meet the 125-character quote limit): \"Showcasing spectacular views of the Golden Gate Bridg"
+    },
+    {
+      "url": "https://www.loewshotels.com/san-francisco-hotel/accommodations",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.suiteness.com/suites/us/san-francisco/loews-regency-san-francisco/golden-gate-junior-suite",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://marriott.com/en-us/hotels/sfojw-jw-marriott-san-francisco-union-square/rooms",
+      "chars": 330,
+      "blocked": false,
+      "head": "\"Golden Gate View Room\" \"California Presidential Suite\" \"One Bedroom Suite\" \"Queen/Queen City View Guest Room\" Golden Gate View Room sentence: \"Boasting unrivaled views of the time"
+    },
+    {
+      "url": "https://www.fourseasons.com/embarcadero/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.fourseasons.com/preferredpartner/sanfrancisco/photos-and-videos/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.hilton.com/en/hotels/sfohdhh-hilton-san-francisco-union-square/rooms/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.lemeridien.com/hotels/sfoe-le-meridien-san-francisco/rooms",
+      "chars": 750,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.lemeridien.com/hotels/sfoe-le-meridien-san-francisco/rooms Redirect"
+    },
+    {
+      "url": "https://marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/rooms",
+      "chars": 517,
+      "blocked": false,
+      "head": "**Hotel name:** \"The Westin St. Francis San Francisco on Union Square\" **Sentence with \"Bridgeview Suite\":** The full sentence, which also mentions the Golden Gate Bridge, is longe"
+    },
+    {
+      "url": "https://marriott.com/en-us/hotels/sfojw-jw-marriott-san-francisco-union-square/rooms",
+      "chars": 92,
+      "blocked": true,
+      "head": "The hotel's name, as shown in the page heading, is: \"JW Marriott San Francisco Union Square\""
+    },
+    {
+      "url": "https://www.fairmont-san-francisco.com/accommodations/signature-golden-gate-suite/",
+      "chars": 248,
+      "blocked": false,
+      "head": "**Hotel name:** \"Fairmont San Francisco\" **Page title:** \"Signature Golden Gate Suite - Fairmont San Francisco\" The page has no sentence containing \"Signature Golden Gate Suite.\" T"
+    },
+    {
+      "url": "https://marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/rooms",
+      "chars": 649,
+      "blocked": false,
+      "head": "The paragraph is in the **Bridgeview** suite description. The sentence before \"Its premium corner location\" is: \"San Francisco's cosmopolitan culture is the focus of this two-bedro"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=20&format=json&srsearch=Golden%20Gate%20Bridge%20daytime",
+      "chars": 1320,
+      "blocked": false,
+      "head": "File:Golden Gate daytime.jpg File:Golden Gate Bridge on misty day with traffic (Unsplash).jpg File:The natural man; a romance of the golden age (IA naturalmanromanc00lloyiala).pdf "
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:Golden_Gate_Bridge&cmtype=file&cmlimit=50&format=json",
+      "chars": 196,
+      "blocked": false,
+      "head": "File:De-Golden Gate Bridge.ogg File:AK Navigator Inbound Golden Gate.jpg File:Golden Gate Bridge Above the Fog from Battery Spencer.jpg File:Golden Gate Bridge Emerging from Fog, S"
+    }
+  ],
+  "searches": [
+    "hotels with Golden Gate Bridge view room",
+    "Golden Gate Bridge view room suite hotel San Francisco",
+    "Golden Gate Bridge view hotel rooms Marina district official site",
+    "San Francisco hotel room \"Golden Gate\" view named room category Hilton Le Meridien Loews Regency"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 42,
+    "error": false
+  },
+  "outcome": "drafted",
+  "reason": "Started by hand for Golden Gate Bridge."
+}

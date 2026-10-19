@@ -1,0 +1,24 @@
+[
+  { "hotel": "fairmont-san-francisco", "field": "hotel.name", "value": "Fairmont San Francisco", "url": "https://www.fairmont-san-francisco.com/accommodations/signature-golden-gate-suite/", "quote": "Hotel name: \"Fairmont San Francisco\"" },
+  { "hotel": "fairmont-san-francisco", "field": "hotel.where", "value": "950 Mason Street", "url": "https://www.fairmont-san-francisco.com/accommodations/signature-golden-gate-suite/", "quote": "Address: 950 Mason Street, San Francisco, California 94108, United States" },
+  { "hotel": "fairmont-san-francisco", "field": "hotel.level", "value": "listed", "url": "https://www.fairmont-san-francisco.com/accommodations/signature-golden-gate-suite/", "quote": "\"Signature Golden Gate Suite\"" },
+  { "hotel": "fairmont-san-francisco", "field": "room.book", "value": "Signature Golden Gate Suite", "url": "https://www.fairmont-san-francisco.com/accommodations/signature-golden-gate-suite/", "quote": "\"Signature Golden Gate Suite\"" },
+  { "hotel": "fairmont-san-francisco", "field": "room.skip", "value": "Fairmont Suite", "url": "https://www.fairmont-san-francisco.com/accommodations/signature-golden-gate-suite/", "quote": "\"Fairmont Suite\"" },
+
+  { "hotel": "argonaut-hotel", "field": "hotel.name", "value": "Argonaut Hotel", "url": "https://www.argonauthotel.com/san-francisco-hotel-suites", "quote": "Argonaut Hotel, 495 Jefferson Street, San Francisco, CA 94109" },
+  { "hotel": "argonaut-hotel", "field": "hotel.where", "value": "495 Jefferson Street", "url": "https://www.argonauthotel.com/san-francisco-hotel-suites", "quote": "Argonaut Hotel, 495 Jefferson Street, San Francisco, CA 94109" },
+  { "hotel": "argonaut-hotel", "field": "hotel.level", "value": "listed", "url": "https://www.argonauthotel.com/san-francisco-hotel-suites", "quote": "Argonaut Golden Gate One-Bedroom Suite" },
+  { "hotel": "argonaut-hotel", "field": "room.book", "value": "Argonaut Golden Gate One-Bedroom Suite", "url": "https://www.argonauthotel.com/san-francisco-hotel-suites", "quote": "Argonaut Golden Gate One-Bedroom Suite" },
+  { "hotel": "argonaut-hotel", "field": "room.skip", "value": "Bay View One-Bedroom Suite", "url": "https://www.argonauthotel.com/san-francisco-hotel-suites", "quote": "Bay View One-Bedroom Suite:" },
+
+  { "hotel": "jw-marriott-san-francisco-union-square", "field": "hotel.name", "value": "JW Marriott San Francisco Union Square", "url": "https://marriott.com/en-us/hotels/sfojw-jw-marriott-san-francisco-union-square/rooms", "quote": "\"JW Marriott San Francisco Union Square\"" },
+  { "hotel": "jw-marriott-san-francisco-union-square", "field": "hotel.where", "value": "515 Mason Street", "url": "https://marriott.com/en-us/hotels/sfojw-jw-marriott-san-francisco-union-square/rooms", "quote": "Address: 515 Mason Street, San Francisco, California, USA, 94102" },
+  { "hotel": "jw-marriott-san-francisco-union-square", "field": "hotel.level", "value": "listed", "url": "https://marriott.com/en-us/hotels/sfojw-jw-marriott-san-francisco-union-square/rooms", "quote": "\"Golden Gate View Room\"" },
+  { "hotel": "jw-marriott-san-francisco-union-square", "field": "room.book", "value": "Golden Gate View Room", "url": "https://marriott.com/en-us/hotels/sfojw-jw-marriott-san-francisco-union-square/rooms", "quote": "\"Golden Gate View Room\"" },
+  { "hotel": "jw-marriott-san-francisco-union-square", "field": "room.skip", "value": "Queen/Queen City View Guest Room", "url": "https://marriott.com/en-us/hotels/sfojw-jw-marriott-san-francisco-union-square/rooms", "quote": "\"Queen/Queen City View Guest Room\"" },
+
+  { "hotel": "westin-st-francis-san-francisco", "field": "hotel.name", "value": "The Westin St. Francis San Francisco on Union Square", "url": "https://marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/rooms", "quote": "Hotel name: \"The Westin St. Francis San Francisco on Union Square\"" },
+  { "hotel": "westin-st-francis-san-francisco", "field": "hotel.where", "value": "335 Powell Street", "url": "https://marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/rooms", "quote": "335 Powell Street, San Francisco, California, USA, 94102" },
+  { "hotel": "westin-st-francis-san-francisco", "field": "hotel.level", "value": "listed", "url": "https://marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/rooms", "quote": "the Bridgeview Suite with its spacious living area and breathtaking views of the San Francisco Bay" },
+  { "hotel": "westin-st-francis-san-francisco", "field": "room.book", "value": "Bridgeview Suite", "url": "https://marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/rooms", "quote": "the Bridgeview Suite with its spacious living area and breathtaking views of the San Francisco Bay" }
+]

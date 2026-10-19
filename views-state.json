@@ -31,6 +31,14 @@
       "title": "Hotels with a Cologne Cathedral view, and which room to book",
       "hotels": 4,
       "rooms": 5
+    },
+    {
+      "date": "2026-10-19",
+      "slug": "golden-gate-bridge",
+      "qid": "Q44440",
+      "title": "Hotels with a Golden Gate Bridge view, and which room to book",
+      "hotels": 4,
+      "rooms": 4
     }
   ],
   "attempts": {

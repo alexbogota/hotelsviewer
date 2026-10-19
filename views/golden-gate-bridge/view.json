@@ -1,0 +1,176 @@
+{
+  "slug": "golden-gate-bridge",
+  "order": 12,
+  "landmark": "Golden Gate Bridge",
+  "landmarkInText": "the Golden Gate Bridge",
+  "city": "San Francisco",
+  "region": "California",
+  "country": "United States",
+  "coords": {
+    "lat": 37.8197,
+    "lng": -122.4786
+  },
+  "checked": "2026-10",
+  "title": "Hotels with a Golden Gate Bridge view: which room to book",
+  "metaDescription": "Four San Francisco hotels that sell rooms named for the Golden Gate Bridge view, the exact category to book, and the Bay View and city view rooms to skip.",
+  "h1": "Hotels with a Golden Gate Bridge view, and which room to book",
+  "dek": "Four hotels in San Francisco that sell a room category with the Golden Gate Bridge in its name or description. For each one we list the exact name to book, and the Bay View or city view rooms that look elsewhere.",
+  "teaser": "Four hotels, four named categories, and a Bay View suite that faces the water, not the bridge.",
+  "photo": {
+    "commons": [
+      {
+        "file": "File:Golden Gate Bridge Above the Fog from Battery Spencer.jpg",
+        "alt": "Golden Gate Bridge in San Francisco above the fog, seen from Battery Spencer"
+      },
+      {
+        "file": "File:Golden Gate Bridge Emerging from Fog, San Francisco.jpg",
+        "alt": "Golden Gate Bridge in San Francisco emerging from fog"
+      },
+      {
+        "file": "File:Golden Gate daytime.jpg",
+        "alt": "Golden Gate Bridge in San Francisco in daylight"
+      }
+    ]
+  },
+  "shortAnswer": [
+    {
+      "label": "Named for the bridge, a suite",
+      "hotel": "fairmont-san-francisco",
+      "room": "Signature Golden Gate Suite"
+    },
+    {
+      "label": "One category, named for the view",
+      "hotel": "jw-marriott-san-francisco-union-square",
+      "room": "Golden Gate View Room"
+    },
+    {
+      "label": "One-bedroom suite on the bay side",
+      "hotel": "argonaut-hotel",
+      "room": "Argonaut Golden Gate One-Bedroom Suite"
+    }
+  ],
+  "decoder": [
+    {
+      "left": "Queen/Queen City View Guest Room",
+      "right": "Golden Gate View Room",
+      "text": "At the JW Marriott San Francisco Union Square, the Queen/Queen City View Guest Room is sold with a city view. The Golden Gate View Room is the one the hotel describes as having views of the bridge."
+    },
+    {
+      "left": "Bay View One-Bedroom Suite",
+      "right": "Argonaut Golden Gate One-Bedroom Suite",
+      "text": "Both are one-bedroom suites at the Argonaut Hotel. The Golden Gate suite is described with panoramic Bay views, the Golden Gate Bridge and Alcatraz Island; the Bay View suite is described with San Francisco Bay views only."
+    },
+    {
+      "left": "Fairmont Suite",
+      "right": "Signature Golden Gate Suite",
+      "text": "Both are suites at the Fairmont San Francisco. Only the Signature Golden Gate Suite has the bridge in its name, and its page places it on floors 10 to 23 of the Tower Building."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "fairmont-san-francisco",
+      "name": "Fairmont San Francisco",
+      "where": "950 Mason Street",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Signature Golden Gate Suite"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Fairmont Suite",
+          "note": "Golden Gate is not in its name."
+        }
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.fairmont-san-francisco.com/accommodations/signature-golden-gate-suite/"
+        }
+      ],
+      "query": "Fairmont San Francisco hotel San Francisco"
+    },
+    {
+      "id": "argonaut-hotel",
+      "name": "Argonaut Hotel",
+      "where": "495 Jefferson Street",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Argonaut Golden Gate One-Bedroom Suite"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Bay View One-Bedroom Suite",
+          "note": "Sold with a San Francisco Bay view, not the bridge."
+        }
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.argonauthotel.com/san-francisco-hotel-suites"
+        }
+      ],
+      "query": "Argonaut Hotel San Francisco"
+    },
+    {
+      "id": "jw-marriott-san-francisco-union-square",
+      "name": "JW Marriott San Francisco Union Square",
+      "where": "515 Mason Street",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Golden Gate View Room"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Queen/Queen City View Guest Room",
+          "note": "Sold with a city view, not the bridge."
+        }
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://marriott.com/en-us/hotels/sfojw-jw-marriott-san-francisco-union-square/rooms"
+        }
+      ],
+      "query": "JW Marriott San Francisco Union Square"
+    },
+    {
+      "id": "westin-st-francis-san-francisco",
+      "name": "The Westin St. Francis San Francisco on Union Square",
+      "where": "335 Powell Street",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Bridgeview Suite",
+          "note": "The page places the Golden Gate Bridge view under this suite's heading. Ask the hotel to confirm which suite has it."
+        }
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/rooms"
+        }
+      ],
+      "query": "Westin St. Francis San Francisco on Union Square"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which San Francisco hotels sell rooms with a Golden Gate Bridge view?",
+      "a": "Of the four hotels we checked in October 2026, the Fairmont San Francisco, the Argonaut Hotel, the JW Marriott San Francisco Union Square and The Westin St. Francis on Union Square each sell a category with the bridge in its name or in its description on their own site."
+    },
+    {
+      "q": "Is the Westin's Bridgeview Suite certain to face the bridge?",
+      "a": "Not from the name alone. The hotel's page places the Golden Gate Bridge view, with the Alcatraz, North Bay and East Bay views, under the Bridgeview suite's heading. Ask the hotel which suite has it before you book."
+    },
+    {
+      "q": "Does a city view room at the JW Marriott face the bridge?",
+      "a": "No. The Queen/Queen City View Guest Room is named for the city. The hotel's page describes the separate Golden Gate View Room as having views of the bridge, so book that category instead."
+    }
+  ]
+}
