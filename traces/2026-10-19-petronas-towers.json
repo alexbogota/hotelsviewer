@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-19",
+  "slug": "petronas-towers",
+  "fetched": [
+    {
+      "url": "https://www.mandarinoriental.com/en/kuala-lumpur/petronas-towers/stay/twin-towers-view-suite",
+      "chars": 469,
+      "blocked": false,
+      "head": "The page content provided doesn't include any room category names, a street address, or a star rating. The text ends with \"[Content truncated due to length...]\", so the room listin"
+    },
+    {
+      "url": "https://www.mandarinoriental.com/en/kuala-lumpur/petronas-towers/stay/park-view-suite",
+      "chars": 491,
+      "blocked": false,
+      "head": "I can't find any room category names or a street address in the content provided. The page text is truncated after the navigation menu (\"[Content truncated due to length...]\"), so "
+    },
+    {
+      "url": "https://www.mandarinoriental.com/en/kuala-lumpur/petronas-towers/stay/2-bedroom-twin-towers-suite",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.banyantree.com/malaysia/kuala-lumpur/accommodation/sanctuary-suite",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.hyatt.com/grand-hyatt/en-US/kuagh-grand-hyatt-kuala-lumpur/rooms/CLVT",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.businesstoday.com.my/2022/12/02/hotels-with-the-best-views-in-kl/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.mandarinoriental.com/kuala-lumpur/petronas-towers/stay",
+      "chars": 341,
+      "blocked": false,
+      "head": "The page content provided is truncated and contains only navigation links and menu items. It doesn't include any room or suite category names, a street address, or a star rating, s"
+    },
+    {
+      "url": "https://www.mandarinoriental.com/en/kuala-lumpur/petronas-towers/stay",
+      "chars": 427,
+      "blocked": false,
+      "head": "The content you provided is truncated after the navigation menu, so it doesn't include any room or suite category names, the hotel's street address, or a star rating. I can't fill "
+    },
+    {
+      "url": "https://pointmetotheplane.boardingarea.com/?p=49352",
+      "chars": 489,
+      "blocked": false,
+      "head": "**Room category and floor:** \"I was thrilled to be upgraded to a Grand Executive Suite on the 33rd floor.\" The article also says check-in is on a different floor: \"What I didn't re"
+    },
+    {
+      "url": "https://says.com/my/shopping/kl-hotels-picture-perfect-skyline-views",
+      "chars": 788,
+      "blocked": false,
+      "head": "Five hotels are described as having rooms with Petronas Twin Towers views: 1. **Traders Hotel Kuala Lumpur:** \"while selected rooms offer views towards the Twin Towers.\" No room ca"
+    },
+    {
+      "url": "https://shewandersabroad.com/kuala-lumpur-hotels-with-klcc-views/",
+      "chars": 413,
+      "blocked": false,
+      "head": "The page doesn't say that any hotel has rooms with a view of the Petronas Towers, and it names no room categories. It only places hotels near the towers by neighborhood: - On KLCC:"
+    },
+    {
+      "url": "https://kualalumpurcity.my/?p=9540",
+      "chars": 608,
+      "blocked": false,
+      "head": "The page says these hotels have views of the Petronas Twin Towers: 1. **Traders Hotel Kuala Lumpur** - \"Traders Hotel is famous for its spectacular views of the Petronas Twin Tower"
+    },
+    {
+      "url": "https://www.mandarinoriental.com/en/kuala-lumpur/petronas-towers/stay/twin-towers-view-suite",
+      "chars": 80,
+      "blocked": true,
+      "head": "Nothing left to read from offset 1500: this page's text is 1088 characters long."
+    },
+    {
+      "url": "https://www.mandarinoriental.com/en/kuala-lumpur/petronas-towers/stay/park-view-suite",
+      "chars": 80,
+      "blocked": true,
+      "head": "Nothing left to read from offset 1500: this page's text is 1137 characters long."
+    },
+    {
+      "url": "https://www.traders.com/kualalumpur/rooms-suites/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.wkualalumpur.com/rooms",
+      "chars": 6565,
+      "blocked": true,
+      "head": "Hostname/IP does not match certificate's altnames: Host: www.wkualalumpur.com. is not in the cert's altnames: DNS:marriottbonvoy.com, DNS:30stays300days.com, DNS:africanpridehotels"
+    },
+    {
+      "url": "https://www.banyantree.com/en/malaysia/kuala-lumpur",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.mandarinoriental.com/en/kuala-lumpur/petronas-towers",
+      "chars": 488,
+      "blocked": false,
+      "head": "The page content is truncated, so I can't find any room or suite names or the hotel's street address. The visible text is limited to the page title, \"Luxury 5 Star Hotel | Petronas"
+    },
+    {
+      "url": "https://www.banyantree.com/en/malaysia/kuala-lumpur/accommodation/sanctuary-suite",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.grandhyatt.com/kuala-lumpur",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.impianahotels.com/klcc",
+      "chars": 518,
+      "blocked": true,
+      "head": "Hostname/IP does not match certificate's altnames: Host: www.impianahotels.com. is not in the cert's altnames: DNS:ahmadalbab30.pw, DNS:cpanel.mycloudforward.com, DNS:cpcalendars.m"
+    },
+    {
+      "url": "https://www.fourseasons.com/kualalumpur/accommodations/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.rumahotel.com/rooms-suites",
+      "chars": 39,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.rumahotel.com"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/kulwi-w-kuala-lumpur/rooms/",
+      "chars": 337,
+      "blocked": false,
+      "head": "\"One Bedroom Residence Suite\" \"Chairman Suite\" \"King Presidential Suite\" \"Two-Bedroom Residence\" \"King Chairman Suite\" \"Chairman Bi-Level Suite\" Street address: \"No 199 Jalan Bukit"
+    },
+    {
+      "url": "https://www.eqkualalumpur.com/rooms",
+      "chars": 719,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.eqkualalumpur.com/rooms Redirect URL (from the server's Location he"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/kulwi-w-kuala-lumpur/overview/",
+      "chars": 234,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. Retry-After: 28800 The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub"
+    }
+  ],
+  "searches": [
+    "hotels with Petronas Towers view room Kuala Lumpur",
+    "Petronas Towers view room suite hotel Kuala Lumpur official site",
+    "Petronas Towers view suite hotel KLCC rooms"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 35,
+    "error": false
+  },
+  "outcome": "unverified",
+  "reason": "Petronas Towers can have a view page, but no hotel could be proved with a room name in this run. Guides (Kuala Lumpur City, Says, Pointmetotheplane) name Traders Hotel, Grand Hyatt, Mandarin Oriental, Banyan Tree and W as having tower views, but no page we opened names a room category with the view. Mandarin Oriental's own pages opened with navigation only. Blocked (403 or no connection): Banyan Tree, Grand Hyatt rooms, Traders, Four Seasons, Business Today, Impiana, RuMa. Try again later."
+}
