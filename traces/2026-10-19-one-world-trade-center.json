@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-19",
+  "slug": "one-world-trade-center",
+  "fetched": [
+    {
+      "url": "https://www.hilton.com/en/hotels/nycdtht-millennium-hilton-new-york-downtown/rooms/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.clubquarters.com/world-trade-center",
+      "chars": 883,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.clubquarters.com/world-trade-center Redirect URL (from the server's"
+    },
+    {
+      "url": "https://www.worldcenterhotel.com/",
+      "chars": 547,
+      "blocked": false,
+      "head": "**Room category names:** None are listed on this page. The \"Our Rooms\" section describes rooms only generally, and the only room-type text is in an image filename, not on the page "
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/nycwd-w-new-york-downtown/rooms/",
+      "chars": 234,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. Retry-After: 28800 The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub"
+    },
+    {
+      "url": "https://www.hilton.com/en/hotels/nyccodt-conrad-new-york-downtown/rooms/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.clubquartershotels.com/world-trade-center",
+      "chars": 521,
+      "blocked": false,
+      "head": "**Room category names:** None. The page doesn't list any room categories. **Street address:** Not provided. The page gives only phone numbers for the United States (+1 (203) 905-21"
+    },
+    {
+      "url": "https://www.hilton.com/en/hotels/nyccodt-conrad-new-york-downtown/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.oyster.com/new-york-city/hotels/millenium-hilton/",
+      "chars": 1246,
+      "blocked": false,
+      "head": "**Room categories:** - \"1 King Bed Accessible Room\" - \"1 King Bed City View Room\" - \"1 King Bed Deluxe Room\" - \"1 King Bed Junior City View Suite\" - \"1 King Bed Junior Suite\" - \"1 "
+    },
+    {
+      "url": "https://www.worldcenterhotel.com/rooms/standard-room/",
+      "chars": 1007,
+      "blocked": false,
+      "head": "**Room categories:** \"Standard Room\" \"One Room Suite\" \"Superior Room\" **Street address:** 144 Washington Street, New York, NY 10006 **Star rating:** Not stated on the page. **Sente"
+    },
+    {
+      "url": "https://www.worldcenterhotel.com/rooms/superior-room/",
+      "chars": 890,
+      "blocked": false,
+      "head": "**Room categories:** \"Superior Room\" \"One Room Suite\" **Street address:** 144 Washington Street, New York, NY 10006 **Star rating:** The page does not state a star rating. **Senten"
+    },
+    {
+      "url": "https://www.worldcenterhotel.com/rooms/",
+      "chars": 495,
+      "blocked": false,
+      "head": "\"Classic Room\" \"Mobility & Hearing Accessible Room\" \"One Room Suite\" \"Standard Room\" \"Superior Room\" Sentences mentioning the 9/11 Memorial, One World Trade Center, a tower, or a v"
+    },
+    {
+      "url": "https://www.fourseasons.com/newyorkdowntown/accommodations/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.tripadvisor.com/Hotel_Feature-g60763-d1553789-zft1-World_Center_Hotel.html",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.clubquartershotels.com/world-trade-center/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.fourseasons.com/newyorkdowntown/rooms/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.worldcenterhotel.com/rooms/classic-room/",
+      "chars": 1027,
+      "blocked": false,
+      "head": "**Room categories:** \"Classic Room\" \"Superior Room\" \"Standard Room\" The page's image alt text also reads \"Standard Room (King)\". **Sentences mentioning One World Trade Center, the "
+    },
+    {
+      "url": "https://www.worldcenterhotel.com/rooms/one-room-suite/",
+      "chars": 653,
+      "blocked": false,
+      "head": "**Room categories:** \"One Room Suite\" **Sentences mentioning One World Trade Center, the tower, the 9/11 Memorial, or a view** (truncated to 125 characters where needed): - \"Step o"
+    },
+    {
+      "url": "https://timeout.com/newyork/hotels/smyth-tribeca",
+      "chars": 577,
+      "blocked": false,
+      "head": "**Quotes about views or the World Trade Center** 1. \"In my room, the room's sweeping windows looked out onto the triangle park known as Bogardus Plaza\" 2. \"and into red-brick artis"
+    },
+    {
+      "url": "https://www.oyster.com/new-york-city/hotels/smyth-hotel/rooms/",
+      "chars": 1115,
+      "blocked": false,
+      "head": "**Sentences mentioning One World Trade Center, the World Trade Center, or a room view** 1. \"Sheer fabric graces the floor-to-ceiling windows that overlook West Broadway, Chambers S"
+    },
+    {
+      "url": "https://www.hotelmulberry.com/rooms",
+      "chars": 936,
+      "blocked": false,
+      "head": "**Room categories:** \"Deluxe King Room\" \"Deluxe King Room with City View\" \"Deluxe King Room with Balcony\" \"Deluxe Queen Room with Two Queen Beds\" \"Deluxe Queen Room with Two Queen "
+    },
+    {
+      "url": "https://www.smythhotels.com/tribeca/rooms",
+      "chars": 41,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.smythhotels.com"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/nycdt-courtyard-new-york-downtown-manhattanwtc-area/rooms/",
+      "chars": 234,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. Retry-After: 28800 The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/nycrz-the-ritz-carlton-new-york-nomad/rooms/",
+      "chars": 234,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. Retry-After: 28800 The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub"
+    },
+    {
+      "url": "https://www.hilton.com/en/hotels/nycdtht-millennium-hilton-new-york-downtown/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.fourseasons.com/newyorkdowntown/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    }
+  ],
+  "searches": [
+    "hotels with One World Trade Center view room",
+    "One World Trade Center view room suite hotel Manhattan official site",
+    "hotel rooms facing One World Trade Center Freedom Tower view category",
+    "\"One World Trade Center\" view room hotel category \"view\" Lower Manhattan suite name",
+    "Smyth Tribeca rooms One World Trade Center view category",
+    "\"One World Trade Center view\" king room hotel New York",
+    "Four Seasons New York Downtown rooms One World Trade Center view suite",
+    "Lower Manhattan hotel \"World Trade Center view\" room category name booking"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 41,
+    "error": false
+  },
+  "outcome": "unverified",
+  "reason": "Only one hotel could be proved in this run: World Center Hotel (144 Washington Street), whose own pages name \"Standard Room\" and \"Superior Room\" with \"Select rooms feature views of the 9/11 Memorial & Museum and One World Trade Center\". Blocked (403 or 404): Millennium Hilton, Conrad New York Downtown, W New York Downtown, Four Seasons New York Downtown, Ritz-Carlton NoMad, Courtyard New York Downtown. Club Quarters' own page names no room. Oyster lists Millennium Hilton categories only as city views. Smyth Tribeca guides mention tower views but name no category."
+}
