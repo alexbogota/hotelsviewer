@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-19",
+  "slug": "iguacu-falls",
+  "fetched": [
+    {
+      "url": "https://www.melia.com/ja/hotels/argentina/iguazu-national-park/gran-melia-iguazu/rooms/redlevel-king-bed-waterfall-view",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.melia.com/en/hotels/argentina/iguazu-national-park/gran-melia-iguazu/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.belmond.com/hotels/south-america/brazil/iguazu-falls/belmond-hotel-das-cataratas/",
+      "chars": 201,
+      "blocked": false,
+      "head": "\"Signature Suites\" \"Suites\" \"Junior Suites\" \"Rooms\" **Address:** Rodovia Br 469, Km 32, Iguassu National Park, Foz do Iguaçu 85855-750, Brazil The page does not state a star rating"
+    },
+    {
+      "url": "https://www.lightfoottravel.com/us/south-america/brazil/iguazu-falls/belmond-das-cataratas",
+      "chars": 1009,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.lightfoottravel.com/us/south-america/brazil/iguazu-falls/belmond-da"
+    },
+    {
+      "url": "https://www.belmond.com/hotels/south-america/brazil/iguazu-falls/belmond-hotel-das-cataratas/accommodations/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "http://www.lightfoottravel.com/us/south-america/brazil/iguazu-falls/accommodation/belmond-das-cataratas",
+      "chars": 331,
+      "blocked": false,
+      "head": "\"Superior rooms\" \"Deluxe rooms\" \"Junior suites\" \"Cataratas suites\" \"pool suites\" Sentences that say which rooms overlook the falls: - \"Deluxe rooms boasts a fully-stocked mini bar "
+    },
+    {
+      "url": "https://www.patagonline.com/en/iguazu-falls/",
+      "chars": 188,
+      "blocked": false,
+      "head": "\"Falls View Rooms\" \"Jungle View Rooms\" \"Junior Suites\" The article's sentence about the hotel's rooms is: \"The Gran Meliá Iguazú offers a variety of room options to suit all prefer"
+    },
+    {
+      "url": "https://www.luxurytraveladvisor.com/hotels/insider-s-iguassu-falls-belmond-hotel-das-cataratas",
+      "chars": 723,
+      "blocked": false,
+      "head": "\"Cataratas Suite\" \"Deluxe Room\" \"Master Suite\" \"Tower Suite\" \"Pool Suites\" \"Deluxe Falls View Rooms\" \"Junior Suite\" Sentences that say which rooms overlook the falls: - \"The Garden"
+    },
+    {
+      "url": "https://www.scottdunn.com/us/argentina/hotels/gran-melia-iguazu",
+      "chars": 637,
+      "blocked": false,
+      "head": "**Room category names:** \"Royal Suite\" \"Junior Suite Falls View\" \"Presidential Suite\" \"Deluxe Falls View bathroom\" (this is a photo caption for a bathroom, so it may not be a separ"
+    },
+    {
+      "url": "https://akorndmc.com/destinations/latin-america/argentina/hotels/gran-meliá-iguazú",
+      "chars": 345,
+      "blocked": false,
+      "head": "The page contains no room category names, so there are none to list. - **Room categories:** None mentioned. - **Street address:** None provided. The only location text is \"United S"
+    },
+    {
+      "url": "https://www.argentinaexplorationjourneys.com/land-of-fire--glaciers-and-waterfalls-trips_3/Sheraton-Iguazu-Hotel--(room-with-view-to-the-falls)_h_ssf_ca4",
+      "chars": 495,
+      "blocked": false,
+      "head": "**Room categories:** \"deluxe category room with falls view\" \"Deluxe Falls View room with a king bed\" \"Deluxe Falls View room with twin beds\" **Street address:** The page does not p"
+    },
+    {
+      "url": "https://thehotelguru.com/best-hotels/iguazu-falls",
+      "chars": 869,
+      "blocked": false,
+      "head": "**Iguazu Jungle Lodge** - No sentence says it has rooms or views of the falls. Its rooms overlook the rainforest. - Address: Not stated. The page gives only \"Puerto Iguazu (AR Códi"
+    },
+    {
+      "url": "https://lostworld.com/destinations/argentina/iguazu-falls/gran-melia-iguazu/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://melia.com/ru/hotels/argentina/iguazu-national-park/gran-melia-iguazu",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.belmond.com/hotels/south-america/brazil/iguassu-falls/belmond-hotel-das-cataratas/cataratas-suite",
+      "chars": 208,
+      "blocked": false,
+      "head": "\"Cataratas Suite\" \"Signature Suites\" \"Junior Cataratas\" \"Junior Suites\" \"Falls and forest views\" (listed under View) \"Wonderful views of the Cataratas Falls and forest are availabl"
+    },
+    {
+      "url": "https://www.expedia.com/Foz-Do-Iguacu-Hotels-Hotel-Das-Cataratas.h53288.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.hotels.com/ho143059/gran-melia-iguazu-puerto-iguazu-argentina/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    }
+  ],
+  "searches": [
+    "hotels with Iguazu Falls view rooms",
+    "Iguazu Falls view room hotel suite Belmond Das Cataratas",
+    "Hotel Iguazu Falls view room category Cataratas Hotel Iguazu Brazil side",
+    "Sheraton Iguazu Resort falls view room category",
+    "Gran Meliá Iguazú Deluxe Falls View room king bed official rooms page",
+    "Foz do Iguaçu hotel rooms with view of Iguassu Falls Brazil side",
+    "Hotel Tropical das Cataratas Iguazu falls view room",
+    "Bourbon Cataratas Iguaçu hotel room view of the falls category",
+    "Loi Suites Iguazú official rooms categories view",
+    "Hotel Tarobá Foz do Iguaçu quartos vista para as cataratas",
+    "Vivaz Cataratas Hotel rooms vista cataratas categoria"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 36,
+    "error": false
+  },
+  "outcome": "unverified",
+  "reason": "Only two hotels could be proved with pages opened in this run: Belmond Hotel das Cataratas, Brazil side (Deluxe Falls View Rooms, Cataratas Suite) and Gran Meliá Iguazú, Argentine side (Falls View Rooms, Junior Suite Falls View). No third hotel showed a falls-view category on a readable page. Meliá's official site gave 403 and 404 errors, Hotels.com gave 429 and a timeout, Expedia gave 429. Vivaz Cataratas, Loi Suites and Hotel Tarobá showed no falls-view category. The place stays in the queue."
+}
