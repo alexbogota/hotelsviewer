@@ -4,7 +4,10 @@ import ViewWindows from '../components/ViewWindows.astro';
 import Decoder from '../components/Decoder.astro';
 import LevelPill from '../components/LevelPill.astro';
 import HotelSearch from '../components/HotelSearch.astro';
-import { levels, type Level } from '../lib/views';
+import ArchPhoto from '../components/ArchPhoto.astro';
+import { getView, levels, photoFor, type Level } from '../lib/views';
+
+const feature = getView('eiffel-tower');
 
 const order: Level[] = ['pictured', 'listed', 'reported'];
 
@@ -30,39 +33,34 @@ const pairs = [
 ];
 ---
 <Layout
-  title="HotelsViewer: which hotel room actually has the view?"
-  description="Which room to book for a real view of the Eiffel Tower, the Taj Mahal, Mount Fuji and more. Exact room names, the look-alikes to skip, and how sure we are."
+  title="HotelsViewer: find a hotel anywhere, and the room with the view"
+  description="Search hotels in any city with current prices. Where there's a famous view, like the Eiffel Tower or Mount Fuji, we show which room category to book for it."
 >
   <section class="hero wrap">
     <div class="copy">
-      <h1>Which hotel room actually has the view?</h1>
-      <p class="dek">Hotels sell the same view under many names, and some of those names don't mean what they seem. We read the room categories and show you which one to book for the Eiffel Tower, the Colosseum, the Taj Mahal, Mount Fuji and more.</p>
+      <h1>Find a hotel anywhere. Book the room with the view.</h1>
+      <p class="dek">Search any city, landmark or address for hotels with current prices. Where there's a famous view, we read the room names and tell you which one to book.</p>
       <div class="find"><HotelSearch /></div>
-      <div class="actions">
-        <a class="btn btn-quiet" href="#views">Browse the views</a>
-        <a class="btn btn-quiet" href="/about/#how-we-check">How we check a view</a>
-      </div>
+      <p class="small try">Try <a class="text-link" href="/hotels/?q=Paris%2C+France&amp;lat=48.85661&amp;lng=2.35222&amp;kind=city">Paris</a>, <a class="text-link" href="/hotels/?q=Kyoto%2C+Japan&amp;lat=35.01164&amp;lng=135.76802&amp;kind=city">Kyoto</a> or <a class="text-link" href="/hotels/?q=Cartagena%2C+Colombia&amp;lat=10.39105&amp;lng=-75.47942&amp;kind=city">Cartagena</a></p>
     </div>
 
-    <figure class="exhibit">
-      <p class="lead">One hotel, two rooms, both sold with an Eiffel Tower view:</p>
-      <div class="pair">
-        <p class="room">Superior Room, 1 Queen Bed, <mark>Tower (High Floor</mark>, Eiffel Tower View)</p>
-        <p class="note">The listing photo captioned “View from room” belongs to this one.</p>
-      </div>
-      <div class="pair">
-        <p class="room">Deluxe Room, 1 King Bed, <mark>Balcony</mark> (Eiffel Tower View)</p>
-        <p class="note">Another booking site calls it a Trocadéro view, with the tower from the balcony.</p>
-      </div>
-      <figcaption class="small">
-        Pullman Paris Tour Eiffel, room names as listed on booking sites in October 2026.{' '}
-        <a class="text-link" href="/views/eiffel-tower/#pullman-paris-tour-eiffel">See both rooms</a>
-      </figcaption>
-    </figure>
+    {feature && (
+      <figure class="feature">
+        <a href={`/views/${feature.slug}/`}>
+          <ArchPhoto photo={photoFor(feature.slug)} landmark={feature.landmark} eager />
+        </a>
+        <figcaption>
+          <p class="small kicker">There's a view here</p>
+          <p class="room">{feature.landmark}, {feature.city}</p>
+          <p class="small">{feature.teaser} <a class="text-link" href={`/views/${feature.slug}/`}>Which room to book</a></p>
+        </figcaption>
+      </figure>
+    )}
   </section>
 
-  <section id="views" class="views wrap" aria-labelledby="views-heading">
-    <h2 id="views-heading">Views, checked room by room</h2>
+<section id="views" class="views wrap" aria-labelledby="views-heading">
+    <h2 id="views-heading">Rooms with a view</h2>
+    <p class="dek measure">For these places we have read the room categories, hotel by hotel, and know which one comes with the view.</p>
     <ViewWindows />
   </section>
 
@@ -98,54 +96,38 @@ const pairs = [
     padding-bottom: 24px;
   }
   .copy h1 {
-    max-width: 13ch;
+    max-width: 16ch;
   }
   .copy .dek {
     margin-top: 20px;
     max-width: 52ch;
   }
-  .actions {
-    margin-top: 28px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-  .exhibit {
-    margin: 0;
-    padding: 28px 28px 24px;
-    background: var(--panel);
-    border-radius: var(--radius);
-    border: 1px solid var(--line-soft);
-  }
-  .lead {
-    color: var(--ink-soft);
-    font-size: 0.9375rem;
-  }
-  .pair {
-    margin-top: 18px;
-    padding-left: 14px;
-    border-left: 3px solid var(--brass);
-  }
-  .pair .room {
-    font-size: 1.25rem;
-  }
-  mark {
-    background: none;
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-color: var(--brass);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
-  }
-  .note {
-    margin-top: 6px;
-    font-size: 0.9375rem;
+  .try {
+    margin-top: 12px;
     color: var(--zinc);
   }
-  figcaption {
-    margin-top: 22px;
-    padding-top: 14px;
-    border-top: 1px solid var(--line-soft);
+  .feature {
+    margin: 0;
+    max-width: 380px;
+    justify-self: center;
+    width: 100%;
+  }
+  .feature figcaption {
+    margin-top: 16px;
+  }
+  .kicker {
+    color: var(--zinc);
+  }
+  .feature .room {
+    margin-top: 2px;
+    font-size: 1.375rem;
+  }
+  .feature figcaption .small:last-child {
+    margin-top: 6px;
+    color: var(--ink-soft);
+  }
+  .views .dek {
+    margin-top: 12px;
   }
   .views {
     margin-top: 72px;
@@ -181,9 +163,6 @@ const pairs = [
     }
     .levels {
       grid-template-columns: minmax(0, 1fr);
-    }
-    .exhibit {
-      padding: 22px 18px 18px;
     }
   }
 </style>

@@ -4,10 +4,13 @@ import ArchPhoto from '../../components/ArchPhoto.astro';
 import Decoder from '../../components/Decoder.astro';
 import HotelEntry from '../../components/HotelEntry.astro';
 import TripExtras from '../../components/TripExtras.astro';
+import HotelMap from '../../components/HotelMap.astro';
+import HotelSearch from '../../components/HotelSearch.astro';
 import {
   views,
   getView,
   hotelName,
+  landmarkInText,
   liveExtras,
   monthLabel,
   photoFor,
@@ -104,6 +107,14 @@ const month = monthLabel(view.checked);
     ))}
 
     <TripExtras items={liveExtras(view)} />
+
+    {view.coords && (
+      <HotelMap lat={view.coords.lat} lng={view.coords.lng} near={landmarkInText(view)} campaign={`view-${view.slug}`} />
+    )}
+
+    <section class="elsewhere" aria-label="Find hotels somewhere else">
+      <HotelSearch id="view-search" />
+    </section>
 
     <section class="faq" aria-labelledby="faq-heading">
       <h2 id="faq-heading">Questions</h2>
@@ -221,6 +232,10 @@ const month = monthLabel(view.checked);
   }
   .aside li + li {
     margin-top: 8px;
+  }
+  .elsewhere {
+    margin-top: 56px;
+    max-width: 640px;
   }
   .faq {
     margin-top: 72px;
