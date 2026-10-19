@@ -1,0 +1,1887 @@
+{
+  "checked": "2026-10-19",
+  "hotels": {
+    "hotel-grande-bretagne": {
+      "name": "Hotel Grande Bretagne",
+      "view": "acropolis",
+      "wikidata": {
+        "id": "Q1630906",
+        "category": "Hotel Grande Bretagne"
+      },
+      "good": [
+        {
+          "file": "File:Hd-hotel-grande-bretagne-athens-gb-roof-garden-restaurant-and-bar-breakfast-1-.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "view-from",
+          "how": "category Hotel Grande Bretagne",
+          "licence": "CC BY-SA 4.0",
+          "author": "Mariavazoura",
+          "source": "https://commons.wikimedia.org/wiki/File:Hd-hotel-grande-bretagne-athens-gb-roof-garden-restaurant-and-bar-breakfast-1-.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Hd-hotel-grande-bretagne-athens-gb-roof-garden-restaurant-and-bar-breakfast-1-.jpg/960px-Hd-hotel-grande-bretagne-athens-gb-roof-garden-restaurant-and-bar-breakfast-1-.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1600,
+          "height": 900,
+          "description": "View from the GB Roof Garden Restaurant."
+        },
+        {
+          "file": "File:Athina Hotel Grande Bretagne.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "wikidata image",
+          "licence": "CC BY-SA 3.0",
+          "author": "Andrzej Otrębski",
+          "source": "https://commons.wikimedia.org/wiki/File:Athina_Hotel_Grande_Bretagne.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Athina_Hotel_Grande_Bretagne.jpg/960px-Athina_Hotel_Grande_Bretagne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2816,
+          "height": 2112,
+          "description": "Athens - Hotel Grande Bretagne"
+        },
+        {
+          "file": "File:Athens Hotels b.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Hotel Grande Bretagne",
+          "licence": "CC BY-SA 3.0",
+          "author": "Dimorsitanos",
+          "source": "https://commons.wikimedia.org/wiki/File:Athens_Hotels_b.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Athens_Hotels_b.jpg/960px-Athens_Hotels_b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 980,
+          "height": 551,
+          "description": "The picture illustrates the luxurius hotels at the center of the city of Athens."
+        },
+        {
+          "file": "File:Athens-Grande1.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Hotel Grande Bretagne",
+          "licence": "Public domain",
+          "author": "Salonica84 at English Wikipedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Athens-Grande1.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Athens-Grande1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 800,
+          "height": 600,
+          "description": "The legendary hotel Grande Bretagne in central Athens, Greece. Located in Syntagma Square. Photo taken in 2006."
+        },
+        {
+          "file": "File:Grande Bretagne Saint Mark lions I.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Hotel Grande Bretagne",
+          "licence": "CC BY-SA 3.0",
+          "author": "Badseed",
+          "source": "https://commons.wikimedia.org/wiki/File:Grande_Bretagne_Saint_Mark_lions_I.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Grande_Bretagne_Saint_Mark_lions_I.JPG/960px-Grande_Bretagne_Saint_Mark_lions_I.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2770,
+          "height": 1964,
+          "description": "The winged lions under the balconies of the Grande Bretagne hotel in Athens, Greece."
+        },
+        {
+          "file": "File:Grande Bretagne Saint Mark lions II.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Hotel Grande Bretagne",
+          "licence": "CC BY-SA 3.0",
+          "author": "Badseed",
+          "source": "https://commons.wikimedia.org/wiki/File:Grande_Bretagne_Saint_Mark_lions_II.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Grande_Bretagne_Saint_Mark_lions_II.JPG/960px-Grande_Bretagne_Saint_Mark_lions_II.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3008,
+          "height": 2000,
+          "description": "The winged lions under the balconies of the Grande Bretagne hotel in Athens, Greece."
+        }
+      ],
+      "refused": 1,
+      "error": null
+    },
+    "electra-palace-athens": {
+      "name": "Electra Palace Athens",
+      "view": "acropolis",
+      "wikidata": {
+        "id": "Q111400724",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "coco-mat-athens-bc": {
+      "name": "COCO-MAT Athens BC",
+      "view": "acropolis",
+      "wikidata": {
+        "id": "Q111857884",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "divani-palace-acropolis": {
+      "name": "Divani Palace Acropolis",
+      "view": "acropolis",
+      "wikidata": {
+        "id": "Q111400736",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "niche-hotel-athens": {
+      "name": "niche Hotel Athens",
+      "view": "acropolis",
+      "wikidata": {
+        "id": "Q111857888",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "plaka-hotel": {
+      "name": "Plaka Hotel",
+      "view": "acropolis",
+      "wikidata": {
+        "id": "Q111400846",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "acropolis-view-hotel": {
+      "name": "Acropolis View Hotel",
+      "view": "acropolis",
+      "wikidata": {
+        "id": "Q111400729",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "bellagio": {
+      "name": "Bellagio",
+      "view": "bellagio-fountains",
+      "wikidata": {
+        "id": "Q25007",
+        "category": "Bellagio Hotel & Casino"
+      },
+      "good": [
+        {
+          "file": "File:WLM - 2021 - Bellagio - 01.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "view-from",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Moahim",
+          "source": "https://commons.wikimedia.org/wiki/File:WLM_-_2021_-_Bellagio_-_01.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/WLM_-_2021_-_Bellagio_-_01.jpg/960px-WLM_-_2021_-_Bellagio_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4729,
+          "height": 3132,
+          "description": "View of Bellagio from Lake Como , Province of Como , Lombardy , Italy ."
+        },
+        {
+          "file": "File:Bellagio outside.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "wikidata image",
+          "licence": "CC BY 3.0",
+          "author": "Blane",
+          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_outside.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Bellagio_outside.jpg/960px-Bellagio_outside.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1159,
+          "height": 882,
+          "description": "Bellagio Hotel and Casino in 2009."
+        },
+        {
+          "file": "File:Lac de Côme - Bellagio.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY 3.0",
+          "author": "Jean-Christophe BENOIST",
+          "source": "https://commons.wikimedia.org/wiki/File:Lac_de_C%C3%B4me_-_Bellagio.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Lac_de_C%C3%B4me_-_Bellagio.jpg/960px-Lac_de_C%C3%B4me_-_Bellagio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3528,
+          "height": 2200,
+          "description": "Bellagio, Lakefront"
+        },
+        {
+          "file": "File:Bellagio by night.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Uppa66",
+          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_by_night.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Bellagio_by_night.jpg/960px-Bellagio_by_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4422,
+          "height": 2812,
+          "description": "Bellagio illuminata durante il periodo natalizio 2019"
+        },
+        {
+          "file": "File:Bellagio in controluce.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Maurizio Moro5153",
+          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_in_controluce.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Bellagio_in_controluce.jpg/960px-Bellagio_in_controluce.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 5464,
+          "height": 3070,
+          "description": "Bellagio"
+        },
+        {
+          "file": "File:Bellagio una lingua sul Lago di Como.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Maurizio Moro5153",
+          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_una_lingua_sul_Lago_di_Como.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Bellagio_una_lingua_sul_Lago_di_Como.jpg/960px-Bellagio_una_lingua_sul_Lago_di_Como.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 6720,
+          "height": 4366,
+          "description": "Bellagio"
+        }
+      ],
+      "refused": 1,
+      "error": null
+    },
+    "the-cosmopolitan": {
+      "name": "The Cosmopolitan of Las Vegas",
+      "view": "bellagio-fountains",
+      "wikidata": {
+        "id": "Q1436845",
+        "category": "Cosmopolitan of Las Vegas"
+      },
+      "good": [
+        {
+          "file": "File:Cosmopolitan - North - 2011-06-04.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "wikidata image",
+          "licence": "CC BY-SA 3.0",
+          "author": "Cygnusloop99",
+          "source": "https://commons.wikimedia.org/wiki/File:Cosmopolitan_-_North_-_2011-06-04.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Cosmopolitan_-_North_-_2011-06-04.jpg/960px-Cosmopolitan_-_North_-_2011-06-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3072,
+          "height": 2048,
+          "description": "The north side of the Cosmopolitan viewed across the Bellagio lake"
+        },
+        {
+          "file": "File:Cosmopolitan - North - 2010-12-12.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 3.0",
+          "author": "Cygnusloop99",
+          "source": "https://commons.wikimedia.org/wiki/File:Cosmopolitan_-_North_-_2010-12-12.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Cosmopolitan_-_North_-_2010-12-12.JPG/960px-Cosmopolitan_-_North_-_2010-12-12.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4000,
+          "height": 3000,
+          "description": "The Cosmopolitan Resort Casino viewed from the Eiffel Tower in Las Vegas."
+        },
+        {
+          "file": "File:The Cosmopolitan of Las Vegas.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY 2.0",
+          "author": "Allen McGregor",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Cosmopolitan_of_Las_Vegas.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/The_Cosmopolitan_of_Las_Vegas.jpg/960px-The_Cosmopolitan_of_Las_Vegas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3176,
+          "height": 2382,
+          "description": "Evening shot of The Cosmopolitan of Las Vegas"
+        },
+        {
+          "file": "File:The Cosmopolitan Las Vegas.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Cosmopolitan of Las Vegas",
+          "licence": "CC BY 2.0",
+          "author": "Allen McGregor",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Cosmopolitan_Las_Vegas.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Cosmopolitan_Las_Vegas.jpg/960px-The_Cosmopolitan_Las_Vegas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3176,
+          "height": 2382,
+          "description": "Las Vegas, Nevada, U.S"
+        },
+        {
+          "file": "File:THE COSMOPOLITAN of LAS VEGAS Hotel and Casino, Las Vegas, Nevada, USA (8276619690).jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY 2.0",
+          "author": "Jim G from Silicon Valley, CA, USA",
+          "source": "https://commons.wikimedia.org/wiki/File:THE_COSMOPOLITAN_of_LAS_VEGAS_Hotel_and_Casino,_Las_Vegas,_Nevada,_USA_(8276619690).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/THE_COSMOPOLITAN_of_LAS_VEGAS_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%288276619690%29.jpg/960px-THE_COSMOPOLITAN_of_LAS_VEGAS_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%288276619690%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4608,
+          "height": 3456,
+          "description": "THE COSMOPOLITAN of LAS VEGAS Hotel and Casino, Las Vegas, Nevada, USA THE COSMOPOLITAN of LAS VEGAS, Las Vegas, Nevada"
+        },
+        {
+          "file": "File:Bellagio Las Vegas December 2013 panorama.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 3.0",
+          "author": "King of Hearts",
+          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_Las_Vegas_December_2013_panorama.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Bellagio_Las_Vegas_December_2013_panorama.jpg/960px-Bellagio_Las_Vegas_December_2013_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 8000,
+          "height": 3200,
+          "description": "Four-segment panorama of the Cosmopolitan , Bellagio , and Caesars Palace (left to right) from the Las Vegas Strip , across from the Bellagio fountains."
+        }
+      ],
+      "refused": 4,
+      "error": null
+    },
+    "caesars-palace": {
+      "name": "Caesars Palace",
+      "view": "bellagio-fountains",
+      "wikidata": {
+        "id": "Q111650626",
+        "category": null
+      },
+      "good": [
+        {
+          "file": "File:View of an Entrance from Las Vegas Boulevard.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "view-from",
+          "how": "search by name",
+          "licence": "Public domain",
+          "author": "Julian Lupyan",
+          "source": "https://commons.wikimedia.org/wiki/File:View_of_an_Entrance_from_Las_Vegas_Boulevard.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_an_Entrance_from_Las_Vegas_Boulevard.jpg/960px-View_of_an_Entrance_from_Las_Vegas_Boulevard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 5929,
+          "height": 3926,
+          "description": "View of an entrance to Caesar's Palace from Las Vegas Boulevard"
+        },
+        {
+          "file": "File:Caesars outside-resized.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY 3.0",
+          "author": "Blane",
+          "source": "https://commons.wikimedia.org/wiki/File:Caesars_outside-resized.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Caesars_outside-resized.jpg/960px-Caesars_outside-resized.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1204,
+          "height": 903,
+          "description": "Caesars Palace, Las Vegas, outside view at daytime. In the center of the image the former Pure Nightclub at Caesars Palace can be seen."
+        },
+        {
+          "file": "File:Caesars Palace - South East - 2010-12-12.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 3.0",
+          "author": "Cygnusloop99",
+          "source": "https://commons.wikimedia.org/wiki/File:Caesars_Palace_-_South_East_-_2010-12-12.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Caesars_Palace_-_South_East_-_2010-12-12.jpg/960px-Caesars_Palace_-_South_East_-_2010-12-12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3885,
+          "height": 2844,
+          "description": "Caesars Palace viewed from the top of the Eiffel tower at Paris Las Vegas."
+        },
+        {
+          "file": "File:Bellagio Las Vegas December 2013 panorama.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 3.0",
+          "author": "King of Hearts",
+          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_Las_Vegas_December_2013_panorama.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Bellagio_Las_Vegas_December_2013_panorama.jpg/960px-Bellagio_Las_Vegas_December_2013_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 8000,
+          "height": 3200,
+          "description": "Four-segment panorama of the Cosmopolitan , Bellagio , and Caesars Palace (left to right) from the Las Vegas Strip , across from the Bellagio fountains."
+        },
+        {
+          "file": "File:Las Vegas Caesers Palace Pool - 48738461652.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 2.0",
+          "author": "Zachary Smith",
+          "source": "https://commons.wikimedia.org/wiki/File:Las_Vegas_Caesers_Palace_Pool_-_48738461652.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Las_Vegas_Caesers_Palace_Pool_-_48738461652.jpg/960px-Las_Vegas_Caesers_Palace_Pool_-_48738461652.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4032,
+          "height": 3024,
+          "description": "Swimming pools at Caesars Palace"
+        },
+        {
+          "file": "File:Las Vegas Caesers Palace Pool - 48738278936.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 2.0",
+          "author": "Zachary Smith",
+          "source": "https://commons.wikimedia.org/wiki/File:Las_Vegas_Caesers_Palace_Pool_-_48738278936.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Las_Vegas_Caesers_Palace_Pool_-_48738278936.jpg/960px-Las_Vegas_Caesers_Palace_Pool_-_48738278936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4032,
+          "height": 3024,
+          "description": "Swimming pools at Caesars Palace"
+        }
+      ],
+      "refused": 3,
+      "error": null
+    },
+    "planet-hollywood": {
+      "name": "Planet Hollywood Resort & Casino",
+      "view": "bellagio-fountains",
+      "wikidata": {
+        "id": "Q1342565",
+        "category": "Planet Hollywood Resort & Casino"
+      },
+      "good": [
+        {
+          "file": "File:Las Vegas (2013) 14.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "view-from",
+          "how": "search by name",
+          "licence": "CC BY-SA 3.0",
+          "author": "Nandaro",
+          "source": "https://commons.wikimedia.org/wiki/File:Las_Vegas_(2013)_14.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Las_Vegas_%282013%29_14.JPG/960px-Las_Vegas_%282013%29_14.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3144,
+          "height": 2027,
+          "description": "Northward view of the Las Vegas Strip from New York-New York . From left to right: Monte Carlo ; Aria 's gigantic vertical monitor; The Mirage ; Treasure Island ; Trump ; Paris ; and Planet Hollywood "
+        },
+        {
+          "file": "File:2015 View from Marriott’s Grand Chateau 01.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "view-from",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Farragutful",
+          "source": "https://commons.wikimedia.org/wiki/File:2015_View_from_Marriott%E2%80%99s_Grand_Chateau_01.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/2015_View_from_Marriott%E2%80%99s_Grand_Chateau_01.JPG/960px-2015_View_from_Marriott%E2%80%99s_Grand_Chateau_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4608,
+          "height": 3456,
+          "description": "Night view of the Las Vegas strip from the top of the Marriott’s Grand Chateau, A Marriott Vacation Club property, in Las Vegas, Nevada."
+        },
+        {
+          "file": "File:View from our room in Bellagio - panoramio.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "view-from",
+          "how": "search by name",
+          "licence": "CC BY-SA 3.0",
+          "author": "crawlem",
+          "source": "https://commons.wikimedia.org/wiki/File:View_from_our_room_in_Bellagio_-_panoramio.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/View_from_our_room_in_Bellagio_-_panoramio.jpg/960px-View_from_our_room_in_Bellagio_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2948,
+          "height": 1948,
+          "description": "View from our room in Bellagio"
+        },
+        {
+          "file": "File:Planet Hollywood Casino.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "wikidata image",
+          "licence": "CC BY 2.0",
+          "author": "Elika Shannon",
+          "source": "https://commons.wikimedia.org/wiki/File:Planet_Hollywood_Casino.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Planet_Hollywood_Casino.jpg/960px-Planet_Hollywood_Casino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3072,
+          "height": 2304,
+          "description": "Exterior of Planet Hollywood Resort and Casino"
+        },
+        {
+          "file": "File:Planet hollywood casino 2007.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY 4.0",
+          "author": "Larry D. Moore",
+          "source": "https://commons.wikimedia.org/wiki/File:Planet_hollywood_casino_2007.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Planet_hollywood_casino_2007.jpg/960px-Planet_hollywood_casino_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1373,
+          "height": 801,
+          "description": "Planet Hollywood Resort and Casino in Las Vegas, Nevada, United States."
+        },
+        {
+          "file": "File:Las Vegas BLVD.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY 2.0",
+          "author": "http2007",
+          "source": "https://commons.wikimedia.org/wiki/File:Las_Vegas_BLVD.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/34/Las_Vegas_BLVD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 800,
+          "height": 600,
+          "description": "Boulevard Las Vegas"
+        }
+      ],
+      "refused": 6,
+      "error": null
+    },
+    "paris-las-vegas": {
+      "name": "Paris Las Vegas",
+      "view": "bellagio-fountains",
+      "wikidata": {
+        "id": "Q691491",
+        "category": "Paris Las Vegas"
+      },
+      "good": [
+        {
+          "file": "File:Las Vegas (5097349235).jpg",
+          "ok": true,
+          "why": [],
+          "kind": "view-from",
+          "how": "category Paris Las Vegas",
+          "licence": "CC BY-SA 2.0",
+          "author": "Toi Moi from au bord de la mer Méditerranée, France",
+          "source": "https://commons.wikimedia.org/wiki/File:Las_Vegas_(5097349235).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Las_Vegas_%285097349235%29.jpg/960px-Las_Vegas_%285097349235%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1200,
+          "height": 1600,
+          "description": "Le Paris Las Vega vue depuis l' hôtel Bellagio . . Pour les nostalgiques : Début octobre 2010 les bâtiments du casino-hôtel \" le Moulin Rouge \" sur la West Bonanza Road viennent d'être démolis . Ce ca"
+        },
+        {
+          "file": "File:LasVegas - ParisLasVegas.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "wikidata image",
+          "licence": "CC BY 3.0",
+          "author": "Jean-Christophe BENOIST",
+          "source": "https://commons.wikimedia.org/wiki/File:LasVegas_-_ParisLasVegas.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/LasVegas_-_ParisLasVegas.jpg/960px-LasVegas_-_ParisLasVegas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4272,
+          "height": 2848,
+          "description": "Hôtel Paris Las Vegas, à Las Vegas"
+        },
+        {
+          "file": "File:The hotel Paris Las Vegas as seen from the hotel The Bellagio.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 3.0",
+          "author": "Jürgen Matern",
+          "source": "https://commons.wikimedia.org/wiki/File:The_hotel_Paris_Las_Vegas_as_seen_from_the_hotel_The_Bellagio.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/The_hotel_Paris_Las_Vegas_as_seen_from_the_hotel_The_Bellagio.jpg/960px-The_hotel_Paris_Las_Vegas_as_seen_from_the_hotel_The_Bellagio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4536,
+          "height": 3914,
+          "description": "Image of the hotel 'Paris Las Vegas' as seen from the hotel 'The Bellagio' on a sunny afternoon in May. Both hotels are at the strip in Las Vegas."
+        },
+        {
+          "file": "File:Balloon of the Paris-Las Vegas hotel & casino.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 3.0",
+          "author": "Clément Bardot",
+          "source": "https://commons.wikimedia.org/wiki/File:Balloon_of_the_Paris-Las_Vegas_hotel_%26_casino.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Balloon_of_the_Paris-Las_Vegas_hotel_%26_casino.jpg/960px-Balloon_of_the_Paris-Las_Vegas_hotel_%26_casino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3576,
+          "height": 2379,
+          "description": "The balloon of the Paris-Las Vegas hotel casino in Las Vegas, Nevada."
+        },
+        {
+          "file": "File:Las Vegas (Nevada, USA), The Strip -- 2012 -- 6232.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Dietmar Rabich",
+          "source": "https://commons.wikimedia.org/wiki/File:Las_Vegas_(Nevada,_USA),_The_Strip_--_2012_--_6232.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Las_Vegas_%28Nevada%2C_USA%29%2C_The_Strip_--_2012_--_6232.jpg/960px-Las_Vegas_%28Nevada%2C_USA%29%2C_The_Strip_--_2012_--_6232.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4860,
+          "height": 3345,
+          "description": "“ The Strip ” (part of the Las Vegas Boulevard) in Las Vegas, Nevada , USA The Las Vegas Strip is the most famous section of Las Vegas Boulevard in Las Vegas. It stretches for around 6.8 kilometers so"
+        },
+        {
+          "file": "File:Le Ballon de Nuit.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Paris Las Vegas",
+          "licence": "CC BY-SA 4.0",
+          "author": "G6rci6",
+          "source": "https://commons.wikimedia.org/wiki/File:Le_Ballon_de_Nuit.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Le_Ballon_de_Nuit.jpg/960px-Le_Ballon_de_Nuit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3000,
+          "height": 4000,
+          "description": "Glowing Air Balloon of the Paris Hotel and Casino in Las Vegas, Nevada."
+        }
+      ],
+      "refused": 6,
+      "error": null
+    },
+    "address-sky-view": {
+      "name": "Address Sky View",
+      "view": "burj-khalifa",
+      "wikidata": {
+        "id": "Q111997627",
+        "category": null
+      },
+      "good": [
+        {
+          "file": "File:Katerina Leroy.png",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Kevin Merph",
+          "source": "https://commons.wikimedia.org/wiki/File:Katerina_Leroy.png",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Katerina_Leroy.png/960px-Katerina_Leroy.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 988,
+          "height": 1392,
+          "description": "Katerina Leroy at January 2020 in Address Sky View Hotel Dubai"
+        }
+      ],
+      "refused": 1,
+      "error": null
+    },
+    "sofitel-dubai-downtown": {
+      "name": "Sofitel Dubai Downtown",
+      "view": "burj-khalifa",
+      "wikidata": {
+        "id": "Q111150313",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "ramada-downtown-dubai": {
+      "name": "Ramada by Wyndham Downtown Dubai",
+      "view": "burj-khalifa",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "shangri-la-dubai": {
+      "name": "Shangri-La Dubai",
+      "view": "burj-khalifa",
+      "wikidata": {
+        "id": "Q111150336",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "palace-downtown": {
+      "name": "Palace Downtown",
+      "view": "burj-khalifa",
+      "wikidata": {
+        "id": "Q111150310",
+        "category": null
+      },
+      "good": [
+        {
+          "file": "File:VitoriaPalacioAnchieta.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "Public domain",
+          "author": "Brunope at Portuguese Wikipedia",
+          "source": "https://commons.wikimedia.org/wiki/File:VitoriaPalacioAnchieta.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a9/VitoriaPalacioAnchieta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 800,
+          "height": 600,
+          "description": "Palácio Anchieta (Anchieta's Palace), downtown, Vitória , state of Espírito Santo , Brazil ."
+        },
+        {
+          "file": "File:RoxieLA.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "Public domain",
+          "author": "Carol M. Highsmith",
+          "source": "https://commons.wikimedia.org/wiki/File:RoxieLA.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b1/RoxieLA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 817,
+          "height": 1024,
+          "description": "John M. Cooper's 1932 Streamlline Moderne Roxie was the last great movie palace downtown Los Angeles. Unlike others on L.A.'s Broadway, it was designed for motion pictures, rather than vaudeville show"
+        },
+        {
+          "file": "File:The Palace Downtown Dubai - panoramio.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY 3.0",
+          "author": "Aidas U.",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Palace_Downtown_Dubai_-_panoramio.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/The_Palace_Downtown_Dubai_-_panoramio.jpg/960px-The_Palace_Downtown_Dubai_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3264,
+          "height": 2448,
+          "description": "The Palace Downtown Dubai"
+        },
+        {
+          "file": "File:The Palace Downtown Dubai - panoramio (4).jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY 3.0",
+          "author": "Aidas U.",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Palace_Downtown_Dubai_-_panoramio_(4).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/The_Palace_Downtown_Dubai_-_panoramio_%284%29.jpg/960px-The_Palace_Downtown_Dubai_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3264,
+          "height": 2448,
+          "description": "The Palace Downtown Dubai"
+        },
+        {
+          "file": "File:The Palace Downtown Dubai - panoramio (6).jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY 3.0",
+          "author": "Aidas U.",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Palace_Downtown_Dubai_-_panoramio_(6).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/The_Palace_Downtown_Dubai_-_panoramio_%286%29.jpg/960px-The_Palace_Downtown_Dubai_-_panoramio_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2448,
+          "height": 3264,
+          "description": "The Palace Downtown Dubai"
+        },
+        {
+          "file": "File:Dodge Avenger Mexico City Police.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Jmagno1998",
+          "source": "https://commons.wikimedia.org/wiki/File:Dodge_Avenger_Mexico_City_Police.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Dodge_Avenger_Mexico_City_Police.jpg/960px-Dodge_Avenger_Mexico_City_Police.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4608,
+          "height": 2592,
+          "description": "A Mexico City Transit Police parked at Hidalgo Avenue, in front of Bellas Artes Palace. Downtown Mexico City."
+        }
+      ],
+      "refused": 3,
+      "error": null
+    },
+    "palazzo-manfredi": {
+      "name": "Palazzo Manfredi",
+      "view": "colosseum",
+      "wikidata": null,
+      "good": [
+        {
+          "file": "File:Palazzo Manfredi 01.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "Public domain",
+          "author": "Pierluigi Falcone",
+          "source": "https://commons.wikimedia.org/wiki/File:Palazzo_Manfredi_01.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Palazzo_Manfredi_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "width": 800,
+          "height": 600,
+          "description": "Facciata di Palazzo Manfredi"
+        },
+        {
+          "file": "File:Faenza panoramica piazza crepuscolo.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Manipol0",
+          "source": "https://commons.wikimedia.org/wiki/File:Faenza_panoramica_piazza_crepuscolo.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Faenza_panoramica_piazza_crepuscolo.jpg/960px-Faenza_panoramica_piazza_crepuscolo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4000,
+          "height": 2250,
+          "description": "Panoramica serale del centro della città di Faenza. Da sinistra a destra: Duomo, Palazzo del Podestà, Torre dell'Orologio, Fontana maggiore, Palazzo Naldi, Piazza del Popolo, ex Palazzo delle Poste, P"
+        },
+        {
+          "file": "File:Faenza, piazza del popolo, palazzo manfredi 01.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Francesco Bini",
+          "source": "https://commons.wikimedia.org/wiki/File:Faenza,_piazza_del_popolo,_palazzo_manfredi_01.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Faenza%2C_piazza_del_popolo%2C_palazzo_manfredi_01.jpg/960px-Faenza%2C_piazza_del_popolo%2C_palazzo_manfredi_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 6255,
+          "height": 4170,
+          "description": "Faenza, Italy"
+        }
+      ],
+      "refused": 2,
+      "error": null
+    },
+    "mercure-roma-centro-colosseo": {
+      "name": "Mercure Roma Centro Colosseo",
+      "view": "colosseum",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "colosseum-corner": {
+      "name": "Colosseum Corner",
+      "view": "colosseum",
+      "wikidata": {
+        "id": "Q112018007",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "n9-colosseo": {
+      "name": "N° 9 Colosseo",
+      "view": "colosseum",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "colosseo-panoramic-rooms": {
+      "name": "Colosseo Panoramic Rooms",
+      "view": "colosseum",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "pullman-paris-tour-eiffel": {
+      "name": "Pullman Paris Tour Eiffel",
+      "view": "eiffel-tower",
+      "wikidata": {
+        "id": "Q106223086",
+        "category": "Pullman Paris Tour Eiffel"
+      },
+      "good": [
+        {
+          "file": "File:Paris View from the Eiffel Tower third floor Avenue de Suffren 01.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "view-from",
+          "how": "category Pullman Paris Tour Eiffel",
+          "licence": "CC0",
+          "author": "Maxime Homme",
+          "source": "https://commons.wikimedia.org/wiki/File:Paris_View_from_the_Eiffel_Tower_third_floor_Avenue_de_Suffren_01.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Paris_View_from_the_Eiffel_Tower_third_floor_Avenue_de_Suffren_01.jpg/960px-Paris_View_from_the_Eiffel_Tower_third_floor_Avenue_de_Suffren_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2560,
+          "height": 1920,
+          "description": "Vue de Paris"
+        },
+        {
+          "file": "File:Pullman Eiffel Tower Hotel Paris France 1.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Pullman Paris Tour Eiffel",
+          "licence": "CC BY 2.0",
+          "author": "Gary Bembridge from London, UK",
+          "source": "https://commons.wikimedia.org/wiki/File:Pullman_Eiffel_Tower_Hotel_Paris_France_1.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Pullman_Eiffel_Tower_Hotel_Paris_France_1.jpg/960px-Pullman_Eiffel_Tower_Hotel_Paris_France_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3648,
+          "height": 2736,
+          "description": "Pullman Paris Tour Eiffel"
+        },
+        {
+          "file": "File:Pullman Eiffel Tower Hotel Paris France 3.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Pullman Paris Tour Eiffel",
+          "licence": "CC BY 2.0",
+          "author": "Gary Bembridge from London, UK",
+          "source": "https://commons.wikimedia.org/wiki/File:Pullman_Eiffel_Tower_Hotel_Paris_France_3.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Pullman_Eiffel_Tower_Hotel_Paris_France_3.jpg/960px-Pullman_Eiffel_Tower_Hotel_Paris_France_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3648,
+          "height": 2736,
+          "description": "Pullman Paris Tour Eiffel"
+        },
+        {
+          "file": "File:Pullman Eiffel Tower Hotel Paris France 4.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Pullman Paris Tour Eiffel",
+          "licence": "CC BY 2.0",
+          "author": "Gary Bembridge from London, UK",
+          "source": "https://commons.wikimedia.org/wiki/File:Pullman_Eiffel_Tower_Hotel_Paris_France_4.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Pullman_Eiffel_Tower_Hotel_Paris_France_4.jpg/960px-Pullman_Eiffel_Tower_Hotel_Paris_France_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2736,
+          "height": 3648,
+          "description": "Pullman Paris Tour Eiffel"
+        },
+        {
+          "file": "File:Pullman Eiffel Tower Hotel Paris France 2.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Pullman Paris Tour Eiffel",
+          "licence": "CC BY 2.0",
+          "author": "Gary Bembridge from London, UK",
+          "source": "https://commons.wikimedia.org/wiki/File:Pullman_Eiffel_Tower_Hotel_Paris_France_2.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Pullman_Eiffel_Tower_Hotel_Paris_France_2.jpg/960px-Pullman_Eiffel_Tower_Hotel_Paris_France_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3648,
+          "height": 2736,
+          "description": "Pullman Paris Tour Eiffel"
+        },
+        {
+          "file": "File:Summit @ Eiffel Tower @ Paris (34849700550).jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Pullman Paris Tour Eiffel",
+          "licence": "CC BY 2.0",
+          "author": "Guilhem Vellut from Paris, France",
+          "source": "https://commons.wikimedia.org/wiki/File:Summit_@_Eiffel_Tower_@_Paris_(34849700550).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Summit_%40_Eiffel_Tower_%40_Paris_%2834849700550%29.jpg/960px-Summit_%40_Eiffel_Tower_%40_Paris_%2834849700550%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 5472,
+          "height": 3648,
+          "description": "Eiffel Tower, Paris, France."
+        }
+      ],
+      "refused": 0,
+      "error": null
+    },
+    "shangri-la-paris": {
+      "name": "Shangri-La Paris",
+      "view": "eiffel-tower",
+      "wikidata": {
+        "id": "Q3481407",
+        "category": "Shangri-La Hotel Paris"
+      },
+      "good": [
+        {
+          "file": "File:Paris Tour Eiffel Blick von der 3. Ebene 27.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "view-from",
+          "how": "category Shangri-La Hotel Paris",
+          "licence": "CC BY-SA 4.0",
+          "author": "Zairon",
+          "source": "https://commons.wikimedia.org/wiki/File:Paris_Tour_Eiffel_Blick_von_der_3._Ebene_27.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Paris_Tour_Eiffel_Blick_von_der_3._Ebene_27.jpg/960px-Paris_Tour_Eiffel_Blick_von_der_3._Ebene_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4466,
+          "height": 3274,
+          "description": "View from the Top/third Floor of the Eiffel Tower, Paris, Region of Île-de-France, France"
+        },
+        {
+          "file": "File:Awning of the Shangri-La hotel in Paris, 23 January 2014.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "wikidata image",
+          "licence": "CC BY-SA 4.0",
+          "author": "FLLL",
+          "source": "https://commons.wikimedia.org/wiki/File:Awning_of_the_Shangri-La_hotel_in_Paris,_23_January_2014.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Awning_of_the_Shangri-La_hotel_in_Paris%2C_23_January_2014.jpg/960px-Awning_of_the_Shangri-La_hotel_in_Paris%2C_23_January_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2592,
+          "height": 1944,
+          "description": "Awning of the Shangri-La hotel in Paris. The hotel was before the town house of Roland Bonaparte"
+        },
+        {
+          "file": "File:Palais dIéna and Musée Guimet from the Eiffel Tower, Paris 23 August 2013.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Shangri-La Hotel Paris",
+          "licence": "CC BY 2.0",
+          "author": "Flightlog",
+          "source": "https://commons.wikimedia.org/wiki/File:Palais_dI%C3%A9na_and_Mus%C3%A9e_Guimet_from_the_Eiffel_Tower,_Paris_23_August_2013.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Palais_dI%C3%A9na_and_Mus%C3%A9e_Guimet_from_the_Eiffel_Tower%2C_Paris_23_August_2013.jpg/960px-Palais_dI%C3%A9na_and_Mus%C3%A9e_Guimet_from_the_Eiffel_Tower%2C_Paris_23_August_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3872,
+          "height": 2592,
+          "description": "Palais d'Iéna and Musée Guimet from the Eiffel Tower."
+        },
+        {
+          "file": "File:Palais d'Iéna and Musée Guimet from the Eiffel Tower, Paris 23 August 2013.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Shangri-La Hotel Paris",
+          "licence": "CC BY 2.0",
+          "author": "Flightlog",
+          "source": "https://commons.wikimedia.org/wiki/File:Palais_d%27I%C3%A9na_and_Mus%C3%A9e_Guimet_from_the_Eiffel_Tower,_Paris_23_August_2013.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Palais_d%27I%C3%A9na_and_Mus%C3%A9e_Guimet_from_the_Eiffel_Tower%2C_Paris_23_August_2013.jpg/960px-Palais_d%27I%C3%A9na_and_Mus%C3%A9e_Guimet_from_the_Eiffel_Tower%2C_Paris_23_August_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3622,
+          "height": 2532,
+          "description": "Palais d'Iéna and Musée Guimet from the Eiffel Tower."
+        },
+        {
+          "file": "File:Aston Martin, Avenue d'Iéna, Paris 2014.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Shangri-La Hotel Paris",
+          "licence": "CC BY-SA 2.0",
+          "author": "Falcon® Photography from France",
+          "source": "https://commons.wikimedia.org/wiki/File:Aston_Martin,_Avenue_d%27I%C3%A9na,_Paris_2014.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Aston_Martin%2C_Avenue_d%27I%C3%A9na%2C_Paris_2014.jpg/960px-Aston_Martin%2C_Avenue_d%27I%C3%A9na%2C_Paris_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3840,
+          "height": 2160,
+          "description": "Aston Martin, Shangri-La Hotel, Avenue d'Iéna, Paris."
+        },
+        {
+          "file": "File:Avenue d'Iéna, Paris 16e 3.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Polymagou",
+          "source": "https://commons.wikimedia.org/wiki/File:Avenue_d%27I%C3%A9na,_Paris_16e_3.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Avenue_d%27I%C3%A9na%2C_Paris_16e_3.jpg/960px-Avenue_d%27I%C3%A9na%2C_Paris_16e_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 5472,
+          "height": 3648,
+          "description": "Avenue d'Iéna, à hauteur de l'hôtel Shangri-La (Paris, 16e)."
+        }
+      ],
+      "refused": 3,
+      "error": null
+    },
+    "the-peninsula-paris": {
+      "name": "The Peninsula Paris",
+      "view": "eiffel-tower",
+      "wikidata": {
+        "id": "Q16632474",
+        "category": "The Peninsula Paris"
+      },
+      "good": [
+        {
+          "file": "File:FaçadeThePeninsulaParis.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "wikidata image",
+          "licence": "CC0",
+          "author": "Marketingppr",
+          "source": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7adeThePeninsulaParis.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Fa%C3%A7adeThePeninsulaParis.jpg/960px-Fa%C3%A7adeThePeninsulaParis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 5000,
+          "height": 3332,
+          "description": "Façade"
+        },
+        {
+          "file": "File:Musee-de-lArmee-IMG 1058.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category The Peninsula Paris",
+          "licence": "CC BY-SA 2.0 fr",
+          "author": "Rama .",
+          "source": "https://commons.wikimedia.org/wiki/File:Musee-de-lArmee-IMG_1058.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Musee-de-lArmee-IMG_1058.jpg/960px-Musee-de-lArmee-IMG_1058.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2196,
+          "height": 3295,
+          "description": "This image was taken at the Musée de l'Armée , Paris ."
+        },
+        {
+          "file": "File:German officer POWs in Paris HD-SN-99-02952.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "Public domain",
+          "author": "Lovell",
+          "source": "https://commons.wikimedia.org/wiki/File:German_officer_POWs_in_Paris_HD-SN-99-02952.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/German_officer_POWs_in_Paris_HD-SN-99-02952.JPG/960px-German_officer_POWs_in_Paris_HD-SN-99-02952.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3040,
+          "height": 2048,
+          "description": "High ranking German officers seized by Free French troops which liberated their country's capital are lodged in the Hôtel Majestic, headquarters for the Wehrmacht in the days of the Nazi occupation, P"
+        },
+        {
+          "file": "File:Plaque Raymond Bonenfant, 17 rue Galilée, Paris 16.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category The Peninsula Paris",
+          "licence": "CC BY-SA 3.0",
+          "author": "Wikimedia Commons / Mu",
+          "source": "https://commons.wikimedia.org/wiki/File:Plaque_Raymond_Bonenfant,_17_rue_Galil%C3%A9e,_Paris_16.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Plaque_Raymond_Bonenfant%2C_17_rue_Galil%C3%A9e%2C_Paris_16.jpg/960px-Plaque_Raymond_Bonenfant%2C_17_rue_Galil%C3%A9e%2C_Paris_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1117,
+          "height": 1437,
+          "description": "Plaque commémorative, 17 rue de Galilée, Paris 16 e . « Ici est tombé pour la France le 25 août 1944 Raymond Charles Bonenfant des Forces françaises de l'intérieur , marié, père de famille, mort pour "
+        },
+        {
+          "file": "File:Hôtel-Péninsula-construction-(Paris).jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category The Peninsula Paris",
+          "licence": "CC BY-SA 3.0",
+          "author": "Celette",
+          "source": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel-P%C3%A9ninsula-construction-(Paris).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/H%C3%B4tel-P%C3%A9ninsula-construction-%28Paris%29.jpg/960px-H%C3%B4tel-P%C3%A9ninsula-construction-%28Paris%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2736,
+          "height": 3648,
+          "description": "Façade de l'hôtel Péninsula en rénovation/construction (Paris)."
+        },
+        {
+          "file": "File:Hôtel-Péninsula-construction-(Paris)2.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category The Peninsula Paris",
+          "licence": "CC BY-SA 3.0",
+          "author": "Celette",
+          "source": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel-P%C3%A9ninsula-construction-(Paris)2.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/H%C3%B4tel-P%C3%A9ninsula-construction-%28Paris%292.JPG/960px-H%C3%B4tel-P%C3%A9ninsula-construction-%28Paris%292.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3648,
+          "height": 2736,
+          "description": "Façade de l'hôtel Péninsula en rénovation/construction (Paris)."
+        }
+      ],
+      "refused": 3,
+      "error": null
+    },
+    "le-metropolitan-paris-tour-eiffel": {
+      "name": "Le Metropolitan Paris Tour Eiffel",
+      "view": "eiffel-tower",
+      "wikidata": {
+        "id": "Q111390797",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "first-hotel-paris-tour-eiffel": {
+      "name": "First Hotel Paris Tour Eiffel",
+      "view": "eiffel-tower",
+      "wikidata": {
+        "id": "Q111390641",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "mercure-paris-centre-tour-eiffel": {
+      "name": "Mercure Paris Centre Tour Eiffel",
+      "view": "eiffel-tower",
+      "wikidata": {
+        "id": "Q111390716",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "splendid-hotel-paris": {
+      "name": "Splendid Hotel",
+      "view": "eiffel-tower",
+      "wikidata": null,
+      "good": [
+        {
+          "file": "File:Splendidhotel.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 3.0",
+          "author": "Zenman",
+          "source": "https://commons.wikimedia.org/wiki/File:Splendidhotel.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Splendidhotel.JPG/960px-Splendidhotel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1600,
+          "height": 1200,
+          "description": "Splendid Hotel in Ouagadougou (Burkina Faso)"
+        },
+        {
+          "file": "File:Splendid Hotel, Becici.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "Public domain",
+          "author": "Bratislav",
+          "source": "https://commons.wikimedia.org/wiki/File:Splendid_Hotel,_Becici.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Splendid_Hotel%2C_Becici.jpg/960px-Splendid_Hotel%2C_Becici.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1300,
+          "height": 975,
+          "description": "Hotel \"Splendid\" in Bečići, Montenegro."
+        },
+        {
+          "file": "File:Splendid hotel - panoramio.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY 3.0",
+          "author": "kuchin ster",
+          "source": "https://commons.wikimedia.org/wiki/File:Splendid_hotel_-_panoramio.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Splendid_hotel_-_panoramio.jpg/960px-Splendid_hotel_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1632,
+          "height": 1224,
+          "description": "Splendid hotel"
+        },
+        {
+          "file": "File:Splendid Dax.png",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Juliofsanguino",
+          "source": "https://commons.wikimedia.org/wiki/File:Splendid_Dax.png",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Splendid_Dax.png/960px-Splendid_Dax.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1403,
+          "height": 811,
+          "description": "This building is indexed in the base Mérimée , a database of architectural heritage maintained by the French Ministry of Culture , under the reference PA00084027 . brezhoneg ∙ català ∙ Deutsch ∙ Engli"
+        },
+        {
+          "file": "File:Dax (Landes) - Splendid Hôtel 14.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "Public domain",
+          "author": "Q134890703",
+          "source": "https://commons.wikimedia.org/wiki/File:Dax_(Landes)_-_Splendid_H%C3%B4tel_14.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Dax_%28Landes%29_-_Splendid_H%C3%B4tel_14.jpg/960px-Dax_%28Landes%29_-_Splendid_H%C3%B4tel_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1625,
+          "height": 1035,
+          "description": "Dax (Landes) - Splendid Hôtel"
+        }
+      ],
+      "refused": 15,
+      "error": null
+    },
+    "seven-hills-hotel": {
+      "name": "Seven Hills Hotel",
+      "view": "hagia-sophia",
+      "wikidata": {
+        "id": "Q111400253",
+        "category": null
+      },
+      "good": [
+        {
+          "file": "File:Blue Mosque - 4.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "view-from",
+          "how": "search by name",
+          "licence": "CC BY 2.0",
+          "author": "Pedro Szekely",
+          "source": "https://commons.wikimedia.org/wiki/File:Blue_Mosque_-_4.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Blue_Mosque_-_4.jpg/960px-Blue_Mosque_-_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1600,
+          "height": 1067,
+          "description": "The Blue Mosque is one of the highlights in Istanbul. The best place to photograph the mosque is from the terrace restaurant in the Seven Hills Hotel. I had a wonderful dinner there, spent about $40, "
+        }
+      ],
+      "refused": 0,
+      "error": null
+    },
+    "hotel-saint-sophia": {
+      "name": "Hotel Saint Sophia",
+      "view": "hagia-sophia",
+      "wikidata": null,
+      "good": [
+        {
+          "file": "File:Софійський монастир, готель.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 3.0",
+          "author": "Олекса-Київ",
+          "source": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D1%84%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80,_%D0%B3%D0%BE%D1%82%D0%B5%D0%BB%D1%8C.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/%D0%A1%D0%BE%D1%84%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%2C_%D0%B3%D0%BE%D1%82%D0%B5%D0%BB%D1%8C.JPG/960px-%D0%A1%D0%BE%D1%84%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%2C_%D0%B3%D0%BE%D1%82%D0%B5%D0%BB%D1%8C.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3072,
+          "height": 2304,
+          "description": "Готель монастирський (корпус 3), Київ , Володимирська вул. , 24"
+        },
+        {
+          "file": "File:Готель монастирський 01.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Сарапулов",
+          "source": "https://commons.wikimedia.org/wiki/File:%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_01.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_01.jpg/960px-%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 5184,
+          "height": 3456,
+          "description": "Готель монастирський (корпус 3), Київ , Володимирська вул. , 24"
+        },
+        {
+          "file": "File:Перспектива головного фасаду монастирського готелю.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Vi Ko",
+          "source": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B5%D1%80%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%B0_%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE_%D1%84%D0%B0%D1%81%D0%B0%D0%B4%D1%83_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B3%D0%BE%D1%82%D0%B5%D0%BB%D1%8E.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/%D0%9F%D0%B5%D1%80%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%B0_%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE_%D1%84%D0%B0%D1%81%D0%B0%D0%B4%D1%83_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B3%D0%BE%D1%82%D0%B5%D0%BB%D1%8E.jpg/960px-%D0%9F%D0%B5%D1%80%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%B0_%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE_%D1%84%D0%B0%D1%81%D0%B0%D0%B4%D1%83_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B3%D0%BE%D1%82%D0%B5%D0%BB%D1%8E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3733,
+          "height": 2678,
+          "description": "Готель монастирський (корпус 3), Київ , Володимирська вул. , 24"
+        },
+        {
+          "file": "File:Готель монастирський (корпус 3) IMG 6849.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Сарапулов",
+          "source": "https://commons.wikimedia.org/wiki/File:%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_(%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_3)_IMG_6849.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%28%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_3%29_IMG_6849.jpg/960px-%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%28%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_3%29_IMG_6849.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 5184,
+          "height": 3456,
+          "description": "Готель монастирський (корпус 3), Київ , Володимирська вул. , 24"
+        },
+        {
+          "file": "File:Готель монастирський на території Софії Київської.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Alina Vozna",
+          "source": "https://commons.wikimedia.org/wiki/File:%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BD%D0%B0_%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%97_%D0%A1%D0%BE%D1%84%D1%96%D1%97_%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BD%D0%B0_%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%97_%D0%A1%D0%BE%D1%84%D1%96%D1%97_%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97.jpg/960px-%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BD%D0%B0_%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%97_%D0%A1%D0%BE%D1%84%D1%96%D1%97_%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4928,
+          "height": 3264,
+          "description": "Готель монастирський, Київ , вул. Володимирська , 24"
+        },
+        {
+          "file": "File:Готель монастирський (корпус 3) Софійський собор Київ.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "Сергій Венцеславський",
+          "source": "https://commons.wikimedia.org/wiki/File:%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_(%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_3)_%D0%A1%D0%BE%D1%84%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_%D0%9A%D0%B8%D1%97%D0%B2.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%28%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_3%29_%D0%A1%D0%BE%D1%84%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_%D0%9A%D0%B8%D1%97%D0%B2.jpg/960px-%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%28%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81_3%29_%D0%A1%D0%BE%D1%84%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_%D0%9A%D0%B8%D1%97%D0%B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 6000,
+          "height": 4000,
+          "description": "Готель монастирський, Київ , вул. Володимирська , 24"
+        }
+      ],
+      "refused": 0,
+      "error": null
+    },
+    "sura-hagia-sophia-hotel": {
+      "name": "Sura Hagia Sophia Hotel",
+      "view": "hagia-sophia",
+      "wikidata": {
+        "id": "Q111400289",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "four-seasons-istanbul-sultanahmet": {
+      "name": "Four Seasons Hotel Istanbul at Sultanahmet",
+      "view": "hagia-sophia",
+      "wikidata": {
+        "id": "Q102318264",
+        "category": "Four Seasons Hotel Istanbul at Sultanahmet"
+      },
+      "good": [
+        {
+          "file": "File:Four Seasons Sultanahmet March 2008.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "wikidata image",
+          "licence": "CC BY-SA 4.0",
+          "author": "Gryffindor",
+          "source": "https://commons.wikimedia.org/wiki/File:Four_Seasons_Sultanahmet_March_2008.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Four_Seasons_Sultanahmet_March_2008.JPG/960px-Four_Seasons_Sultanahmet_March_2008.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2112,
+          "height": 2816,
+          "description": "The Four Seasons Hotel in Sultanahmet, a former Ottoman jail next to the Hagia Sophia."
+        },
+        {
+          "file": "File:Four Seasons Sultanahmet interior March 2008.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Four Seasons Hotel Istanbul at Sultanahmet",
+          "licence": "CC BY-SA 4.0",
+          "author": "Gryffindor",
+          "source": "https://commons.wikimedia.org/wiki/File:Four_Seasons_Sultanahmet_interior_March_2008.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Four_Seasons_Sultanahmet_interior_March_2008.JPG/960px-Four_Seasons_Sultanahmet_interior_March_2008.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2112,
+          "height": 2816,
+          "description": "The Four Seasons Hotel in Sultanahmet, a former Ottoman jail next to the Hagia Sophia."
+        },
+        {
+          "file": "File:Four Seasons Sultanahmet March 2008b.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Four Seasons Hotel Istanbul at Sultanahmet",
+          "licence": "CC BY-SA 4.0",
+          "author": "Gryffindor",
+          "source": "https://commons.wikimedia.org/wiki/File:Four_Seasons_Sultanahmet_March_2008b.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Four_Seasons_Sultanahmet_March_2008b.JPG/960px-Four_Seasons_Sultanahmet_March_2008b.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2816,
+          "height": 2112,
+          "description": "The Four Seasons Hotel in Sultanahmet, a former Ottoman jail next to the Hagia Sophia."
+        },
+        {
+          "file": "File:Sultanahmet kapalı cezaevi kapısı.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Four Seasons Hotel Istanbul at Sultanahmet",
+          "licence": "CC BY-SA 4.0",
+          "author": "Vikiçizer",
+          "source": "https://commons.wikimedia.org/wiki/File:Sultanahmet_kapal%C4%B1_cezaevi_kap%C4%B1s%C4%B1.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Sultanahmet_kapal%C4%B1_cezaevi_kap%C4%B1s%C4%B1.JPG/960px-Sultanahmet_kapal%C4%B1_cezaevi_kap%C4%B1s%C4%B1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2304,
+          "height": 3072,
+          "description": "İstanbul'dan görüntüler"
+        },
+        {
+          "file": "File:Four Seasons Hotel Istanbul at Sultanahmet - panoramio.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Four Seasons Hotel Istanbul at Sultanahmet",
+          "licence": "CC BY 3.0",
+          "author": "Николай Максимович",
+          "source": "https://commons.wikimedia.org/wiki/File:Four_Seasons_Hotel_Istanbul_at_Sultanahmet_-_panoramio.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Four_Seasons_Hotel_Istanbul_at_Sultanahmet_-_panoramio.jpg/960px-Four_Seasons_Hotel_Istanbul_at_Sultanahmet_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2048,
+          "height": 2048,
+          "description": "Four Seasons Hotel Istanbul at Sultanahmet"
+        }
+      ],
+      "refused": 0,
+      "error": null
+    },
+    "hotel-regina-kawaguchiko": {
+      "name": "Hotel Regina Kawaguchiko",
+      "view": "mount-fuji",
+      "wikidata": null,
+      "good": [
+        {
+          "file": "File:Hotel Regina Kawaguchiko.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "Public domain",
+          "author": "Abasaa",
+          "source": "https://commons.wikimedia.org/wiki/File:Hotel_Regina_Kawaguchiko.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Hotel_Regina_Kawaguchiko.JPG/960px-Hotel_Regina_Kawaguchiko.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2048,
+          "height": 1536,
+          "description": "Hotel Regina Kawaguchiko"
+        }
+      ],
+      "refused": 0,
+      "error": null
+    },
+    "hotel-mifujien": {
+      "name": "Hotel Mifujien",
+      "view": "mount-fuji",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "fuji-view-hotel": {
+      "name": "Fuji View Hotel",
+      "view": "mount-fuji",
+      "wikidata": null,
+      "good": [
+        {
+          "file": "File:From the Fuji View Hotel - panoramio.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "view-from",
+          "how": "search by name",
+          "licence": "CC BY-SA 3.0",
+          "author": "Koichi Shibata",
+          "source": "https://commons.wikimedia.org/wiki/File:From_the_Fuji_View_Hotel_-_panoramio.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/From_the_Fuji_View_Hotel_-_panoramio.jpg/960px-From_the_Fuji_View_Hotel_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3872,
+          "height": 2592,
+          "description": "From the Fuji View Hotel"
+        },
+        {
+          "file": "File:Shin-Yokohama Fuji View Hotel.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "Public domain",
+          "author": "Abasaa",
+          "source": "https://commons.wikimedia.org/wiki/File:Shin-Yokohama_Fuji_View_Hotel.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Shin-Yokohama_Fuji_View_Hotel.JPG/960px-Shin-Yokohama_Fuji_View_Hotel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2560,
+          "height": 1920,
+          "description": "Shin-Yokohama Fuji View Hotel"
+        },
+        {
+          "file": "File:Fuji View Hotel.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "Public domain",
+          "author": "Abasaa",
+          "source": "https://commons.wikimedia.org/wiki/File:Fuji_View_Hotel.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Fuji_View_Hotel.JPG/960px-Fuji_View_Hotel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2490,
+          "height": 1841,
+          "description": "Fuji View Hotel"
+        }
+      ],
+      "refused": 0,
+      "error": null
+    },
+    "oike-hotel": {
+      "name": "Oike Hotel",
+      "view": "mount-fuji",
+      "wikidata": null,
+      "good": [
+        {
+          "file": "File:Oike Hotel.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "Public domain",
+          "author": "Abasaa",
+          "source": "https://commons.wikimedia.org/wiki/File:Oike_Hotel.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Oike_Hotel.JPG/960px-Oike_Hotel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2560,
+          "height": 1920,
+          "description": "Oike Hotel"
+        }
+      ],
+      "refused": 0,
+      "error": null
+    },
+    "konansou-fujikawaguchiko": {
+      "name": "Fujikawaguchiko Onsen Konansou",
+      "view": "mount-fuji",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "hilton-niagara-falls-fallsview": {
+      "name": "Hilton Niagara Falls/Fallsview Hotel & Suites",
+      "view": "niagara-falls",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "niagara-falls-marriott-on-the-falls": {
+      "name": "Niagara Falls Marriott on the Falls",
+      "view": "niagara-falls",
+      "wikidata": {
+        "id": "Q111231641",
+        "category": null
+      },
+      "good": [
+        {
+          "file": "File:View of Niagara River and Falls from hotel tower 20170418 1.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "view-from",
+          "how": "search by name",
+          "licence": "CC BY-SA 4.0",
+          "author": "DXR",
+          "source": "https://commons.wikimedia.org/wiki/File:View_of_Niagara_River_and_Falls_from_hotel_tower_20170418_1.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/View_of_Niagara_River_and_Falls_from_hotel_tower_20170418_1.jpg/960px-View_of_Niagara_River_and_Falls_from_hotel_tower_20170418_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 7354,
+          "height": 3701,
+          "description": "A west view of the Niagara River and the Falls, as seen from the Marriott Falls View, Niagara Falls, Ontario"
+        },
+        {
+          "file": "File:Niagarafallsskyline 04.07.2012 14-34-30.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "wikidata image",
+          "licence": "CC BY-SA 3.0",
+          "author": "Dirk Ingo Franke",
+          "source": "https://commons.wikimedia.org/wiki/File:Niagarafallsskyline_04.07.2012_14-34-30.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Niagarafallsskyline_04.07.2012_14-34-30.jpg/960px-Niagarafallsskyline_04.07.2012_14-34-30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3114,
+          "height": 1910,
+          "description": "Hotels in the Fallsview Area, Niagara Falls, Ontario"
+        },
+        {
+          "file": "File:SkylineNiagaraFalls.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 3.0",
+          "author": "Sundar1",
+          "source": "https://commons.wikimedia.org/wiki/File:SkylineNiagaraFalls.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/SkylineNiagaraFalls.jpg/960px-SkylineNiagaraFalls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3264,
+          "height": 2448,
+          "description": "Skyline of Niagara Falls, Ontario, from Niagara upstream. Buildings from left to right: Marriott on the Falls Hotel , Radisson Hotel Suites Fallsview, Marriott Niagara Falls Hotel Fallsview Spa , Towe"
+        },
+        {
+          "file": "File:Horseshoe Falls (7234573210).jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 2.0",
+          "author": "KimonBerlin",
+          "source": "https://commons.wikimedia.org/wiki/File:Horseshoe_Falls_(7234573210).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Horseshoe_Falls_%287234573210%29.jpg/960px-Horseshoe_Falls_%287234573210%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 5184,
+          "height": 3456,
+          "description": "from the Marriott Gateway"
+        },
+        {
+          "file": "File:From the Marriott Gateway (7234575760).jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 2.0",
+          "author": "KimonBerlin",
+          "source": "https://commons.wikimedia.org/wiki/File:From_the_Marriott_Gateway_(7234575760).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/From_the_Marriott_Gateway_%287234575760%29.jpg/960px-From_the_Marriott_Gateway_%287234575760%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4785,
+          "height": 3329,
+          "description": "from the Marriott Gateway"
+        },
+        {
+          "file": "File:Horseshoe Falls (7234603894).jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 2.0",
+          "author": "KimonBerlin",
+          "source": "https://commons.wikimedia.org/wiki/File:Horseshoe_Falls_(7234603894).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Horseshoe_Falls_%287234603894%29.jpg/960px-Horseshoe_Falls_%287234603894%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 5184,
+          "height": 3456,
+          "description": "from the Marriott Gateway"
+        }
+      ],
+      "refused": 2,
+      "error": null
+    },
+    "marriott-niagara-falls-fallsview": {
+      "name": "Marriott Niagara Falls Fallsview Hotel & Spa",
+      "view": "niagara-falls",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "hyatt-regency-niagara-falls-fallsview": {
+      "name": "Hyatt Regency Niagara Falls Fallsview",
+      "view": "niagara-falls",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "oakes-hotel-overlooking-the-falls": {
+      "name": "Oakes Hotel Overlooking the Falls",
+      "view": "niagara-falls",
+      "wikidata": null,
+      "good": [
+        {
+          "file": "File:SkylineNiagaraFalls.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 3.0",
+          "author": "Sundar1",
+          "source": "https://commons.wikimedia.org/wiki/File:SkylineNiagaraFalls.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/SkylineNiagaraFalls.jpg/960px-SkylineNiagaraFalls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3264,
+          "height": 2448,
+          "description": "Skyline of Niagara Falls, Ontario, from Niagara upstream. Buildings from left to right: Marriott on the Falls Hotel , Radisson Hotel Suites Fallsview, Marriott Niagara Falls Hotel Fallsview Spa , Towe"
+        }
+      ],
+      "refused": 1,
+      "error": null
+    },
+    "steigenberger-pyramids-cairo": {
+      "name": "Steigenberger Pyramids Cairo",
+      "view": "pyramids-of-giza",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "marriott-mena-house": {
+      "name": "Marriott Mena House",
+      "view": "pyramids-of-giza",
+      "wikidata": null,
+      "good": [],
+      "refused": 20,
+      "error": null
+    },
+    "best-view-pyramids-hotel": {
+      "name": "Best View Pyramids Hotel",
+      "view": "pyramids-of-giza",
+      "wikidata": {
+        "id": "Q111111883",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "nine-pyramids-view-hotel": {
+      "name": "Nine Pyramids View Hotel",
+      "view": "pyramids-of-giza",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "le-meridien-pyramids": {
+      "name": "Le Méridien Pyramids Hotel & Spa",
+      "view": "pyramids-of-giza",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "sercotel-rosellon": {
+      "name": "Sercotel Rosellón",
+      "view": "sagrada-familia",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "eurostars-monumental": {
+      "name": "Eurostars Monumental",
+      "view": "sagrada-familia",
+      "wikidata": {
+        "id": "Q111389577",
+        "category": null
+      },
+      "good": [
+        {
+          "file": "File:Eurostars Monumental.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "wikidata image",
+          "licence": "CC BY-SA 3.0",
+          "author": "Pere prlpz",
+          "source": "https://commons.wikimedia.org/wiki/File:Eurostars_Monumental.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Eurostars_Monumental.jpg/960px-Eurostars_Monumental.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2448,
+          "height": 3264,
+          "description": "Eurostars Monumental"
+        }
+      ],
+      "refused": 0,
+      "error": null
+    },
+    "boutique-hostemplo-sagrada-familia": {
+      "name": "Boutique Hostemplo Sagrada Familia",
+      "view": "sagrada-familia",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "the-oberoi-amarvilas": {
+      "name": "The Oberoi Amarvilās",
+      "view": "taj-mahal",
+      "wikidata": {
+        "id": "Q111402646",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "radisson-hotel-agra": {
+      "name": "Radisson Hotel Agra",
+      "view": "taj-mahal",
+      "wikidata": {
+        "id": "Q111402562",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "tajview-agra": {
+      "name": "Tajview, Agra – IHCL SeleQtions",
+      "view": "taj-mahal",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "taj-hotel-convention-centre-agra": {
+      "name": "Taj Hotel & Convention Centre, Agra",
+      "view": "taj-mahal",
+      "wikidata": null,
+      "good": [],
+      "refused": 0,
+      "error": null
+    },
+    "hotel-clarks-shiraz": {
+      "name": "Hotel Clarks Shiraz",
+      "view": "taj-mahal",
+      "wikidata": {
+        "id": "Q22934359",
+        "category": null
+      },
+      "good": [],
+      "refused": 0,
+      "error": null
+    }
+  }
+}
