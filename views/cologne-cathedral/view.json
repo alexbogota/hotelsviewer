@@ -1,0 +1,217 @@
+{
+  "slug": "cologne-cathedral",
+  "order": 12,
+  "landmark": "Cologne Cathedral",
+  "landmarkInText": "Cologne Cathedral",
+  "city": "Cologne",
+  "region": "North Rhine-Westphalia",
+  "country": "Germany",
+  "coords": {
+    "lat": 50.9413,
+    "lng": 6.9583
+  },
+  "checked": "2026-10",
+  "title": "Hotels with a Cologne Cathedral view: which room to book",
+  "metaDescription": "Four Cologne hotels with a cathedral view room, the exact room category to book at each, and the look-alike rooms to skip.",
+  "h1": "Hotels with a Cologne Cathedral view, and which room to book",
+  "dek": "Four hotels around Cologne Cathedral. For each one we list the exact room category sold with the view, and the rooms that do not name it.",
+  "teaser": "From a suite named for the view to a Dom Suite that the hotel's photos tie to it.",
+  "photo": {
+    "commons": [
+      {
+        "file": "File:Kölner Dom von Osten.jpg",
+        "alt": "Cologne Cathedral in Cologne in daylight"
+      },
+      {
+        "file": "File:Cologne Cathedral (Kölner Dom) (25762003913).jpg",
+        "alt": "Cologne Cathedral in Cologne in daylight"
+      },
+      {
+        "file": "File:Kölner Dom - Hohenzollernbrücke.jpg",
+        "alt": "Cologne Cathedral seen from the Hohenzollern Bridge"
+      }
+    ]
+  },
+  "shortAnswer": [
+    {
+      "label": "Most view categories",
+      "hotel": "mondial-am-dom-hotel",
+      "room": "Cathedral View Deluxe"
+    },
+    {
+      "label": "One category, named for it",
+      "hotel": "excelsior-hotel-ernst",
+      "room": "Cathedral View Suite"
+    },
+    {
+      "label": "Dom in the name",
+      "hotel": "cologne-marriott-hotel",
+      "room": "Dom Suite"
+    }
+  ],
+  "decoder": [
+    {
+      "left": "Junior Suite",
+      "right": "Cathedral view Junior Suite",
+      "text": "The Mondial Am Dom Hotel Cologne sells a Junior Suite with no view named and a Cathedral view Junior Suite. Only the second one is for this view."
+    },
+    {
+      "left": "King Guest Room",
+      "right": "Dom Suite",
+      "text": "The Cologne Marriott Hotel sells King Guest Rooms with no view named. Its photo gallery captions the Dom Suite as having views of Cologne Cathedral."
+    },
+    {
+      "left": "Deluxe Room",
+      "right": "Cathedral View Suite",
+      "text": "The Excelsior Hotel Ernst sells a Deluxe Room with no view named. Its Cathedral View Suite is the one the hotel says has a perfect view of Cologne Cathedral."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "excelsior-hotel-ernst",
+      "name": "Excelsior Hotel Ernst",
+      "where": "Trankgasse 1-5, 50667 Cologne",
+      "stars": 5,
+      "level": "listed",
+      "book": [
+        {
+          "room": "Cathedral View Suite"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Deluxe Room",
+          "note": "Sold without a view named."
+        },
+        {
+          "room": "Grand Deluxe Room",
+          "note": "Sold without a view named."
+        },
+        {
+          "room": "Junior Suite",
+          "note": "Sold without a view named."
+        }
+      ],
+      "notes": [
+        "The hotel's own site says the Cathedral View Suite gives a perfect view of Cologne Cathedral."
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.excelsiorhotelernst.com/en/rooms-suites/"
+        }
+      ],
+      "query": "Excelsior Hotel Ernst Cologne"
+    },
+    {
+      "id": "mondial-am-dom-hotel",
+      "name": "Mondial Am Dom Hotel Cologne",
+      "where": "Kurt-Hackenberg-Platz 1",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Cathedral View Deluxe"
+        },
+        {
+          "room": "Cathedral view Junior Suite"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Standard Room",
+          "note": "Sold without a view named."
+        },
+        {
+          "room": "Grand Deluxe",
+          "note": "Sold without a view named."
+        },
+        {
+          "room": "Junior Suite",
+          "note": "Sold without a view named."
+        }
+      ],
+      "notes": [
+        "The hotel's own site says some of its modern rooms have a direct view of Cologne Cathedral, so ask which ones face it."
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://all.accor.com/hotel/1306/index.en.shtml"
+        }
+      ],
+      "query": "Mondial Am Dom Hotel Cologne"
+    },
+    {
+      "id": "cologne-marriott-hotel",
+      "name": "Cologne Marriott Hotel",
+      "where": "Johannisstrasse 76-80",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Dom Suite",
+          "note": "The hotel's photo gallery captions it as having views of Cologne Cathedral."
+        }
+      ],
+      "skip": [
+        {
+          "room": "King Guest Room",
+          "note": "Sold without a view named."
+        },
+        {
+          "room": "Deluxe King Guest Room",
+          "note": "Sold without a view named."
+        },
+        {
+          "room": "Executive King Main Room",
+          "note": "Sold without a view named."
+        }
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.marriott.com/en-us/hotels/cgnmc-cologne-marriott-hotel/photos/"
+        }
+      ],
+      "query": "Cologne Marriott Hotel"
+    },
+    {
+      "id": "dorint-hotel-heumarkt",
+      "name": "Dorint Hotel at Heumarkt Cologne",
+      "where": "Pipinstraße 1",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Comfort room with view of the Cathedral"
+        }
+      ],
+      "notes": [
+        "The hotel's own site says the cathedral can be enjoyed directly from this room."
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://hotel-koeln-city.dorint.com/en/"
+        },
+        {
+          "label": "the hotel's own site",
+          "url": "https://hotel-koeln-city.dorint.com/en/rooms/komfort-zimmer-domblick"
+        }
+      ],
+      "query": "Dorint Hotel at Heumarkt Cologne"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which Cologne hotels sell rooms with a Cologne Cathedral view?",
+      "a": "Of the hotels we checked in October 2026, four name a room with the cathedral in the name or the description: Excelsior Hotel Ernst, Mondial Am Dom Hotel Cologne, Cologne Marriott Hotel and Dorint Hotel at Heumarkt Cologne. Each one's own site names the room."
+    },
+    {
+      "q": "Does a Cathedral view room always face the cathedral?",
+      "a": "The hotels name these rooms on their own sites, but they do not say which floor or side of the building each room faces. Ask the hotel which room faces the cathedral when you book."
+    },
+    {
+      "q": "Is a Dom Suite the same as a Cathedral View Suite?",
+      "a": "Dom is the German word for cathedral. The Cologne Marriott Hotel's photo gallery captions its Dom Suite as having views of Cologne Cathedral. The Excelsior Hotel Ernst sells a suite named Cathedral View Suite. They are at different hotels."
+    }
+  ]
+}

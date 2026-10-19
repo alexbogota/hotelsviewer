@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-19",
+  "slug": "cologne-cathedral",
+  "fetched": [
+    {
+      "url": "https://www.excelsiorhotelernst.com/en/rooms-suites/",
+      "chars": 861,
+      "blocked": false,
+      "head": "**Room categories:** - \"Excelsior Suite\" - \"Cathedral View Suite\" - \"Executive Suite\" - \"Suite\" - \"Junior Suite\" - \"Grand Deluxe Room\" - \"Deluxe Room\" - \"Grand superior room\" - \"Cl"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/cgnmc-cologne-marriott-hotel/photos/",
+      "chars": 666,
+      "blocked": false,
+      "head": "\"Grand Deluxe King Guest Room\" \"Executive Twin/Twin Guest Room\" \"Deluxe Twin/Twin Guest Room\" \"King Guest Room\" \"Executive King Main Room\" \"Deluxe King Guest Room\" \"Executive King "
+    },
+    {
+      "url": "https://www.accorhotels.com/gb/hotel-1306-hotel-mondial-am-dom-cologne-mgallery-by-sofitel/index.shtml",
+      "chars": 908,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.accorhotels.com/gb/hotel-1306-hotel-mondial-am-dom-cologne-mgallery"
+    },
+    {
+      "url": "https://www.hotels.com/ho145187",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://all.accor.com/hotel/1306/index.en.shtml",
+      "chars": 509,
+      "blocked": false,
+      "head": "\"Standard Room\" \"Standard room with 2 single beds\" \"Business Room\" \"Cathedral View Deluxe\" \"Grand Deluxe\" \"Junior Suite\" \"Cathedral view Junior Suite\" Cathedral view sentences: - \""
+    },
+    {
+      "url": "https://www.hotels.com/ho145187/excelsior-hotel-ernst-am-dom-cologne-germany",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.maritim.de/en/hotels/cologne",
+      "chars": 767,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.maritim.de/en/hotels/cologne Redirect URL (from the server's Locati"
+    },
+    {
+      "url": "https://www.maritim.com/en/hotels/cologne",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.hotels.com/ho214997/dorint-hotel-am-heumarkt-koln-cologne-germany/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.dorint.com/koeln/",
+      "chars": 761,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://dorint.com/koeln/ Redirect URL (from the server's Location header — ser"
+    },
+    {
+      "url": "https://hotel-koeln-messe.dorint.com/de//",
+      "chars": 494,
+      "blocked": false,
+      "head": "\"Standard Zimmer mit Queensize Bett\" \"Standard Zimmer mit Doppelbett\" \"Standard Zimmer mit zwei Einzelbetten\" \"Komfort Zimmer\" \"Superior Zimmer\" \"Deluxe Suite\" \"Präsidenten Suite\" "
+    },
+    {
+      "url": "https://hotel-koeln-city.dorint.com/en/rooms/komfort-zimmer-domblick",
+      "chars": 338,
+      "blocked": false,
+      "head": "**Room name:** \"Comfort room with view of the Cathedral\" **Cathedral/Dom view:** - \"A warm welcome to our comfortable rooms with views of Cologne Cathedral.\" - \"...the beautiful vi"
+    },
+    {
+      "url": "https://www.excelsiorhotelernst.com/en/rooms-suites/cathedral-view-suite/",
+      "chars": 323,
+      "blocked": false,
+      "head": "**Room name:** \"CATHEDRAL VIEW SUITE\" **Size:** The page states \"approx. 40 square metres\" for separate living and sleeping areas. **Sentences mentioning the cathedral or view:** -"
+    },
+    {
+      "url": "https://www.hotel-am-museum.de/en/",
+      "chars": 302,
+      "blocked": false,
+      "head": "\"Junior Suite\" \"Triple Room\" \"Double Rooms\" Cathedral view: \"Enjoy the fantastic view of the cathedral.\" The street address is not included in the page content, so I can't provide "
+    },
+    {
+      "url": "https://hotel-koeln-city.dorint.com/en/",
+      "chars": 228,
+      "blocked": false,
+      "head": "**Hotel name:** Dorint Hotel at Heumarkt Cologne **Street address:** Pipinstraße 1, 50667 Cologne **Star rating:** The page does not state a number of stars. It shows a guest ratin"
+    },
+    {
+      "url": "https://www.hyatt.com/hyatt-regency/en-US/cgnrc-hyatt-regency-cologne/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=20&format=json&srsearch=Cologne%20Cathedral%20daytime",
+      "chars": 126,
+      "blocked": true,
+      "head": "None of the search results has a title ending in .jpg or .jpeg. All 20 results are .pdf files, so there are no titles to list."
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=30&format=json&srsearch=Kölner%20Dom%20Cologne%20Cathedral%20jpg",
+      "chars": 1316,
+      "blocked": false,
+      "head": "File:Kölner Dom nachts 2013.jpg File:Kranhäuser Cologne, April 2018 -01.jpg File:Kölner Dom - Spitze des Nordtumes 1881.jpg File:Kölner Dom - Gerüstbau Nordturm (6515-17).jpg File:"
+    },
+    {
+      "url": "https://www.excelsiorhotelernst.com/en/rooms-suites/",
+      "chars": 508,
+      "blocked": false,
+      "head": "**Hotel name:** \"Excelsior Hotel Ernst\" **Street address:** The page doesn't give the address as a sentence. It lists it in the contact block: \"Trankgasse 1-5\" (followed by \"50667 "
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/cgnmc-cologne-marriott-hotel/photos/",
+      "chars": 288,
+      "blocked": false,
+      "head": "**Hotel name:** \"Cologne Marriott Hotel\" **Dom Suite caption:** \"Dom Suite - Views of Cologne Cathedral\" **Address:** The page has no single address sentence. It lists the address "
+    },
+    {
+      "url": "https://all.accor.com/hotel/1306/index.en.shtml",
+      "chars": 269,
+      "blocked": false,
+      "head": "**Hotel name:** \"Mondial Am Dom Hotel Cologne - MGallery Collection\" **Address:** \"Kurt-Hackenberg-Platz 1, 50667 COLOGNE, Germany\" **Cathedral-view rooms:** The page lists \"Modern"
+    }
+  ],
+  "searches": [
+    "hotels with Cologne Cathedral view rooms",
+    "Hotel Excelsior Ernst am Dom Cologne cathedral view room",
+    "Cologne hotel room with cathedral view Dom suite official site",
+    "Le Méridien Dom Hotel Cologne rooms suites cathedral view",
+    "Hotel Domblick Köln official rooms Domblick Zimmer",
+    "Hotel Ludwig Cologne rooms cathedral view category",
+    "Dorint Hotel am Heumarkt Köln official rooms Dom view Terrassen Suite",
+    "Cologne hotel \"Cathedral View\" room type booking",
+    "Steigenberger Hotel Köln rooms Dom view category",
+    "Hyatt Regency Cologne Cathedral River View room official"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 44,
+    "error": false
+  },
+  "outcome": "drafted",
+  "reason": "Started by hand for Cologne Cathedral."
+}

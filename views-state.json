@@ -23,6 +23,14 @@
       "title": "Hotels with a Pantheon view, and which room to book",
       "hotels": 3,
       "rooms": 4
+    },
+    {
+      "date": "2026-10-19",
+      "slug": "cologne-cathedral",
+      "qid": "Q4176",
+      "title": "Hotels with a Cologne Cathedral view, and which room to book",
+      "hotels": 4,
+      "rooms": 5
     }
   ],
   "attempts": {

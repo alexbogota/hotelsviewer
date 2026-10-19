@@ -1,0 +1,32 @@
+[
+  { "hotel": "excelsior-hotel-ernst", "field": "hotel.name", "value": "Excelsior Hotel Ernst", "url": "https://www.excelsiorhotelernst.com/en/rooms-suites/", "quote": "Excelsior Hotel Ernst" },
+  { "hotel": "excelsior-hotel-ernst", "field": "hotel.where", "value": "Trankgasse 1-5, 50667 Cologne", "url": "https://www.excelsiorhotelernst.com/en/rooms-suites/", "quote": "Trankgasse 1-5, 50667 Cologne, Germany" },
+  { "hotel": "excelsior-hotel-ernst", "field": "hotel.stars", "value": "5", "url": "https://www.excelsiorhotelernst.com/en/rooms-suites/", "quote": "5-star hotel" },
+  { "hotel": "excelsior-hotel-ernst", "field": "hotel.level", "value": "listed", "url": "https://www.excelsiorhotelernst.com/en/rooms-suites/", "quote": "Cathedral View Suite" },
+  { "hotel": "excelsior-hotel-ernst", "field": "room.book", "value": "Cathedral View Suite", "url": "https://www.excelsiorhotelernst.com/en/rooms-suites/", "quote": "Cathedral View Suite" },
+  { "hotel": "excelsior-hotel-ernst", "field": "room.skip", "value": "Deluxe Room", "url": "https://www.excelsiorhotelernst.com/en/rooms-suites/", "quote": "Deluxe Room" },
+  { "hotel": "excelsior-hotel-ernst", "field": "room.skip", "value": "Grand Deluxe Room", "url": "https://www.excelsiorhotelernst.com/en/rooms-suites/", "quote": "Grand Deluxe Room" },
+  { "hotel": "excelsior-hotel-ernst", "field": "room.skip", "value": "Junior Suite", "url": "https://www.excelsiorhotelernst.com/en/rooms-suites/", "quote": "Junior Suite" },
+
+  { "hotel": "mondial-am-dom-hotel", "field": "hotel.name", "value": "Mondial Am Dom Hotel Cologne", "url": "https://all.accor.com/hotel/1306/index.en.shtml", "quote": "Mondial Am Dom Hotel Cologne - MGallery Collection" },
+  { "hotel": "mondial-am-dom-hotel", "field": "hotel.where", "value": "Kurt-Hackenberg-Platz 1", "url": "https://all.accor.com/hotel/1306/index.en.shtml", "quote": "Kurt-Hackenberg-Platz 1, 50667 COLOGNE, Germany" },
+  { "hotel": "mondial-am-dom-hotel", "field": "hotel.level", "value": "listed", "url": "https://all.accor.com/hotel/1306/index.en.shtml", "quote": "Cathedral View Deluxe" },
+  { "hotel": "mondial-am-dom-hotel", "field": "room.book", "value": "Cathedral View Deluxe", "url": "https://all.accor.com/hotel/1306/index.en.shtml", "quote": "Cathedral View Deluxe" },
+  { "hotel": "mondial-am-dom-hotel", "field": "room.book", "value": "Cathedral view Junior Suite", "url": "https://all.accor.com/hotel/1306/index.en.shtml", "quote": "Cathedral view Junior Suite" },
+  { "hotel": "mondial-am-dom-hotel", "field": "room.skip", "value": "Standard Room", "url": "https://all.accor.com/hotel/1306/index.en.shtml", "quote": "Standard Room" },
+  { "hotel": "mondial-am-dom-hotel", "field": "room.skip", "value": "Grand Deluxe", "url": "https://all.accor.com/hotel/1306/index.en.shtml", "quote": "Grand Deluxe" },
+  { "hotel": "mondial-am-dom-hotel", "field": "room.skip", "value": "Junior Suite", "url": "https://all.accor.com/hotel/1306/index.en.shtml", "quote": "Junior Suite" },
+
+  { "hotel": "cologne-marriott-hotel", "field": "hotel.name", "value": "Cologne Marriott Hotel", "url": "https://www.marriott.com/en-us/hotels/cgnmc-cologne-marriott-hotel/photos/", "quote": "Cologne Marriott Hotel" },
+  { "hotel": "cologne-marriott-hotel", "field": "hotel.where", "value": "Johannisstrasse 76-80", "url": "https://www.marriott.com/en-us/hotels/cgnmc-cologne-marriott-hotel/photos/", "quote": "Johannisstrasse 76-80" },
+  { "hotel": "cologne-marriott-hotel", "field": "hotel.level", "value": "listed", "url": "https://www.marriott.com/en-us/hotels/cgnmc-cologne-marriott-hotel/photos/", "quote": "Dom Suite - Views of Cologne Cathedral" },
+  { "hotel": "cologne-marriott-hotel", "field": "room.book", "value": "Dom Suite", "url": "https://www.marriott.com/en-us/hotels/cgnmc-cologne-marriott-hotel/photos/", "quote": "Dom Suite - Views of Cologne Cathedral" },
+  { "hotel": "cologne-marriott-hotel", "field": "room.skip", "value": "King Guest Room", "url": "https://www.marriott.com/en-us/hotels/cgnmc-cologne-marriott-hotel/photos/", "quote": "King Guest Room" },
+  { "hotel": "cologne-marriott-hotel", "field": "room.skip", "value": "Deluxe King Guest Room", "url": "https://www.marriott.com/en-us/hotels/cgnmc-cologne-marriott-hotel/photos/", "quote": "Deluxe King Guest Room" },
+  { "hotel": "cologne-marriott-hotel", "field": "room.skip", "value": "Executive King Main Room", "url": "https://www.marriott.com/en-us/hotels/cgnmc-cologne-marriott-hotel/photos/", "quote": "Executive King Main Room" },
+
+  { "hotel": "dorint-hotel-heumarkt", "field": "hotel.name", "value": "Dorint Hotel at Heumarkt Cologne", "url": "https://hotel-koeln-city.dorint.com/en/", "quote": "Dorint Hotel at Heumarkt Cologne" },
+  { "hotel": "dorint-hotel-heumarkt", "field": "hotel.where", "value": "Pipinstraße 1", "url": "https://hotel-koeln-city.dorint.com/en/", "quote": "Pipinstraße 1, 50667 Cologne" },
+  { "hotel": "dorint-hotel-heumarkt", "field": "hotel.level", "value": "listed", "url": "https://hotel-koeln-city.dorint.com/en/rooms/komfort-zimmer-domblick", "quote": "Comfort room with view of the Cathedral" },
+  { "hotel": "dorint-hotel-heumarkt", "field": "room.book", "value": "Comfort room with view of the Cathedral", "url": "https://hotel-koeln-city.dorint.com/en/rooms/komfort-zimmer-domblick", "quote": "Comfort room with view of the Cathedral" }
+]
