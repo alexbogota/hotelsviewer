@@ -1,5 +1,5 @@
 # START: читать первым (короткая память проекта)
-Обновлено: 18 октября 2026 (поздний вечер, партия опубликована). После каждой задачи Claude сам обновляет этот файл (что изменилось, что ждёт владельца). Не больше 60 строк. Длинное идёт в `docs/`.
+Обновлено: 18 октября 2026 (поздний вечер: партия опубликована, Travelpayouts зарегистрирован). После каждой задачи Claude сам обновляет этот файл (что изменилось, что ждёт владельца). Не больше 60 строк. Длинное идёт в `docs/`.
 
 ## Что работает сейчас
 - Сайт hotelsviewer.com (Astro), код в GitHub `alexbogota/hotelsviewer`. Push в `main` сам скачивает недостающие фото, собирает сайт, проверяет его и выкладывает на хостинг по FTPS.
@@ -14,7 +14,7 @@
 1. Деплой сделан и работает (18 октября, сайт открывается, фото на месте). Переменная `FTP_SERVER_DIR=./` оставлена: защита `scripts/ftp-target.mjs` сама выбирает пустую или нашу папку, saveandplay.com не затронут.
 2. Stay22: скрипт Active, карта включена (aid `hotelsviewer`). Осталось посмотреть клики в панели hub.stay22.com: подменяются ли наши `/go/` ссылки.
 3. Почта `contact@hotelsviewer.com`: создать ящик или пересылку в cPanel (Email Accounts или Forwarders). Адрес указан на сайте и нужен для заявок.
-4. Заявки в партнёрки, порядок в `docs/partners.md`: сразу Stay22 и Travelpayouts; после выкладки Agoda, Expedia Travel Creator Program (напрямую), GetYourGuide. Booking через CJ позже.
+4. Заявки в партнёрки (подробно `docs/partners.md`). Stay22 готов. Travelpayouts зарегистрирован, одобрены 9 быстрых программ (из полезных: GetTransfer, eSIM Saily/Yesim/GigSky), отелей среди них нет. Теперь подать заявки внутри Travelpayouts по очереди: 1) отели: Booking.com, Trip.com, Vio.com, Rakuten Travel INTL; 2) билеты: Tiqets, GetYourGuide, Viator; 3) дорога: Welcome Pickups, Radical Storage. Напрямую, вне Travelpayouts: Expedia Travel Creator и Agoda. Booking через CJ теперь запасной путь. Когда что-то одобрят, нужна одна настоящая ссылка из кабинета, чтобы подогнать `links.json`.
 5. Когда будут соцсети и подписка: ссылки в `src/data/site.ts` (`social`), адрес формы Brevo в `subscribeFormUrl`. Пустые поля на сайте скрыты.
 
 ## Партия новых видов: опубликована 18 октября
