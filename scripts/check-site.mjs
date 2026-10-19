@@ -3,10 +3,12 @@
 // - every <img> has a non-empty alt (CLAUDE.md: alt text is the default everywhere);
 // - every internal link and #anchor points at something that exists;
 // - every /go/ link has a redirect in dist/go/.htaccess;
+// - every enabled social account in data/accounts.json has its short profile link there, with the right marks;
 // - no unfinished text (TODO, lorem ipsum, coming soon).
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { PROFILE_MARKER, loadAccounts, profileRedirectLine } from './lib/accounts.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dist = join(root, 'dist');
@@ -24,9 +26,9 @@ function walk(dir) {
 
 const htmlFiles = walk(dist).filter((p) => p.endsWith('.html'));
 const goFile = join(dist, 'go/.htaccess');
-const goIds = existsSync(goFile)
-  ? [...readFileSync(goFile, 'utf8').matchAll(/\^\/go\/([a-z0-9-]+)\//g)].map((m) => m[1])
-  : [];
+// The file has two parts: price and ticket links first, then the short links of our social profiles (after PROFILE_MARKER).
+const [goPriceText, goProfileText = ''] = (existsSync(goFile) ? readFileSync(goFile, 'utf8') : '').split(PROFILE_MARKER);
+const goIds = [...goPriceText.matchAll(/\^\/go\/([a-z0-9-]+)\//g)].map((m) => m[1]);
 
 const errors = [];
 const idsByPage = new Map();
@@ -95,9 +97,21 @@ for (const f of ['.htaccess', 'robots.txt', 'sitemap.xml', 'favicon.svg', 'og-im
   if (!existsSync(join(dist, f))) errors.push(`missing file ${f}`);
 }
 
+const social = loadAccounts();
+const profileLines = new Set(goProfileText.split('\n').filter((l) => l.includes('RedirectMatch')));
+let profileOk = 0;
+for (const a of social.list) {
+  const want = profileRedirectLine(social.links, a);
+  if (a.enabled && profileLines.has(want)) profileOk++;
+  else if (a.enabled) errors.push(`short link /go/${a.go}/ (${a.name}) is missing from dist/go/.htaccess or leads to the wrong address`);
+  else if (goProfileText.includes(`^/go/${a.go}/`)) errors.push(`short link /go/${a.go}/ (${a.name}) is switched off in data/accounts.json but still in dist/go/.htaccess`);
+}
+const profilesWanted = social.list.filter((a) => a.enabled).length;
+if (profileLines.size !== profilesWanted) errors.push(`dist/go/.htaccess has ${profileLines.size} profile link line(s), data/accounts.json asks for ${profilesWanted}`);
+
 if (errors.length) {
   console.error(`check-site: ${errors.length} problem(s)`);
   for (const e of errors) console.error(' - ' + e);
   process.exit(1);
 }
-console.log(`check-site: ${htmlFiles.length} pages OK, ${goIds.length} price links OK`);
+console.log(`check-site: ${htmlFiles.length} pages OK, ${goIds.length} price links OK, ${profileOk} profile links OK`);
