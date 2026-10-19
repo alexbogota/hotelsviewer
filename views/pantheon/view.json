@@ -1,0 +1,199 @@
+{
+  "slug": "pantheon",
+  "order": 12,
+  "landmark": "Pantheon",
+  "landmarkInText": "the Pantheon",
+  "city": "Rome",
+  "region": "Lazio",
+  "country": "Italy",
+  "coords": {
+    "lat": 41.8986,
+    "lng": 12.4769
+  },
+  "checked": "2026-10",
+  "title": "Hotels with a Pantheon view: which room to book",
+  "metaDescription": "Three Rome hotels near the Pantheon with view rooms, the exact room category to book at each, and the standard rooms to skip.",
+  "h1": "Hotels with a Pantheon view, and which room to book",
+  "dek": "Three hotels in Rome's historic centre, two on Piazza della Rotonda and one a short walk away. For each one we list the exact room category sold with the view, and the standard and classic rooms that look elsewhere.",
+  "teaser": "Two hotels name their Pantheon view categories, and one room is only described as facing it by a travel magazine.",
+  "photo": {
+    "commons": [
+      {
+        "file": "File:Pantheon-Rome-May-2009.jpg",
+        "alt": "The Pantheon in Rome in daylight"
+      },
+      {
+        "file": "File:Rome Pantheon Piazza della Rotonda.jpg",
+        "alt": "The Pantheon on Piazza della Rotonda in Rome in daylight"
+      },
+      {
+        "file": "File:Pantheon in Rome, Italy.jpg",
+        "alt": "The Pantheon in Rome, Italy in daylight"
+      }
+    ]
+  },
+  "shortAnswer": [
+    {
+      "label": "Most view categories",
+      "hotel": "antico-albergo-del-sole-al-pantheon",
+      "room": "Deluxe Suite Annex Pantheon View"
+    },
+    {
+      "label": "A double with the view",
+      "hotel": "albergo-del-senato",
+      "room": "Superior Double Rooms"
+    },
+    {
+      "label": "The room a guide names",
+      "hotel": "pantheon-iconic-rome-hotel",
+      "room": "Pantheon Suite"
+    }
+  ],
+  "decoder": [
+    {
+      "left": "Standard Double Rooms",
+      "right": "Superior Double Rooms",
+      "text": "At the Hotel Albergo del Senato, Oyster says the Standard Double Rooms lack a Pantheon view, while the Superior Double Rooms have Pantheon views."
+    },
+    {
+      "left": "Junior Suite",
+      "right": "Deluxe Suite Annex Pantheon View",
+      "text": "The Junior Suite at the Antico Albergo del Sole Al Pantheon is sold on Trip.com with no view named. The Deluxe Suite Annex has Pantheon View in its name."
+    },
+    {
+      "left": "Classic Room",
+      "right": "Pantheon Suite",
+      "text": "The Classic Room at The Pantheon Iconic is sold with no view named. Luxury Travel Advisor says the Pantheon Suite overlooks the Pantheon, but no category name says so."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "antico-albergo-del-sole-al-pantheon",
+      "name": "Antico Albergo del Sole Al Pantheon",
+      "where": "Piazza della Rotonda, 63",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Deluxe Suite Annex Pantheon View"
+        },
+        {
+          "room": "Imperial Suite Ariosto Pantheon View"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Junior Suite",
+          "note": "Sold without the view named."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Trip.com"
+        }
+      ],
+      "query": "Antico Albergo del Sole Al Pantheon Rome"
+    },
+    {
+      "id": "albergo-del-senato",
+      "name": "Hotel Albergo del Senato",
+      "where": "Piazza della Rotonda 73",
+      "stars": 3,
+      "level": "listed",
+      "book": [
+        {
+          "room": "Superior Double Rooms",
+          "note": "Oyster says these have Pantheon views plus bathrobes."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Standard Double Rooms",
+          "note": "Sold without a Pantheon view."
+        },
+        {
+          "room": "Standard Single",
+          "note": "Sold without a Pantheon view."
+        }
+      ],
+      "notes": [
+        "Time Out says many rooms at the front have unobstructed views of the Pantheon and recommends asking for Room 204."
+      ],
+      "sources": [
+        {
+          "label": "Oyster"
+        },
+        {
+          "label": "Great Small Hotels",
+          "url": "https://www.greatsmallhotels.com/rome-boutique-hotels/hotel-albergo-del-senato"
+        },
+        {
+          "label": "Time Out",
+          "url": "https://www.timeout.com/rome/hotels/albergo-del-senato"
+        }
+      ],
+      "query": "Hotel Albergo del Senato Rome"
+    },
+    {
+      "id": "pantheon-iconic-rome-hotel",
+      "name": "The Pantheon Iconic Hotel",
+      "where": "Via di Santa Chiara 4/A",
+      "level": "reported",
+      "book": [
+        {
+          "room": "Pantheon Suite",
+          "note": "Luxury Travel Advisor names it as overlooking the Pantheon. The category name does not say so, so ask the hotel."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Classic Room",
+          "note": "Sold without a view named."
+        },
+        {
+          "room": "Superior Room",
+          "note": "Sold without a view named."
+        }
+      ],
+      "notes": [
+        "Private Upgrades says to ask for a Pantheon-facing room when booking."
+      ],
+      "sources": [
+        {
+          "label": "Luxury Travel Advisor",
+          "url": "https://www.luxurytraveladvisor.com/inside-rome-s-newest-hotel"
+        },
+        {
+          "label": "Private Upgrades"
+        },
+        {
+          "label": "British Airways"
+        }
+      ],
+      "query": "The Pantheon Iconic Rome Hotel Rome"
+    }
+  ],
+  "alternatives": [
+    {
+      "title": "No view room? Try the rooftop",
+      "text": "Oyster describes a rooftop terrace with striking Pantheon views at the Hotel Albergo del Senato, with waiter service in high season."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which hotels sell rooms with a Pantheon view?",
+      "a": "Of the hotels we checked in October 2026, two sell room categories with a Pantheon view in their description: the Antico Albergo del Sole Al Pantheon and the Hotel Albergo del Senato. A travel magazine says the Pantheon Suite at The Pantheon Iconic overlooks the Pantheon."
+    },
+    {
+      "q": "Which room should I book for a Pantheon view?",
+      "a": "At the Antico Albergo del Sole Al Pantheon, book the Deluxe Suite Annex Pantheon View or the Imperial Suite Ariosto Pantheon View. At the Hotel Albergo del Senato, book the Superior Double Rooms. Oyster says those have Pantheon views plus bathrobes."
+    },
+    {
+      "q": "Is the Pantheon Suite confirmed to face the Pantheon?",
+      "a": "Not by the room list we opened. A travel magazine says it overlooks the Pantheon, and Private Upgrades advises asking for a Pantheon-facing room when you book."
+    },
+    {
+      "q": "Do all rooms at the Albergo del Senato face the Pantheon?",
+      "a": "No. Oyster says the Standard Single and Standard Double Rooms lack a Pantheon view. Time Out says many front rooms have an unobstructed view and recommends asking for Room 204."
+    }
+  ]
+}

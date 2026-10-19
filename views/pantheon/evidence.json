@@ -1,0 +1,23 @@
+[
+  { "hotel": "antico-albergo-del-sole-al-pantheon", "field": "hotel.name", "value": "Antico Albergo del Sole Al Pantheon", "url": "https://ph.trip.com/hotels/rome-hotel-detail-2645613/hotel-sole-al-pantheon", "quote": "Antico Albergo del Sole Al Pantheon" },
+  { "hotel": "antico-albergo-del-sole-al-pantheon", "field": "hotel.where", "value": "Piazza della Rotonda, 63", "url": "https://ph.trip.com/hotels/rome-hotel-detail-2645613/hotel-sole-al-pantheon", "quote": "Piazza della Rotonda, 63, Colonna, Rome, Lazio, 00186, Italy" },
+  { "hotel": "antico-albergo-del-sole-al-pantheon", "field": "hotel.level", "value": "listed", "url": "https://ph.trip.com/hotels/rome-hotel-detail-2645613/hotel-sole-al-pantheon", "quote": "Deluxe Suite Annex Pantheon View" },
+  { "hotel": "antico-albergo-del-sole-al-pantheon", "field": "room.book", "value": "Deluxe Suite Annex Pantheon View", "url": "https://ph.trip.com/hotels/rome-hotel-detail-2645613/hotel-sole-al-pantheon", "quote": "Deluxe Suite Annex Pantheon View" },
+  { "hotel": "antico-albergo-del-sole-al-pantheon", "field": "room.book", "value": "Imperial Suite Ariosto Pantheon View", "url": "https://ph.trip.com/hotels/rome-hotel-detail-2645613/hotel-sole-al-pantheon", "quote": "Imperial Suite Ariosto Pantheon View" },
+  { "hotel": "antico-albergo-del-sole-al-pantheon", "field": "room.skip", "value": "Junior Suite", "url": "https://ph.trip.com/hotels/rome-hotel-detail-2645613/hotel-sole-al-pantheon", "quote": "Junior Suite" },
+
+  { "hotel": "albergo-del-senato", "field": "hotel.name", "value": "Hotel Albergo del Senato", "url": "https://www.greatsmallhotels.com/rome-boutique-hotels/hotel-albergo-del-senato", "quote": "Hotel Albergo del Senato, Rome" },
+  { "hotel": "albergo-del-senato", "field": "hotel.where", "value": "Piazza della Rotonda 73", "url": "https://www.oyster.com/rome/hotels/albergo-del-senato/", "quote": "Piazza della Rotonda 73, Rome, Italy" },
+  { "hotel": "albergo-del-senato", "field": "hotel.stars", "value": "3", "url": "https://www.greatsmallhotels.com/rome-boutique-hotels/hotel-albergo-del-senato", "quote": "The hotel is a 3-star boutique property with 57 rooms" },
+  { "hotel": "albergo-del-senato", "field": "hotel.level", "value": "listed", "url": "https://www.oyster.com/rome/hotels/albergo-del-senato/", "quote": "Superior Single and Superior Double Rooms have Pantheon views plus bathrobes." },
+  { "hotel": "albergo-del-senato", "field": "room.book", "value": "Superior Double Rooms", "url": "https://www.oyster.com/rome/hotels/albergo-del-senato/", "quote": "Superior Single and Superior Double Rooms have Pantheon views plus bathrobes." },
+  { "hotel": "albergo-del-senato", "field": "room.skip", "value": "Standard Double Rooms", "url": "https://www.oyster.com/rome/hotels/albergo-del-senato/", "quote": "Standard Single and Standard Double Rooms are beautiful, but lack a Pantheon view," },
+  { "hotel": "albergo-del-senato", "field": "room.skip", "value": "Standard Single", "url": "https://www.oyster.com/rome/hotels/albergo-del-senato/", "quote": "Standard Single and Standard Double Rooms are beautiful, but lack a Pantheon view," },
+
+  { "hotel": "pantheon-iconic-rome-hotel", "field": "hotel.name", "value": "The Pantheon Iconic Hotel", "url": "https://www.privateupgrades.com/italy/the-pantheon-iconic-rome-hotel-autograph-collection-hotel-rome", "quote": "The Pantheon Iconic Hotel" },
+  { "hotel": "pantheon-iconic-rome-hotel", "field": "hotel.where", "value": "Via di Santa Chiara 4/A", "url": "https://www.britishairways.com/en-es/destinations/hotel-information/Rome/The-Pantheon-Iconic-Rome-Hotel/IT-ROM-7807070", "quote": "Via di Santa Chiara 4/A" },
+  { "hotel": "pantheon-iconic-rome-hotel", "field": "hotel.level", "value": "reported", "url": "https://www.luxurytraveladvisor.com/inside-rome-s-newest-hotel", "quote": "consider The Pantheon Suite, which overlooks the Pantheon;" },
+  { "hotel": "pantheon-iconic-rome-hotel", "field": "room.book", "value": "Pantheon Suite", "url": "https://www.luxurytraveladvisor.com/inside-rome-s-newest-hotel", "quote": "consider The Pantheon Suite, which overlooks the Pantheon;" },
+  { "hotel": "pantheon-iconic-rome-hotel", "field": "room.skip", "value": "Classic Room", "url": "https://www.privateupgrades.com/italy/the-pantheon-iconic-rome-hotel-autograph-collection-hotel-rome", "quote": "Classic Room" },
+  { "hotel": "pantheon-iconic-rome-hotel", "field": "room.skip", "value": "Superior Room", "url": "https://www.privateupgrades.com/italy/the-pantheon-iconic-rome-hotel-autograph-collection-hotel-rome", "quote": "Superior Room" }
+]
