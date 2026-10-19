@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-19",
+  "slug": "taipei-101",
+  "fetched": [
+    {
+      "url": "https://www.shangri-la.com/en/taipei/fareasternplazashangrila/rooms-suites/rooms/deluxe-taipei-101-view-room/",
+      "chars": 513,
+      "blocked": false,
+      "head": "**Room category names:** \"Superior\" \"Deluxe\" \"Grand Deluxe Family\" \"Deluxe Taipei 101 View\" \"Premier\" \"Premier Taipei 101 View\" \"Horizon Superior Room\" \"Horizon Deluxe Room\" \"Horiz"
+    },
+    {
+      "url": "https://www.amba-hotels.com/en/songshan/rooms/room-categories",
+      "chars": 670,
+      "blocked": false,
+      "head": "**Room categories (as written on the page):** \"medium 101 view room\" \"medium river view room\" \"corner 101 view room\" \"extra large room\" \"corner extra large 101 view room\" \"loft riv"
+    },
+    {
+      "url": "https://taiwanderers.com/w-taipei-hotel-review/",
+      "chars": 968,
+      "blocked": false,
+      "head": "**Room category:** \"Fantastic Suite\" **Street address:** Not stated in the article. **Sentences mentioning a Taipei 101 view** (the full sentences exceed the 125-character quote li"
+    },
+    {
+      "url": "https://theillumehotel.com/rooms-and-suites/executive-suite",
+      "chars": 635,
+      "blocked": false,
+      "head": "**Room name:** \"Executive Suite\" **Street address:** \"100, Dunhua N. Rd., Songshan Dist., Taipei 105020, Taiwan\" **Star rating:** The page does not state a star rating. **Sentences"
+    },
+    {
+      "url": "https://www.taiwanobsessed.com/best-views-taipei-101-fireworks/",
+      "chars": 1794,
+      "blocked": false,
+      "head": "**Grand Hyatt** - Views: \"We had an amazing stay here and loved the Taipei 101 views from our room and from the VIP lounge.\" - Room categories: None named. - Address: Not stated. *"
+    },
+    {
+      "url": "https://www.shangri-la.com/en/taipei/fareasternplazashangrila/rooms-suites/rooms/premier-taipei-101-view-room/",
+      "chars": 486,
+      "blocked": false,
+      "head": "**Room name heading:** \"Premier Taipei 101 View Room\" **View and Taipei 101 descriptions:** - \"offers a sense of open space with panoramic views of the city and Taipei 101.\" - \"Pan"
+    },
+    {
+      "url": "https://in.hotels.com/ho369485/w-taipei-taipei-taiwan/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.hotels.com/ho120725",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://guide.michelin.com/us/en/hotels-stays/taipei/shangrilas-far-eastern-plaza-hotel-taipei-7327",
+      "chars": 195,
+      "blocked": false,
+      "head": "The web page content you provided is empty, so I can't find a street address, a sentence about Taipei 101 views, or any star or key rating. If you paste the page text, I can pull o"
+    },
+    {
+      "url": "https://expedia.com/Taipei-(and-vicinity)-hotels-Grand-Hyatt-Taipei.h21035.Hotel-information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.uponarriving.com/w-taipei-review",
+      "chars": 637,
+      "blocked": false,
+      "head": "**Room category reviewed:** \"Spectacular King Room w/Taipei 101 View\" **Taipei 101 view sentences:** - \"The first thing that caught my eye upon entering the room was the magnificen"
+    },
+    {
+      "url": "https://www.expedia.com.my/ms/Taipei-Hotels-Shangri-La-Far-Eastern-Plaza.h14153.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.shangri-la.com/en/taipei/fareasternplazashangrila/",
+      "chars": 580,
+      "blocked": false,
+      "head": "**Street address:** \"Address: 201 Tun Hwa South Road, Section 2, Taipei 10675\" **Sentences naming Taipei 101:** - \"The renowned Taipei 101 tower soars magnificently before you.\" - "
+    },
+    {
+      "url": "https://www.hyatt.com/grand-hyatt/en-US/tpegh-grand-hyatt-taipei/rooms-suites",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/tpewh-w-taipei/rooms/",
+      "chars": 280,
+      "blocked": false,
+      "head": "\"Extreme WOW Suite\" Quoted text naming Taipei 101: - \"Take in amazing views of iconic Taipei 101 from select Xinyi, Taipei, hotel suites.\" - \"...panoramic 270-degree views of the c"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/tpedm-le-meridien-taipei/photos/",
+      "chars": 431,
+      "blocked": false,
+      "head": "**Captions/room names containing \"Taipei 101\" or \"101 View\":** - \"Presidential Suite-Taipei 101 View\" (gallery image 39 of 101) - \"Taipei 101\" (gallery image 85 of 101) The page al"
+    },
+    {
+      "url": "https://www.amba-hotels.com/en/songshan/rooms/room-categories",
+      "chars": 719,
+      "blocked": false,
+      "head": "**Room category headings** (all lowercase in the page text): - \"medium 101 view room\" - \"medium river view room\" - \"corner 101 view room\" - \"extra large room\" - \"corner extra large"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=20&format=json&srsearch=Taipei 101 daytime",
+      "chars": 297,
+      "blocked": false,
+      "head": "1. File:Taipei101-DayExt.JPG 2. File:C05517469.pdf 3. File:S10265-023-01448-6.pdf 4. File:State Magazine July-August 1998- Iss 514 (IA sim state-magazine july-august-1998 514).pdf "
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=20&format=json&srsearch=Taipei 101 jpg Xinyi skyline",
+      "chars": 1180,
+      "blocked": false,
+      "head": "Here are the 20 file titles in the search results: 1. File:Taipei Xinyi Skyline 2017.jpg 2. File:Xinyi District Panoramic Skyline - Taipei, Taiwan.jpg 3. File:From Taipei 101 to Xi"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Taipei_101",
+      "chars": 618,
+      "blocked": false,
+      "head": "1. File:101 Tower (Taipei), 2005.jpg 2. File:101大樓 (22437581499).jpg 3. File:2005 Taipei 101.jpg 4. File:2005, Taipei 101.jpg 5. File:2007TaipeiAMPA-TWTC Hall 3.jpg 6. File:202505 "
+    },
+    {
+      "url": "https://www.shangri-la.com/en/taipei/fareasternplazashangrila/rooms-suites/rooms/deluxe-taipei-101-view-room/",
+      "chars": 138,
+      "blocked": true,
+      "head": "**Main heading:** \"Deluxe Taipei 101 View Room\" **Taipei 101 view sentence:** \"The rooms have sweeping views of Taipei 101 and the city.\""
+    },
+    {
+      "url": "https://theillumehotel.com/rooms-and-suites/executive-suite",
+      "chars": 183,
+      "blocked": false,
+      "head": "The hotel name appears in the page title: \"Executive Suite｜Business-Ready Taipei Hotel｜ILLUME TAIPEI\" The address line is: \"100, Dunhua N. Rd., Songshan Dist., Taipei 105020, Taiwa"
+    },
+    {
+      "url": "https://www.amba-hotels.com/en/songshan/rooms/room-categories",
+      "chars": 145,
+      "blocked": true,
+      "head": "**Hotel name (page title):** \"amba Taipei Songshan Hotel | 台北松山意舍酒店\" **Address (footer):** \"8 Section 7 Civic Boulevard\" / \"Taipei 11562 Taiwan\""
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/tpedm-le-meridien-taipei/photos/",
+      "chars": 114,
+      "blocked": true,
+      "head": "Hotel phrase: \"Le Méridien Taipei offers a delicious breakfast.\" Address line: \"38 SongRen Road, Xinyi District,\""
+    }
+  ],
+  "searches": [
+    "hotels with Taipei 101 view room",
+    "Taipei 101 view suite hotel official site rooms",
+    "W Taipei official site rooms \"Spectacular 101\" room Zhongxiao East Road",
+    "Grand Hyatt Taipei rooms \"Taipei 101 View\" king room",
+    "Shangri-La Far Eastern Plaza Hotel Taipei address Dunhua South Road Section 2 Taipei 101 view room"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 41,
+    "error": false
+  },
+  "outcome": "drafted",
+  "reason": "Started by hand for Taipei 101."
+}

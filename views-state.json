@@ -7,6 +7,14 @@
       "title": "Hotels with an Empire State Building view, and which room to book",
       "hotels": 3,
       "rooms": 8
+    },
+    {
+      "date": "2026-10-19",
+      "slug": "taipei-101",
+      "qid": "Q83101",
+      "title": "Hotels with a Taipei 101 view, and which room to book",
+      "hotels": 5,
+      "rooms": 8
     }
   ],
   "attempts": {
