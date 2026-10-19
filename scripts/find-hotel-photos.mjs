@@ -97,15 +97,43 @@ async function wikidataFor(hotel, near) {
   return pickItem(Object.values(e.entities || {}), hotel, near);
 }
 
-async function filesFor(hotel, item) {
-  const titles = new Map(); // title -> how it was found
-  if (item?.image) titles.set(`File:${item.image}`, 'wikidata image');
-  if (item?.category) {
-    const c = await api(COMMONS, { action: 'query', list: 'categorymembers', cmtitle: `Category:${item.category}`, cmtype: 'file', cmlimit: 30 });
-    for (const m of c.query?.categorymembers || []) if (!titles.has(m.title)) titles.set(m.title, `category ${item.category}`);
+// Other ways the hotel may be named on Commons: without accents, without the chain ("Marriott Mena House" -> "Mena House"),
+// without "Hotel & Spa", "& Suites", "- IHCL SeleQtions" and the like.
+const CHAINS = /\b(marriott|hilton|hyatt regency|hyatt|sofitel|mercure|pullman|ramada by wyndham|ramada|radisson|steigenberger|le meridien|four seasons hotel|four seasons|shangri-la|sercotel|eurostars|ihcl seleqtions|the oberoi|oberoi)\b/gi;
+export function nameVariants(name, city = '', landmark = '') {
+  const plain = name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\//g, ' ');
+  const out = new Set([name, plain]);
+  const cut = plain
+    .replace(/\s+[–-]\s+.*$/, '')
+    .replace(/,.*$/, '')
+    .replace(/\b(hotel )?(& spa|and spa|& suites|& casino|resort & casino|fallsview hotel|fallsview)\b/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+  out.add(cut);
+  const noChain = cut.replace(CHAINS, '').replace(city ? new RegExp(`\\b${city.replace(/[^a-z ]/gi, '')}\\b`, 'i') : /$^/, '').replace(/\s{2,}/g, ' ').trim();
+  if (noChain.split(' ').filter((w) => w.length > 2).length >= 2 || /\b(house|palace|view|hotel|amarvilas)\b/i.test(noChain)) out.add(noChain);
+  // a variant must keep a word of its own: "Tour Eiffel" (left of "Pullman Paris Tour Eiffel") would match every photo of the tower
+  const common = new Set([...toks(city), ...toks(landmark), 'tour', 'eiffel', 'view', 'views', 'falls', 'fallsview', 'pyramids', 'pyramid', 'colosseo', 'colosseum', 'acropolis', 'taj', 'mahal', 'fuji', 'downtown', 'centre', 'center', 'centro', 'city', 'roma', 'rome', 'cairo', 'giza', 'paris', 'dubai', 'athens', 'istanbul', 'agra', 'las', 'vegas', 'barcelona', 'niagara', ...STOP]);
+  // the hotel's full name (and without accents) is always kept
+  return [...out].filter((v) => v && (v === name || v === plain || (v.length >= 4 && toks(v).some((t) => !common.has(t) && t.length > 2))));
+}
+
+async function filesFor(hotel, item, city, landmark) {
+  const titles = new Map(); // title -> { how, name } (name = the variant that found it, checked again in judge)
+  const add = (t, how, name = hotel.name) => { if (!titles.has(t)) titles.set(t, { how, name }); };
+  if (item?.image) add(`File:${item.image}`, 'wikidata image');
+  const cats = new Set(item?.category ? [item.category] : []);
+  for (const v of nameVariants(hotel.name, city, landmark)) {
+    // a Commons category named after the hotel ("Category:Mena House Hotel")
+    const c = await api(COMMONS, { action: 'query', list: 'search', srsearch: `intitle:"${v}"`, srnamespace: 14, srlimit: 5 });
+    for (const m of c.query?.search || []) if (mentions(m.title, v)) cats.add(m.title.replace(/^Category:/, ''));
+    const s = await api(COMMONS, { action: 'query', list: 'search', srsearch: `"${v}"`, srnamespace: 6, srlimit: 20 });
+    for (const m of s.query?.search || []) add(m.title, 'search by name', v);
   }
-  const s = await api(COMMONS, { action: 'query', list: 'search', srsearch: `"${hotel.name}"`, srnamespace: 6, srlimit: 20 });
-  for (const m of s.query?.search || []) if (!titles.has(m.title)) titles.set(m.title, 'search by name');
+  for (const cat of [...cats].slice(0, 4)) {
+    const c = await api(COMMONS, { action: 'query', list: 'categorymembers', cmtitle: `Category:${cat}`, cmtype: 'file', cmlimit: 30 });
+    for (const m of c.query?.categorymembers || []) add(m.title, `category ${cat}`);
+  }
   return titles;
 }
 
@@ -160,6 +188,23 @@ export function judge(page, hotel, viewSlug, how, place = {}) {
   };
 }
 
+// For the eye check in the chat: a small copy (640 px) and a site copy (1280 px) of every usable photo.
+async function saveForReview(id, good) {
+  const { mkdirSync } = await import('node:fs');
+  const dir = join(process.env.REVIEW_DIR, id);
+  mkdirSync(dir, { recursive: true });
+  for (const [i, g] of good.entries()) {
+    for (const [size, url] of [['small', g.thumb], ['large', g.thumb?.replace(/\/640px-/, '/1280px-')]]) {
+      if (!url) continue;
+      try {
+        const r = await fetch(url, { headers: { 'User-Agent': UA } });
+        if (r.ok) writeFileSync(join(dir, `${i + 1}-${size}.jpg`), Buffer.from(await r.arrayBuffer()));
+      } catch {}
+      await sleep(200);
+    }
+  }
+}
+
 async function main() {
   const dir = join(root, 'src/data/views');
   const views = readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(readFileSync(join(dir, f), 'utf8')));
@@ -170,9 +215,9 @@ async function main() {
       try {
         const item = await wikidataFor(h, v.coords);
         entry.wikidata = item ? { id: item.id, category: item.category || null } : null;
-        const titles = await filesFor(h, item);
+        const titles = await filesFor(h, item, v.city, v.landmark);
         const pages = await infoFor(titles);
-        const judged = pages.map((p) => judge(p, h, v.slug, titles.get(p.title), { near: v.coords, city: v.city }));
+        const judged = pages.map((p) => { const t = titles.get(p.title); return judge(p, { ...h, name: t.name }, v.slug, t.how, { near: v.coords, city: v.city }); });
         // photos taken from the hotel first, then the Wikidata image, then the rest
         const rank = (x) => (x.kind === 'view-from' ? 0 : x.how === 'wikidata image' ? 1 : 2);
         entry.good = judged.filter((x) => x.ok).sort((a, b) => rank(a) - rank(b)).slice(0, MAX_PER_HOTEL);
@@ -180,6 +225,7 @@ async function main() {
       } catch (e) {
         entry.error = e.message;
       }
+      if (process.env.REVIEW_DIR) await saveForReview(h.id, entry.good);
       result.hotels[h.id] = entry;
       console.log(`${v.slug} / ${h.name}: ${entry.good.length} photos${entry.good.some((g) => g.kind === 'view-from') ? ' (one taken from the hotel)' : ''}${entry.error ? `, error: ${entry.error}` : ''}`);
       await sleep(300);

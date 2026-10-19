@@ -30,8 +30,26 @@ jobs:
       - name: Test the photo checks
         run: npm run test:hotel-photos
 
+      # REVIEW_DIR: also download each usable photo (640 px to look at, 1280 px for the site) for the eye check.
       - name: Look for hotel photos on Wikimedia Commons
+        env:
+          REVIEW_DIR: ${{ runner.temp }}/review
         run: npm run hotel-photos
+
+      # The downloaded photos go to the branch "photo-review" (replaced on every run), never to main: Claude looks at them
+      # in the chat, and only the chosen ones are added to the site.
+      - name: Put the photos on the photo-review branch
+        env:
+          REVIEW_DIR: ${{ runner.temp }}/review
+        run: |
+          cp data/hotel-photo-candidates.json "$REVIEW_DIR/candidates.json"
+          cd "$REVIEW_DIR"
+          git init -q -b photo-review
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Hotel photos to look at"
+          git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" photo-review
 
       - name: Save the list to the repository
         run: |

@@ -1,5 +1,5 @@
 // Offline checks of the hotel photo finder (no network): npm run test:hotel-photos
-import { sameName, mentions, pickItem, judge } from './find-hotel-photos.mjs';
+import { nameVariants, sameName, mentions, pickItem, judge } from './find-hotel-photos.mjs';
 import assert from 'node:assert';
 assert(sameName('Shangri-La Hotel, Paris', 'Shangri-La Paris'));
 assert(!sameName('Hotel Paris', 'Shangri-La Paris'));
@@ -25,4 +25,11 @@ assert(judge(close, { name: 'Bellagio' }, 'bellagio-fountains', 'category X', { 
 assert(!judge(page('File:Splendid Hotel, Becici.jpg', 'CC0'), { name: 'Splendid Hotel' }, 'eiffel-tower', 'search by name', P).ok);
 assert(judge(page('File:Splendid Hotel Paris.jpg', 'CC0'), { name: 'Splendid Hotel' }, 'eiffel-tower', 'search by name', P).ok);
 assert.equal(judge(page('File:View from our room in Bellagio Las Vegas.jpg', 'CC0'), { name: 'Planet Hollywood Resort & Casino' }, 'bellagio-fountains', 'category X', { city: 'Las Vegas' }).kind, 'hotel');
+assert(nameVariants('Marriott Mena House', 'Giza').includes('Mena House'));
+assert(nameVariants('The Oberoi Amarvilās', 'Agra').includes('The Oberoi Amarvilas'));
+assert(nameVariants('Tajview, Agra – IHCL SeleQtions', 'Agra').includes('Tajview'));
+assert(!nameVariants('Pullman Paris Tour Eiffel', 'Paris', 'Eiffel Tower').includes('Tour Eiffel'));
+assert(!nameVariants('Le Méridien Pyramids Hotel & Spa', 'Giza', 'Pyramids of Giza').includes('Pyramids'));
+assert(nameVariants('Bellagio', 'Las Vegas', 'Bellagio fountains').includes('Bellagio'));
+assert(!nameVariants('Steigenberger Pyramids Cairo', 'Giza', 'Pyramids of Giza').includes('Pyramids Cairo'));
 console.log('all ok');
