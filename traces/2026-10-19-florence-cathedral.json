@@ -1,0 +1,303 @@
+{
+  "date": "2026-10-19",
+  "slug": "florence-cathedral",
+  "fetched": [
+    {
+      "url": "https://www.hotelduomofirenze.com/en/rooms",
+      "chars": 760,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.hotelduomofirenze.com/en/rooms Redirect URL (from the server's Loca"
+    },
+    {
+      "url": "https://www.hotelbrunelleschi.com/en/rooms",
+      "chars": 321,
+      "blocked": false,
+      "head": "The web page content you provided is empty; it contains only separator lines. I can't find any room category names, a street address, or a star rating. If you paste the page's actu"
+    },
+    {
+      "url": "https://www.travelocity.com/es/Florence-Hoteles-Hotel-Duomo-Firenze.h2541603.Informacion-Hotel",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.florencetourism.org/florence-hotels-with-view/",
+      "chars": 1805,
+      "blocked": false,
+      "head": "The page gives **no street addresses** for any hotel, so none are listed below. Each entry quotes the page's wording on the dome view. **Hotels with rooms or suites said to see the"
+    },
+    {
+      "url": "https://www.hotelduomofirenze.it/",
+      "chars": 520,
+      "blocked": false,
+      "head": "\"Classic Rooms\" \"Double Rooms\" \"Double Rooms for Single Use\" \"Duomo View\" \"Exclusive Rooms\" \"Inner Court View\" \"Partial Duomo View\" \"Rooms with Bathtub\" \"Single Rooms\" \"Smart Rooms"
+    },
+    {
+      "url": "https://www.hotelbrunelleschi.com/",
+      "chars": 1063,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.hotelbrunelleschi.com/ Redirect URL (from the server's Location hea"
+    },
+    {
+      "url": "https://www.hotelcavour.com/en/rooms/",
+      "chars": 160,
+      "blocked": false,
+      "head": "\"QUEEN ROOMS\" \"CLASSIC ROOMS\" \"SUPERIOR ROOMS\" \"DELUXE ROOMS\" **Street address:** Via del Proconsolo 3, Firenze 50122 **Star rating:** Not stated on the page."
+    },
+    {
+      "url": "https://www.hotelcalzaiuoli.com/en/rooms/",
+      "chars": 23,
+      "blocked": true,
+      "head": "certificate has expired"
+    },
+    {
+      "url": "https://www.hotelduomofirenze.it/",
+      "chars": 2129,
+      "blocked": false,
+      "head": "**Sentences mentioning a view (general, no specific room named):** - \"Hotel Duomo Firenze is the only 3-star hotel in Florence with rooms directly facing the Cathedral\" - \"(not all"
+    },
+    {
+      "url": "https://www.brunelleschihotel.com/en/rooms",
+      "chars": 47,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.brunelleschihotel.com"
+    },
+    {
+      "url": "https://www.hotelcalzaiuoli.com/",
+      "chars": 23,
+      "blocked": true,
+      "head": "certificate has expired"
+    },
+    {
+      "url": "https://www.hotelcavour.com/",
+      "chars": 366,
+      "blocked": false,
+      "head": "**Room categories mentioning a view or dome:** None. No room category name on the page includes \"view\" or \"dome.\" The only dome reference is \"Brunelleschi's Dome\" in the Divina Ter"
+    },
+    {
+      "url": "https://www.hotelduomofirenze.it/",
+      "chars": 329,
+      "blocked": false,
+      "head": "\"Duomo View\" \"Inner Court View\" \"Partial Duomo View\" \"Superior Triple Rooms Duomo View\" \"Triple Rooms, Double Use Duomo View\" These are the category filters under \"Choose Your Room"
+    },
+    {
+      "url": "https://www.hotelpendini.com/en/rooms/",
+      "chars": 38,
+      "blocked": true,
+      "head": "unable to verify the first certificate"
+    },
+    {
+      "url": "https://www.hoteldegliorafi.com/en/rooms/",
+      "chars": 132,
+      "blocked": true,
+      "head": "Hostname/IP does not match certificate's altnames: Host: www.hoteldegliorafi.com. is not in the cert's altnames: DNS:server.pikta.it"
+    },
+    {
+      "url": "https://www.lorologio.it/en/rooms/",
+      "chars": 23,
+      "blocked": true,
+      "head": "certificate has expired"
+    },
+    {
+      "url": "https://www.hotelduomofirenze.it/en/rooms/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.hotelduomofirenze.it/en/",
+      "chars": 1342,
+      "blocked": false,
+      "head": "The page has no room-specific sentence describing each room's Duomo view. The closest statements are below, so the same quote applies to several rooms. **Rooms with \"Duomo\" or \"Dom"
+    },
+    {
+      "url": "https://www.hotelcavour.it/en/rooms/",
+      "chars": 223,
+      "blocked": false,
+      "head": "No room category names on this page mention a view or the dome, so the list is empty. Street address: Via Fatebenefratelli 21, 20121 Milan, Italy Star rating: 4 stars. The FAQ refe"
+    },
+    {
+      "url": "https://www.hotelcalzaiuoli.it/en/rooms/",
+      "chars": 23,
+      "blocked": true,
+      "head": "certificate has expired"
+    },
+    {
+      "url": "https://www.hotelpendini.it/en/rooms/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.hotelpierre.it/en/rooms/",
+      "chars": 40,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.hotelpierre.it"
+    },
+    {
+      "url": "https://www.hoteldavanzati.com/en/rooms/",
+      "chars": 771,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.hoteldavanzati.com/en/rooms/ Redirect URL (from the server's Locati"
+    },
+    {
+      "url": "https://www.hoteldavanzati.it/",
+      "chars": 344,
+      "blocked": false,
+      "head": "**Room categories mentioning a view or the dome:** None. The page names only two room categories, \"Matrimoniale Superior Rooms\" and \"Matrimoniale Classica Rooms\" (taken from image "
+    },
+    {
+      "url": "https://www.theplacefirenze.com/en/rooms/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.villacora.com/en/rooms/",
+      "chars": 38,
+      "blocked": true,
+      "head": "connect ECONNREFUSED 192.64.119.42:443"
+    },
+    {
+      "url": "https://www.hotelcontinentale.it/en/rooms/",
+      "chars": 38,
+      "blocked": true,
+      "head": "unable to get local issuer certificate"
+    },
+    {
+      "url": "https://www.hotelbrunelleschi.it/en/rooms/",
+      "chars": 226,
+      "blocked": false,
+      "head": "None of the room category names on this page mention a view, the dome, or the Duomo, so no names are listed. **Street address:** \"Piazza Santa Elisabetta, 3 Firenze 50122\" **Star r"
+    },
+    {
+      "url": "https://www.grandhotelcavour.com/en/rooms/",
+      "chars": 46,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.grandhotelcavour.com"
+    },
+    {
+      "url": "https://www.hotelcalzaiuoli.com/en/rooms",
+      "chars": 23,
+      "blocked": true,
+      "head": "certificate has expired"
+    },
+    {
+      "url": "https://www.hotelpierre.com/en/rooms/",
+      "chars": 189,
+      "blocked": false,
+      "head": "The web page content you provided is empty, so I can't find any room category names, a street address, or a star rating. Please paste the page's text and I'll extract the requested"
+    },
+    {
+      "url": "https://www.hoteldegliorafi.it/en/rooms/",
+      "chars": 792,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.hoteldegliorafi.it/en/rooms/ Redirect URL (from the server's Locati"
+    },
+    {
+      "url": "https://www.hotellungarno.com/en/rooms/",
+      "chars": 43,
+      "blocked": true,
+      "head": "getaddrinfo EAI_AGAIN www.hotellungarno.com"
+    },
+    {
+      "url": "https://www.lorologio.com/en/rooms/",
+      "chars": 339,
+      "blocked": false,
+      "head": "None of the requested items appear on this page: - **Room category names mentioning a view, the dome, or the Duomo:** None. - **Street address:** Not stated. - **Star rating:** Not"
+    },
+    {
+      "url": "https://www.hotelorafi.it/en/rooms/",
+      "chars": 172,
+      "blocked": false,
+      "head": "\"The Room with a View\" \"View of the Duomo\" \"View of the Ponte Vecchio\" \"Junior Suite with a View of the Arno River\" Address: Lungarno degli Archibusieri, 4, 50122 Florence"
+    },
+    {
+      "url": "https://www.hotelduomofirenze.it/en/rooms/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.hotelorafi.it/en/rooms/",
+      "chars": 463,
+      "blocked": false,
+      "head": "\"The Room with a View\" \"View of the Duomo\" \"View of the Ponte Vecchio\" \"Classic rooms\" \"Executive rooms\" \"Accessible\" \"Junior Suite\" \"Junior Suite with a View of the Arno River\" \"D"
+    },
+    {
+      "url": "https://www.hotelbrunelleschi.it/en/rooms/",
+      "chars": 475,
+      "blocked": false,
+      "head": "The page lists these room and suite categories, not individual room names: - \"Guest Rooms\" - \"Suites\" - \"Unique Rooms\" - \"Family Solutions & Connecting Rooms\" - \"The Suite Privileg"
+    },
+    {
+      "url": "https://www.florencetourism.org/florence-hotels-with-view/",
+      "chars": 827,
+      "blocked": false,
+      "head": "The article mentions Hotel Brunelleschi in these places. It gives the suite as \"Suite 607\" and does not include a street address. **Suite and in-room view:** - \"Brunelleschi Hotel "
+    },
+    {
+      "url": "https://hotelcavour.com/en/rooms/",
+      "chars": 342,
+      "blocked": false,
+      "head": "\"CLASSIC ROOMS\" \"SUPERIOR ROOMS\" Both descriptions say the rooms overlook city streets, and the Superior rooms also overlook inner courtyards. The Queen and Deluxe descriptions don"
+    },
+    {
+      "url": "https://hotelpendini.com/",
+      "chars": 38,
+      "blocked": true,
+      "head": "unable to verify the first certificate"
+    },
+    {
+      "url": "https://www.theplacefirenze.it/",
+      "chars": 777,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.theplacefirenze.it/ Redirect URL (from the server's Location header"
+    },
+    {
+      "url": "https://www.theplacefirenze.com/",
+      "chars": 270,
+      "blocked": false,
+      "head": "No room category on this page mentions a view, the dome, or the Duomo. The \"Rooms & Suites\" section has only a \"discover\" link and no named categories. Street address: Piazza Santa"
+    },
+    {
+      "url": "https://www.helvetia-bristol.com/en/rooms/",
+      "chars": 46,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.helvetia-bristol.com"
+    },
+    {
+      "url": "https://www.hotelsavoy.it/en/rooms/",
+      "chars": 139,
+      "blocked": true,
+      "head": "Hostname/IP does not match certificate's altnames: Host: www.hotelsavoy.it. is not in the cert's altnames: DNS:*.nidoma.com, DNS:nidoma.com"
+    },
+    {
+      "url": "https://www.helvetiabristol.com/en/rooms/",
+      "chars": 45,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.helvetiabristol.com"
+    },
+    {
+      "url": "https://www.hotelhelveticabristol.com/en/rooms/",
+      "chars": 51,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.hotelhelveticabristol.com"
+    }
+  ],
+  "searches": [
+    "hotels with Florence Cathedral view room Duomo view",
+    "Florence Duomo view room hotel Brunelleschi dome view category",
+    "Hotel Brunelleschi Florence official site rooms suites dome view",
+    "Hotel Calzaiuoli Florence rooms Duomo view category",
+    "Hotel Pendini Florence room with Duomo view category",
+    "Florence hotel room \"Duomo view\" official site rooms category Savoy OR Torre Guelfa OR Helvetia Bristol"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 58,
+    "error": false
+  },
+  "outcome": "unverified",
+  "reason": "Florence Cathedral could have a view page, but in this run only 2 hotels could be proved from their own pages. Hotel Duomo Firenze (Piazza del Duomo 1) sells Duomo View room categories, and Hotel Orafi (Lungarno degli Archibusieri 4) sells a View of the Duomo category. Brunelleschi had no view category on its own page. The own sites of Calzaiuoli, Cavour, Pendini, Helvetia & Bristol, Savoy, Pierre, L'Orologio, Davanzati and Continentale either blocked the tool or named no view category."
+}
