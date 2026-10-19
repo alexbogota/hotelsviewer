@@ -1,2 +1,0 @@
-This folder holds the HotelsViewer website (hotelsviewer.com).
-The deploy on GitHub (scripts/ftp-target.mjs) looks for this file, so it never uploads into another site's folder. Please don't delete it.
