@@ -85,7 +85,7 @@ const month = monthLabel(view.checked);
         <h2 id="hotels-heading">{view.hotels.length} hotels, room by room</h2>
         <p class="measure">Room names are copied exactly as the hotels sell them, so you can find the same category on any booking site. The buttons open a search on {pricesProvider}. Some links may earn us a commission; it never changes which rooms we list.</p>
       </div>
-      {view.hotels.map((h) => <HotelEntry hotel={h} checked={view.checked} />)}
+      {view.hotels.map((h) => <HotelEntry hotel={h} checked={view.checked} city={view.city} />)}
     </section>
 
     {view.askAtDesk && (
