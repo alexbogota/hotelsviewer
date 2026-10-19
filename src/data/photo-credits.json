@@ -108,5 +108,16 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg"
+  },
+  "burj-khalifa": {
+    "file": "File:Burj Khalifa (16260269606).jpg",
+    "src": "/photos/burj-khalifa.jpg",
+    "width": 1600,
+    "height": 1067,
+    "alt": "The Burj Khalifa in Dubai in daylight",
+    "author": "Laika ac",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Burj_Khalifa_(16260269606).jpg"
   }
 }
