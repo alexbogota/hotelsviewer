@@ -1,0 +1,334 @@
+{
+  "slug": "burj-khalifa",
+  "order": 8,
+  "landmark": "Burj Khalifa",
+  "landmarkInText": "the Burj Khalifa",
+  "city": "Dubai",
+  "country": "United Arab Emirates",
+  "coords": {
+    "lat": 25.1972,
+    "lng": 55.2744
+  },
+  "checked": "2026-10",
+  "title": "Hotels with a Burj Khalifa view: which room to book",
+  "metaDescription": "Five Dubai hotels with Burj Khalifa view rooms, the exact room category to book, and the fountain, sea, lake and city view rooms that look elsewhere.",
+  "h1": "Hotels with a Burj Khalifa view, and which room to book",
+  "dek": "Five Dubai hotels in Downtown and along Sheikh Zayed Road. For each one we list the exact room category sold with the view, and the fountain, sea, lake and city view rooms that look elsewhere.",
+  "teaser": "From a hotel with the tower in seven room names to one that sells it as a fountain view.",
+  "photo": {
+    "commons": [
+      {
+        "file": "File:Burj Khalifa.jpg",
+        "alt": "The Burj Khalifa in Dubai in daylight"
+      },
+      {
+        "file": "File:Burj Khalifa Dubai.jpg",
+        "alt": "The Burj Khalifa in Dubai in daylight"
+      }
+    ]
+  },
+  "shortAnswer": [
+    {
+      "label": "Seven view categories",
+      "hotel": "address-sky-view",
+      "room": "Premier King Burj Khalifa View Room"
+    },
+    {
+      "label": "On the hotel's own site",
+      "hotel": "sofitel-dubai-downtown",
+      "room": "Luxury Room, 1 King Bed, Burj Khalifa View"
+    },
+    {
+      "label": "The tower in brackets",
+      "hotel": "shangri-la-dubai",
+      "room": "Deluxe Room, City View (Burj Khalifa View)"
+    }
+  ],
+  "decoder": [
+    {
+      "left": "Room, 1 Bedroom, Non Smoking (Fountain View)",
+      "right": "Room, 1 Bedroom, Non Smoking (Burj Khalifa/Fountain View)",
+      "text": "The Ramada by Wyndham Downtown Dubai sells the same 1 Bedroom room both ways. Chris and Wren's guide says the fountain view suite shows the fountain, with the Burj Khalifa partly blocked."
+    },
+    {
+      "left": "Executive Suite Sky View",
+      "right": "Premier King Burj Khalifa View Room",
+      "text": "Sky View is the hotel's name. At Address Sky View the Burj Khalifa is only in the name of the Premier and Club categories, and Expedia lists the Executive Suite Sky View with a city view."
+    },
+    {
+      "left": "Luxury Room, 1 King Bed, Coastline View",
+      "right": "Luxury Room, 1 King Bed, Burj Khalifa View",
+      "text": "At the Sofitel Dubai Downtown the same king room is sold with a coastline view or with the Burj Khalifa. Only the second is for the tower."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "address-sky-view",
+      "name": "Address Sky View",
+      "where": "Sheikh Mohammed Bin Rashid Boulevard, Downtown",
+      "stars": 5,
+      "level": "listed",
+      "book": [
+        {
+          "room": "Premier King Burj Khalifa View Room"
+        },
+        {
+          "room": "Premier Twin Burj Khalifa View Room"
+        },
+        {
+          "room": "Club King Burj View Room"
+        },
+        {
+          "room": "Premier Burj Khalifa View Room - Exclusive Access to Level 54 Infinity Pool"
+        },
+        {
+          "room": "Premier Twin Burj Khalifa View Room - Exclusive Access to Level 54 Infinity Pool"
+        },
+        {
+          "room": "Club Room Burj View - Exclusive Access to Level 54 Infinity Pool"
+        },
+        {
+          "room": "Club Room Twin Burj View - Exclusive Access to Level 54 Infinity Pool"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Executive Suite Sky View - Exclusive Access to Level 54 Infinity Pool",
+          "note": "Expedia lists it with a city view."
+        },
+        {
+          "room": "Premier Room - Exclusive Access to Level 54 Infinity Pool",
+          "note": "Expedia lists it with a city view."
+        },
+        {
+          "room": "Junior Suite - Exclusive Access to Level 54 Infinity Pool",
+          "note": "Expedia lists it with a city view."
+        },
+        {
+          "room": "Premier Twin Room - Exclusive Access to Level 54 Infinity Pool",
+          "note": "Sold without a view named."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Expedia"
+        }
+      ],
+      "query": "Address Sky View Dubai"
+    },
+    {
+      "id": "sofitel-dubai-downtown",
+      "name": "Sofitel Dubai Downtown",
+      "where": "Sheikh Zayed Road, Downtown Dubai",
+      "stars": 5,
+      "level": "listed",
+      "book": [
+        {
+          "room": "Luxury Room, 1 King Bed, Burj Khalifa View",
+          "note": "The hotel's own site lists a “Luxury Room Burj Khalifa View”."
+        },
+        {
+          "room": "Luxury Room, Club Millésime access, 1 King Bed, Burj Khalifa View",
+          "note": "The hotel's own page for its “Luxury Club Burj Khalifa View King” calls the view partial, from the higher floors."
+        },
+        {
+          "room": "Luxury Room, Club Millésime access, 2 Single Beds, Burj Khalifa View"
+        },
+        {
+          "room": "Junior Suite, 1 King Size Bed, Burj Khalifa View"
+        },
+        {
+          "room": "Presidential Suite, Club Millésime access, 1 King Bed, Burj Khalifa View"
+        },
+        {
+          "room": "Royal Suite, Club Millésime access, 1 King Bed, Burj Khalifa View"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Luxury Room, 1 King Bed, Coastline View",
+          "note": "Sold with a coastline view."
+        },
+        {
+          "room": "Luxury Room, 2 Single Beds",
+          "note": "Sold without a view named."
+        },
+        {
+          "room": "Luxury Room, Club Millésime access, 1 King Bed",
+          "note": "Sold without a view named."
+        }
+      ],
+      "notes": [
+        "The Accor listing also sells a Luxury Studio Apartment with Burj Khalifa View."
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.sofitel-dubai-downtown.com/rooms-suites/luxury-club-burj-view-king/"
+        },
+        {
+          "label": "Accor",
+          "url": "https://sofitel.accor.com/en/hotels/7492.html"
+        }
+      ],
+      "query": "Sofitel Dubai Downtown"
+    },
+    {
+      "id": "ramada-downtown-dubai",
+      "name": "Ramada by Wyndham Downtown Dubai",
+      "where": "Mohammed Bin Rashid Boulevard, Downtown",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Premium Studio, 1 King Bed, Non Smoking (Burj Khalifa/Fountain View)"
+        },
+        {
+          "room": "Premium Studio, 2 Twin Beds, Non Smoking (Burj Khalifa/Fountain View)"
+        },
+        {
+          "room": "Room, 1 Bedroom, Non Smoking (Burj Khalifa/Fountain View)"
+        },
+        {
+          "room": "Deluxe Room, 2 Bedrooms, Non Smoking (Burj Khalifa View)"
+        },
+        {
+          "room": "Panoramic Penthouse, 4 Bedrooms (Panoramic Burj Khalifa/Fountain View)"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Room, 1 Bedroom, Non Smoking (Fountain View)",
+          "note": "Sold with a fountain view. A guide says the Burj Khalifa is partly blocked from it."
+        },
+        {
+          "room": "Room, 1 Bedroom, Non Smoking (Downtown View)",
+          "note": "Sold with a downtown view."
+        },
+        {
+          "room": "Premium Room, 1 Bedroom, Non Smoking (Downtown View)",
+          "note": "Sold with a downtown view."
+        }
+      ],
+      "notes": [
+        "Smoking versions of several of these rooms are also sold. Expedia's own view tags for them vary between water and park view, so go by the name."
+      ],
+      "sources": [
+        {
+          "label": "Expedia"
+        },
+        {
+          "label": "Chris and Wren's World",
+          "url": "https://chrisandwrensworld.com/hotels-with-a-burj-khalifa-view-in-dubai/"
+        }
+      ],
+      "query": "Ramada by Wyndham Downtown Dubai"
+    },
+    {
+      "id": "shangri-la-dubai",
+      "name": "Shangri-La Dubai",
+      "where": "Sheikh Zayed Road",
+      "stars": 5,
+      "level": "listed",
+      "book": [
+        {
+          "room": "Deluxe Room, City View (Burj Khalifa View)",
+          "note": "Expedia lists it twice under this name, once with a king bed and once with two twin beds, and tags both a city view."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Deluxe Room, 1 King Bed, Sea View",
+          "note": "Sold with a sea view."
+        },
+        {
+          "room": "One Bedroom Suite, Sea View",
+          "note": "Sold with a sea view."
+        },
+        {
+          "room": "Horizon Deluxe, Room, 1 King Bed, Sea View or City View",
+          "note": "Sold as a sea view or a city view, so the name doesn't promise the tower."
+        }
+      ],
+      "notes": [
+        "Chris and Wren's guide mentions the hotel's Burj Khalifa rooms without naming a category."
+      ],
+      "sources": [
+        {
+          "label": "Expedia"
+        },
+        {
+          "label": "Chris and Wren's World",
+          "url": "https://chrisandwrensworld.com/hotels-with-a-burj-khalifa-view-in-dubai/"
+        }
+      ],
+      "query": "Shangri-La Dubai"
+    },
+    {
+      "id": "palace-downtown",
+      "name": "Palace Downtown",
+      "where": "Sheikh Mohammed Bin Rashid Boulevard, Downtown",
+      "stars": 5,
+      "level": "reported",
+      "book": [
+        {
+          "room": "Palace Room, Fountain View",
+          "note": "No category here names the Burj Khalifa. Expedia says only that the hotel directly overlooks it, and Chris and Wren's guide says to book a fountain view room for the tower."
+        },
+        {
+          "room": "Deluxe Fountain View"
+        },
+        {
+          "room": "Palace Suite Fountain View"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Palace Lake View Room",
+          "note": "Sold with a lake view, not a fountain view."
+        },
+        {
+          "room": "Deluxe Room Lake View - Ultimate Staycation with Attraction Tickets & Kids Go Free",
+          "note": "Sold with a lake view, not a fountain view."
+        },
+        {
+          "room": "Room",
+          "note": "Sold without a view named."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Expedia"
+        },
+        {
+          "label": "Chris and Wren's World",
+          "url": "https://chrisandwrensworld.com/hotels-with-a-burj-khalifa-view-in-dubai/"
+        }
+      ],
+      "query": "Palace Downtown Dubai"
+    }
+  ],
+  "alternatives": [
+    {
+      "title": "No view room? Try a pool or terrace",
+      "text": "Forbes Travel Guide describes Burj Khalifa views from the Address Downtown's rooms and suites in general, and also from its outdoor pool, The Garden bar and the Lobby Lounge terrace. It names no room category for the view."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which Dubai hotels sell rooms with a Burj Khalifa view?",
+      "a": "Of the hotels we checked in October 2026: Address Sky View, Sofitel Dubai Downtown, Ramada by Wyndham Downtown Dubai and Shangri-La Dubai sell categories with the Burj Khalifa in the name. Palace Downtown sells fountain view categories, and a guide says to book those for the tower."
+    },
+    {
+      "q": "Does the Armani Hotel Dubai have a Burj Khalifa view?",
+      "a": "Not in the usual sense. The hotel is inside the Burj Khalifa, so Chris and Wren's guide says it doesn't technically have a view of it."
+    },
+    {
+      "q": "Is a fountain view the same as a Burj Khalifa view?",
+      "a": "Not by room name. The Ramada by Wyndham Downtown Dubai sells “Fountain View” and “Burj Khalifa/Fountain View” as separate categories, and a guide says the tower is partly blocked from the first."
+    },
+    {
+      "q": "Is the Burj Khalifa view at the Sofitel Dubai Downtown a full view?",
+      "a": "For one category, the hotel says no. Its page for the Luxury Club Burj Khalifa View King calls the view partial, from the higher floors."
+    }
+  ]
+}
