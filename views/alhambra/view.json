@@ -1,0 +1,191 @@
+{
+  "slug": "alhambra",
+  "order": 12,
+  "landmark": "Alhambra",
+  "landmarkInText": "the Alhambra",
+  "city": "Granada",
+  "region": "Andalusia",
+  "country": "Spain",
+  "coords": {
+    "lat": 37.1763,
+    "lng": -3.5882
+  },
+  "checked": "2026-10",
+  "title": "Hotels with an Alhambra view: which room to book",
+  "metaDescription": "Three Granada hotels with rooms that face the Alhambra, the exact category to book at each, and the city view and plain rooms to skip.",
+  "h1": "Hotels with an Alhambra view, and which room to book",
+  "dek": "Three hotels in Granada, Spain. Two sell room categories with the Alhambra in the name or description. A third is named only by travel guides, so we list it as reported.",
+  "teaser": "From a junior suite named for the Alhambra to a boutique hotel whose room names don't say so.",
+  "photo": {
+    "commons": [
+      {
+        "file": "File:The whole Alhambra Granada Spain.jpg",
+        "alt": "The Alhambra palace complex in Granada in daylight"
+      },
+      {
+        "file": "File:Alhambra Granada Spain.jpg",
+        "alt": "The Alhambra palace complex in Granada in daylight"
+      }
+    ]
+  },
+  "shortAnswer": [
+    {
+      "label": "Most view categories",
+      "hotel": "shine-albayzin",
+      "room": "Suite with Alhambra view"
+    },
+    {
+      "label": "One category, named for it",
+      "hotel": "palacio-gran-via",
+      "room": "Alhambra Junior Suite"
+    },
+    {
+      "label": "Only a guide names the room",
+      "hotel": "casa-1800-granada",
+      "room": "Suite 1800"
+    }
+  ],
+  "decoder": [
+    {
+      "left": "Deluxe City View",
+      "right": "Alhambra Junior Suite",
+      "text": "Palacio Gran Vía sells a Deluxe City View as its own category, and it does not name the Alhambra. The Alhambra Junior Suite has the landmark in its name, so book that one."
+    },
+    {
+      "left": "Double or Twin Room with interior patio view",
+      "right": "Superior Double or Twin Room with Alhambra view",
+      "text": "At Shine Albayzin the room facing the interior patio is a separate category. A travel guide says the superior room with Alhambra in its name looks outwards to the Alhambra."
+    },
+    {
+      "left": "Guest Room",
+      "right": "Guest Room with Alhambra views",
+      "text": "The Hotel Guru lists a plain Guest Room next to one named for the Alhambra. The plain room is sold without the view named, so book the one with the view in its name."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "palacio-gran-via",
+      "name": "Palacio Gran Vía, a Royal Hideaway Hotel",
+      "where": "Gran Vía de Colón 14",
+      "distance": "about 1 km from the Alhambra",
+      "stars": 5,
+      "level": "listed",
+      "book": [
+        {
+          "room": "Alhambra Junior Suite"
+        },
+        {
+          "room": "Royal Suite",
+          "note": "The name does not say Alhambra. The hotel's page says this suite has a terrace and views of the Alhambra on the top floor."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Deluxe City View",
+          "note": "Sold with a city view, not the Alhambra."
+        },
+        {
+          "room": "Deluxe Room",
+          "note": "Sold without a view named."
+        }
+      ],
+      "notes": [
+        "The hotel's page says the Royal Suite has a terrace and views of the Alhambra."
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/"
+        },
+        {
+          "label": "the hotel's own room pages",
+          "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/rooms/royal-suite/"
+        }
+      ],
+      "query": "Palacio Gran Vía Royal Hideaway Hotel Granada"
+    },
+    {
+      "id": "shine-albayzin",
+      "name": "Shine Albayzin",
+      "where": "Carrera del Darro, 25",
+      "distance": "about 10 minutes away",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Guest Room with Alhambra views"
+        },
+        {
+          "room": "Suite with Alhambra view",
+          "note": "Named in a travel guide, not checked on the hotel's own site. Great Small Hotels says the view comes from private balconies of some suites."
+        },
+        {
+          "room": "Superior Double or Twin Room with Alhambra view",
+          "note": "Named in a travel guide, not checked on the hotel's own site."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Guest Room",
+          "note": "Sold without the view named."
+        },
+        {
+          "room": "Double or Twin Room with interior patio view",
+          "note": "Sold with an interior patio view."
+        }
+      ],
+      "notes": [
+        "Great Small Hotels says the Alhambra views can be enjoyed from private balconies of some suites, so not every suite has one."
+      ],
+      "sources": [
+        {
+          "label": "Great Small Hotels",
+          "url": "https://greatsmallhotels.com/granada-boutique-hotels/shine-albayzin"
+        },
+        {
+          "label": "The Hotel Guru"
+        }
+      ],
+      "query": "Shine Albayzin Granada"
+    },
+    {
+      "id": "casa-1800-granada",
+      "name": "Hotel Casa 1800 Granada",
+      "where": "Calle Benalúa 11",
+      "level": "reported",
+      "book": [
+        {
+          "room": "Suite 1800",
+          "note": "KimKim says the Alhambra views come from rooms with private terraces. It does not say Suite 1800 is one of them. Ask the hotel."
+        }
+      ],
+      "notes": [
+        "KimKim says the Alhambra views come from rooms with private terraces."
+      ],
+      "sources": [
+        {
+          "label": "Great Small Hotels",
+          "url": "https://www.greatsmallhotels.com/granada-boutique-hotels/hotel-casa-1800-granada"
+        },
+        {
+          "label": "KimKim",
+          "url": "https://www.kimkim.com/h/hotel-casa-1800-granada-granada-spain"
+        }
+      ],
+      "query": "Hotel Casa 1800 Granada"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which Granada hotels sell rooms with an Alhambra view?",
+      "a": "Of the hotels we checked in October 2026, Palacio Gran Vía sells an Alhambra Junior Suite, and Shine Albayzin sells categories with Alhambra in the name. Hotel Casa 1800 is named only by travel guides, so no room is listed as sold with the view."
+    },
+    {
+      "q": "Is a Deluxe City View at Palacio Gran Vía the same as an Alhambra view?",
+      "a": "No. The hotel sells a Deluxe City View as a separate category that does not name the Alhambra. Book the Alhambra Junior Suite, or the Royal Suite, whose terrace the hotel's page describes with views of the Alhambra."
+    },
+    {
+      "q": "Does every room at Shine Albayzin look at the Alhambra?",
+      "a": "No. Great Small Hotels says the Alhambra views can be enjoyed from private balconies of some suites. Ask the hotel which room has the view before you book."
+    }
+  ]
+}

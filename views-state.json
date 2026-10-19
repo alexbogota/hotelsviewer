@@ -47,6 +47,14 @@
       "title": "Hotels with an Arc de Triomphe view, and which room to book",
       "hotels": 3,
       "rooms": 4
+    },
+    {
+      "date": "2026-10-19",
+      "slug": "alhambra",
+      "qid": "Q47476",
+      "title": "Hotels with an Alhambra view, and which room to book",
+      "hotels": 3,
+      "rooms": 6
     }
   ],
   "attempts": {

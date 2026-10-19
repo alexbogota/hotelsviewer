@@ -1,0 +1,156 @@
+[
+  {
+    "hotel": "palacio-gran-via",
+    "field": "hotel.name",
+    "value": "Palacio Gran Vía, a Royal Hideaway Hotel",
+    "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/",
+    "quote": "Palacio Gran Vía, a Royal Hideaway Hotel"
+  },
+  {
+    "hotel": "palacio-gran-via",
+    "field": "hotel.where",
+    "value": "Gran Vía de Colón 14",
+    "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/",
+    "quote": "A 5-star Grand Luxury boutique hotel in central Granada, Spain, at Gran Vía de Colón 14."
+  },
+  {
+    "hotel": "palacio-gran-via",
+    "field": "hotel.stars",
+    "value": "5",
+    "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/",
+    "quote": "A 5-star Grand Luxury boutique hotel in central Granada, Spain, at Gran Vía de Colón 14."
+  },
+  {
+    "hotel": "palacio-gran-via",
+    "field": "hotel.distance",
+    "value": "about 1 km from the Alhambra",
+    "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/",
+    "quote": "It is near the Cathedral, about 1 km from the Alhambra, and close to the Albaicín quarter."
+  },
+  {
+    "hotel": "palacio-gran-via",
+    "field": "hotel.level",
+    "value": "listed",
+    "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/rooms/royal-suite/",
+    "quote": "Alhambra Junior Suite"
+  },
+  {
+    "hotel": "palacio-gran-via",
+    "field": "room.book",
+    "value": "Alhambra Junior Suite",
+    "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/rooms/royal-suite/",
+    "quote": "Alhambra Junior Suite"
+  },
+  {
+    "hotel": "palacio-gran-via",
+    "field": "room.book",
+    "value": "Royal Suite",
+    "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/rooms/royal-suite/",
+    "quote": "Royal Suite"
+  },
+  {
+    "hotel": "palacio-gran-via",
+    "field": "room.skip",
+    "value": "Deluxe City View",
+    "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/rooms/",
+    "quote": "Deluxe City View"
+  },
+  {
+    "hotel": "palacio-gran-via",
+    "field": "room.skip",
+    "value": "Deluxe Room",
+    "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/rooms/",
+    "quote": "Deluxe Room"
+  },
+  {
+    "hotel": "shine-albayzin",
+    "field": "hotel.name",
+    "value": "Shine Albayzin",
+    "url": "https://greatsmallhotels.com/granada-boutique-hotels/shine-albayzin",
+    "quote": "Shine Albayzin, Granada"
+  },
+  {
+    "hotel": "shine-albayzin",
+    "field": "hotel.where",
+    "value": "Carrera del Darro, 25",
+    "url": "https://greatsmallhotels.com/granada-boutique-hotels/shine-albayzin",
+    "quote": "Carrera del Darro, 25, 18010, Granada, Granada, Andalusia, SPAIN"
+  },
+  {
+    "hotel": "shine-albayzin",
+    "field": "hotel.distance",
+    "value": "about 10 minutes away",
+    "url": "https://www.thehotelguru.com/en-gb/hotel/shine-albayzin-granada",
+    "quote": "The Alhambra is about 10 minutes away"
+  },
+  {
+    "hotel": "shine-albayzin",
+    "field": "hotel.level",
+    "value": "listed",
+    "url": "https://www.thehotelguru.com/en-gb/hotel/shine-albayzin-granada",
+    "quote": "Guest Room with Alhambra views"
+  },
+  {
+    "hotel": "shine-albayzin",
+    "field": "room.book",
+    "value": "Guest Room with Alhambra views",
+    "url": "https://www.thehotelguru.com/en-gb/hotel/shine-albayzin-granada",
+    "quote": "Guest Room with Alhambra views"
+  },
+  {
+    "hotel": "shine-albayzin",
+    "field": "room.book",
+    "value": "Suite with Alhambra view",
+    "url": "https://greatsmallhotels.com/granada-boutique-hotels/shine-albayzin",
+    "quote": "Suite with Alhambra view"
+  },
+  {
+    "hotel": "shine-albayzin",
+    "field": "room.book",
+    "value": "Superior Double or Twin Room with Alhambra view",
+    "url": "https://greatsmallhotels.com/granada-boutique-hotels/shine-albayzin",
+    "quote": "Superior Double or Twin Room with Alhambra view"
+  },
+  {
+    "hotel": "shine-albayzin",
+    "field": "room.skip",
+    "value": "Guest Room",
+    "url": "https://www.thehotelguru.com/en-gb/hotel/shine-albayzin-granada",
+    "quote": "Guest Room"
+  },
+  {
+    "hotel": "shine-albayzin",
+    "field": "room.skip",
+    "value": "Double or Twin Room with interior patio view",
+    "url": "https://greatsmallhotels.com/granada-boutique-hotels/shine-albayzin",
+    "quote": "Double or Twin Room with interior patio view"
+  },
+  {
+    "hotel": "casa-1800-granada",
+    "field": "hotel.name",
+    "value": "Hotel Casa 1800 Granada",
+    "url": "https://www.greatsmallhotels.com/granada-boutique-hotels/hotel-casa-1800-granada",
+    "quote": "Hotel Casa 1800 Granada"
+  },
+  {
+    "hotel": "casa-1800-granada",
+    "field": "hotel.where",
+    "value": "Calle Benalúa 11",
+    "url": "https://www.kimkim.com/h/hotel-casa-1800-granada-granada-spain",
+    "quote": "Calle Benalúa 11"
+  },
+  {
+    "hotel": "casa-1800-granada",
+    "field": "hotel.level",
+    "value": "reported",
+    "url": "https://www.kimkim.com/h/hotel-casa-1800-granada-granada-spain",
+    "quote": "offers Alhambra views from the rooms with private terraces"
+  },
+  {
+    "hotel": "casa-1800-granada",
+    "field": "room.book",
+    "value": "Suite 1800",
+    "url": "https://www.kimkim.com/h/hotel-casa-1800-granada-granada-spain",
+    "quote": "Room categories range from compact Standard Rooms to the expansive Suite 1800"
+  }
+]

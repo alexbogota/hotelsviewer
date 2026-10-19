@@ -1,0 +1,206 @@
+{
+  "date": "2026-10-19",
+  "slug": "alhambra",
+  "fetched": [
+    {
+      "url": "https://www.parador.es/en/paradores/parador-de-granada",
+      "chars": 810,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.parador.es/en/paradores/parador-de-granada Redirect URL (from the s"
+    },
+    {
+      "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/rooms/royal-suite/",
+      "chars": 505,
+      "blocked": false,
+      "head": "**Room category names:** \"Royal Suite\" \"Suite\" \"Alhambra Junior Suite\" **Street address:** Not stated on the page. **Star rating:** Not stated on the page. **Sentences mentioning t"
+    },
+    {
+      "url": "https://www.alhambrapalace.com/en/rooms",
+      "chars": 361,
+      "blocked": false,
+      "head": "The web page content you provided appears to be empty; it contains only two separator lines. I can't find any room categories, street address, star rating, or Alhambra view referen"
+    },
+    {
+      "url": "https://shinealbayzin.com/rooms",
+      "chars": 39,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND shinealbayzin.com"
+    },
+    {
+      "url": "https://www.casa1800granada.com/rooms",
+      "chars": 45,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.casa1800granada.com"
+    },
+    {
+      "url": "https://www.hotelsantaisabelreal.com/en/rooms",
+      "chars": 50,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.hotelsantaisabelreal.com"
+    },
+    {
+      "url": "https://paradores.es/en/paradores/parador-de-granada",
+      "chars": 38,
+      "blocked": true,
+      "head": "unable to verify the first certificate"
+    },
+    {
+      "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/",
+      "chars": 689,
+      "blocked": false,
+      "head": "**Address:** Gran Vía de Colón, 14, 18010, Granada, Spain **Stars:** 5 stars. The page describes it as \"5 stars Grand Luxury.\" **Sentences mentioning Alhambra views:** - \"Direct vi"
+    },
+    {
+      "url": "https://www.alhambrapalace.com/",
+      "chars": 1015,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.alhambrapalace.com/ Redirect URL (from the server's Location header"
+    },
+    {
+      "url": "https://greatsmallhotels.com/granada-boutique-hotels/shine-albayzin",
+      "chars": 821,
+      "blocked": false,
+      "head": "**Room categories** (gallery captions, as written): \"Double or Twin Room with interior patio view\" \"Superior Double or Twin Room with Alhambra view\" \"Suite with Alhambra view\" The "
+    },
+    {
+      "url": "https://www.greatsmallhotels.com/granada-boutique-hotels/hotel-casa-1800-granada",
+      "chars": 493,
+      "blocked": false,
+      "head": "\"Standard Double Room\" \"Superior Double Room\" \"Deluxe Double Room\" \"Deluxe Junior Suite\" \"Suite Grand Deluxe\" **Street address:** \"Call Benalúa, 11 , 18010, Granada, Granada, Andal"
+    },
+    {
+      "url": "https://www.kimkim.com/h/hotel-casa-1800-granada-granada-spain",
+      "chars": 320,
+      "blocked": false,
+      "head": "\"Standard Rooms\" \"Suite 1800\" **Street address:** Calle Benalúa 11 **Alhambra view sentences (excerpted to stay under the 125-character limit):** - Rooms & Bathrooms section: \"...w"
+    },
+    {
+      "url": "https://www.travelocity.com/Granada-Hotels-Shine-Albayzin-Hotel.h3952920.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.kimkim.com/c/best-hotels-in-granada-with-alhambra-views",
+      "chars": 712,
+      "blocked": false,
+      "head": "1. **Parador de Granada:** \"every unit has views of the Alhambra Palace, gardens, or the surrounding area\" 2. **Hotel Alhambra Palace:** \"If you'd like to enjoy vistas of the Alham"
+    },
+    {
+      "url": "https://www.oyster.com/granada/hotels/parador-de-granada/rooms/",
+      "chars": 526,
+      "blocked": false,
+      "head": "**Room category names:** \"Junior Suites\" \"Suites\" **Street address:** \"Calle Real de La Alhambra s/n, Granada, Spain\" **Star rating:** The page does not state a number of stars. It"
+    },
+    {
+      "url": "https://www.parador.es/en/paradores/parador-de-granada",
+      "chars": 846,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.parador.es/en/paradores/parador-de-granada Redirect URL (from the s"
+    },
+    {
+      "url": "https://www.shinehotels.com/en/hotels/shine-albayzin",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/rooms/",
+      "chars": 289,
+      "blocked": false,
+      "head": "\"Deluxe Room\" \"Deluxe Plus\" \"Deluxe Room With Balcony\" \"Deluxe City View\" \"Deluxe Corner\" \"2x2 Interconnecting Rooms\" \"Alhambra Junior Suite\" \"Suite\" \"Royal Suite\" Alhambra view se"
+    },
+    {
+      "url": "https://www.greatsmallhotels.com/granada-boutique-hotels/hotel-casa-1800-granada",
+      "chars": 520,
+      "blocked": false,
+      "head": "**Hotel name:** Hotel Casa 1800 Granada, Granada **Room categories:** - \"Standard Double Room\" - \"Superior Double Room\" - \"Deluxe Double Room\" - \"Deluxe Junior Suite\" - \"Suite Gran"
+    },
+    {
+      "url": "https://www.virtuoso.com/hotels/16902068/alhambra-palace-hotel",
+      "chars": 29,
+      "blocked": true,
+      "head": "Command failed with no output"
+    },
+    {
+      "url": "https://luxurylink.com/5star/hotels/granada-spain/alhambra-palace-hotel",
+      "chars": 539,
+      "blocked": false,
+      "head": "**Street address:** \"Plaza Arquitecto Garcia de Paredes, 1, Granada, Spain 18009\" **Star rating:** The page does not state a number of stars. It shows a \"9.2 Luxury\" score, which I"
+    },
+    {
+      "url": "https://www.casamorisca.com/en/rooms",
+      "chars": 38,
+      "blocked": true,
+      "head": "connect ECONNREFUSED 104.247.81.99:443"
+    },
+    {
+      "url": "https://www.kimkim.com/c/best-mid-range-hotels-with-alhambra-views-in-granada",
+      "chars": 576,
+      "blocked": false,
+      "head": "**Hotel Casa 1800 Granada** - **Address:** Not shown on the page. - **Alhambra view quote:** \"Some have iron Juliette balconies, seating areas, private terraces, and/or views of th"
+    },
+    {
+      "url": "https://expedia.com/Andalusia-hotels-Shine-Albayzín-Hotel.h3952920.Hotel-information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.thehotelguru.com/en-gb/hotel/shine-albayzin-granada",
+      "chars": 223,
+      "blocked": false,
+      "head": "Room categories named on the page: \"Guest Room with Alhambra views\" \"Guest Room\" The page does not give a street address, and it does not state a star rating. Alhambra view sentenc"
+    },
+    {
+      "url": "https://www.kimkim.com/h/hotel-casa-1800-granada-granada-spain",
+      "chars": 289,
+      "blocked": false,
+      "head": "**Room categories:** - \"Room categories range from compact Standard Rooms to the expansive Suite 1800\" - \"with options for Alhambra views and private terraces.\" **View from the roo"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=20&format=json&srsearch=Alhambra%20Granada%20jpg",
+      "chars": 1109,
+      "blocked": false,
+      "head": "\"File:Pavillon Cour des Lions Alhambra Granada Spain.jpg\" \"File:Stucco ceiling, Patio de los Leones, Alhambra, Granada, Spain, crop.jpg\" \"File:Window, Nasrid motto, Cuarto Dorado, "
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Alhambra",
+      "chars": 5060,
+      "blocked": false,
+      "head": "\"Alhambra_detail.jpg\" \"Alhambra2001.jpg\" \"Alhambra_palace_and_surrounding_area.jpg\" \"116_Tafel_6_Grenada_Alhambra_-_Plano_del_Palacio_Arabe.jpg\" \"Granada Übersichtsplan Alhambra ve"
+    },
+    {
+      "url": "https://www.barcelo.com/en-ie/palacio-gran-via-a-royal-hideaway-hotel/",
+      "chars": 1094,
+      "blocked": false,
+      "head": "**Hotel name (from page heading):** \"Palacio Gran Vía, a Royal Hideaway Hotel\" **Overview** - A 5-star Grand Luxury boutique hotel in central Granada, Spain, at Gran Vía de Colón 1"
+    },
+    {
+      "url": "https://greatsmallhotels.com/granada-boutique-hotels/shine-albayzin",
+      "chars": 156,
+      "blocked": false,
+      "head": "The hotel's name, as it appears in the page title, is: \"Shine Albayzin, a boutique hotel in Granada\" The main page heading reads: \"Shine Albayzin, Granada\""
+    },
+    {
+      "url": "https://www.thehotelguru.com/en-gb/hotel/shine-albayzin-granada",
+      "chars": 813,
+      "blocked": false,
+      "head": "**Shine Albayzin** (Granada, Spain), from $240 per night according to the listing. - **Property:** A 16th-century mansion built around a courtyard, fully renovated into contemporar"
+    }
+  ],
+  "searches": [
+    "hotels with Alhambra view room Granada",
+    "Alhambra view room suite hotel Granada official site",
+    "Parador de Granada Alhambra view rooms",
+    "Shine Albayzin Granada suite with Alhambra view",
+    "Casa 1800 Granada hotel official rooms Alhambra view"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 45,
+    "error": false
+  },
+  "outcome": "drafted",
+  "reason": "Started by hand for Alhambra."
+}
