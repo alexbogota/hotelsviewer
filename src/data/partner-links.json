@@ -1,1 +1,14 @@
-{}
+{
+  "burj-khalifa-tickets-tiqets": {
+    "url": "https://www.tiqets.com/en/dubai-c60005/burj-khalifa-l145628",
+    "partner_url": "https://tiqets.tpm.li/ex67cY63"
+  },
+  "mount-fuji-bus-klook": {
+    "url": "https://www.klook.com/activity/159339-tokyo-mtfuji-highway-bus/",
+    "partner_url": "https://klook.tpm.li/34xWqEKg"
+  },
+  "mount-fuji-ropeway-klook": {
+    "url": "https://www.klook.com/activity/89462-mt-fuji-panoramic-ropeway-round-trip-ticket-yamanashi/",
+    "partner_url": "https://klook.tpm.li/7ZOyEzOT"
+  }
+}
