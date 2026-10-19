@@ -17,4 +17,7 @@ export const site = {
   stay22Id: '6ad53d7b7692614b7741ee96',
   // Stay22 affiliate ID ("aid") for the hotel map on city pages. Empty = the map is hidden.
   stay22Aid: 'hotelsviewer',
+  // Google Analytics 4 measurement ID (not a secret). Loaded only after the visitor allows it
+  // (components/AnalyticsConsent.astro). Empty = no analytics and no banner.
+  gaId: 'G-KNJLEMRVNP',
 };

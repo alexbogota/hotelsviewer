@@ -40,6 +40,7 @@ const year = new Date().getFullYear();
       <a href="/disclosure/">Affiliate disclosure</a>
       <a href="/privacy/">Privacy policy</a>
       <a href="/terms/">Terms of use</a>
+      {site.gaId && <button type="button" data-analytics-settings>Analytics settings</button>}
     </nav>
   </div>
   <div class="wrap legal">
@@ -85,7 +86,8 @@ const year = new Date().getFullYear();
     font-size: 1rem;
     margin-bottom: 6px;
   }
-  nav a {
+  nav a,
+  nav button {
     display: inline-flex;
     align-items: center;
     min-height: 40px;
@@ -93,7 +95,16 @@ const year = new Date().getFullYear();
     color: var(--ink-soft);
     text-decoration: none;
   }
-  nav a:hover {
+  nav button {
+    padding: 0;
+    border: 0;
+    background: none;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+  nav a:hover,
+  nav button:hover {
     color: var(--ink);
     text-decoration: underline;
     text-underline-offset: 3px;
