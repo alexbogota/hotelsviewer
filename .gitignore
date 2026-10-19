@@ -6,6 +6,9 @@ dist/
 # local screenshots and checks
 shots/
 
+# working files of the view writer (the drafts live on the branch drafts, never on main)
+/drafts/
+
 # secrets: never commit these
 .env
 .env.*
