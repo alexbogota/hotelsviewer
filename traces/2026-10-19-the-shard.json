@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-19",
+  "slug": "the-shard",
+  "fetched": [
+    {
+      "url": "https://www.shangri-la.com/london/theshard/accommodation/",
+      "chars": 898,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.shangri-la.com/london/theshard/accommodation/ Redirect URL (from th"
+    },
+    {
+      "url": "http://www.shangri-la.com/london/theshard/accommodation/",
+      "chars": 898,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.shangri-la.com/london/theshard/accommodation/ Redirect URL (from th"
+    },
+    {
+      "url": "https://www.hotels.com/ho456469",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.hotels.com/ho247121",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.shangri-la.com/london/theshard/",
+      "chars": 833,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.shangri-la.com/london/theshard/ Redirect URL (from the server's Loc"
+    },
+    {
+      "url": "https://www.dangerous-business.com/shangri-la-the-shard-london/",
+      "chars": 1232,
+      "blocked": false,
+      "head": "**Room categories** (names as written, with the view each is described as having): - \"Superior Shard Room\": southerly views away from the Thames. \"these rooms have floor-to-ceiling"
+    },
+    {
+      "url": "https://www.shangri-la.com/london/theshard/rooms-suites/",
+      "chars": 754,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.shangri-la.com/london/theshard/rooms-suites/ Redirect URL (from the"
+    },
+    {
+      "url": "https://www.hilton.com/en/hotels/lonhitw-hilton-london-tower-bridge/rooms/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.turningleftforless.com/shangri-la-at-the-shard-london-hotel-review/",
+      "chars": 859,
+      "blocked": false,
+      "head": "**Room categories on the page:** 1. **\"Deluxe City View\"**: No view is described. The page only says \"I booked a Deluxe City View room.\" 2. **\"Premier\"**: No view is described. The"
+    }
+  ],
+  "searches": [
+    "hotels with The Shard view rooms London",
+    "Shangri-La Hotel At The Shard London rooms categories",
+    "\"The Shard view\" room hotel London Bridge",
+    "Hilton London Tower Bridge rooms with view of The Shard",
+    "London hotel room \"view of The Shard\" booking category"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 22,
+    "error": false
+  },
+  "outcome": "unverified",
+  "reason": "Only one hotel is inside The Shard: Shangri-La The Shard, London. Its room names (Superior Shard Room, Premier City View Room, Iconic City View Room and others) are named for the building, and the Dangerous Business review describes their views as south, north, east or 180-degree, not a view of the Shard. Its own site redirected in a loop and could not be read. Hilton London Tower Bridge mentions a Shard view only for a lounge terrace. Hotels.com, Expedia and Booking.com timed out or blocked. Fewer than 3 hotels proved."
+}
