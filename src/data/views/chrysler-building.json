@@ -1,0 +1,184 @@
+{
+  "slug": "chrysler-building",
+  "order": 20,
+  "landmark": "Chrysler Building",
+  "landmarkInText": "the Chrysler Building",
+  "city": "New York",
+  "region": "New York",
+  "country": "United States",
+  "coords": {
+    "lat": 40.7514,
+    "lng": -73.9757
+  },
+  "checked": "2026-10",
+  "title": "Hotels with a Chrysler Building view: which room to book",
+  "metaDescription": "Three New York hotels with a Chrysler Building view: the exact room category to book at each, and the city view and Times Square rooms to skip.",
+  "h1": "Hotels with a Chrysler Building view, and which room to book",
+  "dek": "Three hotels in Midtown Manhattan that sell rooms facing the Chrysler Building. For each one we list the exact category to book, and the city view and Times Square rooms that look elsewhere.",
+  "teaser": "One suite is named for the building, and a Westin room only says it faces the Chrysler or the Empire State.",
+  "photo": {
+    "commons": [
+      {
+        "file": "File:Chrysler Building September 2024.jpg",
+        "alt": "The Chrysler Building in New York City, seen from the street"
+      },
+      {
+        "file": "File:Chrysler Building 2011.jpg",
+        "alt": "The Chrysler Building in New York City, seen from the street"
+      },
+      {
+        "file": "File:Chrysler Building July 2024.jpg",
+        "alt": "The Chrysler Building in New York City, seen from the street"
+      }
+    ]
+  },
+  "shortAnswer": [
+    {
+      "label": "One category, named for it",
+      "hotel": "sofitel-new-york",
+      "room": "Grand Terrace Chrysler View One-Bedroom Suite"
+    },
+    {
+      "label": "High floor, named for the skyline",
+      "hotel": "hyatt-centric-times-square",
+      "room": "High-Floor Skyline-View Suite - One King Bed"
+    },
+    {
+      "label": "Premium room, one of two buildings",
+      "hotel": "westin-new-york-grand-central",
+      "room": "Premium King View Rooms"
+    }
+  ],
+  "decoder": [
+    {
+      "left": "High-Floor City-View Room - One King Bed",
+      "right": "High-Floor Skyline-View Suite - One King Bed",
+      "text": "At the Hyatt Centric Times Square, the city-view room is sold with views of northern Manhattan. The Skyline-View Suite is the one that Costco Travel describes as facing the Chrysler Building, on the 40th floor."
+    },
+    {
+      "left": "Deluxe Rooms",
+      "right": "Premium King View Rooms",
+      "text": "At the Westin New York Grand Central, only the Premium King View Rooms are sold with a view in the name. Virgin Atlantic Holidays says they face the Chrysler Building or the Empire State Building, and does not say which."
+    },
+    {
+      "left": "Signature Iconic Building View One-Bedroom Suite",
+      "right": "Grand Terrace Chrysler View One-Bedroom Suite",
+      "text": "At the Sofitel New York, only the Grand Terrace Chrysler View One-Bedroom Suite has the Chrysler Building in its name. The American Express page names the Iconic Building suite for the Chrysler Building and the Empire State Building together."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "sofitel-new-york",
+      "name": "Sofitel New York",
+      "where": "45 West 44th street",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Grand Terrace Chrysler View One-Bedroom Suite"
+        },
+        {
+          "room": "Signature Skyline View Room",
+          "note": "The page recommends it for standout views of the Chrysler Building and Empire State Building."
+        },
+        {
+          "room": "Signature Iconic Building View One-Bedroom Suite",
+          "note": "The page recommends it for standout views of the Chrysler Building and Empire State Building."
+        },
+        {
+          "room": "Terrace Suite",
+          "note": "The page recommends it for standout views of the Chrysler Building and Empire State Building."
+        }
+      ],
+      "notes": [
+        "The page says select accommodations on higher floors frame sweeping skyline vistas, so ask for a high floor."
+      ],
+      "sources": [
+        {
+          "label": "American Express"
+        }
+      ],
+      "query": "Sofitel New York 45 West 44th Street"
+    },
+    {
+      "id": "westin-new-york-grand-central",
+      "name": "Westin New York Grand Central",
+      "where": "212 East 42nd Street",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Premium King View Rooms",
+          "note": "The page says the view is of the Chrysler Building or the Empire State Building, not which one."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Traditional Rooms",
+          "note": "This page names no view for it."
+        },
+        {
+          "room": "Deluxe Rooms",
+          "note": "This page names no view for it."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Virgin Atlantic Holidays"
+        },
+        {
+          "label": "Hotel Guides",
+          "url": "https://hotelguides.com/new-york/chrysler-building-hotels.html"
+        }
+      ],
+      "query": "Westin New York Grand Central Midtown Manhattan"
+    },
+    {
+      "id": "hyatt-centric-times-square",
+      "name": "Hyatt Centric Times Square New York",
+      "where": "135 W 45th St",
+      "level": "listed",
+      "book": [
+        {
+          "room": "High-Floor Skyline-View Suite - One King Bed",
+          "note": "Costco Travel says the room is on the 40th floor and looks at the Chrysler Building."
+        }
+      ],
+      "skip": [
+        {
+          "room": "High-Floor City-View Room - One King Bed",
+          "note": "Sold with views of northern Manhattan."
+        },
+        {
+          "room": "High-Floor Times Square-View Room - One King Bed",
+          "note": "Sold with a Times Square view."
+        },
+        {
+          "room": "Room - One King Bed",
+          "note": "This listing names no view for it."
+        }
+      ],
+      "notes": [
+        "Costco Travel gives the view and the 40th floor for this suite only. It does not say how many suites of this kind the hotel has, so ask."
+      ],
+      "sources": [
+        {
+          "label": "Costco Travel"
+        }
+      ],
+      "query": "Hyatt Centric Times Square New York 135 W 45th St"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which hotels sell rooms with a Chrysler Building view?",
+      "a": "Of the hotels we checked in October 2026: the Sofitel New York sells a Grand Terrace Chrysler View One-Bedroom Suite, the Hyatt Centric Times Square New York sells a High-Floor Skyline-View Suite, and the Westin New York Grand Central sells Premium King View Rooms."
+    },
+    {
+      "q": "Does the Westin's Premium King View room face the Chrysler Building or the Empire State Building?",
+      "a": "The Virgin Atlantic Holidays page says its Premium King View Rooms offer views of the Chrysler Building or the Empire State Building. It does not say which one a given room faces, so ask the hotel."
+    },
+    {
+      "q": "Do the Sofitel's other suites face the Chrysler Building?",
+      "a": "The American Express page recommends the Signature Skyline View Room, the Signature Iconic Building View One-Bedroom Suite and the Terrace Suite for standout views of the Chrysler Building and the Empire State Building. It does not say which floor or side each one faces."
+    }
+  ]
+}

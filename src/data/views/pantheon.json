@@ -1,0 +1,236 @@
+{
+  "slug": "pantheon",
+  "order": 21,
+  "landmark": "Pantheon",
+  "landmarkInText": "the Pantheon",
+  "city": "Rome",
+  "region": "Lazio",
+  "country": "Italy",
+  "coords": {
+    "lat": 41.8986,
+    "lng": 12.4769
+  },
+  "checked": "2026-10",
+  "title": "Hotels with a Pantheon view: which room to book",
+  "metaDescription": "Three Rome hotels around Piazza della Rotonda with a Pantheon view, the exact room category to book at each, and the annex and plain rooms to skip.",
+  "h1": "Hotels with a Pantheon view, and which room to book",
+  "dek": "Three hotels around Piazza della Rotonda, the square in front of the Pantheon in Rome. For each one we list the room category sold with the view, and the annex and plain rooms that look elsewhere.",
+  "teaser": "Six categories at one hotel name the Pantheon. At another, a travel guide, not the hotel, says its suite faces the temple.",
+  "photo": {
+    "commons": [
+      {
+        "file": "File:Pantheon (Rome) - Exterior 01.jpg",
+        "alt": "The Pantheon in Rome in daylight"
+      },
+      {
+        "file": "File:Rome Pantheon Piazza della Rotonda.jpg",
+        "alt": "The Pantheon in Rome in daylight, seen from Piazza della Rotonda"
+      },
+      {
+        "file": "File:Pantheon-Rome-May-2009.jpg",
+        "alt": "The Pantheon in Rome in daylight"
+      }
+    ]
+  },
+  "shortAnswer": [
+    {
+      "label": "Most view categories",
+      "hotel": "hotel-abruzzi",
+      "room": "Double or Twin Room with Pantheon View"
+    },
+    {
+      "label": "One category, named for it",
+      "hotel": "albergo-del-senato",
+      "room": "Superior Room with Pantheon View"
+    },
+    {
+      "label": "Only a guide names the view",
+      "hotel": "the-pantheon-iconic-rome",
+      "room": "Pantheon Suite"
+    }
+  ],
+  "decoder": [
+    {
+      "left": "Double or Twin Room in the Annex",
+      "right": "Double or Twin Room with Pantheon View",
+      "text": "Both are sold at Hotel Abruzzi. The annex room's name has no view in it, so only the one with Pantheon View in its name is for this view."
+    },
+    {
+      "left": "Standard Double",
+      "right": "Superior Room with Pantheon View",
+      "text": "At Albergo del Senato the Standard Double is sold with no view named. Book the Superior Room with Pantheon View to get the view."
+    },
+    {
+      "left": "Santa Chiara Suite",
+      "right": "Pantheon Suite",
+      "text": "At The Pantheon Iconic Rome Hotel the Santa Chiara Suite is sold without the Pantheon in its name. Only the Pantheon Suite is named for the view, and a travel guide says it overlooks the temple."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "hotel-abruzzi",
+      "name": "Hotel Abruzzi",
+      "where": "Piazza della Rotonda, 69",
+      "stars": 3,
+      "level": "listed",
+      "book": [
+        {
+          "room": "Double or Twin Room with Pantheon View"
+        },
+        {
+          "room": "Junior Suite with Pantheon View"
+        },
+        {
+          "room": "Quadruple room with Pantheon View"
+        },
+        {
+          "room": "Romantic Room with French Bed & Pantheon View"
+        },
+        {
+          "room": "Corner room with Pantheon and fountain view"
+        },
+        {
+          "room": "Junior suite with Pantheon view on the 5th floor"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Executive room (triple room) - Annex",
+          "note": "Sold without the view named."
+        },
+        {
+          "room": "Double or Twin Room in the Annex",
+          "note": "Sold without the view named."
+        },
+        {
+          "room": "Double Room/Twin beds De Luxe in the annexe",
+          "note": "Sold without the view named."
+        },
+        {
+          "room": "Triple Room De Luxe in the annexe",
+          "note": "Sold without the view named."
+        }
+      ],
+      "notes": [
+        "Time Out says most of the rooms look at the Pantheon, and advises asking for a view when you book."
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.hotelabruzzi.it/"
+        },
+        {
+          "label": "Time Out",
+          "url": "https://www.timeout.com/rome/hotels/abruzzi"
+        }
+      ],
+      "query": "Hotel Abruzzi Rome Piazza della Rotonda"
+    },
+    {
+      "id": "albergo-del-senato",
+      "name": "Albergo del Senato",
+      "where": "Piazza della Rotonda, 73",
+      "stars": 3,
+      "level": "listed",
+      "book": [
+        {
+          "room": "Superior Room with Pantheon View"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Standard Double",
+          "note": "Sold without a view named."
+        },
+        {
+          "room": "Standard Twin",
+          "note": "Sold without a view named."
+        },
+        {
+          "room": "Junior Suite",
+          "note": "Sold without a view named."
+        },
+        {
+          "room": "Senior Suite",
+          "note": "Sold without a view named."
+        }
+      ],
+      "notes": [
+        "Time Out says many rooms at the front of the hotel look at the Pantheon, and suggests asking for Room 204, which has a private balcony facing it."
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.albergodelsenato.it/"
+        },
+        {
+          "label": "Time Out",
+          "url": "https://www.timeout.com/rome/hotels/albergo-del-senato"
+        }
+      ],
+      "query": "Albergo del Senato Rome Piazza della Rotonda"
+    },
+    {
+      "id": "the-pantheon-iconic-rome",
+      "name": "The Pantheon Iconic Rome Hotel",
+      "where": "Via di Santa Chiara, 3-8",
+      "level": "reported",
+      "book": [
+        {
+          "room": "Pantheon Suite",
+          "note": "A travel guide says this suite overlooks the Pantheon. The hotel's own page names no view. Ask the hotel to confirm."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Classic King Bed",
+          "note": "Sold without the Pantheon named."
+        },
+        {
+          "room": "Superior King Bed",
+          "note": "Sold without the Pantheon named."
+        },
+        {
+          "room": "Deluxe King Bed",
+          "note": "Sold without the Pantheon named."
+        },
+        {
+          "room": "Santa Chiara Suite",
+          "note": "Sold without the Pantheon named."
+        }
+      ],
+      "notes": [
+        "Luxury Travel Advisor says only the Pantheon Suite overlooks the Pantheon among the suites it describes. Ask the hotel to confirm the room before you book."
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://thepantheonhotel.com/"
+        },
+        {
+          "label": "Luxury Travel Advisor",
+          "url": "https://www.luxurytraveladvisor.com/inside-rome-s-newest-hotel"
+        }
+      ],
+      "query": "The Pantheon Iconic Rome Hotel Rome"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which Rome hotels sell rooms with a Pantheon view?",
+      "a": "Of the hotels we checked in October 2026, Hotel Abruzzi and Albergo del Senato sell room categories with Pantheon View in the name. The Pantheon Iconic Rome Hotel names no view in its room names, but a travel guide says its Pantheon Suite overlooks the temple."
+    },
+    {
+      "q": "Which room should I book at Hotel Abruzzi?",
+      "a": "Any category with Pantheon View in its name, such as the Double or Twin Room with Pantheon View. The annex and De Luxe categories on its page name no view, so skip them."
+    },
+    {
+      "q": "Is the Pantheon Suite guaranteed to have the view?",
+      "a": "No. Only a travel guide says it overlooks the Pantheon. The hotel's own page does not say so, so ask the hotel to confirm the room before you book."
+    },
+    {
+      "q": "Is a Santa Chiara Suite the same as a Pantheon view?",
+      "a": "No. The Santa Chiara Suite is sold without the Pantheon in its name. Book the category that has the Pantheon in its name instead."
+    }
+  ]
+}

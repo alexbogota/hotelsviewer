@@ -1,0 +1,238 @@
+{
+  "slug": "taipei-101",
+  "order": 13,
+  "landmark": "Taipei 101",
+  "landmarkInText": "Taipei 101",
+  "city": "Taipei",
+  "country": "Taiwan",
+  "coords": {
+    "lat": 25.0338,
+    "lng": 121.5645
+  },
+  "checked": "2026-10",
+  "title": "Hotels with a Taipei 101 view: which room to book",
+  "metaDescription": "Five Taipei hotels with rooms facing Taipei 101, the exact room category to book at each, and the look-alike rooms that look at the city or the river instead.",
+  "h1": "Hotels with a Taipei 101 view, and which room to book",
+  "dek": "Five hotels in Taipei, in Xinyi and Songshan. For each one we list the room category sold with the tower in sight, and the look-alike rooms that do not name it.",
+  "teaser": "From a hotel with three categories named for the tower to one that sells it inside a suite.",
+  "photo": {
+    "commons": [
+      {
+        "file": "File:Taipei101-DayExt.JPG",
+        "alt": "Taipei 101 tower in Taipei in daylight"
+      },
+      {
+        "file": "File:Taipei 101 2025.jpg",
+        "alt": "Taipei 101 tower in Taipei in daylight"
+      },
+      {
+        "file": "File:Taipei 101 20230401.jpg",
+        "alt": "Taipei 101 tower in Taipei in daylight"
+      }
+    ]
+  },
+  "shortAnswer": [
+    {
+      "label": "Most view categories",
+      "hotel": "amba-taipei-songshan",
+      "room": "Corner Extra Large 101 View Room"
+    },
+    {
+      "label": "One category, named for it",
+      "hotel": "shangri-la-far-eastern-taipei",
+      "room": "Deluxe Taipei 101 View Room"
+    },
+    {
+      "label": "A suite with the tower in view",
+      "hotel": "w-taipei",
+      "room": "Extreme WOW Suite"
+    }
+  ],
+  "decoder": [
+    {
+      "left": "Horizon Deluxe Room",
+      "right": "Deluxe Taipei 101 View Room",
+      "text": "Shangri-La's page says the Horizon Deluxe Rooms look at Taipei 101 or Taipei city. The Deluxe Taipei 101 View Room has the tower in its name."
+    },
+    {
+      "left": "Loft River View Room",
+      "right": "Corner Extra Large 101 View Room",
+      "text": "At amba Taipei Songshan the river rooms and the 101 rooms are separate categories. The hotel says most rooms see the tower or the Keelung River."
+    },
+    {
+      "left": "Premier Room",
+      "right": "Executive Suite",
+      "text": "At Illume Taipei only the Executive Suite page mentions Taipei 101. The Premier Room category does not name any view."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "shangri-la-far-eastern-taipei",
+      "name": "Shangri-La Far Eastern, Taipei",
+      "where": "201 Tun Hwa South Road, Section 2",
+      "stars": 5,
+      "level": "listed",
+      "book": [
+        {
+          "room": "Deluxe Taipei 101 View Room"
+        },
+        {
+          "room": "Premier Taipei 101 View Room"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Horizon Deluxe Room",
+          "note": "Sold with views of Taipei 101 or the city, so the tower is not promised."
+        },
+        {
+          "room": "Horizon Superior Room",
+          "note": "Sold without Taipei 101 named."
+        }
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.shangri-la.com/en/taipei/fareasternplazashangrila/"
+        },
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.shangri-la.com/en/taipei/fareasternplazashangrila/rooms-suites/rooms/deluxe-taipei-101-view-room/"
+        },
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.shangri-la.com/en/taipei/fareasternplazashangrila/rooms-suites/rooms/premier-taipei-101-view-room/"
+        }
+      ],
+      "query": "Shangri-La Far Eastern Taipei"
+    },
+    {
+      "id": "w-taipei",
+      "name": "W Taipei",
+      "where": "10 Zhongxiao East Road Sec. 5, Xinyi District",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Extreme WOW Suite",
+          "note": "The hotel describes panoramic views of the city and Taipei 101."
+        }
+      ],
+      "skip": [],
+      "notes": [
+        "Taiwan Obsessed says only certain rooms at the hotel have Taipei 101 views, so ask the hotel to confirm the room."
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.marriott.com/en-us/hotels/tpewh-w-taipei/rooms/"
+        },
+        {
+          "label": "Taiwanderers",
+          "url": "https://taiwanderers.com/w-taipei-hotel-review/"
+        },
+        {
+          "label": "Taiwan Obsessed",
+          "url": "https://www.taiwanobsessed.com/best-views-taipei-101-fireworks/"
+        }
+      ],
+      "query": "W Taipei Xinyi Taipei"
+    },
+    {
+      "id": "le-meridien-taipei",
+      "name": "Le Méridien Taipei",
+      "where": "38 SongRen Road, Xinyi District",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Presidential Suite-Taipei 101 View",
+          "note": "Named this way in the hotel's photo gallery. Ask the hotel for the exact category on the booking page."
+        }
+      ],
+      "skip": [],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.marriott.com/en-us/hotels/tpedm-le-meridien-taipei/photos/"
+        }
+      ],
+      "query": "Le Méridien Taipei"
+    },
+    {
+      "id": "amba-taipei-songshan",
+      "name": "amba Taipei Songshan Hotel",
+      "where": "8 Section 7 Civic Boulevard",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Smart 101 View Room"
+        },
+        {
+          "room": "Corner Extra Large 101 View Room"
+        },
+        {
+          "room": "101 View Studio"
+        }
+      ],
+      "skip": [
+        {
+          "room": "Loft River View Room",
+          "note": "Sold as a river view room."
+        }
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.amba-hotels.com/en/songshan/rooms/room-categories"
+        }
+      ],
+      "query": "amba Taipei Songshan Hotel"
+    },
+    {
+      "id": "illume-taipei",
+      "name": "Illume Taipei",
+      "where": "100, Dunhua N. Rd., Songshan Dist.",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Executive Suite",
+          "note": "The page describes city views and Taipei 101."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Premier Room",
+          "note": "Sold without Taipei 101 named."
+        },
+        {
+          "room": "Premier Deluxe Room",
+          "note": "Sold without Taipei 101 named."
+        },
+        {
+          "room": "Deluxe Suite",
+          "note": "Sold without Taipei 101 named."
+        }
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://theillumehotel.com/rooms-and-suites/executive-suite"
+        }
+      ],
+      "query": "Illume Taipei Dunhua North Road"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which Taipei hotels sell rooms with a Taipei 101 view?",
+      "a": "Of the hotels we checked in October 2026: Shangri-La Far Eastern and amba Taipei Songshan sell categories with 101 in the name. W Taipei, Le Méridien Taipei and Illume Taipei describe the tower in a suite."
+    },
+    {
+      "q": "Do all rooms at these hotels see Taipei 101?",
+      "a": "No. Taiwan Obsessed says only certain rooms at W Taipei have the view. Amba says most of its rooms see the tower or the Keelung River, so book the category with 101 in the name."
+    },
+    {
+      "q": "Is a city view the same as a Taipei 101 view?",
+      "a": "Not by name. Shangri-La sells its Horizon Deluxe Rooms with views of the tower or the city. If you want the tower, book a category that names it."
+    }
+  ]
+}

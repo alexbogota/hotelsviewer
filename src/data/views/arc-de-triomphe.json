@@ -1,0 +1,191 @@
+{
+  "slug": "arc-de-triomphe",
+  "order": 16,
+  "landmark": "Arc de Triomphe",
+  "landmarkInText": "the Arc de Triomphe",
+  "city": "Paris",
+  "region": "Île-de-France",
+  "country": "France",
+  "coords": {
+    "lat": 48.8738,
+    "lng": 2.295
+  },
+  "checked": "2026-10",
+  "title": "Hotels with an Arc de Triomphe view: which room to book",
+  "metaDescription": "Three Paris hotels with an Arc de Triomphe view, the exact room category to book at each, and the Champs-Élysées and Eiffel Tower rooms to skip.",
+  "h1": "Hotels with an Arc de Triomphe view, and which room to book",
+  "dek": "Three hotels in Paris, around the Arc de Triomphe and the Champs-Élysées. For each one we list the room category sold with the arch in view, and the rooms named for the Champs-Élysées or the Eiffel Tower.",
+  "teaser": "Two suites at Fouquet's Paris are named for the arch, and a third hotel's view rests on a travel guide.",
+  "photo": {
+    "commons": [
+      {
+        "file": "File:Arc de Triomphe daytime.jpg",
+        "alt": "Arc de Triomphe in Paris in daylight"
+      },
+      {
+        "file": "File:Arch of triumph Paris France.jpg",
+        "alt": "Arc de Triomphe in Paris in daylight"
+      }
+    ]
+  },
+  "shortAnswer": [
+    {
+      "label": "Most view categories",
+      "hotel": "fouquets-paris",
+      "room": "Arc de Triomphe Signature Suite"
+    },
+    {
+      "label": "One category, named for it",
+      "hotel": "renaissance-paris-arc-de-triomphe",
+      "room": "Arc de Triomphe Suite"
+    },
+    {
+      "label": "Bull's-eye window on the arch",
+      "hotel": "fouquets-paris",
+      "room": "Harcourt Paris Suite"
+    }
+  ],
+  "decoder": [
+    {
+      "left": "Suite Signature Champs-Élysées",
+      "right": "Arc de Triomphe Signature Suite",
+      "text": "Fouquet's Paris sells a suite named for the Champs-Élysées avenue and one named for the arch. Only the second is named for the view; its page describes the view over the Champs-Élysées, the Arc de Triomphe and the Eiffel Tower."
+    },
+    {
+      "left": "Junior Suites",
+      "right": "Arc de Triomphe Suite",
+      "text": "The Renaissance Paris Arc de Triomphe Hotel's rooms page lists Junior Suites without naming the arch. Only the Arc de Triomphe Suite is named for it, and the page says its terrace overlooks the Paris main monuments."
+    },
+    {
+      "left": "Paris Eiffel Suite",
+      "right": "Harcourt Paris Suite",
+      "text": "Fouquet's Paris names its Paris Eiffel Suite for the Eiffel Tower. The Harcourt Paris Suite's bedroom has a bull's-eye window that gives the Arc de Triomphe, according to the hotel's page."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "fouquets-paris",
+      "name": "Fouquet's Paris",
+      "where": "46, Avenue George V, 75008 Paris",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Arc de Triomphe Signature Suite"
+        },
+        {
+          "room": "Harcourt Paris Suite",
+          "note": "The view is from a bull's-eye window in the bedroom."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Paris Eiffel Suite",
+          "note": "Named for the Eiffel Tower, not the Arc."
+        },
+        {
+          "room": "Suite Signature Champs-Élysées",
+          "note": "Named for the Champs-Élysées, not the Arc."
+        }
+      ],
+      "notes": [
+        "The hotel's page for the Arc de Triomphe Signature Suite describes a view over the Champs-Élysées, the Arc de Triomphe and the Eiffel Tower."
+      ],
+      "sources": [
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.hotelsbarriere.com/en/paris/le-fouquets/exception-suites/arc-de-triomphe-suite.html"
+        },
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.hotelsbarriere.com/en/paris/le-fouquets/exception-suites/harcourt-paris-suite.html"
+        },
+        {
+          "label": "the hotel's own site",
+          "url": "https://www.hotelsbarriere.com/en/paris/le-fouquets.html"
+        }
+      ],
+      "query": "Fouquet's Paris Paris"
+    },
+    {
+      "id": "renaissance-paris-arc-de-triomphe",
+      "name": "Renaissance Paris Arc de Triomphe Hotel",
+      "where": "39 Avenue de Wagram, Paris, France, 75017",
+      "stars": 5,
+      "level": "listed",
+      "book": [
+        {
+          "room": "Arc de Triomphe Suite",
+          "note": "The hotel's page says its terrace overlooks the Paris main monuments."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Junior Suites",
+          "note": "Named without the Arc."
+        }
+      ],
+      "notes": [
+        "The hotel's page also lists Paris Sky View rooms. It does not say which way they face, so ask the hotel."
+      ],
+      "sources": [
+        {
+          "label": "Marriott",
+          "url": "https://www.marriott.com/hotels/hotel-rooms/parwg-renaissance-paris-arc-de-triomphe-hotel/"
+        },
+        {
+          "label": "Travel Guys",
+          "url": "https://www.travelguys.fr/en/2022/04/04/renaissance-paris-arc-de-triomphe-almost-a-faultless-performance/"
+        }
+      ],
+      "query": "Renaissance Paris Arc de Triomphe Hotel Paris"
+    },
+    {
+      "id": "hotel-napoleon-paris",
+      "name": "Hotel Napoleon Paris",
+      "where": "40 avenue de Friedland, Paris, France",
+      "level": "reported",
+      "book": [
+        {
+          "room": "Imperial Suite",
+          "note": "Only a travel guide reports the terrace view. Ask the hotel which room has it."
+        }
+      ],
+      "notes": [
+        "Paris Insider's Guide says the rooms look onto Avenue de Friedland or a quiet courtyard, so ask for the terrace room."
+      ],
+      "sources": [
+        {
+          "label": "Paris Insider's Guide",
+          "url": "https://www.parisinsidersguide.com/hotel-napoleon-paris.html"
+        },
+        {
+          "label": "Oyster"
+        }
+      ],
+      "query": "Hotel Napoleon Paris"
+    }
+  ],
+  "askAtDesk": {
+    "title": "Ask the hotel",
+    "items": [
+      {
+        "name": "Hotel Napoleon Paris",
+        "text": "Which room has the top-floor terrace with the Arc de Triomphe view? Our sources do not say which category it is."
+      }
+    ]
+  },
+  "faq": [
+    {
+      "q": "Which Paris hotels sell rooms with an Arc de Triomphe view?",
+      "a": "Of the hotels we checked in October 2026, Fouquet's Paris sells two categories with the arch in view, and the Renaissance Paris Arc de Triomphe Hotel sells one. Hotel Napoleon Paris is reported by a travel guide to have a terrace view, but no category is sold with it, so ask the hotel."
+    },
+    {
+      "q": "Is the Arc de Triomphe Suite at the Renaissance on a high floor?",
+      "a": "A 2022 guest review says the Arc de Triomphe Suite with terrace is on the 8th and top floor, with a large balcony that overlooks the arch. The hotel's own page does not give the floor."
+    },
+    {
+      "q": "Is a Champs-Élysées room the same as an Arc de Triomphe room?",
+      "a": "No. Fouquet's Paris sells a Suite Signature Champs-Élysées, named for the avenue. Its Arc de Triomphe Signature Suite is named for the arch, and its own page describes the view over both."
+    }
+  ]
+}
