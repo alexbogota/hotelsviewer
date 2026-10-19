@@ -27,7 +27,7 @@ Principle: the catalogue grows from verified views, never from a list of cities.
 Room names exactly as sold, no invented data, no prices, booking sites named but not linked, free-licence photos only with credit, no night Eiffel photos, no AI pictures of views.
 
 ## Other ideas, not started
-- Pinterest pins per view (images 1000x1500, arched window style); Bluesky/Mastodon/Tumblr/Quora posts, same account scheme as SaveAndPlay (`data/accounts.json`).
+- Pinterest pins per view (images 1000x1500, arched window style); Tumblr and posting by program. Bluesky, Mastodon and Quora profile texts and pictures are ready (18 Oct 2026, `docs/social-profiles.md`); next is creating the accounts, then `site.ts` links and a posting workflow (same account scheme as SaveAndPlay, `data/accounts.json`).
 - "Coming next" block on the home page, to show the site is growing (useful for affiliate applications).
 - Replace the Booking search links in `src/data/links.json` with affiliate links when a programme approves.
 - Telegram channel and email subscription (`site.ts` fields exist).

@@ -53,3 +53,10 @@ Newest at the bottom. START.md keeps only the result.
 - Links: made by the Travelpayouts Links API on GitHub (`scripts/make-partner-links.mjs`), one per row, with the row id as sub ID, so statistics show which row earns. The marker (174296) and project ID (587479) are public and live in `src/data/travelpayouts.json`; the API token is the GitHub secret `TRAVELPAYOUTS_TOKEN` and is never printed or saved.
 - Safety: a row without a partner link is not shown, so a failed run changes nothing for visitors. The deploy never fails because of this step. Failures are saved in `data/partner-links-status.json` and printed as `::warning::` annotations.
 - Not done on purpose: articles about eSIM or "Colosseum tickets" (big sites win, and they dilute the topic). Hotel buttons stay on the Booking.com search until a hotel programme approves.
+
+## 18 October 2026: social profiles prepared (Bluesky, Mastodon, Quora)
+- One name everywhere (HotelsViewer) and one look: the site's arched window, drawn by `scripts/make-social.py`. No photos and no landmarks in the pictures, so there is no licence or credit to carry.
+- Every bio says in plain words that links may earn a commission, like the Disclosure page. No numbers of views in bios (the home page doesn't state them either).
+- Mastodon on mastodon.social (open sign-up, no rules against business accounts). Bluesky gets a domain handle later. Quora is manual only and has the strictest promotion rules: no affiliate links there.
+- Texts, limits with sources and next steps: `docs/social-profiles.md`. The accounts themselves are created by the owner.
+
