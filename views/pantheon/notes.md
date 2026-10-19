@@ -1,21 +1,20 @@
 ## Что за вид
 
-Пантеон в Риме, на площади Piazza della Rotonda. Три отеля на этой площади или рядом продают номера с видом на Пантеон: Albergo del Senato, Hotel Albergo Abruzzi и Antico Albergo del Sole Al Pantheon. Во всех трёх категории названы с Pantheon View или описаны на сайте отеля или на Trip.com как вид на Пантеон.
+Пантеон в Риме, на площади Piazza della Rotonda. Отели на этой площади и рядом выставляют номера с видом на храм. У двух отелей категории с видом названы прямо в названии номера на сайте отеля. Третий отель пока подтверждён только через путеводитель: там сказано, что люкс Pantheon Suite выходит на Пантеон, но на сайте отеля этого нет.
 
 ## Откуда данные
 
-- Albergo del Senato: https://www.albergodelsenato.it/en/rooms (официальный сайт, список категорий и описания видов).
-- Hotel Albergo Abruzzi: https://www.hotelabruzzi.it/ (официальный сайт, категории, адрес, 3 звезды).
-- Antico Albergo del Sole Al Pantheon: https://uk.trip.com/hotels/rome-hotel-detail-2645613/antico-albergo-del-sole-al-pantheon (Trip.com, сайт бронирования; официального сайта мы не нашли).
+- Hotel Abruzzi: сайт отеля https://www.hotelabruzzi.it/ (категории, адрес, 3 звезды); Time Out https://www.timeout.com/rome/hotels/abruzzi (адрес, фраза о видах).
+- Albergo del Senato: сайт отеля https://www.albergodelsenato.it/ (категории, адрес, 3 звезды); Time Out https://www.timeout.com/rome/hotels/albergo-del-senato (фраза о видах, номер 204); блог https://youshouldgohere.com/?p=959 открыт, но в файле не используется.
+- The Pantheon Iconic Rome Hotel: сайт отеля https://thepantheonhotel.com/ (названия номеров, адрес); Luxury Travel Advisor https://www.luxurytraveladvisor.com/inside-rome-s-newest-hotel (Pantheon Suite выходит на Пантеон).
 
 ## Что проверить владельцу
 
-- У Antico Albergo del Sole Trip.com ставит на две категории с видом на Пантеон метку City View. Название категории мы считаем обещанием, но стоит проверить на сайте отеля или по телефону.
-- Категорию «Prestige Double or Twin Toom with Pantheon Square View» мы не включили: в тексте страницы написано «Toom», и не ясно, как она называется на самом деле.
-- Pantheon Iconic Rome Hotel не включён: мы не нашли в его категориях названия с видом на Пантеон (на booking-сайтах написано City view), а адреса на сайтах, которые мы открыли, нет.
-- Booking.com, Hotels.com, Marriott и Expedia не открылись (блокировка или ошибка), поэтому цены и категории на них не проверены.
-- Фото: мы не смогли открыть файлы с Wikimedia Commons в этом запуске. Посмотрите их после git pull, особенно первое.
+- Не проверены: Antico Albergo del Sole al Pantheon (на сайте отеля нет названий номеров с видом; Trip.com и Hotels.com заблокировали или не открылись) и Pantheon Royal Suites (сайт не открылся). Их стоит добавить вручную, если найдутся страницы отелей с названиями номеров.
+- The Pantheon Iconic: уровень reported, вид подтверждён только путеводителем. Сайт отеля и Marriott (403) не говорят про вид из номера.
+- Time Out и сайт Hotel Abruzzi дают разные формулировки: «почти все номера» и «most of the rooms». В тексте сказано «most».
+- Фото: три кандидата из Wikimedia Commons. Их не удалось открыть, проверьте после git pull.
 
 ## Когда перепроверить
 
-Через полгода: названия категорий на booking-сайтах и на сайтах отелей часто меняются.
+Через полгода (к апрелю 2027): названия номеров на сайтах отелей меняются чаще всего.
