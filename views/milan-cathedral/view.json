@@ -1,0 +1,212 @@
+{
+  "slug": "milan-cathedral",
+  "order": 12,
+  "landmark": "Milan Cathedral",
+  "landmarkInText": "Milan Cathedral",
+  "city": "Milan",
+  "region": "Lombardy",
+  "country": "Italy",
+  "coords": {
+    "lat": 45.4641,
+    "lng": 9.1919
+  },
+  "checked": "2026-10",
+  "title": "Hotels with a Milan Cathedral view: which room to book",
+  "metaDescription": "Four Milan hotels with a room named for the Duomo, the exact category to book at each, and the look-alike rooms to skip.",
+  "h1": "Hotels with a Milan Cathedral view, and which room to book",
+  "dek": "Four hotels in the centre of Milan, around the Duomo. For each one we list the room category that names the cathedral, and the courtyard, terrace and plain suites that look elsewhere.",
+  "teaser": "Three hotels name the view in the room; the fourth names only the Duomo in its suite.",
+  "photo": {
+    "commons": [
+      {
+        "file": "File:Milan Cathedral from Piazza del Duomo.jpg",
+        "alt": "Milan Cathedral in daylight, seen from Piazza del Duomo"
+      },
+      {
+        "file": "File:Milan Cathedral three quarters.jpg",
+        "alt": "Milan Cathedral in daylight, seen from the side"
+      },
+      {
+        "file": "File:Duomo di Milano (Milan Cathedral).jpg",
+        "alt": "Milan Cathedral in Milan in daylight"
+      }
+    ]
+  },
+  "shortAnswer": [
+    {
+      "label": "Named for the Duomo",
+      "hotel": "park-hyatt-milano",
+      "room": "Suite (Duomo)"
+    },
+    {
+      "label": "One category, named for the cathedral",
+      "hotel": "amabilia-suites-milano",
+      "room": "Double Room (Cathedral view)"
+    },
+    {
+      "label": "Duomo View in the name",
+      "hotel": "rosa-grand-milano",
+      "room": "Deluxe Double Room (Duomo View)"
+    }
+  ],
+  "decoder": [
+    {
+      "left": "Double Room, Courtyard View",
+      "right": "Double Room (Cathedral view)",
+      "text": "Both are double rooms at Amabilia Suites Milano. Expedia lists the courtyard room with no view tag and the cathedral room with a City view tag, so the name decides."
+    },
+    {
+      "left": "Suite",
+      "right": "Suite con vista Duomo",
+      "text": "At SCF Collection – Duomo, the plain Suite has no view named on Expedia. Only the Suite con vista Duomo, which means suite with a Duomo view, is sold with the view."
+    },
+    {
+      "left": "Suite, Terrace",
+      "right": "Suite (Duomo)",
+      "text": "Park Hyatt Milano sells a Suite, Terrace with a City view tag only. Its Suite (Duomo) is the category that names the cathedral, though the name leaves out the word view."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "rosa-grand-milano",
+      "name": "Rosa Grand Milano",
+      "where": "P.za Fontana 3",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Deluxe Double Room (Duomo View)"
+        },
+        {
+          "room": "Duomo Deluxe Terrace Apartment 2 Bedroom",
+          "note": "Named for the Duomo, but Expedia shows no view tag for it. The Following the Rivera guide says these apartments overlook the spires of the cathedral."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Deluxe Double or Twin Room",
+          "note": "Sold without a view named."
+        },
+        {
+          "room": "Grand Deluxe",
+          "note": "Sold without a view named."
+        },
+        {
+          "room": "Junior Suite",
+          "note": "Sold without a view named."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Expedia"
+        },
+        {
+          "label": "Following the Rivera",
+          "url": "https://www.followingtherivera.com/best-milan-hotels-with-duomo-views/"
+        }
+      ],
+      "query": "Rosa Grand Milano Milan"
+    },
+    {
+      "id": "amabilia-suites-milano",
+      "name": "Amabilia Suites Milano",
+      "where": "Passaggio Duomo 2",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Double Room (Cathedral view)",
+          "note": "Expedia tags it City view, so go by the name."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Double Room, Courtyard View",
+          "note": "Sold with a courtyard view."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Expedia"
+        },
+        {
+          "label": "Following the Rivera",
+          "url": "https://www.followingtherivera.com/best-milan-hotels-with-duomo-views/"
+        }
+      ],
+      "query": "Amabilia Suites Milano Milan"
+    },
+    {
+      "id": "scf-collection-duomo",
+      "name": "SCF Collection – Duomo",
+      "where": "Passaggio Duomo 2",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Suite con vista Duomo",
+          "note": "Expedia tags it City view. The name says Duomo view. The Following the Rivera guide advises booking a 'Suite with City view' instead, a name that is not on Expedia, so ask the hotel."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Suite",
+          "note": "Sold without a view named."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Expedia"
+        },
+        {
+          "label": "Following the Rivera",
+          "url": "https://www.followingtherivera.com/best-milan-hotels-with-duomo-views/"
+        }
+      ],
+      "query": "SCF Collection Duomo Milan"
+    },
+    {
+      "id": "park-hyatt-milano",
+      "name": "Park Hyatt Milano",
+      "where": "Via Tommaso Grossi 1",
+      "level": "listed",
+      "book": [
+        {
+          "room": "Suite (Duomo)",
+          "note": "The name gives the Duomo but not the word view. Expedia tags it City view, so ask the hotel."
+        }
+      ],
+      "skip": [
+        {
+          "room": "Suite, Terrace",
+          "note": "Sold with a City view tag only."
+        },
+        {
+          "room": "Suite (MONTENAPOLEONE)",
+          "note": "Named for a street, not the Duomo."
+        },
+        {
+          "room": "Suite (Solferino)",
+          "note": "Named for another suite, not the Duomo."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Expedia"
+        }
+      ],
+      "query": "Park Hyatt Milano Milan"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which Milan hotels sell rooms with a view of the Duomo?",
+      "a": "Of the hotels we checked in October 2026, four sell a room category with the cathedral in its name: Rosa Grand Milano, Amabilia Suites Milano, SCF Collection – Duomo and Park Hyatt Milano. Only the first three say view in the name."
+    },
+    {
+      "q": "Why does a booking site say City view for a Duomo room?",
+      "a": "The view tag on a booking site is a generic label. Expedia tags the Double Room (Cathedral view) at Amabilia Suites Milano as City view, and the Suite (Duomo) at Park Hyatt Milano the same way. The room name is the promise."
+    },
+    {
+      "q": "Is the Duomo Deluxe Terrace Apartment a room with a view?",
+      "a": "Its name at Rosa Grand Milano says Duomo, but Expedia shows no view tag for it. A travel guide says the Duomo Deluxe Terrace apartments overlook the spires of the cathedral, so ask the hotel which one you will get."
+    }
+  ]
+}

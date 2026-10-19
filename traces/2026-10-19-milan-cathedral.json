@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-19",
+  "slug": "milan-cathedral",
+  "fetched": [
+    {
+      "url": "https://www.followingtherivera.com/best-milan-hotels-with-duomo-views/",
+      "chars": 2236,
+      "blocked": false,
+      "head": "1. **Amabilia Suites Milano** (Passaggio Duomo, 2) \"Comfortably sleeping 2 people, the suite's window faces directly onto the gothic cathedral.\" 2. **The Glamore Milano Duomo** (Vi"
+    },
+    {
+      "url": "https://www.melia.com/en/hotels/italy/milan/palazzo-cordusio-gran-melia/rooms/duomo-suite",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.melia.com/en/hotels/italy/milan/palazzo-cordusio-gran-melia/rooms/one-bedroom-master-suite-with-balcony",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.melia.com/en/hotels/italy/milan/palazzo-cordusio-gran-melia/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.amabiliasuites.com/",
+      "chars": 696,
+      "blocked": false,
+      "head": "The page doesn't contain the information you asked for: - **Room or suite categories:** None are listed. The page only links to the group's properties: Amabilia (main site), Milano"
+    },
+    {
+      "url": "https://www.glamore.com/",
+      "chars": 813,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.glamore.com/ Redirect URL (from the server's Location header — serv"
+    },
+    {
+      "url": "https://www.expedia.com/Milan-Hotels-Amabilia-Suites.h68764248.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.expedia.com/Milan-Hotels-SCF-COLLECTION-Duomo.h88650289.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://www.hotels.com/ho216455",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.hotels.com/ho218758/strafhotel-bar-a-member-of-design-hotel-milan-italy",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://ae.trip.com/hotels/milan-hotel-detail-2149991/park-hyatt-milan",
+      "chars": 356,
+      "blocked": false,
+      "head": "\"Terrace Suite\" - \"Has window\" \"Presidential Suite\" - \"Has window\" \"Solferino Suite\" - \"Has window\" \"Park Executive Suite\" - \"Has window\" The page says \"Show 11 Remaining Room Type"
+    },
+    {
+      "url": "https://www.hotels.com/ho2837809248/scf-collection-duomo-milan-italia/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.amabiliasuitesmilano.com/",
+      "chars": 404,
+      "blocked": false,
+      "head": "**Room or suite category names:** The page does not name any individual suite categories. It mentions \"Le Suite\" only as a navigation menu label and describes \"Quattro suite temati"
+    },
+    {
+      "url": "https://milan.park.hyatt.com/en/hotel/rooms-suites.html",
+      "chars": 887,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://milan.park.hyatt.com/en/hotel/rooms-suites.html Redirect URL (from the "
+    },
+    {
+      "url": "https://www.straf.it/",
+      "chars": 554,
+      "blocked": false,
+      "head": "The page doesn't name any specific room or suite categories. The only room-type terms are these two, used descriptively in the text: \"comfort rooms\" \"Suites\" Sentences mentioning t"
+    },
+    {
+      "url": "https://www.scfcollection.com/",
+      "chars": 43,
+      "blocked": true,
+      "head": "getaddrinfo ENOTFOUND www.scfcollection.com"
+    },
+    {
+      "url": "https://www.hyatt.com/en-US/hotel/italy/park-hyatt-milan/milph",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.starhotels.com/en/hotels/rosa-grand-milan",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://mob.expedia.ae/Milan-Hotels-Rosa-Grand-Milano.h2875.Hotel-Information",
+      "chars": 973,
+      "blocked": false,
+      "head": "\"Family Triple Room\" (no view tag shown) \"Junior Suite\" (no view tag shown) \"Family Quadruple Room\" (no view tag shown) \"Connecting Family\" (no view tag shown) \"Deluxe Double Room "
+    },
+    {
+      "url": "https://mob.expedia.ae/Milan-Hotels-Amabilia-Suites.h68764248.Hotel-Information",
+      "chars": 211,
+      "blocked": false,
+      "head": "\"Double Room (Cathedral view)\" - \"City view\" \"Double Room, Courtyard View\" - No separate view tag is listed for this room. Its name includes \"Courtyard View.\" Street address: Passa"
+    },
+    {
+      "url": "https://mob.expedia.ae/Milan-Hotels-SCF-COLLECTION-Duomo.h88650289.Hotel-Information",
+      "chars": 116,
+      "blocked": true,
+      "head": "\"Suite con vista Duomo\" - City view \"Suite\" - No view tag shown Street address: Passaggio Duomo 2, Milan, MI, 20123"
+    },
+    {
+      "url": "https://mob.expedia.ae/Milan-Hotels-Park-Hyatt-Milano.h977287.Hotel-Information",
+      "chars": 646,
+      "blocked": false,
+      "head": "\"Deluxe Room (Park)\" - no view tag shown \"Room (Park King)\" - no view tag shown \"Junior Suite (Park)\" - no view tag shown \"Suite (Prestige)\" - no view tag shown \"Premium Room (Park"
+    },
+    {
+      "url": "https://mob.expedia.ae/Milan-Hotels-STRAFhotelbar-A-Member-Of-Design-Hotel.h995633.Hotel-Information",
+      "chars": 917,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://mob.expedia.ae/Milan-Hotels-STRAFhotelbar-A-Member-Of-Design-Hotel.h995"
+    },
+    {
+      "url": "https://www.expedia.ae/Milan-Hotels-Straf.h995633.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=30&format=json&srsearch=Milan Cathedral Duomo di Milano",
+      "chars": 1643,
+      "blocked": false,
+      "head": "1. File:View west along Duomo roof, Milan.jpg 2. File:Milano - Duomo di Milano - Guglie, composizione - 2026-09-08 20-59-21 001.jpg 3. File:20110724 Milan Cathedral 5260.jpg 4. Fil"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Milan_Cathedral",
+      "chars": 107,
+      "blocked": true,
+      "head": "The category page lists no files ending in .jpg. It states: \"There are no pages or files in this category.\""
+    },
+    {
+      "url": "https://mob.expedia.ae/Milan-Hotels-Park-Hyatt-Milano.h977287.Hotel-Information",
+      "chars": 59,
+      "blocked": true,
+      "head": "\"Park Hyatt Milano\" Via Tommaso Grossi 1, Milan, MI, 20121"
+    }
+  ],
+  "searches": [
+    "hotels with Milan Cathedral Duomo view room",
+    "Duomo view room Milan hotel category \"Duomo view\"",
+    "Milan hotel rooms facing the Duomo cathedral view suite",
+    "Rosa Grand Milano rooms Duomo Deluxe Terrace official site",
+    "STRAF Hotel Milano suites king bed private terrace cathedral",
+    "Park Hyatt Milano Duomo Suite rooms official site",
+    "SCF Collection Duomo Milano \"Suite with City view\" rooms",
+    "Amabilia Suites Milano Montenapoleone suite Duomo rooms",
+    "Milan hotel \"Duomo view\" room type Expedia cathedral view double room Piazza Duomo"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 44,
+    "error": false
+  },
+  "outcome": "drafted",
+  "reason": "Started by hand for Milan Cathedral."
+}

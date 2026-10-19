@@ -63,6 +63,14 @@
       "title": "Hotels with a Brooklyn Bridge view, and which room to book",
       "hotels": 3,
       "rooms": 7
+    },
+    {
+      "date": "2026-10-19",
+      "slug": "milan-cathedral",
+      "qid": "Q18068",
+      "title": "Hotels with a Milan Cathedral view, and which room to book",
+      "hotels": 4,
+      "rooms": 5
     }
   ],
   "attempts": {

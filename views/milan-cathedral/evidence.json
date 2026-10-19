@@ -1,0 +1,30 @@
+[
+  { "hotel": "rosa-grand-milano", "field": "hotel.name", "value": "Rosa Grand Milano", "url": "https://www.followingtherivera.com/best-milan-hotels-with-duomo-views/", "quote": "4. **Rosa Grand Milano** (Piazza Fontana, 3)" },
+  { "hotel": "rosa-grand-milano", "field": "hotel.where", "value": "P.za Fontana 3", "url": "https://mob.expedia.ae/Milan-Hotels-Rosa-Grand-Milano.h2875.Hotel-Information", "quote": "Street address: P.za Fontana 3, Milan, MI, 20122" },
+  { "hotel": "rosa-grand-milano", "field": "hotel.level", "value": "listed", "url": "https://mob.expedia.ae/Milan-Hotels-Rosa-Grand-Milano.h2875.Hotel-Information", "quote": "\"Deluxe Double Room (Duomo View)\" (view tag: Duomo View, as part of the name)" },
+  { "hotel": "rosa-grand-milano", "field": "room.book", "value": "Deluxe Double Room (Duomo View)", "url": "https://mob.expedia.ae/Milan-Hotels-Rosa-Grand-Milano.h2875.Hotel-Information", "quote": "\"Deluxe Double Room (Duomo View)\" (view tag: Duomo View, as part of the name)" },
+  { "hotel": "rosa-grand-milano", "field": "room.book", "value": "Duomo Deluxe Terrace Apartment 2 Bedroom", "url": "https://mob.expedia.ae/Milan-Hotels-Rosa-Grand-Milano.h2875.Hotel-Information", "quote": "\"Duomo Deluxe Terrace Apartment 2 Bedroom\" (no view tag shown)" },
+  { "hotel": "rosa-grand-milano", "field": "room.skip", "value": "Deluxe Double or Twin Room", "url": "https://mob.expedia.ae/Milan-Hotels-Rosa-Grand-Milano.h2875.Hotel-Information", "quote": "\"Deluxe Double or Twin Room\" (no view tag shown)" },
+  { "hotel": "rosa-grand-milano", "field": "room.skip", "value": "Grand Deluxe", "url": "https://mob.expedia.ae/Milan-Hotels-Rosa-Grand-Milano.h2875.Hotel-Information", "quote": "\"Grand Deluxe\" (no view tag shown)" },
+  { "hotel": "rosa-grand-milano", "field": "room.skip", "value": "Junior Suite", "url": "https://mob.expedia.ae/Milan-Hotels-Rosa-Grand-Milano.h2875.Hotel-Information", "quote": "\"Junior Suite\" (no view tag shown)" },
+
+  { "hotel": "amabilia-suites-milano", "field": "hotel.name", "value": "Amabilia Suites Milano", "url": "https://www.followingtherivera.com/best-milan-hotels-with-duomo-views/", "quote": "1. **Amabilia Suites Milano** (Passaggio Duomo, 2)" },
+  { "hotel": "amabilia-suites-milano", "field": "hotel.where", "value": "Passaggio Duomo 2", "url": "https://mob.expedia.ae/Milan-Hotels-Amabilia-Suites.h68764248.Hotel-Information", "quote": "Street address: Passaggio Duomo 2, Milan, MI, 20123" },
+  { "hotel": "amabilia-suites-milano", "field": "hotel.level", "value": "listed", "url": "https://mob.expedia.ae/Milan-Hotels-Amabilia-Suites.h68764248.Hotel-Information", "quote": "\"Double Room (Cathedral view)\" - \"City view\"" },
+  { "hotel": "amabilia-suites-milano", "field": "room.book", "value": "Double Room (Cathedral view)", "url": "https://mob.expedia.ae/Milan-Hotels-Amabilia-Suites.h68764248.Hotel-Information", "quote": "\"Double Room (Cathedral view)\" - \"City view\"" },
+  { "hotel": "amabilia-suites-milano", "field": "room.skip", "value": "Double Room, Courtyard View", "url": "https://mob.expedia.ae/Milan-Hotels-Amabilia-Suites.h68764248.Hotel-Information", "quote": "\"Double Room, Courtyard View\" - No separate view tag is listed for this room. Its name includes \"Courtyard View.\"" },
+
+  { "hotel": "scf-collection-duomo", "field": "hotel.name", "value": "SCF Collection – Duomo", "url": "https://www.followingtherivera.com/best-milan-hotels-with-duomo-views/", "quote": "5. **SCF Collection – Duomo** (Passaggio Duomo, 2)" },
+  { "hotel": "scf-collection-duomo", "field": "hotel.where", "value": "Passaggio Duomo 2", "url": "https://mob.expedia.ae/Milan-Hotels-SCF-COLLECTION-Duomo.h88650289.Hotel-Information", "quote": "Street address: Passaggio Duomo 2, Milan, MI, 20123" },
+  { "hotel": "scf-collection-duomo", "field": "hotel.level", "value": "listed", "url": "https://mob.expedia.ae/Milan-Hotels-SCF-COLLECTION-Duomo.h88650289.Hotel-Information", "quote": "\"Suite con vista Duomo\" - City view" },
+  { "hotel": "scf-collection-duomo", "field": "room.book", "value": "Suite con vista Duomo", "url": "https://mob.expedia.ae/Milan-Hotels-SCF-COLLECTION-Duomo.h88650289.Hotel-Information", "quote": "\"Suite con vista Duomo\" - City view" },
+  { "hotel": "scf-collection-duomo", "field": "room.skip", "value": "Suite", "url": "https://mob.expedia.ae/Milan-Hotels-SCF-COLLECTION-Duomo.h88650289.Hotel-Information", "quote": "\"Suite\" - No view tag shown" },
+
+  { "hotel": "park-hyatt-milano", "field": "hotel.name", "value": "Park Hyatt Milano", "url": "https://mob.expedia.ae/Milan-Hotels-Park-Hyatt-Milano.h977287.Hotel-Information", "quote": "\"Park Hyatt Milano\"" },
+  { "hotel": "park-hyatt-milano", "field": "hotel.where", "value": "Via Tommaso Grossi 1", "url": "https://mob.expedia.ae/Milan-Hotels-Park-Hyatt-Milano.h977287.Hotel-Information", "quote": "Via Tommaso Grossi 1, Milan, MI, 20121" },
+  { "hotel": "park-hyatt-milano", "field": "hotel.level", "value": "listed", "url": "https://mob.expedia.ae/Milan-Hotels-Park-Hyatt-Milano.h977287.Hotel-Information", "quote": "\"Suite (Duomo)\" - \"City view\"" },
+  { "hotel": "park-hyatt-milano", "field": "room.book", "value": "Suite (Duomo)", "url": "https://mob.expedia.ae/Milan-Hotels-Park-Hyatt-Milano.h977287.Hotel-Information", "quote": "\"Suite (Duomo)\" - \"City view\"" },
+  { "hotel": "park-hyatt-milano", "field": "room.skip", "value": "Suite, Terrace", "url": "https://mob.expedia.ae/Milan-Hotels-Park-Hyatt-Milano.h977287.Hotel-Information", "quote": "\"Suite, Terrace\" - \"City view\"" },
+  { "hotel": "park-hyatt-milano", "field": "room.skip", "value": "Suite (MONTENAPOLEONE)", "url": "https://mob.expedia.ae/Milan-Hotels-Park-Hyatt-Milano.h977287.Hotel-Information", "quote": "\"Suite (MONTENAPOLEONE)\" - \"City view\"" },
+  { "hotel": "park-hyatt-milano", "field": "room.skip", "value": "Suite (Solferino)", "url": "https://mob.expedia.ae/Milan-Hotels-Park-Hyatt-Milano.h977287.Hotel-Information", "quote": "\"Suite (Solferino)\" - \"City view\"" }
+]
