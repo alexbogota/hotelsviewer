@@ -1,0 +1,43 @@
+---
+// Search box for any place in the world. Sends the visitor to /hotels/?q=<place>,
+// where the Stay22 map shows hotels there (no page per city is needed).
+interface Props {
+  value?: string;
+  id?: string;
+}
+const { value = '', id = 'hotel-search' } = Astro.props;
+---
+<form class="search" action="/hotels/" method="get" role="search">
+  <label for={id}>Where are you going?</label>
+  <div class="row">
+    <input id={id} name="q" type="search" required minlength="2" maxlength="80" placeholder="A city, a landmark or an address" value={value} autocomplete="off" />
+    <button class="btn" type="submit">Find hotels</button>
+  </div>
+</form>
+
+<style>
+  .search label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  input {
+    flex: 1 1 240px;
+    min-width: 0;
+    min-height: 48px;
+    padding: 0 14px;
+    font: inherit;
+    color: var(--ink);
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  button {
+    min-height: 48px;
+  }
+</style>

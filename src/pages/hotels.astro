@@ -1,0 +1,121 @@
+---
+// Hotels anywhere: /hotels/?q=<place>. One static page for every place in the world.
+// The Stay22 map takes any place name (parameter "address", https://dev.stay22.com/docs/maps/parameters).
+// If the place matches one of our checked views (city, country or landmark), those views are shown first.
+import Layout from '../layouts/Layout.astro';
+import HotelSearch from '../components/HotelSearch.astro';
+import { views } from '../lib/views';
+import { site } from '../data/site';
+
+const known = views.map((v) => ({
+  href: `/views/${v.slug}/`,
+  landmark: v.landmark,
+  city: v.city,
+  country: v.country,
+  teaser: v.teaser,
+}));
+---
+<Layout
+  title="Find hotels anywhere, and the room with the view where we know it"
+  description="Type any city, landmark or address to see hotels there with current prices. Where we have checked the rooms, we show which one to book for the view."
+>
+  <div class="wrap">
+    <header class="page-head">
+      <h1>Find hotels anywhere</h1>
+      <p class="dek measure">Type a city, a landmark or an address. You get the hotels there with current prices, and where we have checked the rooms, the one to book for the view.</p>
+    </header>
+
+    <HotelSearch id="hotels-q" />
+
+    <section id="ours" class="ours" hidden aria-labelledby="ours-heading">
+      <h2 id="ours-heading">Rooms with a view we have checked here</h2>
+      <ul id="ours-list"></ul>
+    </section>
+
+    {site.stay22Aid && (
+      <section id="results" class="results" hidden aria-labelledby="results-heading">
+        <h2 id="results-heading">Hotels in <span id="place"></span></h2>
+        <p class="measure note">This map comes from our partner Stay22 and shows hotels with current prices from several booking sites. We haven't checked these hotels for a view. Bookings made through the map may earn us a commission.</p>
+        <iframe id="map" title="Map of hotels, from Stay22" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </section>
+    )}
+  </div>
+</Layout>
+
+<script is:inline define:vars={{ known, aid: site.stay22Aid }}>
+  (function () {
+    var q = (new URLSearchParams(location.search).get('q') || '').trim().slice(0, 80);
+    if (q.length < 2) return;
+    var input = document.getElementById('hotels-q');
+    if (input) input.value = q;
+    var low = q.toLowerCase();
+    var norm = function (s) { return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); };
+    var nq = norm(low);
+    var hits = known.filter(function (v) {
+      return [v.city, v.country, v.landmark].some(function (f) {
+        var nf = norm(f);
+        return nf && (nq.indexOf(nf) !== -1 || (nq.length >= 3 && nf.indexOf(nq) !== -1));
+      });
+    });
+    if (hits.length) {
+      var list = document.getElementById('ours-list');
+      hits.forEach(function (v) {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.className = 'text-link';
+        a.href = v.href;
+        a.textContent = v.landmark + ', ' + v.city;
+        li.appendChild(a);
+        if (v.teaser) {
+          var p = document.createElement('p');
+          p.textContent = v.teaser;
+          li.appendChild(p);
+        }
+        list.appendChild(li);
+      });
+      document.getElementById('ours').hidden = false;
+    }
+    var map = document.getElementById('map');
+    if (map && aid) {
+      var params = new URLSearchParams({ aid: aid, address: q, campaign: 'search', maincolor: '1c2633' });
+      map.src = 'https://www.stay22.com/embed/gm?' + params.toString();
+      map.title = 'Map of hotels in ' + q + ', from Stay22';
+      document.getElementById('place').textContent = q;
+      document.getElementById('results').hidden = false;
+      document.title = 'Hotels in ' + q + ' | HotelsViewer';
+    }
+  })();
+</script>
+
+<style>
+  .ours,
+  .results {
+    margin-top: 48px;
+  }
+  .ours ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+    display: grid;
+    gap: 16px;
+  }
+  .ours p,
+  .note {
+    margin-top: 8px;
+    color: var(--ink-soft);
+  }
+  iframe {
+    display: block;
+    width: 100%;
+    height: 560px;
+    margin-top: 24px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--sky);
+  }
+  @media (max-width: 640px) {
+    iframe {
+      height: 460px;
+    }
+  }
+</style>

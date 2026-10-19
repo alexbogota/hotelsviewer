@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import ViewWindows from '../components/ViewWindows.astro';
 import Decoder from '../components/Decoder.astro';
 import LevelPill from '../components/LevelPill.astro';
+import HotelSearch from '../components/HotelSearch.astro';
 import { levels, type Level } from '../lib/views';
 
 const order: Level[] = ['pictured', 'listed', 'reported'];
@@ -36,8 +37,9 @@ const pairs = [
     <div class="copy">
       <h1>Which hotel room actually has the view?</h1>
       <p class="dek">Hotels sell the same view under many names, and some of those names don't mean what they seem. We read the room categories and show you which one to book for the Eiffel Tower, the Colosseum, the Taj Mahal, Mount Fuji and more.</p>
+      <div class="find"><HotelSearch /></div>
       <div class="actions">
-        <a class="btn" href="#views">Browse the views</a>
+        <a class="btn btn-quiet" href="#views">Browse the views</a>
         <a class="btn btn-quiet" href="/about/#how-we-check">How we check a view</a>
       </div>
     </div>
@@ -84,6 +86,9 @@ const pairs = [
 </Layout>
 
 <style>
+  .find {
+    margin-top: 28px;
+  }
   .hero {
     display: grid;
     grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
