@@ -18,14 +18,6 @@
     },
     {
       "date": "2026-10-19",
-      "slug": "pantheon",
-      "qid": "Q99309",
-      "title": "Hotels with a Pantheon view, and which room to book",
-      "hotels": 3,
-      "rooms": 4
-    },
-    {
-      "date": "2026-10-19",
       "slug": "cologne-cathedral",
       "qid": "Q4176",
       "title": "Hotels with a Cologne Cathedral view, and which room to book",
@@ -79,6 +71,14 @@
       "title": "Hotels with a Chrysler Building view, and which room to book",
       "hotels": 3,
       "rooms": 6
+    },
+    {
+      "date": "2026-10-19",
+      "slug": "pantheon",
+      "qid": "Q99309",
+      "title": "Hotels with a Pantheon view, and which room to book",
+      "hotels": 3,
+      "rooms": 13
     }
   ],
   "attempts": {

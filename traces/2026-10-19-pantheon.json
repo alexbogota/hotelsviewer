@@ -3,28 +3,34 @@
   "slug": "pantheon",
   "fetched": [
     {
-      "url": "https://www.albergodelsenato.com/en/rooms/",
-      "chars": 38,
-      "blocked": true,
-      "head": "connect ECONNREFUSED 213.205.38.45:443"
-    },
-    {
-      "url": "https://www.hotelabruzzi.com/en/rooms/",
-      "chars": 366,
+      "url": "https://www.albergodelsenato.it/en/rooms",
+      "chars": 1198,
       "blocked": false,
-      "head": "The web page content didn't come through. The section between the `---` markers is empty, so I can't list any room categories, the street address, or a star rating. Please paste th"
+      "head": "\"Standard Double Rooms\" \"Twin-Disabled Room\" \"SUPERIOR DOUBLE ROOM PANTHEON VIEW\" \"Superior Twin Room\" \"Triple Rooms\" \"Triple Rooms- Separate Beds\" \"Penthouse Suite\" \"Suite Seminar"
     },
     {
-      "url": "https://www.anticoalbergodelsole.com/en/rooms/",
-      "chars": 50,
+      "url": "https://www.solepantheon.com/en/rooms/",
+      "chars": 42,
       "blocked": true,
-      "head": "getaddrinfo ENOTFOUND www.anticoalbergodelsole.com"
+      "head": "getaddrinfo ENOTFOUND www.solepantheon.com"
     },
     {
-      "url": "https://www.thepantheoniconic.com/en/rooms-and-suites",
+      "url": "https://www.thepantheoniconic.com/rooms",
       "chars": 47,
       "blocked": true,
       "head": "getaddrinfo ENOTFOUND www.thepantheoniconic.com"
+    },
+    {
+      "url": "https://www.hotelabruzzi.com/en/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.albergodelsenato.it/en/rooms",
+      "chars": 509,
+      "blocked": false,
+      "head": "**SUPERIOR DOUBLE ROOM PANTHEON VIEW** - Pantheon view: \"Superior Double Rooms at Albergo del Senato all guarantee a breathtaking view of the Pantheon.\" **Superior Twin Room** - Pa"
     },
     {
       "url": "https://www.hotels.com/ho225115",
@@ -33,178 +39,107 @@
       "head": "timeout of 60000ms exceeded"
     },
     {
-      "url": "https://ie.hotels.com/ho119754/albergo-del-senato-rome-italy",
-      "chars": 27,
-      "blocked": true,
-      "head": "timeout of 60000ms exceeded"
-    },
-    {
-      "url": "https://www.hotels.com/ho280148",
-      "chars": 27,
-      "blocked": true,
-      "head": "timeout of 60000ms exceeded"
-    },
-    {
-      "url": "https://www.greatsmallhotels.com/rome-boutique-hotels/hotel-albergo-del-senato",
-      "chars": 818,
-      "blocked": false,
-      "head": "**Room categories** (from the \"Type of rooms\" section): \"Single\" \"Double/Twin\" \"Superior Double\" \"Triple\" \"Junior Suite\" \"Apartment Junior Suite\" \"Mini Apartment\" \"Suite Seminario\""
-    },
-    {
-      "url": "https://www.albergodelsenato.it/en/rooms",
-      "chars": 196,
-      "blocked": false,
-      "head": "The web page content you provided is empty, so I can't find any room category names, a street address, or a star rating. Please paste the page text and I'll extract the details exa"
-    },
-    {
-      "url": "https://www.hotelabruzzi.it/en/rooms",
-      "chars": 315,
-      "blocked": false,
-      "head": "The web page content didn't come through. The section after \"Web page content:\" is blank, so I can't list any room categories, a street address, or a star rating. Please paste the "
-    },
-    {
-      "url": "https://www.oyster.com/rome/hotels/hotel-abruzzi/",
-      "chars": 513,
-      "blocked": false,
-      "head": "\"Standard Rooms\" **Street address:** Piazza della Rotonda 69, Rome, Italy **Star rating:** The page does not state a number of stars. It describes the hotel as a \"three-pearl prope"
-    },
-    {
-      "url": "https://www.internationaltraveller.com/?p=30953",
-      "chars": 607,
-      "blocked": false,
-      "head": "The page content doesn't mention a Pantheon view, any room names, a street address, or a star rating, so there is nothing to quote. The page is the International Traveller homepage"
-    },
-    {
-      "url": "https://ph.trip.com/hotels/rome-hotel-detail-2645613/hotel-sole-al-pantheon",
-      "chars": 446,
-      "blocked": false,
-      "head": "\"Junior Suite\" \"Deluxe Suite Annex Pantheon View\" \"Prestige Double or Twin Toom with Pantheon Square View\" \"Imperial Suite Ariosto Pantheon View\" The page also says \"Show 6 Remaini"
-    },
-    {
-      "url": "https://www.oyster.com/rome/hotels/albergo-del-senato/",
-      "chars": 2032,
-      "blocked": false,
-      "head": "**Room category names (as written):** \"Apartment Junior Suite\" \"Double\" \"Junior Suite\" \"Penthouse Suite\" \"Senior Suite\" \"Suite Seminario\" \"Superior Double\" \"Triple\" \"Twin\" \"Standar"
-    },
-    {
       "url": "https://www.booking.com/hotel/it/hotelsolealpantheon.html",
-      "chars": 413,
+      "chars": 348,
       "blocked": false,
-      "head": "The web page content didn't come through. The section between the dividers is empty, so I can't find any room category names, a street address, or a star rating. Please paste the p"
+      "head": "The web page content you included appears to be empty. It contains only separator lines, so I can't find any room categories, a street address, a star rating, or sentences about th"
     },
     {
-      "url": "https://oyster.com/rome/hotels/pantheon-royal-suite",
-      "chars": 810,
-      "blocked": false,
-      "head": "**Room category names:** None appear on the page. The Rooms section does not name any categories. **Sentences mentioning a Pantheon view:** - \"Guests are overwhelmingly couples, li"
-    },
-    {
-      "url": "https://www.timeout.com/rome/hotels/abruzzi",
-      "chars": 580,
-      "blocked": false,
-      "head": "**Room categories:** None are listed on the page. It mentions only \"26 rooms\" without naming any categories. **Pantheon view sentences:** - \"Nearly all of Abruzzi's 26 rooms have b"
-    },
-    {
-      "url": "https://www.timeout.com/rome/hotels/albergo-del-senato",
-      "chars": 651,
-      "blocked": false,
-      "head": "**Room categories:** \"standard rooms\" \"split-level apartments\" These are mentioned in the review text rather than listed as formal category names. **Sentences mentioning a Pantheon"
-    },
-    {
-      "url": "https://www.luxurytraveladvisor.com/inside-rome-s-newest-hotel",
-      "chars": 699,
-      "blocked": false,
-      "head": "**Sentence mentioning the Pantheon Suite, other suites, and their views** (split into segments to stay under the 125-character limit): > \"If you’re looking for a room with the best"
-    },
-    {
-      "url": "https://www.asmallworld.com/collection/hotels/the-patheon-iconic-rome-hotel-autograph-collection",
-      "chars": 3044,
-      "blocked": false,
-      "head": "**Pantheon views and references** - \"The luxurious Pantheon Suite offers direct views of the ancient temple,\" (Pantheon Suite) - \"The gorgeous Pantheon Suite offers direct views of"
-    },
-    {
-      "url": "https://lastminute.co.nz/Rome-Hotels-Hotel-Abruzzi.h2529050.Hotel-Information",
-      "chars": 847,
-      "blocked": false,
-      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.lastminute.co.nz/Rome-Hotels-Hotel-Abruzzi.h2529050.Hotel-Informati"
-    },
-    {
-      "url": "https://www.perillotours.com/custom/hotels/hotel-pantheon-iconic-rome",
-      "chars": 215,
+      "url": "https://www.marriott.com/en-us/hotels/romic-the-pantheon-iconic-rome-hotel-autograph-collection/overview/",
+      "chars": 234,
       "blocked": true,
-      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+      "head": "The server returned HTTP 403 Forbidden. Retry-After: 28800 The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub"
     },
     {
-      "url": "https://www.expedia.de/en/Rome-Hotels-The-Pantheon-Iconic-Rome-Hotel.h23972532.Hotel-Information",
+      "url": "https://www.travelocity.com/Rome-Hotels-Antico-Albergo-Del-Sole-Al-Pantheon.h879940.Hotel-Information",
       "chars": 223,
       "blocked": true,
       "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
     },
     {
-      "url": "https://www.hotels.com/ho280148",
-      "chars": 27,
+      "url": "https://www.hotelsolealpantheon.com/en/rooms",
+      "chars": 215,
       "blocked": true,
-      "head": "timeout of 60000ms exceeded"
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
     },
     {
-      "url": "https://www.businesstraveller.com/tried-and-tested/hotel-review-the-pantheon-iconic-rome-hotel-autograph-collection/",
+      "url": "https://uk.trip.com/hotels/rome-hotel-detail-2645613/antico-albergo-del-sole-al-pantheon",
+      "chars": 1291,
+      "blocked": false,
+      "head": "**Room categories (as written on the page):** \"Junior Suite\" \"Deluxe Suite Annex Pantheon View\" \"Prestige Double or Twin Toom with Pantheon Square View\" \"Imperial Suite Ariosto Pan"
+    },
+    {
+      "url": "https://www.hotelabruzzi.com/",
+      "chars": 810,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.hotelabruzzi.com/ Redirect URL (from the server's Location header —"
+    },
+    {
+      "url": "https://www.lastminute.com/hotels/italy/rome/pantheonview-luxury-suites_hid-1797696",
       "chars": 215,
       "blocked": true,
       "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
     },
     {
-      "url": "https://www.britishairways.com/en-es/destinations/hotel-information/Rome/The-Pantheon-Iconic-Rome-Hotel/IT-ROM-7807070",
-      "chars": 96,
+      "url": "https://www.hotelabruzzi.it/",
+      "chars": 2050,
+      "blocked": false,
+      "head": "**Room categories (exactly as written):** 1. \"Double or Twin Room with Pantheon View\" 2. \"Junior Suite with Pantheon View\" 3. \"Quadruple room with Pantheon View\" 4. \"Executive room"
+    },
+    {
+      "url": "https://www.luxurytraveladvisor.com/inside-rome-s-newest-hotel",
+      "chars": 496,
+      "blocked": false,
+      "head": "**Suites and Pantheon views:** - \"If you're looking for a room with the best view, consider The Pantheon Suite, which overlooks the Pantheon;\" - \"The Dioniso Suite, which has a ter"
+    },
+    {
+      "url": "https://www.hospitalitynet.org/announcement/41001105.html",
+      "chars": 411,
+      "blocked": false,
+      "head": "**Suites:** \"Each of the 79 individually designed guest rooms, including 20 suites,\" **Pantheon view:** \"Offering exceptional views of sights including The Pantheon,\" **Street addr"
+    },
+    {
+      "url": "https://www.hotelabruzzi.it/",
+      "chars": 393,
+      "blocked": false,
+      "head": "**Only-hotel sentence:** \"The only Hotel with a view on the Pantheon in the center of Rome!\" **Star category sentence:** \"Welcome to the family run Hotel Albergo Abruzzi Rome - 3 s"
+    },
+    {
+      "url": "https://uk.trip.com/hotels/rome-hotel-detail-2645613/antico-albergo-del-sole-al-pantheon",
+      "chars": 375,
+      "blocked": false,
+      "head": "**Hotel name:** \"Antico Albergo del Sole Al Pantheon\" **Address:** \"Piazza della Rotonda, 63, Rome, Lazio 00186, Italy\" **Rooms with \"Pantheon\" in the name:** - \"Deluxe Suite Annex"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=20&format=json&srsearch=Pantheon Rome daytime",
+      "chars": 1474,
+      "blocked": false,
+      "head": "\"File:The Fate of the Parthenon (IA jstor-25527849).pdf\" \"File:Studies in Christian history (IA cu31924031453016).pdf\" \"File:Library of the world's best literature, ancient and mod"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Category:Pantheon,_Rome",
+      "chars": 147,
       "blocked": true,
-      "head": "**Street address:** \"Via di Santa Chiara 4/A\" **Star rating:** 5 stars (British Airways rating)"
+      "head": "None. The category page states: \"There are no pages or files in this category.\" No \"File:\" entries ending in \".jpg\" appear in the content provided."
     },
     {
-      "url": "https://www.privateupgrades.com/italy/the-pantheon-iconic-rome-hotel-autograph-collection-hotel-rome",
-      "chars": 256,
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrnamespace=6&gsrlimit=20&gsrsearch=Pantheon%20Rome%20exterior&prop=imageinfo&iiprop=extmetadata|mime&format=json",
+      "chars": 1042,
       "blocked": false,
-      "head": "**Street address:** \"Via di Santa Chiara, 4/A, 00186 Roma, Italy\" **Room categories:** - Classic Room - Superior Room - Deluxe Room - Junior Suite - Spa Suite - Santa Chiara Suite "
-    },
-    {
-      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=20&format=json&srsearch=Pantheon%20Rome%20exterior",
-      "chars": 867,
-      "blocked": false,
-      "head": "File:Pantheon in Rome (1).jpg File:Pantheon (Rome) - Exterior 01.jpg File:Pantheon (Rome) - Exterior 05.jpg File:Pantheon (Rome) - Exterior 04.jpg File:Pantheon (Rome) - Exterior 1"
-    },
-    {
-      "url": "https://ph.trip.com/hotels/rome-hotel-detail-2645613/hotel-sole-al-pantheon",
-      "chars": 399,
-      "blocked": false,
-      "head": "**Hotel name:** \"Antico Albergo del Sole Al Pantheon\" **Address:** \"Piazza della Rotonda, 63, Colonna, Rome, Lazio, 00186, Italy\" **Key details:** - **Check-in/out:** After 14:00 /"
-    },
-    {
-      "url": "https://www.privateupgrades.com/italy/the-pantheon-iconic-rome-hotel-autograph-collection-hotel-rome",
-      "chars": 1174,
-      "blocked": false,
-      "head": "**The Pantheon Iconic Hotel** is a compact luxury hotel on Via di Santa Chiara, a short walk from the Pantheon in central Rome. It has 79 rooms and suites and is part of Marriott's"
-    },
-    {
-      "url": "https://www.greatsmallhotels.com/rome-boutique-hotels/hotel-albergo-del-senato",
-      "chars": 850,
-      "blocked": false,
-      "head": "**Hotel name:** \"Hotel Albergo del Senato, Rome\" **Address:** \"Piazza della Rotonda, 73, Pantheon, 00186, Rome, Rome, Lazio, ITALY\" The hotel is a 3-star boutique property with 57 "
+      "head": "\"File:Pantheon, Rome 123028.webm\" (video/webm) \"File:Pantheon-Rome-May-2009.jpg\" (image/jpeg) \"File:Pantheon (Rome) - Exterior 01.jpg\" (image/jpeg) \"File:Pantheon (Rome) - Exterior"
     }
   ],
   "searches": [
-    "hotels with Pantheon view room Rome",
-    "Pantheon view room hotel Piazza della Rotonda rooms suites",
-    "Pantheon view suite Rome hotel official site",
-    "Albergo del Senato Rome official site rooms Pantheon view Superior Double",
-    "Antico Albergo del Sole al Pantheon official website rooms",
-    "The Pantheon Iconic Rome Hotel rooms and suites Pantheon Suite",
-    "Hotel Abruzzi Rome Piazza della Rotonda rooms Pantheon view",
-    "\"Pantheon view\" room Rome hotel \"Junior Suite\" OR \"Superior\" Piazza della Rotonda booking",
-    "Rome hotel rooms facing the Pantheon Piazza della Rotonda Hotel Santa Chiara Hotel Raphael Pantheon view",
-    "\"Pantheon View\" room category hotel Rome Deluxe Junior Suite Piazza della Rotonda Hotels.com Expedia",
-    "Rome hotel with Pantheon view rooms Pantheon View double room guide 2026"
+    "hotels with Pantheon Rome view room",
+    "Pantheon view room suite hotel Piazza della Rotonda",
+    "Antico Albergo del Sole al Pantheon official site rooms",
+    "The Pantheon Iconic Rome Hotel official website suites Pantheon view",
+    "The Pantheon Iconic Rome Hotel address Piazza della Rotonda rooms with Pantheon view category",
+    "Rome hotel \"Pantheon view\" room category official site Piazza della Rotonda Via del Pantheon"
   ],
   "ended": {
     "subtype": "success",
-    "turns": 50,
+    "turns": 34,
     "error": false
   },
   "outcome": "drafted",
