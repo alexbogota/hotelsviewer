@@ -13,6 +13,8 @@ const known = views.map((v) => ({
   city: v.city,
   country: v.country,
   teaser: v.teaser,
+  lat: v.coords?.lat,
+  lng: v.coords?.lng,
 }));
 ---
 <Layout
@@ -51,7 +53,19 @@ const known = views.map((v) => ({
     var low = q.toLowerCase();
     var norm = function (s) { return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); };
     var nq = norm(low);
-    var hits = known.filter(function (v) {
+    var sp = new URLSearchParams(location.search);
+    var plat = parseFloat(sp.get('lat') || ''), plng = parseFloat(sp.get('lng') || '');
+    var hasPoint = isFinite(plat) && isFinite(plng) && Math.abs(plat) <= 90 && Math.abs(plng) <= 180;
+    var kind = sp.get('kind') || '';
+    var km = function (a, b, c, d) {
+      var r = Math.PI / 180, x = Math.sin((c - a) * r / 2), y = Math.sin((d - b) * r / 2);
+      return 12742 * Math.asin(Math.sqrt(x * x + Math.cos(a * r) * Math.cos(c * r) * y * y));
+    };
+    // A chosen place: our views within 40 km of it (a whole country: views in that country).
+    // Only typed text: views whose city, country or landmark is in the text.
+    var hits = hasPoint && kind !== 'country' ? known.filter(function (v) {
+      return typeof v.lat === 'number' && km(plat, plng, v.lat, v.lng) <= 40;
+    }) : known.filter(function (v) {
       return [v.city, v.country, v.landmark].some(function (f) {
         var nf = norm(f);
         return nf && (nq.indexOf(nf) !== -1 || (nq.length >= 3 && nf.indexOf(nq) !== -1));
@@ -77,7 +91,14 @@ const known = views.map((v) => ({
     }
     var map = document.getElementById('map');
     if (map && aid) {
-      var params = new URLSearchParams({ aid: aid, address: q, campaign: 'search', maincolor: '1c2633' });
+      var params = new URLSearchParams({ aid: aid, campaign: 'search', maincolor: '1c2633' });
+      if (hasPoint) {
+        params.set('lat', plat.toFixed(5));
+        params.set('lng', plng.toFixed(5));
+        params.set('zoom', kind === 'city' ? '12' : kind === 'country' ? '6' : kind === 'state' ? '8' : '13');
+      } else {
+        params.set('address', q);
+      }
       map.src = 'https://www.stay22.com/embed/gm?' + params.toString();
       map.title = 'Map of hotels in ' + q + ', from Stay22';
       document.getElementById('place').textContent = q;
