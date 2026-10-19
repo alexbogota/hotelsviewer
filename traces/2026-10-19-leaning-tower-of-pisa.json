@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-19",
+  "slug": "leaning-tower-of-pisa",
+  "fetched": [
+    {
+      "url": "https://www.grandhotelduomo.it/en/rooms/",
+      "chars": 762,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.grandhotelduomo.it/en/rooms/ Redirect URL (from the server's Locati"
+    },
+    {
+      "url": "https://www.travelpirates.com/hotels/room-with-leaning-tower-of-pisa-views",
+      "chars": 259,
+      "blocked": false,
+      "head": "The page names one hotel: **Residenza d'Epoca Relais I Miracoli**. It says: \"some rooms ome with a Leaning Tower view\" (sic). The page also describes suites with a more general vie"
+    },
+    {
+      "url": "https://www.grandhotelduomopisa.it/",
+      "chars": 183,
+      "blocked": false,
+      "head": "\"Singola Basic\" \"Doppia Basic\" \"Standard\" \"Superior\" \"Superior Tower\" \"Family Room\" \"Family Plus\" **Address:** Via Santa Maria, 94 / 56126 - PISA **Star rating:** 4 stelle (4 stars"
+    },
+    {
+      "url": "https://www.grandhotelduomopisa.it/en/rooms/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.oyster.com/pisa/hotels/allegroitalia-pisa-tower-plaza/",
+      "chars": 588,
+      "blocked": false,
+      "head": "\"Superior Rooms\" \"Deluxe Rooms\" \"Amore Suites\" Leaning Tower view sentences: - \"Distant views of the Leaning Tower of Pisa from the furnished rooftop terrace and some rooms\" - \"Som"
+    },
+    {
+      "url": "https://sp.booking.com/hotel/it/relais-i-miracoli.html",
+      "chars": 827,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://sp.booking.com/hotel/it/relais-i-miracoli.html Redirect URL (from the s"
+    },
+    {
+      "url": "https://www.travelpirates.com/hotels/room-with-leaning-tower-of-pisa-views",
+      "chars": 626,
+      "blocked": false,
+      "head": "The page doesn't have a single sentence that names the hotel and says its rooms have a Leaning Tower view. The hotel is named in one sentence, and the view appears in the next: - H"
+    },
+    {
+      "url": "https://www.grandhotelduomopisa.it/",
+      "chars": 479,
+      "blocked": false,
+      "head": "**Nothing found.** The page lists \"Superior Tower\" only as a link in the navigation menu, with no description of the room or its view. The page also says nothing about any room or "
+    },
+    {
+      "url": "https://www.grandhotelduomopisa.it/camere/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.perillotours.com/custom/hotels/grand-hotel-duomo",
+      "chars": 889,
+      "blocked": false,
+      "head": "**Rooms and suites:** - \"Grand Hotel Duomo Pisa offers 90 accommodations divided into various types of rooms\" (excerpt) - \"ranging from the 12m² of the single rooms to the 40m² of "
+    },
+    {
+      "url": "https://www.grandhotelduomopisa.it/superior-tower/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://nz.trip.com/hotels/pisa-hotel-detail-2157636/grand-hotel-duomo",
+      "chars": 524,
+      "blocked": false,
+      "head": "\"Standard Room\" \"Superior Tower Room\" \"Basic Room\" \"Single Room\" The page says \"Show 7 Remaining Room Types,\" but those seven are not included in the content, so they can't be list"
+    },
+    {
+      "url": "https://oyster.com/pisa/hotels/hotel-pisa-tower",
+      "chars": 293,
+      "blocked": false,
+      "head": "**Tower views:** No sentence on the page says rooms have a view of the Leaning Tower of Pisa. The closest statement is: \"Some of the rooms have picturesque views of the hotel's gar"
+    },
+    {
+      "url": "https://www.villakinzica.it/",
+      "chars": 257,
+      "blocked": false,
+      "head": "The web page content didn't come through. Only the separators are there, so I can't find any room categories, sentences about views of the Leaning Tower, a street address, or a sta"
+    },
+    {
+      "url": "https://www.relaisimiracoli.it/",
+      "chars": 289,
+      "blocked": false,
+      "head": "\"Family Room\" \"Deluxe\" \"Classic\" \"Suite\" **Tower view quotes:** - \"have a wonderful view of the Leaning tower, the Baptistery and Cathedral.\" - \"Side view of the Tower of Pisa\" (Cl"
+    },
+    {
+      "url": "https://www.pratodeimiracoli.it/",
+      "chars": 332,
+      "blocked": false,
+      "head": "The web page content didn't come through. The section between the separator lines is empty, so I can't find any room category names, views of the Leaning Tower, street addresses, o"
+    },
+    {
+      "url": "https://www.onthebeach.ie/hotels/italy/tuscany/pisa/grand-duomo",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.relaisimiracoli.it/",
+      "chars": 761,
+      "blocked": false,
+      "head": "**Room captions** (the page gives no separate view text for each room beyond these captions): - **Family Room:** \"Sqm 24/34 - Max 4 guests - View of Piazza dei Miracoli\" - **Deluxe"
+    },
+    {
+      "url": "https://www.relaisimiracoli.it/en/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.relaisimiracoli.it/",
+      "chars": 298,
+      "blocked": false,
+      "head": "Family Room | Sqm 24/34 - Max 4 guests - View of Piazza dei Miracoli Deluxe | Sqm 19 - Max 2 guests– Garden view Classic | Sqm 17 – Max 4 guests – Side view of the Tower of Pisa Su"
+    },
+    {
+      "url": "https://www.hotelvillakinzica.it/",
+      "chars": 496,
+      "blocked": false,
+      "head": "The page contains no room categories. The only category names are for its blog articles, and they are: \"Viaggi in Toscana\" \"Ospitalità e Alberghi\" \"Gastronomia Italiana\" \"Arte e Cu"
+    },
+    {
+      "url": "https://www.pratodeimiracoli.com/",
+      "chars": 387,
+      "blocked": false,
+      "head": "The web page content you included appears to be empty, so I can't find any room category names, views of the Leaning Tower, captions, or a street address. Please paste the page tex"
+    },
+    {
+      "url": "https://www.hotelvillakinzica.com/",
+      "chars": 330,
+      "blocked": false,
+      "head": "\"Camera Singola\" \"Camera doppia/ matrimoniale\" \"Camera Tripla\" \"Camera Quadrupla\" The page has no sentence about a view of the Leaning Tower. Its only mention of the tower is in th"
+    },
+    {
+      "url": "https://www.grandhotelduomopisa.it/en/",
+      "chars": 384,
+      "blocked": false,
+      "head": "\"Single Basic\" \"Double Basic\" \"Standard\" \"Superior\" \"Superior Tower\" \"Family Room\" \"Family Plus\" No sentence on the page says a room or suite has a view of the Leaning Tower. The c"
+    }
+  ],
+  "searches": [
+    "hotels with Leaning Tower of Pisa view room",
+    "Leaning Tower of Pisa view room suite hotel",
+    "Grand Hotel Duomo Pisa official site rooms suites tower view",
+    "Allegroitalia Pisa Tower Plaza rooms suites Leaning Tower view",
+    "Residenza d'Epoca Relais I Miracoli Pisa rooms tower view",
+    "Hotel Roma Pisa rooms view Leaning Tower official site",
+    "Pisa hotel \"Leaning Tower view\" room category booking",
+    "Relais I Miracoli Pisa official website camere",
+    "Pisa Tower Plaza SMY Hotels rooms suites official site",
+    "Hotel Pisa Tower Pisa official site rooms view",
+    "Perillo Tours Grand Hotel Duomo Pisa rooms suites view Leaning Tower",
+    "Pisa hotel room with view of Leaning Tower Piazza dei Miracoli rooms category \"view\" official",
+    "Hotel Helvetia Pisa rooms Leaning Tower view",
+    "Hotel Kinzica Pisa camere vista torre",
+    "Giardino Tower Inn Pisa rooms view tower",
+    "Hotel Villa Kinzica Pisa sito ufficiale camere",
+    "Prato dei Miracoli Residenza d'Epoca Pisa sito ufficiale camere vista torre",
+    "Hotel Roma Pisa sito ufficiale camere vista torre pendente",
+    "smyhotels Pisa Tower Plaza hotel rooms",
+    "Hotel Helvetia Pisa Tower official website camere Via Don Gaetano Boschi",
+    "Hotel Astor Pisa rooms view Leaning Tower official",
+    "Pisa hotel \"Torre\" room \"vista\" category Hotel Bonanno OR Hotel Francesco OR Hotel Novecento Pisa rooms tower view"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 53,
+    "error": false
+  },
+  "outcome": "unverified",
+  "reason": "Only one hotel could be proved with its own page: Residenza d'Epoca Relais I Miracoli, whose site captions its Classic and Suite rooms \"Side view of the Tower of Pisa\". Grand Hotel Duomo's own site lists a \"Superior Tower\" room but no view wording. Hotel Villa Kinzica's site names no view. Other hotels had no official site found, only booking sites with no tower-view room names. Retry later."
+}
