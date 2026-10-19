@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-19",
+  "slug": "white-house",
+  "fetched": [
+    {
+      "url": "https://www.hayadams.com/rooms-suites",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.americanexpress.com/en-fi/travel/discover/property/District-of-Columbia-US/Washington/the-hay-adams-washington-dc",
+      "chars": 761,
+      "blocked": false,
+      "head": "**Room categories:** None are named on the page. It only says, \"Rooms and suites feature classic décor with muted color palettes and subtle floral patterns.\" **White House view sen"
+    },
+    {
+      "url": "https://www.scottdunn.com/usa/hotels/hay-adams-washington-d-c",
+      "chars": 389,
+      "blocked": false,
+      "head": "\"Federal suite\" \"Junior suite\" \"Superior room\" \"White House Junior Suite\" The page says rooms on the upper floor have White House views: \"rooms on the upper floor enjoy views of th"
+    },
+    {
+      "url": "https://www.expedia.com/Washington-Hotels-The-Hay-Adams.h18913.Hotel-Information",
+      "chars": 223,
+      "blocked": true,
+      "head": "The server returned HTTP 429 Too Many Requests. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP"
+    },
+    {
+      "url": "https://whatahotel.com/hotels/4855/Sofitel-Washington-DC-Lafayette-Square.html",
+      "chars": 567,
+      "blocked": false,
+      "head": "**White House views (verbatim, under 125 characters each):** - \"Its rooftop offers unparalleled views of the White House grounds and Washington Monument.\" - \"Request a Lafayette Sq"
+    },
+    {
+      "url": "https://www.hotels.com/ho141181/the-st-regis-washington-d-c-washington-united-states-of-america/",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://stay.washington.org/property/8443/the-hay-adams",
+      "chars": 227,
+      "blocked": true,
+      "head": "The server returned HTTP 500 Internal Server Error. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an"
+    },
+    {
+      "url": "https://washington.intercontinental.com/rooms-suites/suites",
+      "chars": 429,
+      "blocked": false,
+      "head": "\"Junior Suites\" \"Willard Suites\" \"One Bedroom Suites\" \"Signature Suites\" \"Oval Suites\" \"Presidential Suites\" No sentence in the content mentions a White House view. The Oval Suites"
+    },
+    {
+      "url": "https://www.roomertravel.com/fi/featured/hotel-washington.h1506677",
+      "chars": 677,
+      "blocked": false,
+      "head": "**Room categories:** \"Monument View Premier King\" [Monument view] \"City View Deluxe\" [City view] \"Standard Classic Rooms\" [No view stated] **White House mentions:** - \"steps from t"
+    },
+    {
+      "url": "https://www.theculturetrip.com/north-america/usa/washington-dc/articles/the-best-hotels-with-a-balcony-in-washington-dc",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.themostperfectview.com/washington-dc-hotels-best-national-mall-views",
+      "chars": 2204,
+      "blocked": false,
+      "head": "**Note:** The page gives no street addresses for any hotel. It names only neighborhoods and landmarks (for example, Lafayette Square and 15th Street). **The Hay-Adams** - White Hou"
+    },
+    {
+      "url": "https://trip101.com/article/hotels-with-view-of-white-house",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://in.hotels.com/ho126820/hotel-washington-washington-united-states-of-america",
+      "chars": 27,
+      "blocked": true,
+      "head": "timeout of 60000ms exceeded"
+    },
+    {
+      "url": "https://www.hayadams.com",
+      "chars": 569,
+      "blocked": false,
+      "head": "**Room categories and links:** - Executive Suites: /rooms-and-suites/suites/ - Premier Rooms: /rooms-and-suites/rooms/premier-rooms/ - Deluxe Rooms: /rooms-and-suites/rooms/ - Clas"
+    },
+    {
+      "url": "https://www.hotelwashington.com/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/wasxr-the-st-regis-washington-dc/overview/",
+      "chars": 234,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. Retry-After: 28800 The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub"
+    },
+    {
+      "url": "https://www.hayadams.com/rooms-and-suites/rooms/premier-rooms/",
+      "chars": 237,
+      "blocked": false,
+      "head": "**Room category names:** - \"Premier Rooms\" - \"Deluxe Rooms\" - \"Accessible Rooms\" **White House view:** The page doesn't mention a White House view. It describes a view of Lafayette"
+    },
+    {
+      "url": "https://www.sofitel-washington-dc.com/en/",
+      "chars": 426,
+      "blocked": false,
+      "head": "**Room categories (as written on the page):** - \"SUPERIOR ROOM\" - \"SUPERIOR ROOM – ADA ACCESSIBLE\" - \"SUPERIOR DOUBLE\" - \"LUXURY ROOM\" - \"LUXURY DOUBLE\" - \"LUXURY CORNER KING\" - \"J"
+    }
+  ],
+  "searches": [
+    "hotels with White House view room Washington DC",
+    "Hay-Adams White House view rooms suites official site",
+    "St. Regis Washington DC rooms White House view",
+    "Washington DC hotel rooms \"White House view\" Lafayette Square Willard Sofitel Jefferson Hotel Washington Pendry",
+    "hayadams.com accommodations \"White House View\" king room",
+    "W Washington DC room \"White House view\" OR \"Washington Monument view\" suite",
+    "Willard InterContinental Washington rooms suites \"White House\" view",
+    "Washington DC hotels where you can see the White House from your room guide",
+    "\"White House View\" room hotel Washington DC king room booking -Hay-Adams",
+    "Sofitel Washington DC Lafayette Square rooms \"White House\" view room category",
+    "Hotel Washington DC Pendry \"White House View\" king room 515 15th Street",
+    "hotel room faces White House Washington DC \"view of the White House\" room hotel official rooms Hyatt Place OR \"Hilton Garden Inn\" OR \"Residence Inn\" OR \"Hampton Inn\""
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 35,
+    "error": false
+  },
+  "outcome": "unverified",
+  "reason": "Only The Hay-Adams could be tied to White House view rooms (\"White House Junior Suite\" on Scott Dunn, \"select guest rooms\" on American Express), and its own rooms pages (Premier, Deluxe) named no view category. Sofitel Lafayette Square, Willard InterContinental, Hotel Washington (Monument View rooms only), W Washington and St. Regis pages named no White House view category; Hotels.com, Expedia, Marriott and Trip101 timed out or were blocked. Fewer than 3 hotels verified."
+}
