@@ -80,6 +80,10 @@ const month = monthLabel(view.checked);
 
     <Decoder pairs={view.decoder} />
 
+    {view.coords && (
+      <HotelMap lat={view.coords.lat} lng={view.coords.lng} near={landmarkInText(view)} campaign={`view-${view.slug}-photos`} mode="listview" />
+    )}
+
     <section class="hotels" aria-labelledby="hotels-heading">
       <div class="hotels-head">
         <h2 id="hotels-heading">{view.hotels.length} hotels, room by room</h2>

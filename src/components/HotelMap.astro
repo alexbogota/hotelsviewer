@@ -8,8 +8,10 @@ interface Props {
   lng: number;
   near: string; // "the Eiffel Tower"
   campaign: string; // where the booking came from, e.g. "city-paris"
+  mode?: 'map' | 'listview'; // listview = hotels as photo cards (owner liked them in search, 19 Oct 2026)
 }
-const { lat, lng, near, campaign } = Astro.props;
+const { lat, lng, near, campaign, mode = 'map' } = Astro.props;
+const photos = mode === 'listview';
 
 const params = new URLSearchParams({
   aid: site.stay22Aid,
@@ -18,16 +20,18 @@ const params = new URLSearchParams({
   zoom: '15',
   campaign,
   maincolor: '1c2633',
+  viewmode: mode,
+  ...(photos ? { limit: '12' } : {}),
 });
 const src = `https://www.stay22.com/embed/gm?${params.toString()}`;
 ---
 {site.stay22Aid && (
-  <section class="map" aria-labelledby="map-heading">
-    <h2 id="map-heading">More hotels near {near}</h2>
-    <p class="measure">This map comes from our partner Stay22 and shows hotels around {near} with current prices. We haven't checked these hotels for a view. Look for a room category that names the view, or start with the hotels on our view pages. Bookings made through the map may earn us a commission.</p>
+  <section class={photos ? 'map photos' : 'map'} aria-labelledby={`${mode}-heading`}>
+    <h2 id={`${mode}-heading`}>{photos ? `Hotels near ${near}, with photos` : `More hotels near ${near}`}</h2>
+    <p class="measure">{photos ? 'These hotels come' : 'This map comes'} from our partner Stay22 and shows hotels around {near} with current prices. We haven't checked these hotels for a view. Look for a room category that names the view, or start with the hotels on our view pages. Bookings made through the map may earn us a commission.</p>
     <iframe
       src={src}
-      title={`Map of hotels near ${near}, from Stay22`}
+      title={`${photos ? 'Photos of hotels' : 'Map of hotels'} near ${near}, from Stay22`}
       loading="lazy"
       referrerpolicy="strict-origin-when-cross-origin"
     ></iframe>
@@ -37,6 +41,12 @@ const src = `https://www.stay22.com/embed/gm?${params.toString()}`;
 <style>
   .map {
     margin-top: 72px;
+  }
+  .map.photos {
+    margin-top: 56px;
+  }
+  .photos iframe {
+    height: 640px;
   }
   .map p {
     margin-top: 12px;
@@ -54,6 +64,9 @@ const src = `https://www.stay22.com/embed/gm?${params.toString()}`;
   @media (max-width: 640px) {
     iframe {
       height: 420px;
+    }
+    .photos iframe {
+      height: 600px;
     }
   }
 </style>
