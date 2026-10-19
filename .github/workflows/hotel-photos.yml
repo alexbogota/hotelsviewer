@@ -1,0 +1,47 @@
+name: Find hotel photos
+
+# By hand: GitHub -> Actions -> "Find hotel photos" -> Run workflow.
+# Looks for licensed photos of every hotel on Wikimedia Commons (scripts/find-hotel-photos.mjs) and saves the list:
+# data/hotel-photo-candidates.json and docs/hotel-photos-report.md. Nothing goes on the site; the commit has [skip ci], so no deploy.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: hotel-photos
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # No packages to install: the script uses only what Node.js brings.
+      - name: Test the photo checks
+        run: npm run test:hotel-photos
+
+      - name: Look for hotel photos on Wikimedia Commons
+        run: npm run hotel-photos
+
+      - name: Save the list to the repository
+        run: |
+          if [ -n "$(git status --porcelain data/hotel-photo-candidates.json docs/hotel-photos-report.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/hotel-photo-candidates.json docs/hotel-photos-report.md
+            git commit -m "Hotel photo candidates from Wikimedia Commons [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo "The list did not change."
+          fi

@@ -32,6 +32,7 @@ First goal (October 2026): get approved by affiliate programs. Order and status:
 - Booking sites (Hotels.com, Expedia, Travelocity, Booking.com) are named as sources but not linked. Official sources (hotel sites, tourism boards) and travel guides are linked.
 - No prices on the site.
 - Photos: only licences that allow commercial use (CC0, public domain, CC BY, CC BY-SA), always credited next to the photo. Never copy photos from booking sites or hotel sites without permission. No night photos of the Eiffel Tower (its lights are copyrighted, SETE permission needed). Never AI-generated pictures of a "view".
+- Every hotel needs photos (owner, 19 Oct 2026): a hotel entry without a photo is not acceptable to visitors. Use only legal sources: Wikimedia Commons (licence checked, credited; `scripts/find-hotel-photos.mjs`, workflow "Find hotel photos", list in `data/hotel-photo-candidates.json`), and later partner photo feeds (Expedia Creator Toolbox, Agoda) once approved. Never copy photos from hotel or booking sites.
 - The affiliate disclosure stays visible in the footer and on every view page above the hotels.
 - Keep the research trail: every new hotel gets its sources in `docs/research-*.md`.
 
