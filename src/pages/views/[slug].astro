@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import ArchPhoto from '../../components/ArchPhoto.astro';
 import Decoder from '../../components/Decoder.astro';
 import HotelEntry from '../../components/HotelEntry.astro';
+import hotelPhotos from '../../data/hotel-photos.json';
 import TripExtras from '../../components/TripExtras.astro';
 import HotelMap from '../../components/HotelMap.astro';
 import HotelSearch from '../../components/HotelSearch.astro';
@@ -34,6 +35,10 @@ const others = views
   .sort((a, b) => rank(a) - rank(b) || a.order - b.order)
   .slice(0, 6);
 const month = monthLabel(view.checked);
+// Hotels with a licensed photo come first; the others follow under their own heading, so no card shows an empty frame.
+const photoIds = new Set(Object.keys(hotelPhotos));
+const withPhoto = view.hotels.filter((h) => photoIds.has(h.id));
+const withoutPhoto = view.hotels.filter((h) => !photoIds.has(h.id));
 ---
 <Layout
   title={`${view.title} | HotelsViewer`}
@@ -65,6 +70,24 @@ const month = monthLabel(view.checked);
       </div>
     </section>
 
+    {withPhoto.length > 0 && (
+      <section class="strip" aria-label="The hotels on this page">
+        <ul>
+          {withPhoto.map((h) => {
+            const p = (hotelPhotos as Record<string, { src: string; alt: string; width: number; height: number }>)[h.id];
+            return (
+              <li>
+                <a href={`#${h.id}`}>
+                  <img src={p.src} alt={p.alt} width={p.width} height={p.height} loading="eager" decoding="async" />
+                  <span class="small">{h.name}</span>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    )}
+
     <section class="short" aria-labelledby="short-heading">
       <h2 id="short-heading">The short answer</h2>
       <ul>
@@ -85,7 +108,13 @@ const month = monthLabel(view.checked);
         <h2 id="hotels-heading">{view.hotels.length} hotels, room by room</h2>
         <p class="measure">Room names are copied exactly as the hotels sell them, so you can find the same category on any booking site. The buttons open a search on {pricesProvider}. Some links may earn us a commission; it never changes which rooms we list.</p>
       </div>
-      {view.hotels.map((h) => <HotelEntry hotel={h} checked={view.checked} />)}
+      {withPhoto.map((h) => <HotelEntry hotel={h} checked={view.checked} />)}
+      {withoutPhoto.length > 0 && (
+        <>
+          <h3 class="more-hotels">{withPhoto.length ? 'More hotels with the view' : 'Hotels with the view'}</h3>
+          {withoutPhoto.map((h) => <HotelEntry hotel={h} checked={view.checked} />)}
+        </>
+      )}
     </section>
 
     {view.askAtDesk && (
@@ -236,6 +265,43 @@ const month = monthLabel(view.checked);
   .elsewhere {
     margin-top: 56px;
     max-width: 640px;
+  }
+  .strip {
+    margin-top: 40px;
+  }
+  .strip ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+  }
+  .strip a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+  .strip img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 50% 50% var(--radius) var(--radius) / 34% 34% var(--radius) var(--radius);
+    background: var(--sky);
+  }
+  .strip span {
+    display: block;
+    margin-top: 8px;
+    color: var(--ink-soft);
+  }
+  .strip a:hover span {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .more-hotels {
+    margin-top: 48px;
+    font-size: 1.375rem;
   }
   .faq {
     margin-top: 72px;

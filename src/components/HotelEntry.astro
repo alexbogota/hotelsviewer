@@ -1,6 +1,7 @@
 ---
 import LevelPill from './LevelPill.astro';
 import { goHref, monthLabel, pricesButton, starsLabel, type Hotel } from '../lib/views';
+import hotelPhotos from '../data/hotel-photos.json';
 
 interface Props {
   hotel: Hotel;
@@ -8,6 +9,8 @@ interface Props {
 }
 
 const { hotel, checked } = Astro.props;
+// A licensed photo from Wikimedia Commons, chosen by eye (src/data/hotel-photos.json, files in public/photos/hotels/).
+const photo = (hotelPhotos as Record<string, { src: string; alt: string; width: number; height: number; author: string; license: string; source: string; fromHotel: boolean }>)[hotel.id];
 const facts = [hotel.distance, starsLabel(hotel.stars)].filter(Boolean).join(', ');
 
 // "a, b and c" with official sources linked.
@@ -15,13 +18,26 @@ const sources = hotel.sources;
 const lastIndex = sources.length - 1;
 ---
 <article class="hotel" id={hotel.id} aria-labelledby={`${hotel.id}-name`}>
-  <header class="head">
-    <h3 id={`${hotel.id}-name`}>{hotel.name}</h3>
-    <LevelPill level={hotel.level} />
-  </header>
-  <p class="where">
-    {hotel.where}{facts && <><br /><span class="facts">{facts.charAt(0).toUpperCase() + facts.slice(1)}</span></>}
-  </p>
+  <div class:list={['top', { 'has-photo': photo }]}>
+    {photo && (
+      <figure class="shot">
+        <img src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
+        <figcaption class="small">
+          {photo.fromHotel && <><strong>Taken from the hotel.</strong> </>}
+          Photo: {photo.author}, <a class="text-link" href={photo.source} rel="noopener">{photo.license}</a>, via Wikimedia Commons
+        </figcaption>
+      </figure>
+    )}
+    <div class="intro-text">
+      <header class="head">
+        <h3 id={`${hotel.id}-name`}>{hotel.name}</h3>
+        <LevelPill level={hotel.level} />
+      </header>
+      <p class="where">
+        {hotel.where}{facts && <><br /><span class="facts">{facts.charAt(0).toUpperCase() + facts.slice(1)}</span></>}
+      </p>
+    </div>
+  </div>
 
   <div class="lists">
     <section class="book" aria-label={`Rooms to book at ${hotel.name}`}>
@@ -72,6 +88,34 @@ const lastIndex = sources.length - 1;
 </article>
 
 <style>
+  .top.has-photo {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: 28px;
+    align-items: start;
+    margin-bottom: 8px;
+  }
+  .shot {
+    margin: 0;
+  }
+  .shot img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--radius);
+    background: var(--sky);
+  }
+  .shot figcaption {
+    margin-top: 6px;
+    color: var(--zinc);
+  }
+  @media (max-width: 760px) {
+    .top.has-photo {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+    }
+  }
   .hotel {
     padding: 36px 0 40px;
     border-top: 1px solid var(--line);

@@ -1,0 +1,222 @@
+{
+  "bellagio": {
+    "src": "/photos/hotels/bellagio.jpg",
+    "alt": "The Bellagio hotel behind its lake on the Las Vegas Strip",
+    "width": 960,
+    "height": 731,
+    "author": "Blane",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bellagio_outside.jpg",
+    "file": "File:Bellagio outside.jpg",
+    "fromHotel": false
+  },
+  "caesars-palace": {
+    "src": "/photos/hotels/caesars-palace.jpg",
+    "alt": "The towers of Caesars Palace seen from the Strip",
+    "width": 960,
+    "height": 720,
+    "author": "Blane",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Caesars_outside-resized.jpg",
+    "file": "File:Caesars outside-resized.jpg",
+    "fromHotel": false
+  },
+  "eurostars-monumental": {
+    "src": "/photos/hotels/eurostars-monumental.jpg",
+    "alt": "Facade of the Eurostars Monumental hotel in Barcelona",
+    "width": 900,
+    "height": 1200,
+    "author": "Pere prlpz",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Eurostars_Monumental.jpg",
+    "file": "File:Eurostars Monumental.jpg",
+    "fromHotel": false
+  },
+  "four-seasons-istanbul-sultanahmet": {
+    "src": "/photos/hotels/four-seasons-istanbul-sultanahmet.jpg",
+    "alt": "The Four Seasons Sultanahmet building lit in the evening",
+    "width": 900,
+    "height": 1200,
+    "author": "Gryffindor",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Four_Seasons_Sultanahmet_March_2008.JPG",
+    "file": "File:Four Seasons Sultanahmet March 2008.JPG",
+    "fromHotel": false
+  },
+  "fuji-view-hotel": {
+    "src": "/photos/hotels/fuji-view-hotel.jpg",
+    "alt": "The Fuji View Hotel and its driveway",
+    "width": 960,
+    "height": 710,
+    "author": "Abasaa",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Fuji_View_Hotel.JPG",
+    "file": "File:Fuji View Hotel.JPG",
+    "fromHotel": false
+  },
+  "hotel-grande-bretagne": {
+    "src": "/photos/hotels/hotel-grande-bretagne.jpg",
+    "alt": "Breakfast tables on the hotel roof garden, with the Acropolis behind",
+    "width": 960,
+    "height": 540,
+    "author": "Mariavazoura",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hd-hotel-grande-bretagne-athens-gb-roof-garden-restaurant-and-bar-breakfast-1-.jpg",
+    "file": "File:Hd-hotel-grande-bretagne-athens-gb-roof-garden-restaurant-and-bar-breakfast-1-.jpg",
+    "fromHotel": true
+  },
+  "hotel-regina-kawaguchiko": {
+    "src": "/photos/hotels/hotel-regina-kawaguchiko.jpg",
+    "alt": "The Hotel Regina Kawaguchiko building",
+    "width": 960,
+    "height": 720,
+    "author": "Abasaa",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Hotel_Regina_Kawaguchiko.JPG",
+    "file": "File:Hotel Regina Kawaguchiko.JPG",
+    "fromHotel": false
+  },
+  "hyatt-regency-niagara-falls-fallsview": {
+    "src": "/photos/hotels/hyatt-regency-niagara-falls-fallsview.jpg",
+    "alt": "Niagara Falls skyline with the Hyatt Regency tower",
+    "width": 960,
+    "height": 640,
+    "author": "K2HWY",
+    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cityscape_of_Niagara_Falls,_Ontario.jpg",
+    "file": "File:Cityscape of Niagara Falls, Ontario.jpg",
+    "fromHotel": false
+  },
+  "marriott-mena-house": {
+    "src": "/photos/hotels/marriott-mena-house.jpg",
+    "alt": "Mena House with the pyramids of Giza behind it",
+    "width": 960,
+    "height": 640,
+    "author": "Paul Mannix",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Oberoi_-_Mena_House,_Egypt.jpg",
+    "file": "File:The Oberoi - Mena House, Egypt.jpg",
+    "fromHotel": false
+  },
+  "oike-hotel": {
+    "src": "/photos/hotels/oike-hotel.jpg",
+    "alt": "The Oike Hotel building",
+    "width": 960,
+    "height": 720,
+    "author": "Abasaa",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Oike_Hotel.JPG",
+    "file": "File:Oike Hotel.JPG",
+    "fromHotel": false
+  },
+  "palace-downtown": {
+    "src": "/photos/hotels/palace-downtown.jpg",
+    "alt": "The Palace Downtown hotel among palm trees",
+    "width": 960,
+    "height": 720,
+    "author": "Aidas U.",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Palace_Downtown_Dubai_-_panoramio_(4).jpg",
+    "file": "File:The Palace Downtown Dubai - panoramio (4).jpg",
+    "fromHotel": false
+  },
+  "paris-las-vegas": {
+    "src": "/photos/hotels/paris-las-vegas.jpg",
+    "alt": "Paris Las Vegas with its Eiffel Tower replica",
+    "width": 960,
+    "height": 640,
+    "author": "Jean-Christophe BENOIST",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:LasVegas_-_ParisLasVegas.jpg",
+    "file": "File:LasVegas - ParisLasVegas.jpg",
+    "fromHotel": false
+  },
+  "planet-hollywood": {
+    "src": "/photos/hotels/planet-hollywood.jpg",
+    "alt": "The Planet Hollywood tower on the Las Vegas Strip",
+    "width": 960,
+    "height": 720,
+    "author": "Elika Shannon",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Planet_Hollywood_Casino.jpg",
+    "file": "File:Planet Hollywood Casino.jpg",
+    "fromHotel": false
+  },
+  "pullman-paris-tour-eiffel": {
+    "src": "/photos/hotels/pullman-paris-tour-eiffel.jpg",
+    "alt": "A guest room at the Pullman Paris Tour Eiffel",
+    "width": 960,
+    "height": 720,
+    "author": "Gary Bembridge from London, UK",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pullman_Eiffel_Tower_Hotel_Paris_France_1.jpg",
+    "file": "File:Pullman Eiffel Tower Hotel Paris France 1.jpg",
+    "fromHotel": false
+  },
+  "seven-hills-hotel": {
+    "src": "/photos/hotels/seven-hills-hotel.jpg",
+    "alt": "The Blue Mosque at dusk, photographed from the Seven Hills Hotel terrace restaurant",
+    "width": 960,
+    "height": 640,
+    "author": "Pedro Szekely",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Blue_Mosque_-_4.jpg",
+    "file": "File:Blue Mosque - 4.jpg",
+    "fromHotel": true
+  },
+  "shangri-la-paris": {
+    "src": "/photos/hotels/shangri-la-paris.jpg",
+    "alt": "The glass canopy over the entrance of the Shangri-La Paris",
+    "width": 960,
+    "height": 720,
+    "author": "FLLL",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Awning_of_the_Shangri-La_hotel_in_Paris,_23_January_2014.jpg",
+    "file": "File:Awning of the Shangri-La hotel in Paris, 23 January 2014.jpg",
+    "fromHotel": false
+  },
+  "splendid-hotel-paris": {
+    "src": "/photos/hotels/splendid-hotel-paris.jpg",
+    "alt": "The Splendid Hotel on its street corner in Paris",
+    "width": 960,
+    "height": 1098,
+    "author": "Doods Dumaguing",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Splendid_Hotel,_Paris_25_June_2011.jpg",
+    "file": "File:Splendid Hotel, Paris 25 June 2011.jpg",
+    "fromHotel": false
+  },
+  "tajview-agra": {
+    "src": "/photos/hotels/tajview-agra.jpg",
+    "alt": "The Taj Mahal in the haze, seen from the Tajview hotel",
+    "width": 960,
+    "height": 720,
+    "author": "Gryffindor",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tajview_Agra_2019_001.jpg",
+    "file": "File:Tajview Agra 2019 001.jpg",
+    "fromHotel": true
+  },
+  "the-cosmopolitan": {
+    "src": "/photos/hotels/the-cosmopolitan.jpg",
+    "alt": "The Cosmopolitan towers seen across the Bellagio lake",
+    "width": 960,
+    "height": 640,
+    "author": "Cygnusloop99",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cosmopolitan_-_North_-_2011-06-04.jpg",
+    "file": "File:Cosmopolitan - North - 2011-06-04.jpg",
+    "fromHotel": false
+  },
+  "the-peninsula-paris": {
+    "src": "/photos/hotels/the-peninsula-paris.jpg",
+    "alt": "Facade of The Peninsula Paris on Avenue Kléber",
+    "width": 960,
+    "height": 640,
+    "author": "Marketingppr",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7adeThePeninsulaParis.jpg",
+    "file": "File:FaçadeThePeninsulaParis.jpg",
+    "fromHotel": false
+  }
+}
