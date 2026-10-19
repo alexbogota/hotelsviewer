@@ -1,0 +1,16 @@
+{
+  "about": "Аккаунты соцсетей проекта: ОДНО место для метки каждой сети. Метка (subid) везде одна и та же: в короткой ссылке профиля, в ссылках постов (utm_source) и в партнёрской сети (sub ID). Чтобы добавить сеть, скопируйте любой блок ниже и смените ключ, name, subid и go. Кода менять не нужно: при каждой сборке сайта scripts/build-go.mjs сам добавляет строку перенаправления в dist/go/.htaccess. Поля: enabled = нужна ли сети короткая ссылка (false: ссылки нет); name = название для людей; handle = имя аккаунта (пусто, пока аккаунта нет); subid = метка, только маленькие латинские буквы, цифры и дефис; go = короткий адрес для профиля, hotelsviewer.com/go/<go>/ (то же правило символов; не должен совпадать с id отеля или строки «After the window», сборка остановится и скажет об этом). Короткая ссылка профиля отвечает 302 и ведёт на главную с ?utm_source=<subid>&utm_medium=<medium>&utm_campaign=<profileCampaign>. links = общие настройки: site (адрес сайта без слэша в конце, должен совпадать с site.ts), medium и profileCampaign (метки для всех сетей). Результат смотреть в Google Analytics: Reports, Acquisition, Traffic acquisition, Session source / medium (например bluesky / social) и кампания profile. GA считает только тех, кто нажал Allow analytics. Для ссылок постов есть функция postLink в scripts/lib/accounts.mjs, она берёт ту же метку; своих формул для ссылок не писать.",
+  "links": {
+    "site": "https://hotelsviewer.com",
+    "medium": "social",
+    "profileCampaign": "profile"
+  },
+  "accounts": {
+    "bluesky": { "enabled": true, "name": "Bluesky", "handle": "", "subid": "bluesky", "go": "bsky" },
+    "mastodon": { "enabled": true, "name": "Mastodon", "handle": "", "subid": "mastodon", "go": "mastodon" },
+    "quora": { "enabled": true, "name": "Quora", "handle": "", "subid": "quora", "go": "quora" },
+    "pinterest": { "enabled": true, "name": "Pinterest", "handle": "", "subid": "pinterest", "go": "pinterest" },
+    "tumblr": { "enabled": true, "name": "Tumblr", "handle": "", "subid": "tumblr", "go": "tumblr" },
+    "telegram": { "enabled": true, "name": "Telegram", "handle": "", "subid": "telegram", "go": "telegram" }
+  }
+}

@@ -10,6 +10,7 @@
     "photos": "node scripts/fetch-photos.mjs",
     "partner-links": "node scripts/make-partner-links.mjs",
     "test:partner-links": "node scripts/test-partner-links.mjs",
+    "test:accounts": "node scripts/test-accounts.mjs",
     "check:site": "node scripts/check-site.mjs",
     "candidates": "node scripts/build-candidates.mjs",
     "check:candidates": "node scripts/check-candidates.mjs",
