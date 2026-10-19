@@ -31,5 +31,82 @@
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "source": "https://commons.wikimedia.org/wiki/File:3Falls_Niagara.jpg"
+  },
+  "acropolis": {
+    "file": "File:The Acropolis of Athens viewed from the Hill of the Muses (14220794964).jpg",
+    "src": "/photos/acropolis.jpg",
+    "width": 1600,
+    "height": 1060,
+    "alt": "The Acropolis of Athens in daylight, seen from the Hill of the Muses",
+    "author": "Carole Raddato from FRANKFURT, Germany",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Acropolis_of_Athens_viewed_from_the_Hill_of_the_Muses_(14220794964).jpg"
+  },
+  "colosseum": {
+    "file": "File:Colosseo 2020.jpg",
+    "src": "/photos/colosseum.jpg",
+    "width": 1600,
+    "height": 1121,
+    "alt": "The Colosseum in Rome in daylight",
+    "author": "FeaturedPics",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg"
+  },
+  "hagia-sophia": {
+    "file": "File:Hagia Sophia Mars 2013.jpg",
+    "src": "/photos/hagia-sophia.jpg",
+    "width": 1600,
+    "height": 1068,
+    "alt": "Hagia Sophia in Istanbul in daylight",
+    "author": "Arild Vågen",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg"
+  },
+  "mount-fuji": {
+    "file": "File:Lake Kawaguchiko Sakura Mount Fuji 4.JPG",
+    "src": "/photos/mount-fuji.jpg",
+    "width": 1600,
+    "height": 1071,
+    "alt": "Mount Fuji in daylight, seen from Lake Kawaguchi",
+    "author": "Midori",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lake_Kawaguchiko_Sakura_Mount_Fuji_4.JPG"
+  },
+  "pyramids-of-giza": {
+    "file": "File:All Gizah Pyramids.jpg",
+    "src": "/photos/pyramids-of-giza.jpg",
+    "width": 1600,
+    "height": 1063,
+    "alt": "The Pyramids of Giza in daylight",
+    "author": "Ricardo Liberato",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg"
+  },
+  "sagrada-familia": {
+    "file": "File:Sagrada Familia 01.jpg",
+    "src": "/photos/sagrada-familia.jpg",
+    "width": 1600,
+    "height": 1075,
+    "alt": "The Sagrada Família in Barcelona in daylight",
+    "author": "Bernard Gagnon",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sagrada_Familia_01.jpg"
+  },
+  "taj-mahal": {
+    "file": "File:Taj Mahal (Edited).jpeg",
+    "src": "/photos/taj-mahal.jpg",
+    "width": 1600,
+    "height": 1052,
+    "alt": "The Taj Mahal in Agra in daylight, seen from the front",
+    "author": "Yann ; edited by Jim Carter",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg"
   }
 }
