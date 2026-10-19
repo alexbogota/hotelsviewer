@@ -4,7 +4,7 @@ import { mkdtempSync, mkdirSync, writeFileSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { checkView, checkEvidence, parseTranscript, urlKey, norm, isBookingHost, isBookingLabel, hostOf } from './lib/view-check.mjs';
-import { buildPrompt, checkDraft, gateDecision, lastResult, notesProblems, resultHint, patchCandidateText, patchPublishedViews, pickCandidate, readSiteViews, researchSection, verifyPhotos, waitingDrafts } from './view-tools.mjs';
+import { buildPrompt, buildTrace, traceLine, checkDraft, gateDecision, lastResult, notesProblems, resultHint, patchCandidateText, patchPublishedViews, pickCandidate, readSiteViews, researchSection, verifyPhotos, waitingDrafts } from './view-tools.mjs';
 
 let n = 0;
 const tests = [];
@@ -395,13 +395,33 @@ test('checkDraft end to end: a good draft, a rejected one, and tampering', async
   // an unknown place
   assert.ok(has((await checkDraft(join(dir, 'unknown-place'), { fetches, candidates })).problems, 'is not a slug'));
 
-  // a rejected draft is one short paragraph
-  writeFileSync(join(folder, 'rejected.md'), 'Only two hotels sell a room with this view, and a view needs at least three.');
+  // a rejected draft is one short paragraph that starts with NO VIEW: or NOT VERIFIED:
+  writeFileSync(join(folder, 'rejected.md'), 'NO VIEW: nothing of the place can be seen from any hotel, it stands inside a closed site.');
   const rej = await checkDraft(folder, { candidates });
   assert.equal(rej.outcome, 'rejected');
-  assert.ok(rej.reason.includes('Only two hotels'));
-  writeFileSync(join(folder, 'rejected.md'), 'no');
-  assert.equal((await checkDraft(folder, { candidates })).outcome, 'failed');
+  assert.ok(rej.reason.startsWith('nothing of the place'));
+  writeFileSync(join(folder, 'rejected.md'), 'NOT VERIFIED: only two hotels could be verified, the booking pages blocked the tool.');
+  const unv = await checkDraft(folder, { candidates });
+  assert.equal(unv.outcome, 'unverified');
+  assert.ok(unv.reason.startsWith('only two hotels'));
+  writeFileSync(join(folder, 'rejected.md'), 'Only two hotels near the site sell a room with it in the name, and a third could not be verified.');
+  assert.equal((await checkDraft(folder, { candidates })).outcome, 'failed', 'no prefix');
+  writeFileSync(join(folder, 'rejected.md'), 'NO VIEW: no');
+  assert.equal((await checkDraft(folder, { candidates })).outcome, 'failed', 'too short');
+});
+
+test('buildTrace tells opened pages from blocked ones, and traceLine says it in Russian', () => {
+  const lines = [
+    { type: 'assistant', message: { content: [{ type: 'tool_use', id: 'a', name: 'WebFetch', input: { url: 'https://www.langhamhotels.com/rooms' } }, { type: 'tool_use', id: 'b', name: 'WebFetch', input: { url: 'https://www.expedia.com/h' } }, { type: 'tool_use', id: 'c', name: 'WebFetch', input: { url: 'https://www.hotels.com/ho1' } }, { type: 'tool_use', id: 'd', name: 'WebSearch', input: { query: 'hotels with empire state building view' } }] } },
+    { type: 'user', message: { content: [{ type: 'tool_result', tool_use_id: 'a', content: 'Deluxe Room with Empire State Building View. '.repeat(20) }, { type: 'tool_result', tool_use_id: 'b', content: 'Request failed with status code 403', is_error: true }, { type: 'tool_result', tool_use_id: 'c', content: 'Access denied. Please verify you are a human. '.repeat(10) }] } },
+    { type: 'result', subtype: 'success', num_turns: 12, is_error: false },
+  ];
+  const trace = buildTrace(lines.map((l) => JSON.stringify(l)).join('\n'));
+  assert.deepEqual(trace.fetched.map((f) => f.blocked), [false, true, true]);
+  assert.deepEqual(trace.searches, ['hotels with empire state building view']);
+  assert.equal(trace.ended.turns, 12);
+  const line = traceLine(trace);
+  assert.ok(line.includes('открыл страниц: 3') && line.includes('прочитано 1') && line.includes('expedia.com') && line.includes('hotels.com') && !line.includes('langhamhotels'));
 });
 
 test('researchSection lists every page of every hotel', () => {

@@ -56,6 +56,11 @@ save() {
       cp "drafts/views/$slug/$f" "$WT/views/$slug/$f"
     done
   fi
+  # a short record of what the run opened and searched (the run log of GitHub is not reachable from the chat)
+  if [ -f drafts/views-trace.json ] && [ -n "$slug" ]; then
+    mkdir -p "$WT/traces"
+    cp drafts/views-trace.json "$WT/traces/$(node -p "require('./drafts/views-run.json').date")-$slug.json"
+  fi
   cp drafts/views-state.json "$WT/views-state.json"
   git -C "$WT" add -A
   if git -C "$WT" diff --cached --quiet; then

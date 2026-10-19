@@ -15,14 +15,14 @@
 //   node scripts/view-tools.mjs take <slug> [--from dir]
 //                                                  puts a draft into the site folders (src/data/views, docs/research, candidates). Used after the owner's ok.
 //
-// A draft is the folder drafts/views/<slug>/ with: view.json, evidence.json, notes.md (or only rejected.md when nothing can be verified).
+// A draft is the folder drafts/views/<slug>/ with: view.json, evidence.json, notes.md (or only rejected.md: "NO VIEW: reason" when the place cannot have a view, "NOT VERIFIED: reason" when too few hotels could be verified in this run).
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync, appendFileSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { resolve, join } from 'node:path';
-import { checkView, checkEvidence, parseTranscript, norm } from './lib/view-check.mjs';
+import { checkView, checkEvidence, parseTranscript, parseSearches, hostOf, norm } from './lib/view-check.mjs';
 import { licenceOk, looksLikeNight } from './fetch-photos.mjs';
 
 const ROOT = resolve(fileURLToPath(new URL('..', import.meta.url)));
@@ -170,8 +170,11 @@ export async function checkDraft(dir, { fetches = null, root = ROOT, month = tod
   const rejected = join(dir, 'rejected.md');
   if (existsSync(rejected)) {
     const text = (await readFile(rejected, 'utf8')).trim();
-    if (text.length < 20 || text.length > 500 || /\n\s*\n/.test(text)) return { problems: ['rejected.md must be one short paragraph (20 to 500 characters) saying why no honest view can be written'], outcome: 'failed', view: null };
-    return { problems: [], outcome: 'rejected', view: null, reason: text.replace(/\s+/g, ' ') };
+    const m = /^(NO VIEW|NOT VERIFIED):\s*([\s\S]+)$/.exec(text);
+    if (!m || m[2].trim().length < 20 || text.length > 600 || /\n\s*\n/.test(text)) {
+      return { problems: ['rejected.md must be one short paragraph (20 to 600 characters) that starts with "NO VIEW:" (the place cannot have one) or "NOT VERIFIED:" (too few hotels could be verified in this run), then the reason'], outcome: 'failed', view: null };
+    }
+    return { problems: [], outcome: m[1] === 'NO VIEW' ? 'rejected' : 'unverified', view: null, reason: m[2].replace(/\s+/g, ' ').trim() };
   }
 
   const problems = [];
@@ -335,13 +338,33 @@ async function cmdCheck() {
     for (const p of r.problems) console.log(' - ' + p);
     process.exit(1);
   }
-  console.log(r.outcome === 'rejected' ? `OK (rejected: ${r.reason})` : fetches ? `OK (every quote found on a page opened in the run: ${fetches.length} pages read)` : 'OK');
+  console.log(r.outcome === 'rejected' || r.outcome === 'unverified' ? `OK (${r.outcome}: ${r.reason})` : fetches ? `OK (every quote found on a page opened in the run: ${fetches.length} pages read)` : 'OK');
 }
 
 // Anything the writer changed outside drafts/ is a mistake or an attack: nothing is saved.
 function strayChanges() {
   const out = execFileSync('git', ['status', '--porcelain'], { cwd: ROOT, encoding: 'utf8' });
   return out.split('\n').filter((l) => l.trim() && !/^\?\? drafts\//.test(l));
+}
+
+// A short record of what the run opened and searched, kept on the drafts branch (traces/) because the run log of GitHub is not
+// reachable from the chat. A page counts as "blocked" when the tool reported an error, came back almost empty, or says so.
+export function buildTrace(text) {
+  const fetched = parseTranscript(text).slice(0, 80).map((f) => ({
+    url: f.url,
+    chars: f.text.length,
+    blocked: f.error || f.text.trim().length < 150 || /\b(403|forbidden|access denied|captcha|blocked|timed? ?out|unable to fetch|request failed|ECONN\w*)\b/i.test(f.text.slice(0, 400)),
+    head: f.text.replace(/\s+/g, ' ').slice(0, 180),
+  }));
+  const r = lastResult(text);
+  return { fetched, searches: parseSearches(text).slice(0, 40), ended: r ? { subtype: r.subtype, turns: r.num_turns, error: Boolean(r.is_error) } : null };
+}
+
+// One plain line for the Summary about what the writer could and could not open.
+export function traceLine(trace) {
+  const ok = trace.fetched.filter((f) => !f.blocked);
+  const blocked = [...new Set(trace.fetched.filter((f) => f.blocked).map((f) => hostOf(f.url)))];
+  return `Автор открыл страниц: ${trace.fetched.length} (прочитано ${ok.length}, не открылось ${trace.fetched.length - ok.length}), поисков: ${trace.searches.length}${blocked.length ? `. Не открылись сайты: ${blocked.slice(0, 12).join(', ')}` : ''}.`;
 }
 
 function summaryFor(view, evidence, photos, slug) {
@@ -375,6 +398,8 @@ async function cmdFinish() {
   const dir = join(ROOT, 'drafts/views', run.slug);
   const tfile = join(ROOT, 'drafts/views-transcript.jsonl');
   const result = { ...run, outcome: 'failed', problems: [] };
+  const transcript = existsSync(tfile) ? await readFile(tfile, 'utf8') : null;
+  const trace = transcript === null ? null : { date: run.date, slug: run.slug, ...buildTrace(transcript) };
 
   const stray = strayChanges();
   if (stray.length) {
@@ -382,14 +407,15 @@ async function cmdFinish() {
   } else if (!existsSync(dir)) {
     result.problems.push(`The writer did not create drafts/views/${run.slug}/.`);
   } else {
-    const fetches = existsSync(tfile) ? parseTranscript(await readFile(tfile, 'utf8')) : null;
+    const fetches = transcript === null ? null : parseTranscript(transcript);
     const r = await checkDraft(dir, { fetches });
     result.problems.push(...r.problems);
-    if (r.outcome !== 'rejected' && !fetches) result.problems.push('drafts/views-transcript.jsonl is missing, so the quotes cannot be proved: nothing is saved.');
-    else if (r.outcome !== 'rejected' && fetches.length === 0) result.problems = [`The transcript holds no pages opened with WebFetch (the writer never opened a page, or the transcript format is not the one parseTranscript expects).`];
+    const final = r.outcome === 'rejected' || r.outcome === 'unverified';
+    if (!final && !fetches) result.problems.push('drafts/views-transcript.jsonl is missing, so the quotes cannot be proved: nothing is saved.');
+    else if (!final && fetches.length === 0) result.problems = [`The transcript holds no pages opened with WebFetch (the writer never opened a page, or the transcript format is not the one parseTranscript expects).`];
     if (!result.problems.length) {
-      if (r.outcome === 'rejected') {
-        result.outcome = 'rejected';
+      if (final) {
+        result.outcome = r.outcome;
         result.reason = r.reason;
       } else {
         const photos = process.env.SKIP_PHOTO_CHECK ? { good: [], notes: ['photo check skipped'], unreachable: 0 } : await verifyPhotos(r.view);
@@ -406,13 +432,26 @@ async function cmdFinish() {
     }
   }
 
+  const pages = trace ? '\n\n' + traceLine(trace) : '';
   if (result.outcome === 'drafted') {
     state.drafts = [...state.drafts.filter((d) => d.slug !== run.slug), { date: run.date, slug: run.slug, qid: run.qid, title: result.title, hotels: result.hotels, rooms: result.rooms }];
     delete state.attempts[run.qid];
-    summary(result.summary);
+    summary(result.summary + pages);
   } else if (result.outcome === 'rejected') {
     delete state.attempts[run.qid];
-    summary(`## Автор видов: «${run.name}» отклонён\n\nЧестный вид написать нельзя: ${result.reason}\n\nМесто помечено rejected в \`data/view-candidates.json\`. Если не согласны, поставьте status new.`);
+    summary(`## Автор видов: «${run.name}» отклонён\n\nВида здесь быть не может: ${result.reason}\n\nМесто помечено rejected в \`data/view-candidates.json\`. Если не согласны, поставьте status new.${pages}`);
+  } else if (result.outcome === 'unverified') {
+    state.attempts[run.qid] = (state.attempts[run.qid] ?? 0) + 1;
+    if (state.attempts[run.qid] >= settings.maxAttempts) {
+      result.outcome = 'gave-up';
+      result.honest = true; // the writer worked properly, it just found too little: not a red run
+      result.reason = `Not verified in ${state.attempts[run.qid]} tries. Last reason: ${result.reason}`.slice(0, 400);
+    }
+    summary(
+      `## Автор видов: «${run.name}» пока не подтвердить\n\nАвтор не нашёл трёх отелей, которые можно подтвердить цитатой со страницы: ${result.reason}\n\n` +
+        (result.outcome === 'gave-up' ? `Это ${state.attempts[run.qid]}-я попытка, место помечено rejected, чтобы не тратить лимит подписки. Вернуть: status new в \`data/view-candidates.json\`.` : 'Место остаётся в очереди, следующий запуск попробует его ещё раз.') +
+        pages,
+    );
   } else {
     state.attempts[run.qid] = (state.attempts[run.qid] ?? 0) + 1;
     if (state.attempts[run.qid] >= settings.maxAttempts) {
@@ -428,16 +467,17 @@ async function cmdFinish() {
         ...result.problems.slice(0, 30).map((p) => `- ${p}`),
         '',
         result.outcome === 'gave-up' ? `Это ${state.attempts[run.qid]}-я попытка, место помечено rejected, чтобы не тратить лимит подписки. Можно вернуть status new в \`data/view-candidates.json\`.` : 'Следующий запуск попробует это место ещё раз.',
-      ].join('\n'),
+      ].join('\n') + pages,
     );
     if (process.env.GITHUB_ACTIONS) for (const p of result.problems.slice(0, 9)) console.log(`::error::${p}`);
   }
+  if (trace) await writeJson(join(ROOT, 'drafts/views-trace.json'), { ...trace, outcome: result.outcome, reason: result.reason });
   await writeJson(join(ROOT, 'drafts/views-state.json'), state);
   await writeJson(join(ROOT, 'drafts/views-run.json'), result);
   output('outcome', result.outcome);
   console.log(`Outcome: ${result.outcome}`);
   for (const p of result.problems) console.log(' - ' + p);
-  if (result.outcome === 'failed' || result.outcome === 'gave-up') process.exit(1);
+  if (result.outcome === 'failed' || (result.outcome === 'gave-up' && !result.honest)) process.exit(1);
 }
 
 async function cmdMark() {

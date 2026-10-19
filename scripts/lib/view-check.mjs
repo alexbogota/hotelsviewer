@@ -417,10 +417,24 @@ export function parseTranscript(text) {
       if (block?.type === 'tool_result') {
         const c = block.content;
         const body = typeof c === 'string' ? c : Array.isArray(c) ? c.map((x) => (typeof x === 'string' ? x : x?.text ?? '')).join('\n') : '';
-        results.set(block.tool_use_id, body);
+        results.set(block.tool_use_id, { text: body, error: block.is_error === true });
       }
     }
   }
-  for (const [id, url] of calls) if (results.has(id)) fetches.push({ url, text: results.get(id) });
+  for (const [id, url] of calls) if (results.has(id)) fetches.push({ url, text: results.get(id).text, error: results.get(id).error });
   return fetches;
+}
+
+// What the writer searched for (WebSearch calls), in order. Only for the trace that is kept for diagnosis.
+export function parseSearches(text) {
+  const out = [];
+  for (const line of String(text).split('\n')) {
+    const t = line.trim();
+    if (!t.startsWith('{')) continue;
+    try {
+      const content = JSON.parse(t)?.message?.content;
+      if (Array.isArray(content)) for (const b of content) if (b?.type === 'tool_use' && b.name === 'WebSearch' && typeof b.input?.query === 'string') out.push(b.input.query);
+    } catch {}
+  }
+  return out;
 }
