@@ -95,12 +95,30 @@ const { value = '', id = 'hotel-search' } = Astro.props;
       input.removeAttribute('aria-activedescendant');
       active = -1;
     };
+    // The visitor's own last searches, only in their browser (shown by ViewPanel on the home page).
+    const remember = () => {
+      try {
+        const q = input.value.trim();
+        if (q.length < 2) return;
+        const params = new URLSearchParams({ q });
+        for (const el of [lat, lng, kind]) if (!el.disabled && el.value) params.set(el.name, el.value);
+        const href = `/hotels/?${params.toString()}`;
+        const old: { label: string; href: string }[] = JSON.parse(localStorage.getItem('hv-recent') || '[]');
+        const list = [{ label: q, href }, ...(Array.isArray(old) ? old : []).filter((r) => r && r.label !== q)].slice(0, 5);
+        localStorage.setItem('hv-recent', JSON.stringify(list));
+      } catch {
+        /* storage blocked: nothing to remember */
+      }
+    };
+    form.addEventListener('submit', remember);
     const choose = (i: number) => {
       const p = items[i];
       if (!p) return;
       input.value = p.label;
+      document.dispatchEvent(new CustomEvent('hotelsearch:input', { detail: p.label }));
       setPoint(p);
       close();
+      remember();
       form.submit();
     };
     const mark = (i: number) => {
@@ -128,6 +146,7 @@ const { value = '', id = 'hotel-search' } = Astro.props;
     };
 
     input.addEventListener('input', () => {
+      document.dispatchEvent(new CustomEvent('hotelsearch:input', { detail: input.value }));
       setPoint(null);
       clearTimeout(timer);
       const q = input.value.trim();

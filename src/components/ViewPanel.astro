@@ -1,0 +1,164 @@
+---
+// The panel next to the search box on the home page.
+// 1. "Your recent searches": the visitor's own last searches, kept only in their browser (localStorage, written by HotelSearch).
+//    Nothing is invented: a visitor with no searches sees no such block.
+// 2. "Where we know the room with the view": our checked views. While the visitor types in the search box
+//    (event "hotelsearch:input"), the list keeps only the views whose landmark, city, region or country match, e.g. "Italy".
+import ArchPhoto from './ArchPhoto.astro';
+import { photoFor, roomCount, views } from '../lib/views';
+import { placeLabel } from '../lib/places';
+
+const hay = (parts: (string | undefined)[]) =>
+  parts
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '');
+---
+<aside class="panel" aria-label="Places with a checked view">
+  <div class="recent" hidden>
+    <h2 class="label">Your recent searches</h2>
+    <ul class="recent-list"></ul>
+  </div>
+
+  <h2 class="label">Where we know the room with the view</h2>
+  <ul class="rows">
+    {views.map((v) => (
+      <li data-hay={hay([v.landmark, v.city, v.region, v.country])}>
+        <a href={`/views/${v.slug}/`}>
+          <span class="thumb"><ArchPhoto photo={photoFor(v.slug)} landmark={v.landmark} variant="thumb" /></span>
+          <span class="txt">
+            <span class="room name">{v.landmark}</span>
+            <span class="small where">{placeLabel(v)}</span>
+          </span>
+          <span class="small count" title="Room categories sold with the view">{roomCount(v)} room types</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+  <p class="small none" hidden>No checked view here yet. The search still shows every hotel there.</p>
+</aside>
+
+<script>
+  const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
+
+  for (const panel of document.querySelectorAll<HTMLElement>('.panel')) {
+    const rows = [...panel.querySelectorAll<HTMLLIElement>('.rows li')];
+    const none = panel.querySelector<HTMLElement>('.none')!;
+
+    const filter = (text: string) => {
+      // "Valencia, Carabobo, Venezuela": any part may match ("Italy" matches the country of the Colosseum)
+      const words = norm(text).split(/[,\s]+/).filter((w) => w.length >= 3);
+      let shown = 0;
+      for (const li of rows) {
+        const h = li.dataset.hay || '';
+        const ok = words.length === 0 || words.some((w) => h.split(' ').some((x) => x.startsWith(w)));
+        li.hidden = !ok;
+        if (ok) shown++;
+      }
+      none.hidden = shown > 0;
+    };
+    document.addEventListener('hotelsearch:input', (e) => filter((e as CustomEvent<string>).detail || ''));
+
+    // the visitor's own recent searches
+    try {
+      const list: { label: string; href: string }[] = JSON.parse(localStorage.getItem('hv-recent') || '[]');
+      if (Array.isArray(list) && list.length) {
+        const ul = panel.querySelector<HTMLUListElement>('.recent-list')!;
+        for (const r of list.slice(0, 5)) {
+          if (!r || typeof r.label !== 'string' || typeof r.href !== 'string' || !r.href.startsWith('/hotels/')) continue;
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.className = 'text-link';
+          a.href = r.href;
+          a.textContent = r.label;
+          li.appendChild(a);
+          ul.appendChild(li);
+        }
+        panel.querySelector<HTMLElement>('.recent')!.hidden = ul.children.length === 0;
+      }
+    } catch {
+      /* no storage: no recent searches, the rest works */
+    }
+  }
+</script>
+
+<style>
+  .panel {
+    padding: 22px 22px 14px;
+    background: var(--panel);
+    border: 1px solid var(--line-soft);
+    border-radius: var(--radius);
+  }
+  .label {
+    font-family: inherit;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--zinc);
+  }
+  .recent {
+    margin-bottom: 20px;
+  }
+  .recent-list {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+  }
+  .recent-list :global(a) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .rows {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+    max-height: 430px;
+    overflow-y: auto;
+  }
+  .rows li[hidden] {
+    display: none;
+  }
+  .rows a {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr) auto;
+    gap: 14px;
+    align-items: center;
+    padding: 8px 4px;
+    min-height: 56px;
+    color: inherit;
+    text-decoration: none;
+    border-top: 1px solid var(--line-soft);
+  }
+  .rows li:first-child a {
+    border-top: 0;
+  }
+  .rows a:hover .name {
+    text-decoration: underline;
+    text-decoration-color: var(--brass);
+    text-underline-offset: 4px;
+  }
+  .thumb {
+    display: block;
+    width: 44px;
+  }
+  .txt {
+    display: grid;
+    min-width: 0;
+  }
+  .name {
+    font-size: 1.125rem;
+  }
+  .where,
+  .count {
+    color: var(--zinc);
+  }
+  .none {
+    padding: 8px 4px;
+    color: var(--ink-soft);
+  }
+</style>
