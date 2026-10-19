@@ -8,6 +8,8 @@
     "build": "astro build && node scripts/build-go.mjs",
     "preview": "astro preview",
     "photos": "node scripts/fetch-photos.mjs",
+    "partner-links": "node scripts/make-partner-links.mjs",
+    "test:partner-links": "node scripts/test-partner-links.mjs",
     "check:site": "node scripts/check-site.mjs",
     "candidates": "node scripts/build-candidates.mjs",
     "check:candidates": "node scripts/check-candidates.mjs",

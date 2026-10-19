@@ -317,6 +317,17 @@
       "text": "Forbes Travel Guide describes Burj Khalifa views from the Address Downtown's rooms and suites in general, and also from its outdoor pool, The Garden bar and the Lobby Lounge terrace. It names no room category for the view."
     }
   ],
+  "extras": [
+    {
+      "id": "burj-khalifa-tickets-tiqets",
+      "kind": "Tickets",
+      "title": "Burj Khalifa tickets",
+      "partner": "Tiqets",
+      "url": "https://www.tiqets.com/en/dubai-c60005/burj-khalifa-l145628",
+      "note": "Not the same view: from the observation deck you look out over Dubai, not at the tower. Tiqets lists At the Top tickets for levels 124/125 and 148, and says entry is strictly timed and late arrivals may not be admitted.",
+      "checked": "2026-10"
+    }
+  ],
   "faq": [
     {
       "q": "Which Dubai hotels sell rooms with a Burj Khalifa view?",

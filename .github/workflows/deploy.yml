@@ -51,6 +51,29 @@ jobs:
             echo "No new photos."
           fi
 
+      # Ticket and transport rows ("After the window") need a Travelpayouts partner link, made through their API
+      # (scripts/make-partner-links.mjs). The token is the GitHub secret TRAVELPAYOUTS_TOKEN. Without it, or if the
+      # service is down, nothing breaks: a row without a partner link is simply not shown.
+      # The results are in data/partner-links-status.json (ok, or the reason it failed).
+      - name: Make partner links
+        run: npm run partner-links
+        continue-on-error: true
+        env:
+          TRAVELPAYOUTS_TOKEN: ${{ secrets.TRAVELPAYOUTS_TOKEN }}
+
+      - name: Save new partner links to the repository
+        continue-on-error: true
+        run: |
+          if [ -n "$(git status --porcelain src/data/partner-links.json data/partner-links-status.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add src/data/partner-links.json data/partner-links-status.json
+            git commit -m "Add partner links from Travelpayouts"
+            git push
+          else
+            echo "No new partner links."
+          fi
+
       - name: Build the site into dist/
         run: npm run build
 

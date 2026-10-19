@@ -277,6 +277,26 @@
       "text": "At some Lake Kawaguchi hotels the Fuji view is from a bath or a terrace, not from the room. Kawaguchiko.net names the hot spring baths at the Tominoko Hotel and the observatory and baths at Wakakusa no Yado Maruei Ryokan."
     }
   ],
+  "extras": [
+    {
+      "id": "mount-fuji-ropeway-klook",
+      "kind": "See it from above",
+      "title": "Mt. Fuji Panoramic Ropeway Round-trip Ticket in Yamanashi",
+      "partner": "Klook",
+      "url": "https://www.klook.com/activity/89462-mt-fuji-panoramic-ropeway-round-trip-ticket-yamanashi/",
+      "note": "A second way to see the mountain, from Fujikawaguchiko. Klook says you see Lake Kawaguchi and Mt. Fuji from the top. Like a room's view, it depends on the clouds.",
+      "checked": "2026-10"
+    },
+    {
+      "id": "mount-fuji-bus-klook",
+      "kind": "Getting there",
+      "title": "Tokyo - Mt.Fuji Highway Bus",
+      "partner": "Klook",
+      "url": "https://www.klook.com/activity/159339-tokyo-mtfuji-highway-bus/",
+      "note": "Klook lists stops in Tokyo and at Lake Kawaguchi, with assigned seats, and says buses reach their stops within 3 hours from Tokyo.",
+      "checked": "2026-10"
+    }
+  ],
   "faq": [
     {
       "q": "Which hotels in Fujikawaguchiko sell rooms with a Mount Fuji view?",

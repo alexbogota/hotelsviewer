@@ -3,10 +3,12 @@ import Layout from '../../layouts/Layout.astro';
 import ArchPhoto from '../../components/ArchPhoto.astro';
 import Decoder from '../../components/Decoder.astro';
 import HotelEntry from '../../components/HotelEntry.astro';
+import TripExtras from '../../components/TripExtras.astro';
 import {
   views,
   getView,
   hotelName,
+  liveExtras,
   monthLabel,
   photoFor,
   pricesProvider,
@@ -100,6 +102,8 @@ const month = monthLabel(view.checked);
         <p class="measure">{a.text}</p>
       </section>
     ))}
+
+    <TripExtras items={liveExtras(view)} />
 
     <section class="faq" aria-labelledby="faq-heading">
       <h2 id="faq-heading">Questions</h2>

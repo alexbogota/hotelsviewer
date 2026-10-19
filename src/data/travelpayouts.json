@@ -1,0 +1,5 @@
+{
+  "_comment": "Public IDs of our Travelpayouts account. They are inside every affiliate link, so they are not secret. The API token is NOT here: it is the GitHub secret TRAVELPAYOUTS_TOKEN.",
+  "marker": 174296,
+  "trs": 587479
+}

@@ -1,6 +1,7 @@
 // Everything the pages need about the views: types, loading the data files, small helpers.
 import links from '../data/links.json';
 import credits from '../data/photo-credits.json';
+import partnerLinks from '../data/partner-links.json';
 
 export type Level = 'pictured' | 'listed' | 'reported';
 
@@ -28,6 +29,17 @@ export interface Hotel {
   query: string; // what the "Check prices" link searches for
 }
 
+// A ticket or transport link near a view ("After the window"). Only real products we checked on the seller's page.
+export interface Extra {
+  id: string; // becomes /go/<id>/ and the sub ID in the Travelpayouts statistics
+  kind: string; // "Tickets", "Getting there", "See it from above"
+  title: string; // the product name as the seller names it
+  partner: string; // the seller, e.g. "Tiqets"
+  url: string; // the seller's own page; scripts/make-partner-links.mjs turns it into a partner link
+  note?: string; // only what the seller's page says
+  checked: string; // YYYY-MM
+}
+
 export interface View {
   slug: string;
   order: number;
@@ -48,6 +60,7 @@ export interface View {
   shortAnswer: { label: string; hotel: string; room: string }[];
   decoder: { left: string; right: string; text: string }[];
   hotels: Hotel[];
+  extras?: Extra[];
   alternatives?: { title: string; text: string }[];
   askAtDesk?: { title: string; items: { name: string; text: string }[] };
   faq: { q: string; a: string }[];
@@ -117,6 +130,13 @@ export const pricesProvider = links.provider;
 
 export function goHref(hotelId: string): string {
   return `/go/${hotelId}/`;
+}
+
+// The extras of a view that already have a partner link (src/data/partner-links.json, made on GitHub by
+// scripts/make-partner-links.mjs). A row without one is not shown, so no button ever leads nowhere.
+export function liveExtras(view: View): Extra[] {
+  const store = partnerLinks as Record<string, { url: string; partner_url: string }>;
+  return (view.extras ?? []).filter((e) => store[e.id]?.url === e.url);
 }
 
 // The photo of a view, once scripts/fetch-photos.mjs has downloaded it. Null until then.

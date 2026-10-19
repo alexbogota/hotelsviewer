@@ -45,3 +45,11 @@ Newest at the bottom. START.md keeps only the result.
 - The page slug follows the wording hotels sell: `pyramids-of-giza` for the candidate "Great Pyramid of Giza", `acropolis` for "Parthenon".
 - The home page no longer says how many views there are.
 
+
+## 18 October 2026: "After the window", a pilot of tickets and transport
+- Why: tickets, transfers and eSIM raise income per visitor but do not bring visitors. They go where the reader already is, on the view page, and only where we checked a real product on the seller's own page. Nothing generic, no filler rows.
+- Pilot: Burj Khalifa (Tiqets tickets) and Mount Fuji (Klook: panoramic ropeway, Tokyo to Lake Kawaguchi highway bus). Hagia Sophia has no row: foreign visitors pay at the gate, and no real product was found.
+- Wording: the product name is the seller's; the note says only what the seller's page says ("Klook says...", "Tiqets says..."); no prices; the month checked is shown; a partner-link line sits above the rows and the disclosure page is updated.
+- Links: made by the Travelpayouts Links API on GitHub (`scripts/make-partner-links.mjs`), one per row, with the row id as sub ID, so statistics show which row earns. The marker (174296) and project ID (587479) are public and live in `src/data/travelpayouts.json`; the API token is the GitHub secret `TRAVELPAYOUTS_TOKEN` and is never printed or saved.
+- Safety: a row without a partner link is not shown, so a failed run changes nothing for visitors. The deploy never fails because of this step. Failures are saved in `data/partner-links-status.json` and printed as `::warning::` annotations.
+- Not done on purpose: articles about eSIM or "Colosseum tickets" (big sites win, and they dilute the topic). Hotel buttons stay on the Booking.com search until a hotel programme approves.
