@@ -42,7 +42,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Hotel Grande Bretagne",
+          "how": "search by name",
           "licence": "CC BY-SA 3.0",
           "author": "Dimorsitanos",
           "source": "https://commons.wikimedia.org/wiki/File:Athens_Hotels_b.jpg",
@@ -56,7 +56,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Hotel Grande Bretagne",
+          "how": "search by name",
           "licence": "Public domain",
           "author": "Salonica84 at English Wikipedia",
           "source": "https://commons.wikimedia.org/wiki/File:Athens-Grande1.jpg",
@@ -70,7 +70,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Hotel Grande Bretagne",
+          "how": "search by name",
           "licence": "CC BY-SA 3.0",
           "author": "Badseed",
           "source": "https://commons.wikimedia.org/wiki/File:Grande_Bretagne_Saint_Mark_lions_I.JPG",
@@ -94,7 +94,7 @@
           "description": "The winged lions under the balconies of the Grande Bretagne hotel in Athens, Greece."
         }
       ],
-      "refused": 2,
+      "refused": 7,
       "error": null
     },
     "electra-palace-athens": {
@@ -104,8 +104,23 @@
         "id": "Q111400724",
         "category": null
       },
-      "good": [],
-      "refused": 0,
+      "good": [
+        {
+          "file": "File:07Athen Lycabettu Berg.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY-SA 2.0 de",
+          "author": "Fingalo",
+          "source": "https://commons.wikimedia.org/wiki/File:07Athen_Lycabettu_Berg.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/07Athen_Lycabettu_Berg.jpg/960px-07Athen_Lycabettu_Berg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2448,
+          "height": 3264,
+          "description": "View of Lycabettus hill in Athens, Greek capital."
+        }
+      ],
+      "refused": 17,
       "error": null
     },
     "coco-mat-athens-bc": {
@@ -138,7 +153,7 @@
         "category": null
       },
       "good": [],
-      "refused": 0,
+      "refused": 4,
       "error": null
     },
     "plaka-hotel": {
@@ -186,77 +201,77 @@
           "description": "Bellagio Hotel and Casino in 2009."
         },
         {
-          "file": "File:Bellagio Hotel and Casino, Las Vegas, Nevada, USA (17794262035).jpg",
+          "file": "File:Bellagio Hotel and Casino, Las Vegas, Nevada, USA (17156080828).jpg",
           "ok": true,
           "why": [],
           "kind": "hotel",
           "how": "category Bellagio Hotel & Casino",
           "licence": "CC BY 2.0",
           "author": "Jim G from Silicon Valley, CA, USA",
-          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_Hotel_and_Casino,_Las_Vegas,_Nevada,_USA_(17794262035).jpg",
-          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817794262035%29.jpg/960px-Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817794262035%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "width": 4608,
-          "height": 3456,
-          "description": "Contentment and opulence are the hallmarks of the a href='http://www.bellagio.com' data-x-rel='noreferrer nofollow' Bellagio /a luxury hotel experience. A retreat unto themselves, the 3,933 Guest Room"
-        },
-        {
-          "file": "File:Bellagio Hotel and Casino, Las Vegas, Nevada, USA (17606765820).jpg",
-          "ok": true,
-          "why": [],
-          "kind": "hotel",
-          "how": "category Bellagio Hotel & Casino",
-          "licence": "CC BY 2.0",
-          "author": "Jim G from Silicon Valley, CA, USA",
-          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_Hotel_and_Casino,_Las_Vegas,_Nevada,_USA_(17606765820).jpg",
-          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817606765820%29.jpg/960px-Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817606765820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "width": 1920,
-          "height": 3424,
+          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_Hotel_and_Casino,_Las_Vegas,_Nevada,_USA_(17156080828).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817156080828%29.jpg/960px-Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817156080828%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3456,
+          "height": 4608,
           "description": "Contentment and opulence are the hallmarks of the a href=\" http://www.bellagio.com \" rel=\"noreferrer nofollow\" Bellagio /a luxury hotel experience. A retreat unto themselves, the 3,933 Guest Rooms and"
         },
         {
-          "file": "File:Bellagio Hotel and Casino, Las Vegas, Nevada, USA (17608043759).jpg",
+          "file": "File:Bellagio Hotel and Casino, Las Vegas, Nevada, USA (17343883595).jpg",
           "ok": true,
           "why": [],
           "kind": "hotel",
           "how": "category Bellagio Hotel & Casino",
           "licence": "CC BY 2.0",
           "author": "Jim G from Silicon Valley, CA, USA",
-          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_Hotel_and_Casino,_Las_Vegas,_Nevada,_USA_(17608043759).jpg",
-          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817608043759%29.jpg/960px-Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817608043759%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_Hotel_and_Casino,_Las_Vegas,_Nevada,_USA_(17343883595).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817343883595%29.jpg/960px-Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817343883595%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4912,
+          "height": 1080,
+          "description": "Contentment and opulence are the hallmarks of the a href=\" http://www.bellagio.com \" rel=\"noreferrer nofollow\" Bellagio /a luxury hotel experience. A retreat unto themselves, the 3,933 Guest Rooms and"
+        },
+        {
+          "file": "File:Bellagio Hotel and Casino, Las Vegas, Nevada, USA (17136442607).jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Bellagio Hotel & Casino",
+          "licence": "CC BY 2.0",
+          "author": "Jim G from Silicon Valley, CA, USA",
+          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_Hotel_and_Casino,_Las_Vegas,_Nevada,_USA_(17136442607).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817136442607%29.jpg/960px-Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817136442607%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "width": 4320,
           "height": 3240,
           "description": "Contentment and opulence are the hallmarks of the a href=\" http://www.bellagio.com \" rel=\"noreferrer nofollow\" Bellagio /a luxury hotel experience. A retreat unto themselves, the 3,933 Guest Rooms and"
         },
         {
-          "file": "File:Bellagio Hotel and Casino, Las Vegas, Nevada, USA (17608044519).jpg",
+          "file": "File:Bellagio Hotel and Casino, Las Vegas, Nevada, USA (17156307290).jpg",
           "ok": true,
           "why": [],
           "kind": "hotel",
           "how": "category Bellagio Hotel & Casino",
           "licence": "CC BY 2.0",
           "author": "Jim G from Silicon Valley, CA, USA",
-          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_Hotel_and_Casino,_Las_Vegas,_Nevada,_USA_(17608044519).jpg",
-          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817608044519%29.jpg/960px-Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817608044519%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_Hotel_and_Casino,_Las_Vegas,_Nevada,_USA_(17156307290).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817156307290%29.jpg/960px-Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817156307290%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "width": 4320,
           "height": 3240,
           "description": "Contentment and opulence are the hallmarks of the a href=\" http://www.bellagio.com \" rel=\"noreferrer nofollow\" Bellagio /a luxury hotel experience. A retreat unto themselves, the 3,933 Guest Rooms and"
         },
         {
-          "file": "File:Bellagio Hotel and Casino, Las Vegas, Nevada, USA (17606768560).jpg",
+          "file": "File:Bellagio Hotel and Casino, Las Vegas, Nevada, USA (17341987882).jpg",
           "ok": true,
           "why": [],
           "kind": "hotel",
           "how": "category Bellagio Hotel & Casino",
           "licence": "CC BY 2.0",
           "author": "Jim G from Silicon Valley, CA, USA",
-          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_Hotel_and_Casino,_Las_Vegas,_Nevada,_USA_(17606768560).jpg",
-          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817606768560%29.jpg/960px-Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817606768560%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_Hotel_and_Casino,_Las_Vegas,_Nevada,_USA_(17341987882).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817341987882%29.jpg/960px-Bellagio_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%2817341987882%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
           "width": 4320,
           "height": 3240,
           "description": "Contentment and opulence are the hallmarks of the a href=\" http://www.bellagio.com \" rel=\"noreferrer nofollow\" Bellagio /a luxury hotel experience. A retreat unto themselves, the 3,933 Guest Rooms and"
         }
       ],
-      "refused": 21,
+      "refused": 38,
       "error": null
     },
     "the-cosmopolitan": {
@@ -300,7 +315,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "search by name",
+          "how": "category Bars at the Cosmopolitan of Las Vegas",
           "licence": "CC BY-SA 3.0",
           "author": "Cygnusloop99",
           "source": "https://commons.wikimedia.org/wiki/File:Cosmopolitan_-_Interiors_02_-_2011-06-05.jpg",
@@ -308,6 +323,20 @@
           "width": 4000,
           "height": 3000,
           "description": "Inside the Cosmopolitan"
+        },
+        {
+          "file": "File:Cosmopolitan - Interiors 03 - 2011-06-04.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Art at the Cosmopolitan of Las Vegas",
+          "licence": "CC BY-SA 3.0",
+          "author": "Cygnusloop99",
+          "source": "https://commons.wikimedia.org/wiki/File:Cosmopolitan_-_Interiors_03_-_2011-06-04.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Cosmopolitan_-_Interiors_03_-_2011-06-04.jpg/960px-Cosmopolitan_-_Interiors_03_-_2011-06-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 3072,
+          "height": 2048,
+          "description": "The elevator loby in the garage at the Cosmopolitan"
         },
         {
           "file": "File:The Cosmopolitan of Las Vegas.jpg",
@@ -328,7 +357,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Cosmopolitan of Las Vegas",
+          "how": "search by name",
           "licence": "CC BY 2.0",
           "author": "Allen McGregor",
           "source": "https://commons.wikimedia.org/wiki/File:The_Cosmopolitan_Las_Vegas.jpg",
@@ -336,23 +365,9 @@
           "width": 3176,
           "height": 2382,
           "description": "Las Vegas, Nevada, U.S"
-        },
-        {
-          "file": "File:THE COSMOPOLITAN of LAS VEGAS Hotel and Casino, Las Vegas, Nevada, USA (8276619690).jpg",
-          "ok": true,
-          "why": [],
-          "kind": "hotel",
-          "how": "search by name",
-          "licence": "CC BY 2.0",
-          "author": "Jim G from Silicon Valley, CA, USA",
-          "source": "https://commons.wikimedia.org/wiki/File:THE_COSMOPOLITAN_of_LAS_VEGAS_Hotel_and_Casino,_Las_Vegas,_Nevada,_USA_(8276619690).jpg",
-          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/THE_COSMOPOLITAN_of_LAS_VEGAS_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%288276619690%29.jpg/960px-THE_COSMOPOLITAN_of_LAS_VEGAS_Hotel_and_Casino%2C_Las_Vegas%2C_Nevada%2C_USA_%288276619690%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "width": 4608,
-          "height": 3456,
-          "description": "THE COSMOPOLITAN of LAS VEGAS Hotel and Casino, Las Vegas, Nevada, USA THE COSMOPOLITAN of LAS VEGAS, Las Vegas, Nevada"
         }
       ],
-      "refused": 4,
+      "refused": 6,
       "error": null
     },
     "caesars-palace": {
@@ -363,6 +378,34 @@
         "category": null
       },
       "good": [
+        {
+          "file": "File:Bette Midler lasvegas.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Main sign at Caesars Palace (Las Vegas)",
+          "licence": "CC BY-SA 2.0",
+          "author": "Mrs. Gemstone",
+          "source": "https://commons.wikimedia.org/wiki/File:Bette_Midler_lasvegas.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Bette_Midler_lasvegas.jpg/960px-Bette_Midler_lasvegas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2816,
+          "height": 2112,
+          "description": "Anuncio del show de Bette Midler en el casino Caesars Palace en Las Vegas."
+        },
+        {
+          "file": "File:Caesar's Palace Las Vegas 2007.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Main sign at Caesars Palace (Las Vegas)",
+          "licence": "CC BY 3.0",
+          "author": "Forest Kim Starr",
+          "source": "https://commons.wikimedia.org/wiki/File:Caesar%27s_Palace_Las_Vegas_2007.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Caesar%27s_Palace_Las_Vegas_2007.jpg/960px-Caesar%27s_Palace_Las_Vegas_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2816,
+          "height": 2112,
+          "description": "Olea europaea subsp. europaea (habit). Location: Nevada, Caesars Palace Las Vegas"
+        },
         {
           "file": "File:Caesars outside-resized.jpg",
           "ok": true,
@@ -378,77 +421,49 @@
           "description": "Caesars Palace, Las Vegas, outside view at daytime. In the center of the image the former Pure Nightclub at Caesars Palace can be seen."
         },
         {
-          "file": "File:Caesars Palace - South East - 2010-12-12.jpg",
+          "file": "File:Caesars inside-resized.jpg",
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "search by name",
+          "how": "category Casino at Caesars Palace (Las Vegas)",
           "licence": "CC BY-SA 3.0",
-          "author": "Cygnusloop99",
-          "source": "https://commons.wikimedia.org/wiki/File:Caesars_Palace_-_South_East_-_2010-12-12.jpg",
-          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Caesars_Palace_-_South_East_-_2010-12-12.jpg/960px-Caesars_Palace_-_South_East_-_2010-12-12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "width": 3885,
-          "height": 2844,
-          "description": "Caesars Palace viewed from the top of the Eiffel tower at Paris Las Vegas."
+          "author": "Blane",
+          "source": "https://commons.wikimedia.org/wiki/File:Caesars_inside-resized.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Caesars_inside-resized.jpg/960px-Caesars_inside-resized.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1204,
+          "height": 663,
+          "description": "Caesar's Palace, Las Vegas, Inside View (Main Lobby)"
         },
         {
-          "file": "File:Bellagio Las Vegas December 2013 panorama.jpg",
+          "file": "File:Caesars Palace (3355666672).jpg",
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "search by name",
-          "licence": "CC BY-SA 3.0",
-          "author": "King of Hearts",
-          "source": "https://commons.wikimedia.org/wiki/File:Bellagio_Las_Vegas_December_2013_panorama.jpg",
-          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Bellagio_Las_Vegas_December_2013_panorama.jpg/960px-Bellagio_Las_Vegas_December_2013_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "width": 8000,
-          "height": 3200,
-          "description": "Four-segment panorama of the Cosmopolitan , Bellagio , and Caesars Palace (left to right) from the Las Vegas Strip , across from the Bellagio fountains."
-        },
-        {
-          "file": "File:Las Vegas Caesers Palace Pool - 48738278936.jpg",
-          "ok": true,
-          "why": [],
-          "kind": "hotel",
-          "how": "search by name",
+          "how": "category Main sign at Caesars Palace (Las Vegas)",
           "licence": "CC BY-SA 2.0",
-          "author": "Zachary Smith",
-          "source": "https://commons.wikimedia.org/wiki/File:Las_Vegas_Caesers_Palace_Pool_-_48738278936.jpg",
-          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Las_Vegas_Caesers_Palace_Pool_-_48738278936.jpg/960px-Las_Vegas_Caesers_Palace_Pool_-_48738278936.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "width": 4032,
-          "height": 3024,
-          "description": "Swimming pools at Caesars Palace"
+          "author": "Ken Lund from Las Vegas, Nevada, USA",
+          "source": "https://commons.wikimedia.org/wiki/File:Caesars_Palace_(3355666672).jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Caesars_Palace_%283355666672%29.jpg/960px-Caesars_Palace_%283355666672%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2112,
+          "height": 2816,
+          "description": "Caesars Palace, is a luxury hotel and casino located on the Las Vegas Strip in Paradise, an unincorporated township in Clark County, Nevada, United States in the Las Vegas metropolitan area. en.wikipe"
         },
         {
-          "file": "File:Palace Tower facade.jpg",
+          "file": "File:Caesars Palace hotel (Las Vegas)2.JPG",
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "search by name",
-          "licence": "CC BY-SA 4.0",
-          "author": "GyozaDumpling",
-          "source": "https://commons.wikimedia.org/wiki/File:Palace_Tower_facade.jpg",
-          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Palace_Tower_facade.jpg/960px-Palace_Tower_facade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "width": 9248,
-          "height": 6936,
-          "description": "The southern facade of Palace Tower in the Caesars Palace hotel in Paradise, Nevada in the Las Vegas metropolitan area."
-        },
-        {
-          "file": "File:Las Vegas (7977415183).jpg",
-          "ok": true,
-          "why": [],
-          "kind": "hotel",
-          "how": "search by name",
-          "licence": "CC BY 2.0",
-          "author": "Sean MacEntee from Monaghan, Ireland",
-          "source": "https://commons.wikimedia.org/wiki/File:Las_Vegas_(7977415183).jpg",
-          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Las_Vegas_%287977415183%29.jpg/960px-Las_Vegas_%287977415183%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "width": 3648,
-          "height": 2736,
-          "description": "Las Vegas"
+          "how": "category Casino at Caesars Palace (Las Vegas)",
+          "licence": "CC BY-SA 3.0",
+          "author": "Laslovarga",
+          "source": "https://commons.wikimedia.org/wiki/File:Caesars_Palace_hotel_(Las_Vegas)2.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Caesars_Palace_hotel_%28Las_Vegas%292.JPG/960px-Caesars_Palace_hotel_%28Las_Vegas%292.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4000,
+          "height": 3000,
+          "description": "Caesars Palace hotel (Las Vegas), Inside view (Detail)"
         }
       ],
-      "refused": 2,
+      "refused": 5,
       "error": null
     },
     "planet-hollywood": {
@@ -502,6 +517,20 @@
           "description": "Boulevard Las Vegas"
         },
         {
+          "file": "File:Planet Hollywood Las Vegas 2007 sign.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Main sign at Planet Hollywood Resort & Casino",
+          "licence": "CC BY 3.0",
+          "author": "Forest Kim Starr",
+          "source": "https://commons.wikimedia.org/wiki/File:Planet_Hollywood_Las_Vegas_2007_sign.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Planet_Hollywood_Las_Vegas_2007_sign.jpg/960px-Planet_Hollywood_Las_Vegas_2007_sign.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2816,
+          "height": 2112,
+          "description": "City lights. Location: Nevada, The Strip Las Vegas"
+        },
+        {
           "file": "File:Planet-Hollywood-LV.JPG",
           "ok": true,
           "why": [],
@@ -528,23 +557,9 @@
           "width": 3072,
           "height": 2048,
           "description": "Lobby of Planet Hollywood RESORT and Casino-Las Vegas"
-        },
-        {
-          "file": "File:Las vegas-01.jpg",
-          "ok": true,
-          "why": [],
-          "kind": "hotel",
-          "how": "search by name",
-          "licence": "CC BY 2.0",
-          "author": "Moyan Brenn from Italy",
-          "source": "https://commons.wikimedia.org/wiki/File:Las_vegas-01.jpg",
-          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Las_vegas-01.jpg/960px-Las_vegas-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "width": 1434,
-          "height": 951,
-          "description": "view of some skyscrapers in the afternoon"
         }
       ],
-      "refused": 6,
+      "refused": 21,
       "error": null
     },
     "paris-las-vegas": {
@@ -560,7 +575,7 @@
           "ok": true,
           "why": [],
           "kind": "view-from",
-          "how": "category Paris Las Vegas",
+          "how": "search by name",
           "licence": "CC BY-SA 2.0",
           "author": "Toi Moi from au bord de la mer Méditerranée, France",
           "source": "https://commons.wikimedia.org/wiki/File:Las_Vegas_(5097349235).jpg",
@@ -750,7 +765,7 @@
           "description": "The Palace Downtown Dubai"
         }
       ],
-      "refused": 8,
+      "refused": 7,
       "error": null
     },
     "palazzo-manfredi": {
@@ -809,7 +824,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Pullman Paris Tour Eiffel",
+          "how": "search by name",
           "licence": "CC BY 2.0",
           "author": "Gary Bembridge from London, UK",
           "source": "https://commons.wikimedia.org/wiki/File:Pullman_Eiffel_Tower_Hotel_Paris_France_1.jpg",
@@ -823,7 +838,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Pullman Paris Tour Eiffel",
+          "how": "search by name",
           "licence": "CC BY 2.0",
           "author": "Gary Bembridge from London, UK",
           "source": "https://commons.wikimedia.org/wiki/File:Pullman_Eiffel_Tower_Hotel_Paris_France_3.jpg",
@@ -837,7 +852,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Pullman Paris Tour Eiffel",
+          "how": "search by name",
           "licence": "CC BY 2.0",
           "author": "Gary Bembridge from London, UK",
           "source": "https://commons.wikimedia.org/wiki/File:Pullman_Eiffel_Tower_Hotel_Paris_France_4.jpg",
@@ -851,7 +866,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Pullman Paris Tour Eiffel",
+          "how": "search by name",
           "licence": "CC BY 2.0",
           "author": "Gary Bembridge from London, UK",
           "source": "https://commons.wikimedia.org/wiki/File:Pullman_Eiffel_Tower_Hotel_Paris_France_2.jpg",
@@ -865,7 +880,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Pullman Paris Tour Eiffel",
+          "how": "search by name",
           "licence": "CC0",
           "author": "Maxime Homme",
           "source": "https://commons.wikimedia.org/wiki/File:Paris_View_from_the_Eiffel_Tower_third_floor_Avenue_de_Suffren_01.jpg",
@@ -879,7 +894,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Pullman Paris Tour Eiffel",
+          "how": "search by name",
           "licence": "CC BY 2.0",
           "author": "Guilhem Vellut from Paris, France",
           "source": "https://commons.wikimedia.org/wiki/File:Summit_@_Eiffel_Tower_@_Paris_(34849700550).jpg",
@@ -919,7 +934,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Shangri-La Hotel Paris",
+          "how": "search by name",
           "licence": "CC BY 2.0",
           "author": "Flightlog",
           "source": "https://commons.wikimedia.org/wiki/File:Palais_dI%C3%A9na_and_Mus%C3%A9e_Guimet_from_the_Eiffel_Tower,_Paris_23_August_2013.jpg",
@@ -933,7 +948,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Shangri-La Hotel Paris",
+          "how": "search by name",
           "licence": "CC BY 2.0",
           "author": "Flightlog",
           "source": "https://commons.wikimedia.org/wiki/File:Palais_d%27I%C3%A9na_and_Mus%C3%A9e_Guimet_from_the_Eiffel_Tower,_Paris_23_August_2013.jpg",
@@ -947,7 +962,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Shangri-La Hotel Paris",
+          "how": "search by name",
           "licence": "CC BY-SA 2.0",
           "author": "Falcon® Photography from France",
           "source": "https://commons.wikimedia.org/wiki/File:Aston_Martin,_Avenue_d%27I%C3%A9na,_Paris_2014.jpg",
@@ -961,7 +976,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Shangri-La Hotel Paris",
+          "how": "search by name",
           "licence": "CC BY-SA 4.0",
           "author": "Zairon",
           "source": "https://commons.wikimedia.org/wiki/File:Paris_Tour_Eiffel_Blick_von_der_3._Ebene_27.jpg",
@@ -1081,7 +1096,7 @@
           "description": "Façade de l'hôtel Péninsula en rénovation/construction (Paris)."
         }
       ],
-      "refused": 3,
+      "refused": 21,
       "error": null
     },
     "le-metropolitan-paris-tour-eiffel": {
@@ -1121,8 +1136,23 @@
       "name": "Splendid Hotel",
       "view": "eiffel-tower",
       "wikidata": null,
-      "good": [],
-      "refused": 20,
+      "good": [
+        {
+          "file": "File:Splendid Hotel, Paris 25 June 2011.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY 2.0",
+          "author": "Doods Dumaguing",
+          "source": "https://commons.wikimedia.org/wiki/File:Splendid_Hotel,_Paris_25_June_2011.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Splendid_Hotel%2C_Paris_25_June_2011.jpg/960px-Splendid_Hotel%2C_Paris_25_June_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2282,
+          "height": 2609,
+          "description": "Splendid Hotel Tour Eiffel, 29 Avenue de Tourville, 75007 Paris, France"
+        }
+      ],
+      "refused": 19,
       "error": null
     },
     "seven-hills-hotel": {
@@ -1197,7 +1227,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Four Seasons Hotel Istanbul at Sultanahmet",
+          "how": "search by name",
           "licence": "CC BY-SA 4.0",
           "author": "Gryffindor",
           "source": "https://commons.wikimedia.org/wiki/File:Four_Seasons_Sultanahmet_interior_March_2008.JPG",
@@ -1211,7 +1241,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Four Seasons Hotel Istanbul at Sultanahmet",
+          "how": "search by name",
           "licence": "CC BY-SA 4.0",
           "author": "Gryffindor",
           "source": "https://commons.wikimedia.org/wiki/File:Four_Seasons_Sultanahmet_March_2008b.JPG",
@@ -1225,7 +1255,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Four Seasons Hotel Istanbul at Sultanahmet",
+          "how": "search by name",
           "licence": "CC BY-SA 4.0",
           "author": "Vikiçizer",
           "source": "https://commons.wikimedia.org/wiki/File:Sultanahmet_kapal%C4%B1_cezaevi_kap%C4%B1s%C4%B1.JPG",
@@ -1239,7 +1269,7 @@
           "ok": true,
           "why": [],
           "kind": "hotel",
-          "how": "category Four Seasons Hotel Istanbul at Sultanahmet",
+          "how": "search by name",
           "licence": "CC BY 3.0",
           "author": "Николай Максимович",
           "source": "https://commons.wikimedia.org/wiki/File:Four_Seasons_Hotel_Istanbul_at_Sultanahmet_-_panoramio.jpg",
@@ -1453,7 +1483,22 @@
       "name": "Hyatt Regency Niagara Falls Fallsview",
       "view": "niagara-falls",
       "wikidata": null,
-      "good": [],
+      "good": [
+        {
+          "file": "File:Cityscape of Niagara Falls, Ontario.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC BY 4.0",
+          "author": "K2HWY",
+          "source": "https://commons.wikimedia.org/wiki/File:Cityscape_of_Niagara_Falls,_Ontario.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Cityscape_of_Niagara_Falls%2C_Ontario.jpg/960px-Cityscape_of_Niagara_Falls%2C_Ontario.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4272,
+          "height": 2848,
+          "description": "Image of buidlings in Niagara Falls, Ontario, including Hyatt Regency, Niagara Falls Tower Observatory (which is also an IHOP) and the Mariott Fallsview Hotel. Taken from the Trans Canada trail"
+        }
+      ],
       "refused": 0,
       "error": null
     },
@@ -1492,8 +1537,93 @@
       "name": "Marriott Mena House",
       "view": "pyramids-of-giza",
       "wikidata": null,
-      "good": [],
-      "refused": 20,
+      "good": [
+        {
+          "file": "File:Giza.JPG",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Mena House garden",
+          "licence": "CC BY-SA 3.0",
+          "author": "Aleksasfi at Lithuanian Wikipedia",
+          "source": "https://commons.wikimedia.org/wiki/File:Giza.JPG",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Giza.JPG/960px-Giza.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1600,
+          "height": 1200,
+          "description": "Giza or Gizah (Arabic: الجيزة‎, transliterated el-Gīzah) is a city in Egypt"
+        },
+        {
+          "file": "File:The Oberoi - Mena House, Egypt.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Mena House garden",
+          "licence": "CC BY 2.0",
+          "author": "Paul Mannix",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Oberoi_-_Mena_House,_Egypt.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/The_Oberoi_-_Mena_House%2C_Egypt.jpg/960px-The_Oberoi_-_Mena_House%2C_Egypt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 1536,
+          "height": 1024,
+          "description": "The view out of our hotel window, Giza, Egypt"
+        },
+        {
+          "file": "File:هرم خوفو من داخل احد الفنادق المطلة علي الاهرامات.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Mena House garden",
+          "licence": "CC BY-SA 4.0",
+          "author": "Mohamedwardany",
+          "source": "https://commons.wikimedia.org/wiki/File:%D9%87%D8%B1%D9%85_%D8%AE%D9%88%D9%81%D9%88_%D9%85%D9%86_%D8%AF%D8%A7%D8%AE%D9%84_%D8%A7%D8%AD%D8%AF_%D8%A7%D9%84%D9%81%D9%86%D8%A7%D8%AF%D9%82_%D8%A7%D9%84%D9%85%D8%B7%D9%84%D8%A9_%D8%B9%D9%84%D9%8A_%D8%A7%D9%84%D8%A7%D9%87%D8%B1%D8%A7%D9%85%D8%A7%D8%AA.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/%D9%87%D8%B1%D9%85_%D8%AE%D9%88%D9%81%D9%88_%D9%85%D9%86_%D8%AF%D8%A7%D8%AE%D9%84_%D8%A7%D8%AD%D8%AF_%D8%A7%D9%84%D9%81%D9%86%D8%A7%D8%AF%D9%82_%D8%A7%D9%84%D9%85%D8%B7%D9%84%D8%A9_%D8%B9%D9%84%D9%8A_%D8%A7%D9%84%D8%A7%D9%87%D8%B1%D8%A7%D9%85%D8%A7%D8%AA.jpg/960px-%D9%87%D8%B1%D9%85_%D8%AE%D9%88%D9%81%D9%88_%D9%85%D9%86_%D8%AF%D8%A7%D8%AE%D9%84_%D8%A7%D8%AD%D8%AF_%D8%A7%D9%84%D9%81%D9%86%D8%A7%D8%AF%D9%82_%D8%A7%D9%84%D9%85%D8%B7%D9%84%D8%A9_%D8%B9%D9%84%D9%8A_%D8%A7%D9%84%D8%A7%D9%87%D8%B1%D8%A7%D9%85%D8%A7%D8%AA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2617,
+          "height": 1947,
+          "description": ""
+        },
+        {
+          "file": "File:هرم خوفو والحضارة العظيمة.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Mena House garden",
+          "licence": "CC BY-SA 4.0",
+          "author": "Mohamedwardany",
+          "source": "https://commons.wikimedia.org/wiki/File:%D9%87%D8%B1%D9%85_%D8%AE%D9%88%D9%81%D9%88_%D9%88%D8%A7%D9%84%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%B9%D8%B8%D9%8A%D9%85%D8%A9.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/%D9%87%D8%B1%D9%85_%D8%AE%D9%88%D9%81%D9%88_%D9%88%D8%A7%D9%84%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%B9%D8%B8%D9%8A%D9%85%D8%A9.jpg/960px-%D9%87%D8%B1%D9%85_%D8%AE%D9%88%D9%81%D9%88_%D9%88%D8%A7%D9%84%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%B9%D8%B8%D9%8A%D9%85%D8%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 2617,
+          "height": 1947,
+          "description": "عظمة الحضارة وجمالها"
+        },
+        {
+          "file": "File:Egypt. Cairo. Hotels. Mena House & pyramids from the gardens LOC matpc.03824.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Historical images of Mena House",
+          "licence": "Public domain",
+          "author": "Matson Collection",
+          "source": "https://commons.wikimedia.org/wiki/File:Egypt._Cairo._Hotels._Mena_House_%26_pyramids_from_the_gardens_LOC_matpc.03824.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Egypt._Cairo._Hotels._Mena_House_%26_pyramids_from_the_gardens_LOC_matpc.03824.jpg/960px-Egypt._Cairo._Hotels._Mena_House_%26_pyramids_from_the_gardens_LOC_matpc.03824.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 6116,
+          "height": 4516,
+          "description": "Title: Egypt. Cairo. Hotels. Mena House pyramids from the gardens Abstract/medium: G. Eric and Edith Matson Photograph Collection Physical description: 1 negative :"
+        },
+        {
+          "file": "File:Egypt. Cairo. Hotels. Mena House. Front garden with the two pyramids as background LOC matpc.03825.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "category Historical images of Mena House",
+          "licence": "Public domain",
+          "author": "Matson Collection",
+          "source": "https://commons.wikimedia.org/wiki/File:Egypt._Cairo._Hotels._Mena_House._Front_garden_with_the_two_pyramids_as_background_LOC_matpc.03825.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Egypt._Cairo._Hotels._Mena_House._Front_garden_with_the_two_pyramids_as_background_LOC_matpc.03825.jpg/960px-Egypt._Cairo._Hotels._Mena_House._Front_garden_with_the_two_pyramids_as_background_LOC_matpc.03825.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 5772,
+          "height": 4272,
+          "description": "Title: Egypt. Cairo. Hotels. Mena House. Front garden with the two pyramids as background Abstract/medium: G. Eric and Edith Matson Photograph Collection Physical description: 1 negative :"
+        }
+      ],
+      "refused": 58,
       "error": null
     },
     "best-view-pyramids-hotel": {
@@ -1591,7 +1721,36 @@
       "name": "Tajview, Agra – IHCL SeleQtions",
       "view": "taj-mahal",
       "wikidata": null,
-      "good": [],
+      "good": [
+        {
+          "file": "File:Tajview Agra 2019 001.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "view-from",
+          "how": "search by name",
+          "licence": "CC0",
+          "author": "Gryffindor",
+          "source": "https://commons.wikimedia.org/wiki/File:Tajview_Agra_2019_001.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Tajview_Agra_2019_001.jpg/960px-Tajview_Agra_2019_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4032,
+          "height": 3024,
+          "description": "View towards the Taj Mahal from the hotel Tajview."
+        },
+        {
+          "file": "File:Tajview Agra 2019 002.jpg",
+          "ok": true,
+          "why": [],
+          "kind": "hotel",
+          "how": "search by name",
+          "licence": "CC0",
+          "author": "Gryffindor",
+          "source": "https://commons.wikimedia.org/wiki/File:Tajview_Agra_2019_002.jpg",
+          "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Tajview_Agra_2019_002.jpg/960px-Tajview_Agra_2019_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "width": 4032,
+          "height": 3024,
+          "description": "Poolside of Tajview hotel, Agra."
+        }
+      ],
       "refused": 0,
       "error": null
     },

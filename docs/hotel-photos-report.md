@@ -2,12 +2,12 @@
 
 Проверено 2026-10-19. Это только список, на сайт ничего не попало. Делает `scripts/find-hotel-photos.mjs` (workflow «Find hotel photos»).
 
-Итого: 19 из 56 отелей с подходящим фото; у 3 есть снимок, сделанный из самого отеля.
+Итого: 24 из 56 отелей с подходящим фото; у 4 есть снимок, сделанный из самого отеля.
 
 | Вид | Отель | Фото | Снято из отеля | Пример |
 |---|---|---|---|---|
 | acropolis | Hotel Grande Bretagne | 6 | да | [Hd-hotel-grande-bretagne-athens-gb-roof-garden-restaurant-and-bar-breakfast-1-.jpg](https://commons.wikimedia.org/wiki/File:Hd-hotel-grande-bretagne-athens-gb-roof-garden-restaurant-and-bar-breakfast-1-.jpg) (CC BY-SA 4.0) |
-| acropolis | Electra Palace Athens | 0 |  |  |
+| acropolis | Electra Palace Athens | 1 |  | [07Athen Lycabettu Berg.jpg](https://commons.wikimedia.org/wiki/File:07Athen_Lycabettu_Berg.jpg) (CC BY-SA 2.0 de) |
 | acropolis | COCO-MAT Athens BC | 0 |  |  |
 | acropolis | Divani Palace Acropolis | 0 |  |  |
 | acropolis | niche Hotel Athens | 0 |  |  |
@@ -15,7 +15,7 @@
 | acropolis | Acropolis View Hotel | 0 |  |  |
 | bellagio-fountains | Bellagio | 6 |  | [Bellagio outside.jpg](https://commons.wikimedia.org/wiki/File:Bellagio_outside.jpg) (CC BY 3.0) |
 | bellagio-fountains | The Cosmopolitan of Las Vegas | 6 |  | [Cosmopolitan - North - 2011-06-04.jpg](https://commons.wikimedia.org/wiki/File:Cosmopolitan_-_North_-_2011-06-04.jpg) (CC BY-SA 3.0) |
-| bellagio-fountains | Caesars Palace | 6 |  | [Caesars outside-resized.jpg](https://commons.wikimedia.org/wiki/File:Caesars_outside-resized.jpg) (CC BY 3.0) |
+| bellagio-fountains | Caesars Palace | 6 |  | [Bette Midler lasvegas.jpg](https://commons.wikimedia.org/wiki/File:Bette_Midler_lasvegas.jpg) (CC BY-SA 2.0) |
 | bellagio-fountains | Planet Hollywood Resort & Casino | 6 |  | [Planet Hollywood Casino.jpg](https://commons.wikimedia.org/wiki/File:Planet_Hollywood_Casino.jpg) (CC BY 2.0) |
 | bellagio-fountains | Paris Las Vegas | 6 | да | [Las Vegas (5097349235).jpg](https://commons.wikimedia.org/wiki/File:Las_Vegas_(5097349235).jpg) (CC BY-SA 2.0) |
 | burj-khalifa | Address Sky View | 1 |  | [Katerina Leroy.png](https://commons.wikimedia.org/wiki/File:Katerina_Leroy.png) (CC BY-SA 4.0) |
@@ -34,7 +34,7 @@
 | eiffel-tower | Le Metropolitan Paris Tour Eiffel | 0 |  |  |
 | eiffel-tower | First Hotel Paris Tour Eiffel | 0 |  |  |
 | eiffel-tower | Mercure Paris Centre Tour Eiffel | 0 |  |  |
-| eiffel-tower | Splendid Hotel | 0 |  |  |
+| eiffel-tower | Splendid Hotel | 1 |  | [Splendid Hotel, Paris 25 June 2011.jpg](https://commons.wikimedia.org/wiki/File:Splendid_Hotel,_Paris_25_June_2011.jpg) (CC BY 2.0) |
 | hagia-sophia | Seven Hills Hotel | 1 | да | [Blue Mosque - 4.jpg](https://commons.wikimedia.org/wiki/File:Blue_Mosque_-_4.jpg) (CC BY 2.0) |
 | hagia-sophia | Hotel Saint Sophia | 0 |  |  |
 | hagia-sophia | Sura Hagia Sophia Hotel | 0 |  |  |
@@ -47,10 +47,10 @@
 | niagara-falls | Hilton Niagara Falls/Fallsview Hotel & Suites | 0 |  |  |
 | niagara-falls | Niagara Falls Marriott on the Falls | 6 |  | [Niagarafallsskyline 04.07.2012 14-34-30.jpg](https://commons.wikimedia.org/wiki/File:Niagarafallsskyline_04.07.2012_14-34-30.jpg) (CC BY-SA 3.0) |
 | niagara-falls | Marriott Niagara Falls Fallsview Hotel & Spa | 0 |  |  |
-| niagara-falls | Hyatt Regency Niagara Falls Fallsview | 0 |  |  |
+| niagara-falls | Hyatt Regency Niagara Falls Fallsview | 1 |  | [Cityscape of Niagara Falls, Ontario.jpg](https://commons.wikimedia.org/wiki/File:Cityscape_of_Niagara_Falls,_Ontario.jpg) (CC BY 4.0) |
 | niagara-falls | Oakes Hotel Overlooking the Falls | 1 |  | [SkylineNiagaraFalls.jpg](https://commons.wikimedia.org/wiki/File:SkylineNiagaraFalls.jpg) (CC BY-SA 3.0) |
 | pyramids-of-giza | Steigenberger Pyramids Cairo | 0 |  |  |
-| pyramids-of-giza | Marriott Mena House | 0 |  |  |
+| pyramids-of-giza | Marriott Mena House | 6 |  | [Giza.JPG](https://commons.wikimedia.org/wiki/File:Giza.JPG) (CC BY-SA 3.0) |
 | pyramids-of-giza | Best View Pyramids Hotel | 0 |  |  |
 | pyramids-of-giza | Nine Pyramids View Hotel | 0 |  |  |
 | pyramids-of-giza | Le Méridien Pyramids Hotel & Spa | 0 |  |  |
@@ -59,6 +59,6 @@
 | sagrada-familia | Boutique Hostemplo Sagrada Familia | 0 |  |  |
 | taj-mahal | The Oberoi Amarvilās | 0 |  |  |
 | taj-mahal | Radisson Hotel Agra | 0 |  |  |
-| taj-mahal | Tajview, Agra – IHCL SeleQtions | 0 |  |  |
+| taj-mahal | Tajview, Agra – IHCL SeleQtions | 2 | да | [Tajview Agra 2019 001.jpg](https://commons.wikimedia.org/wiki/File:Tajview_Agra_2019_001.jpg) (CC0) |
 | taj-mahal | Taj Hotel & Convention Centre, Agra | 0 |  |  |
 | taj-mahal | Hotel Clarks Shiraz | 0 |  |  |
