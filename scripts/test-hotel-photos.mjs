@@ -17,4 +17,12 @@ assert(!judge(page('File:Shangri-La Paris at night.jpg', 'CC0'), { name: 'Shangr
 assert(judge(page('File:Hotel Bellagio at night.jpg', 'CC0'), { name: 'Bellagio' }, 'bellagio-fountains', 'category X').ok);
 assert(!judge(page('File:Shangri-La Paris logo.png', 'CC0'), { name: 'Shangri-La Paris' }, 'eiffel-tower', 'category X').ok);
 assert(!judge(page('File:Avenue d Iena.jpg', 'CC0', 'a street'), { name: 'Shangri-La Paris' }, 'eiffel-tower', 'search by name').ok);
+const P = { near, city: 'Paris' };
+const far = { ...page('File:Bellagio outside.jpg', 'CC0'), coordinates: [{ lat: 45.98, lon: 9.26 }] };
+assert(!judge(far, { name: 'Bellagio' }, 'bellagio-fountains', 'category X', { near: { lat: 36.1126, lng: -115.1767 }, city: 'Las Vegas' }).ok);
+const close = { ...page('File:Bellagio outside.jpg', 'CC0'), coordinates: [{ lat: 36.113, lon: -115.176 }] };
+assert(judge(close, { name: 'Bellagio' }, 'bellagio-fountains', 'category X', { near: { lat: 36.1126, lng: -115.1767 }, city: 'Las Vegas' }).ok);
+assert(!judge(page('File:Splendid Hotel, Becici.jpg', 'CC0'), { name: 'Splendid Hotel' }, 'eiffel-tower', 'search by name', P).ok);
+assert(judge(page('File:Splendid Hotel Paris.jpg', 'CC0'), { name: 'Splendid Hotel' }, 'eiffel-tower', 'search by name', P).ok);
+assert.equal(judge(page('File:View from our room in Bellagio Las Vegas.jpg', 'CC0'), { name: 'Planet Hollywood Resort & Casino' }, 'bellagio-fountains', 'category X', { city: 'Las Vegas' }).kind, 'hotel');
 console.log('all ok');

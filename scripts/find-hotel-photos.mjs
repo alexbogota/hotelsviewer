@@ -113,13 +113,13 @@ async function infoFor(titles) {
   const out = [];
   const list = [...titles.keys()];
   for (let i = 0; i < list.length; i += 40) {
-    const j = await api(COMMONS, { action: 'query', prop: 'imageinfo|categories', iiprop: 'url|size|mime|extmetadata', iiurlwidth: 640, cllimit: 'max', titles: list.slice(i, i + 40).join('|') });
+    const j = await api(COMMONS, { action: 'query', prop: 'imageinfo|categories|coordinates', coprop: 'globe', iiprop: 'url|size|mime|extmetadata', iiurlwidth: 640, cllimit: 'max', titles: list.slice(i, i + 40).join('|') });
     for (const p of j.query?.pages || []) if (p.imageinfo?.[0]) out.push(p);
   }
   return out;
 }
 
-export function judge(page, hotel, viewSlug, how) {
+export function judge(page, hotel, viewSlug, how, place = {}) {
   const ii = page.imageinfo[0];
   const m = ii.extmetadata || {};
   const licence = strip(m.LicenseShortName?.value);
@@ -134,11 +134,21 @@ export function judge(page, hotel, viewSlug, how) {
   if (viewSlug === 'eiffel-tower' && looksLikeNight(page.title, desc)) why.push('night (Eiffel Tower lights)');
   // found by name search only: the name must really be in the title, description or categories
   if (how === 'search by name' && !mentions(text, hotel.name)) why.push('name only in the page text');
+  // The right place: a photo with a camera position must be within 3 km of the landmark; a photo without one must name
+  // the city in its title, description or categories. ("Bellagio" is also a village on Lake Como.)
+  const co = page.coordinates?.[0];
+  if (co && place.near) {
+    const km = distanceKm(place.near, { lat: co.lat, lng: co.lon });
+    if (km > 3) why.push(`taken ${Math.round(km)} km away`);
+  } else if (place.city && !mentions(text, place.city)) {
+    why.push(`no place: ${place.city} not named`);
+  }
   return {
     file: page.title,
     ok: why.length === 0,
     why,
-    kind: VIEW_FROM.test(`${page.title} ${desc}`) ? 'view-from' : 'hotel',
+    // taken from THIS hotel: the view words and the hotel's name together ("View from our room in Bellagio" is not Planet Hollywood)
+    kind: VIEW_FROM.test(`${page.title} ${desc}`) && mentions(`${page.title} ${desc}`, hotel.name) ? 'view-from' : 'hotel',
     how,
     licence,
     author: strip(m.Artist?.value) || 'unknown',
@@ -162,7 +172,7 @@ async function main() {
         entry.wikidata = item ? { id: item.id, category: item.category || null } : null;
         const titles = await filesFor(h, item);
         const pages = await infoFor(titles);
-        const judged = pages.map((p) => judge(p, h, v.slug, titles.get(p.title)));
+        const judged = pages.map((p) => judge(p, h, v.slug, titles.get(p.title), { near: v.coords, city: v.city }));
         // photos taken from the hotel first, then the Wikidata image, then the rest
         const rank = (x) => (x.kind === 'view-from' ? 0 : x.how === 'wikidata image' ? 1 : 2);
         entry.good = judged.filter((x) => x.ok).sort((a, b) => rank(a) - rank(b)).slice(0, MAX_PER_HOTEL);
