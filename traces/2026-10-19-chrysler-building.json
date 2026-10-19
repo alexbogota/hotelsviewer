@@ -1,0 +1,165 @@
+{
+  "date": "2026-10-19",
+  "slug": "chrysler-building",
+  "fetched": [
+    {
+      "url": "https://www.americanexpress.com/en-no/travel/discover/property/New-York-US/New-York/sofitel-new-york",
+      "chars": 276,
+      "blocked": false,
+      "head": "\"Signature Skyline View Room\" \"Signature Iconic Building View One-Bedroom Suite\" \"Terrace Suite\" \"Grand Terrace Chrysler View One-Bedroom Suite\" **Address:** 45 West 44th street. N"
+    },
+    {
+      "url": "https://www.fourseasons.com/newyork/accommodations/one_and_two_bedroom_suites/manhattan_suite",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.hotelexecutive.com/newswire/52749/the-westin-new-york-grand-central-hotel-responds-to-1-guest-request-launches-room-with-a-view-package-guaranteeing-spectacular-manhattan-views",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.fourseasons.com/preferredpartner/newyork/accommodations/one_and_two_bedroom_suites/manhattan-two-bedroom-suite/",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.americanexpress.com/en-fi/travel/discover/property/New-York-US/New-York-City/Sofitel-New-York",
+      "chars": 607,
+      "blocked": false,
+      "head": "**Views of the Chrysler Building and other views:** - \"For standout views of the Chrysler Building and Empire State Building,\" - \"Select accommodations on higher floors frame sweep"
+    },
+    {
+      "url": "https://fsorigin-www.fourseasons.com/newyork/accommodations/one_and_two_bedroom_suites/manhattan_suite",
+      "chars": 527,
+      "blocked": true,
+      "head": "Hostname/IP does not match certificate's altnames: Host: fsorigin-www.fourseasons.com. is not in the cert's altnames: DNS:fourseasons.com, DNS:carrieres.fourseasons.com, DNS:fonts."
+    },
+    {
+      "url": "https://www.timeout.com/new-york-kids/hotels/park-south-hotel",
+      "chars": 295,
+      "blocked": false,
+      "head": "**Sentence mentioning the Chrysler Building or a view:** - \"Some rooms have dazzling views of the Chrysler Building.\" **Room category names:** None are listed. The page only gives "
+    },
+    {
+      "url": "https://www.virginatlantic.com/holidays/holiday-types/city-breaks/hotels/westin-new-york-grand-central",
+      "chars": 656,
+      "blocked": false,
+      "head": "**Room categories:** - \"Traditional Rooms\" - \"Deluxe Rooms\" - \"Premium King View Rooms\" **Sentence mentioning the Chrysler Building or Empire State Building** (shortened to meet th"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/nyced-the-westin-new-york-grand-central/rooms/",
+      "chars": 234,
+      "blocked": true,
+      "head": "The server returned HTTP 404 Not Found. Retry-After: 28800 The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub"
+    },
+    {
+      "url": "https://www.timeout.com/newyork/hotels/park-south-hotel",
+      "chars": 258,
+      "blocked": false,
+      "head": "**Sentence mentioning the Chrysler Building:** \"Some rooms have dazzling views of the Chrysler Building.\" **Room category names:** The page doesn't list any. It only gives a total "
+    },
+    {
+      "url": "https://engine.com/lodging/property/the-westin-new-york-grand-central",
+      "chars": 876,
+      "blocked": false,
+      "head": "The provided content doesn't include any of the items you asked for: - **Room category names:** None are listed. The page describes Engine's hotel booking service and lists cities "
+    },
+    {
+      "url": "https://hotelguides.com/new-york/chrysler-building-hotels.html",
+      "chars": 4182,
+      "blocked": false,
+      "head": "**Hotels and addresses** (each listing's distance line quotes \"X mile from Chrysler Building\"): 1. Grand Hyatt Hotel New York: 109 East 42nd Street, New York, NY 10017. \"0.1 mile f"
+    },
+    {
+      "url": "https://www.virginholidays.co.uk/holiday-types/city-breaks/hotels/hyatt-centric-times-square-new-york",
+      "chars": 958,
+      "blocked": false,
+      "head": "REDIRECT DETECTED: The URL redirects to a location that was not fetched automatically. Original URL: https://www.virginholidays.co.uk/holiday-types/city-breaks/hotels/hyatt-centric"
+    },
+    {
+      "url": "https://www.ihg.com/intercontinental/hotels/us/en/new-york/nycha/hoteldetail/gallery",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.virginatlantic.com/holidays/holiday-types/city-breaks/hotels/hyatt-centric-times-square-new-york",
+      "chars": 1487,
+      "blocked": false,
+      "head": "**Room categories (as written in the \"Hotel information\" section):** - \"Standard Rooms\" - \"City View Rooms\" - \"King Room With Terrace\" - \"High Floor View Rooms\" - \"Queen High Floor"
+    },
+    {
+      "url": "https://www.asmallworld.com/collection/hotels/hyatt-centric-times-square-new-york",
+      "chars": 1277,
+      "blocked": false,
+      "head": "**Room categories** (as listed on the page; the list is cut off in the source, so there may be more): - \"King High Floor City View\" - \"King Times Square View Suite ADA Shower\" - \"D"
+    },
+    {
+      "url": "https://www.hyatt.com/hyatt-centric/en-US/nycts-hyatt-centric-times-square-new-york/rooms",
+      "chars": 215,
+      "blocked": true,
+      "head": "The server returned HTTP 403 Forbidden. The response body was not retrieved. If this URL requires authentication, use an authenticated tool (e.g. `gh` for GitHub, or an MCP-provide"
+    },
+    {
+      "url": "https://www.costcotravel.com/hotels/New-York/New-York-City/NewYorkHyattCentric",
+      "chars": 2417,
+      "blocked": false,
+      "head": "**Address:** 135 W 45th St, New York, NY, 10036, United States **Room categories:** - \"Room - One King Bed\" - \"Room - Two Queen Beds\" - \"Room - One King Bed Accessible with Shower\""
+    },
+    {
+      "url": "https://www.kenwoodtravel.co.uk/usa-holidays/east/new-york/hyatt-centric-times-square-new-york",
+      "chars": 721,
+      "blocked": false,
+      "head": "**Street address:** The page doesn't give the hotel's street address. It says only that the hotel is in the Manhattan neighbourhood near Times Square. **Room category names:** The "
+    },
+    {
+      "url": "https://www.americanexpress.com/en-no/travel/discover/property/New-York-US/New-York/sofitel-new-york",
+      "chars": 206,
+      "blocked": false,
+      "head": "**Property name:** \"Sofitel New York\" **Sofitel confirmation:** \"Sofitel New York is a member of Sofitel Hotels & Resorts\" **Street address:** \"45 West 44th street. New York, New Y"
+    },
+    {
+      "url": "https://www.costcotravel.com/hotels/New-York/New-York-City/NewYorkHyattCentric",
+      "chars": 37,
+      "blocked": true,
+      "head": "\"Hyatt Centric Times Square New York\""
+    },
+    {
+      "url": "https://www.virginatlantic.com/holidays/holiday-types/city-breaks/hotels/westin-new-york-grand-central",
+      "chars": 82,
+      "blocked": true,
+      "head": "The hotel's name is \"Westin New York Grand Central,\" located in Midtown, New York."
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srlimit=20&format=json&srsearch=Chrysler Building",
+      "chars": 893,
+      "blocked": false,
+      "head": "\"File:Manhattan from Weehawken, NJ.jpg\" \"File:View of Chrysler Building from Empire State Building, New York City, 20231001 1510 1364.jpg\" \"File:Chrysler Building NYC-20090519-RM-0"
+    }
+  ],
+  "searches": [
+    "hotels with Chrysler Building view rooms",
+    "Chrysler Building view room hotel Manhattan suite",
+    "Chrysler Building view hotel Midtown East room category",
+    "\"Chrysler view\" room hotel New York",
+    "Sofitel New York official site Grand Terrace Chrysler View One-Bedroom Suite",
+    "Westin New York Grand Central rooms Premium Corner View Chrysler Building",
+    "Park South Hotel New York rooms Chrysler Building view room category",
+    "room with Chrysler Building view king room hotel official site",
+    "Chrysler Building view guest rooms Midtown hotel \"Chrysler Building view\" category",
+    "Hyatt Centric Times Square King High Floor Skyline View Suite Chrysler Building",
+    "Park South Hotel JdV Hyatt New York room types Chrysler Building view king room",
+    "Four Seasons Manhattan Suite Chrysler Building view bed options floors 33 49"
+  ],
+  "ended": {
+    "subtype": "success",
+    "turns": 44,
+    "error": false
+  },
+  "outcome": "drafted",
+  "reason": "Started by hand for Chrysler Building."
+}

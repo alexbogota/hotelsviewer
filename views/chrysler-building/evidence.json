@@ -1,0 +1,142 @@
+[
+  {
+    "hotel": "sofitel-new-york",
+    "field": "hotel.name",
+    "value": "Sofitel New York",
+    "url": "https://www.americanexpress.com/en-no/travel/discover/property/New-York-US/New-York/sofitel-new-york",
+    "quote": "Sofitel New York is a member of Sofitel Hotels & Resorts"
+  },
+  {
+    "hotel": "sofitel-new-york",
+    "field": "hotel.where",
+    "value": "45 West 44th street",
+    "url": "https://www.americanexpress.com/en-no/travel/discover/property/New-York-US/New-York/sofitel-new-york",
+    "quote": "45 West 44th street. New York, New York 10036 United States"
+  },
+  {
+    "hotel": "sofitel-new-york",
+    "field": "hotel.level",
+    "value": "listed",
+    "url": "https://www.americanexpress.com/en-no/travel/discover/property/New-York-US/New-York/sofitel-new-york",
+    "quote": "Grand Terrace Chrysler View One-Bedroom Suite"
+  },
+  {
+    "hotel": "sofitel-new-york",
+    "field": "room.book",
+    "value": "Grand Terrace Chrysler View One-Bedroom Suite",
+    "url": "https://www.americanexpress.com/en-no/travel/discover/property/New-York-US/New-York/sofitel-new-york",
+    "quote": "Grand Terrace Chrysler View One-Bedroom Suite"
+  },
+  {
+    "hotel": "sofitel-new-york",
+    "field": "room.book",
+    "value": "Signature Skyline View Room",
+    "url": "https://www.americanexpress.com/en-no/travel/discover/property/New-York-US/New-York/sofitel-new-york",
+    "quote": "Signature Skyline View Room"
+  },
+  {
+    "hotel": "sofitel-new-york",
+    "field": "room.book",
+    "value": "Signature Iconic Building View One-Bedroom Suite",
+    "url": "https://www.americanexpress.com/en-no/travel/discover/property/New-York-US/New-York/sofitel-new-york",
+    "quote": "Signature Iconic Building View One-Bedroom Suite"
+  },
+  {
+    "hotel": "sofitel-new-york",
+    "field": "room.book",
+    "value": "Terrace Suite",
+    "url": "https://www.americanexpress.com/en-no/travel/discover/property/New-York-US/New-York/sofitel-new-york",
+    "quote": "Terrace Suite"
+  },
+  {
+    "hotel": "westin-new-york-grand-central",
+    "field": "hotel.name",
+    "value": "Westin New York Grand Central",
+    "url": "https://www.virginatlantic.com/holidays/holiday-types/city-breaks/hotels/westin-new-york-grand-central",
+    "quote": "The hotel's name is \"Westin New York Grand Central,\" located in Midtown, New York."
+  },
+  {
+    "hotel": "westin-new-york-grand-central",
+    "field": "hotel.where",
+    "value": "212 East 42nd Street",
+    "url": "https://hotelguides.com/new-york/chrysler-building-hotels.html",
+    "quote": "Westin New York Grand Central Hotel: 212 East 42nd Street, New York, NY 10017."
+  },
+  {
+    "hotel": "westin-new-york-grand-central",
+    "field": "hotel.level",
+    "value": "listed",
+    "url": "https://www.virginatlantic.com/holidays/holiday-types/city-breaks/hotels/westin-new-york-grand-central",
+    "quote": "Premium King View Rooms are 354 sq ft and offer views of the Chrysler Building or Empire State Building"
+  },
+  {
+    "hotel": "westin-new-york-grand-central",
+    "field": "room.book",
+    "value": "Premium King View Rooms",
+    "url": "https://www.virginatlantic.com/holidays/holiday-types/city-breaks/hotels/westin-new-york-grand-central",
+    "quote": "Premium King View Rooms are 354 sq ft and offer views of the Chrysler Building or Empire State Building"
+  },
+  {
+    "hotel": "westin-new-york-grand-central",
+    "field": "room.skip",
+    "value": "Traditional Rooms",
+    "url": "https://www.virginatlantic.com/holidays/holiday-types/city-breaks/hotels/westin-new-york-grand-central",
+    "quote": "\"Traditional Rooms\""
+  },
+  {
+    "hotel": "westin-new-york-grand-central",
+    "field": "room.skip",
+    "value": "Deluxe Rooms",
+    "url": "https://www.virginatlantic.com/holidays/holiday-types/city-breaks/hotels/westin-new-york-grand-central",
+    "quote": "\"Deluxe Rooms\""
+  },
+  {
+    "hotel": "hyatt-centric-times-square",
+    "field": "hotel.name",
+    "value": "Hyatt Centric Times Square New York",
+    "url": "https://www.costcotravel.com/hotels/New-York/New-York-City/NewYorkHyattCentric",
+    "quote": "Hyatt Centric Times Square New York"
+  },
+  {
+    "hotel": "hyatt-centric-times-square",
+    "field": "hotel.where",
+    "value": "135 W 45th St",
+    "url": "https://www.costcotravel.com/hotels/New-York/New-York-City/NewYorkHyattCentric",
+    "quote": "135 W 45th St, New York, NY, 10036, United States"
+  },
+  {
+    "hotel": "hyatt-centric-times-square",
+    "field": "hotel.level",
+    "value": "listed",
+    "url": "https://www.costcotravel.com/hotels/New-York/New-York-City/NewYorkHyattCentric",
+    "quote": "High-Floor Skyline-View Suite - One King Bed"
+  },
+  {
+    "hotel": "hyatt-centric-times-square",
+    "field": "room.book",
+    "value": "High-Floor Skyline-View Suite - One King Bed",
+    "url": "https://www.costcotravel.com/hotels/New-York/New-York-City/NewYorkHyattCentric",
+    "quote": "High-Floor Skyline-View Suite - One King Bed"
+  },
+  {
+    "hotel": "hyatt-centric-times-square",
+    "field": "room.skip",
+    "value": "High-Floor City-View Room - One King Bed",
+    "url": "https://www.costcotravel.com/hotels/New-York/New-York-City/NewYorkHyattCentric",
+    "quote": "High-Floor City-View Room - One King Bed"
+  },
+  {
+    "hotel": "hyatt-centric-times-square",
+    "field": "room.skip",
+    "value": "High-Floor Times Square-View Room - One King Bed",
+    "url": "https://www.costcotravel.com/hotels/New-York/New-York-City/NewYorkHyattCentric",
+    "quote": "High-Floor Times Square-View Room - One King Bed"
+  },
+  {
+    "hotel": "hyatt-centric-times-square",
+    "field": "room.skip",
+    "value": "Room - One King Bed",
+    "url": "https://www.costcotravel.com/hotels/New-York/New-York-City/NewYorkHyattCentric",
+    "quote": "Room - One King Bed"
+  }
+]
