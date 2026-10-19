@@ -3,7 +3,7 @@
   "enabled": true,
   "maxPending": 2,
   "expireDays": 14,
-  "model": "sonnet",
+  "model": "haiku",
   "maxTurns": 90,
   "branch": "drafts",
   "skipNear": true,
