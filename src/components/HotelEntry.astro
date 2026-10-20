@@ -2,6 +2,7 @@
 import LevelPill from './LevelPill.astro';
 import { goHref, monthLabel, pricesButton, starsLabel, type Hotel } from '../lib/views';
 import { site } from '../data/site';
+import verified from '../data/stay22-verified.json';
 
 interface Props {
   hotel: Hotel;
@@ -18,7 +19,7 @@ const { hotel, checked, n, city, country, campaign } = Astro.props;
 // (owner checked Arc de Triomphe and Eiffel Tower on /lab/hotel-photos/, 19 Oct 2026). City and country are added when the address lacks them.
 const has = (t: string) => hotel.where.toLowerCase().includes(t.toLowerCase());
 const address = [hotel.where, has(city) ? '' : city, has(country) ? '' : country].filter(Boolean).join(', ');
-const photosSrc = site.stay22Aid
+const photosSrc = site.stay22Aid && verified.hotels.includes(hotel.id)
   ? `https://www.stay22.com/embed/gm?${new URLSearchParams({
       aid: site.stay22Aid,
       address,
@@ -35,7 +36,7 @@ const facts = [hotel.distance, starsLabel(hotel.stars)].filter(Boolean).join(', 
 const sources = hotel.sources;
 const lastIndex = sources.length - 1;
 ---
-<article class="hotel" id={hotel.id} aria-labelledby={`${hotel.id}-name`}>
+<article class:list={['hotel', { plain: !photosSrc }]} id={hotel.id} aria-labelledby={`${hotel.id}-name`}>
   {photosSrc && (
     <div class="photos">
       <iframe src={photosSrc} title={`Photos and prices for ${hotel.name}, from Stay22`} loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -114,6 +115,9 @@ const lastIndex = sources.length - 1;
     border: 1px solid var(--line);
     border-radius: 10px;
     scroll-margin-top: 16px;
+  }
+  .hotel.plain {
+    grid-template-columns: minmax(0, 1fr);
   }
   .photos iframe {
     display: block;
