@@ -1,0 +1,73 @@
+{
+  "slug": "hagia-sophia-dome-covered-which-rooms-see-it",
+  "view": "hagia-sophia",
+  "date": "2026-10-20",
+  "checked": "2026-10",
+  "title": "Hagia Sophia's dome is under a steel cover. Which Sultanahmet rooms still face it?",
+  "description": "The dome is wrapped in a temporary steel roof while the work moves to the eastern half-dome. Three hotels, and the room names to book.",
+  "dek": "Restoration at Hagia Sophia has reached its most visible stage. The room name matters more than ever, because the building you look at is partly covered.",
+  "sections": [
+    {
+      "h": "What just happened",
+      "p": [
+        "Since July 2026 the main dome of Hagia Sophia has been under a temporary steel roof. Türkiye Today reported that crews began covering it, and that the roof protects the historic structure, its interior mosaics and the workers from the weather. By September the outside of the main dome was completely covered, and the work had moved to the eastern semi-dome, where a steel platform is being installed inside for structural reinforcement.",
+        "The building stays open. The reports say the mosque remains open to worshippers and visitors while the work goes on. None of the reports we read gives an end date."
+      ]
+    },
+    {
+      "h": "Why it matters if you are booking a room",
+      "p": [
+        "A room that faces Hagia Sophia faces the same building, but not the same picture. For the coming months the dome you see from a window is a dome under a cover. Your room may still be a good view. The question is whether the hotel sells that view under a name you can check.",
+        "Hotels around Sultanahmet all describe the church as a view. Only some of them name it in the room."
+      ]
+    },
+    {
+      "h": "Three hotels and the rooms to book",
+      "p": [
+        "At Seven Hills Hotel, book Suite with Hagia Sophia View, King Suite With Hagia Sophia View, Junior Suite Hagia Sophia View, Queen Suite Hagia Sophia View or Royal Suite With Hagia Sophia View. Skip Suite with Blue Mosque View: the hotel sells the two domes as separate suites. Megi Vorera says not all rooms at the hotel have the view, so the room name is the only safe guide. Expedia also tags a Corner St. Sophia Suite (Annex Building) with a garden view, so if you see that name, ask the hotel what it faces.",
+        "At Hotel Saint Sophia, book Grand Deluxe Room with Hagia Sophia View. The Deluxe Room is sold without the view named, and one reviewer's corner Deluxe room looked at the Blue Mosque's minarets.",
+        "At Sura Hagia Sophia Hotel, book Superior Double or Twin Room with Hagia Sophia View. Skip the Superior Double Room and the Superior Twin Room, which are sold without a view named. The hotel's name carries the church, but only one of its sixteen categories on Expedia has the view in the room name. The name on the room you book is what counts."
+      ]
+    },
+    {
+      "h": "How to check a room name",
+      "p": [
+        "Read the room name, not the hotel's description. The view has to be in the category name. Words like balcony, terrace and city view describe the room, not the church. Booking sites tag the same room with different view types, so the name decides. Expedia lists the Hagia Sophia categories at Seven Hills as city view in some places and sea view in others, so a tag on a booking site is not a promise.",
+        "Before you pay, write to the hotel and ask which category faces the dome, and ask for the answer in writing. Ask whether the cover on the dome changes anything for that room."
+      ]
+    },
+    {
+      "h": "The full list",
+      "p": [
+        "Our Hagia Sophia page lists the three hotels, every room to book and every look-alike to skip, with the sources and the month we checked."
+      ]
+    }
+  ],
+  "hotels": ["seven-hills-hotel", "hotel-saint-sophia", "sura-hagia-sophia-hotel"],
+  "cta": {
+    "label": "See which room to book near Hagia Sophia",
+    "href": "/views/hagia-sophia/"
+  },
+  "sources": [
+    {
+      "label": "Türkiye Today: Hagia Sophia dome restoration enters new phase with protective roof covering (July 2026)",
+      "url": "https://www.turkiyetoday.com/culture/hagia-sophia-dome-restoration-enters-new-phase-with-protective-roof-covering-3224546"
+    },
+    {
+      "label": "Daily Sabah: Hagia Sophia restoration turns to its most vulnerable area (September 2026)",
+      "url": "https://www.dailysabah.com/life/hagia-sophia-restoration-turns-to-its-most-vulnerable-area/news"
+    },
+    {
+      "label": "Hürriyet Daily News: Hagia Sophia restoration continues with dome work (September 2026)",
+      "url": "https://www.hurriyetdailynews.com/hagia-sophia-restoration-continues-with-dome-work-226776"
+    },
+    {
+      "label": "Megi Vorera: Istanbul hotels with a Hagia Sophia view",
+      "url": "https://megivorera.com/istanbul-hotels-with-hagia-sophia-view/"
+    },
+    {
+      "label": "The Luxury Editor: Hotel Saint Sophia",
+      "url": "https://theluxuryeditor.com/?p=594"
+    }
+  ]
+}
