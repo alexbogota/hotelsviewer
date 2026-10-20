@@ -1,0 +1,54 @@
+---
+// Test page (not linked, noindex): does the Stay22 list show the exact hotel when the map is centred on its address
+// at the closest zoom? If yes, every checked hotel gets its own photos and prices this way, legally and automatically.
+import Layout from '../../layouts/Layout.astro';
+import { getView, type View } from '../../lib/views';
+import { site } from '../../data/site';
+
+const slugs = ['arc-de-triomphe', 'eiffel-tower'];
+const rows = slugs
+  .map((s) => getView(s) as View | undefined)
+  .filter(Boolean)
+  .flatMap((v) => v!.hotels.map((h) => ({ view: v!.landmark, name: h.name, where: h.where })));
+const src = (where: string) =>
+  `https://www.stay22.com/embed/gm?${new URLSearchParams({
+    aid: site.stay22Aid,
+    address: where,
+    zoom: '18',
+    viewmode: 'listview',
+    limit: '5',
+    campaign: 'lab-hotel-photos',
+    maincolor: '1c2633',
+  }).toString()}`;
+---
+<Layout title="Test: hotel photos from Stay22" description="Internal test page: is the first Stay22 card the hotel we checked?" noindex>
+  <div class="wrap">
+    <h1>Test: hotel photos</h1>
+    <p class="dek measure">For each checked hotel, the Stay22 list centred on its address. Is the first card the same hotel?</p>
+    {rows.map((r) => (
+      <section class="row">
+        <h2>{r.name}</h2>
+        <p class="small">{r.view}. Address: {r.where}</p>
+        <iframe src={src(r.where)} title={`Stay22 list for ${r.name}`} loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </section>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .row {
+    margin-top: 40px;
+  }
+  .row .small {
+    margin-top: 6px;
+  }
+  iframe {
+    display: block;
+    width: 100%;
+    height: 520px;
+    margin-top: 12px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--sky);
+  }
+</style>
