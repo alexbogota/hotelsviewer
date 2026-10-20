@@ -1,0 +1,117 @@
+name: Guide writer
+
+# By hand: GitHub -> Actions -> "Guide writer" -> Run workflow. Leave "view" empty to let the writer pick the place with the freshest news,
+# or type a view slug (for example "trevi-fountain" only if that view is on the site) to write about that place.
+# Claude (the owner's subscription token, no paid API) searches for fresh news about the places of our views and writes ONE draft guide:
+# guide.json and evidence.json (every fact from outside with the quote it was copied from). Room names come only from our own view data.
+# Rules for the writer: docs/guide-writer.md. Checks and the Summary: scripts/guide-tools.mjs (no AI in it).
+# Nothing is published and the site is not touched: the draft is saved on the "drafts" branch in guides/<slug>/ (no deploy).
+# To read it: open the run, scroll down to "Summary". To publish: tell Claude in the chat «ок, статья <slug>» (it runs `node scripts/guide-tools.mjs take <slug>`).
+#
+# Daily running is not switched on on purpose. To switch it on, remove the # in front of the next two lines:
+# on:
+#   schedule: [{ cron: '10 12 * * *' }] # 12:10 UTC = 07:10 Bogota
+on:
+  workflow_dispatch:
+    inputs:
+      view:
+        description: 'View slug to write about (empty = the writer picks the place with the freshest news).'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: guide-writer
+  cancel-in-progress: false
+
+jobs:
+  guide:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Test the checks
+        run: npm run test:guides
+
+      - name: Is there room for a new draft?
+        id: gate
+        env:
+          ONLY_SLUG: ${{ inputs.view }}
+        run: node scripts/guide-tools.mjs gate
+
+      - name: Check the subscription token
+        if: steps.gate.outputs.run == 'true'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+            echo "::error::The secret CLAUDE_CODE_OAUTH_TOKEN is not set."
+            exit 1
+          fi
+
+      - name: Install Claude Code
+        if: steps.gate.outputs.run == 'true'
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Build the instructions for the writer
+        if: steps.gate.outputs.run == 'true'
+        env:
+          ONLY_SLUG: ${{ inputs.view }}
+        run: node scripts/guide-tools.mjs prompt
+
+      # The whole conversation goes to drafts/guides-transcript.jsonl: the checks use it to prove that every quote in evidence.json
+      # is in a page the writer really opened.
+      - name: Write the draft with Claude
+        if: steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        timeout-minutes: 35
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          MODEL: ${{ steps.gate.outputs.model }}
+          MAX_TURNS: ${{ steps.gate.outputs.maxTurns }}
+        run: |
+          claude -p "$(cat drafts/guides-prompt.txt)" \
+            --model "$MODEL" \
+            --max-turns "$MAX_TURNS" \
+            --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(node scripts/guide-tools.mjs check:*)" \
+            --output-format stream-json --verbose \
+            > drafts/guides-transcript.jsonl
+
+      - name: Check the draft and write the Summary
+        id: finish
+        if: always() && steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        run: node scripts/guide-tools.mjs finish
+
+      - name: Save the draft on the drafts branch
+        if: always() && steps.gate.outputs.run == 'true'
+        run: bash scripts/guide-branch.sh save
+
+      - name: Keep the files for download
+        if: always() && steps.gate.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: guide-draft
+          retention-days: 3
+          path: |
+            drafts/guides/
+            drafts/guides-run.json
+          if-no-files-found: ignore
+
+      - name: Stop with red if the draft failed
+        if: always() && steps.gate.outputs.run == 'true' && steps.finish.outcome == 'failure'
+        run: |
+          echo "::error::The draft did not pass the checks: see the Summary of this run."
+          exit 1

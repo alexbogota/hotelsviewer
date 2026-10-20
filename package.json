@@ -18,7 +18,9 @@
     "test:views": "node scripts/test-view-tools.mjs",
     "check:view": "node scripts/view-tools.mjs check",
     "test:hotel-photos": "node scripts/test-hotel-photos.mjs",
-    "hotel-photos": "node scripts/find-hotel-photos.mjs"
+    "hotel-photos": "node scripts/find-hotel-photos.mjs",
+    "test:guides": "node scripts/test-guide-tools.mjs",
+    "guide-tools": "node scripts/guide-tools.mjs"
   },
   "dependencies": {
     "@fontsource-variable/newsreader": "^5.3.0",
