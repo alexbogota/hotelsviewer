@@ -87,7 +87,7 @@ const month = monthLabel(view.checked);
 
     <section class="hotels" aria-labelledby="hotels-heading">
       <h2 id="hotels-heading">{view.hotels.length} hotels, room by room</h2>
-      {view.hotels.map((h, i) => <HotelEntry hotel={h} checked={view.checked} n={i + 1} />)}
+      {view.hotels.map((h, i) => <HotelEntry hotel={h} checked={view.checked} n={i + 1} city={view.city} country={view.country} campaign={`hotel-${h.id}`} />)}
     </section>
 
     <Decoder pairs={view.decoder} />
@@ -111,7 +111,7 @@ const month = monthLabel(view.checked);
     ))}
 
     {view.coords && (
-      <HotelMap lat={view.coords.lat} lng={view.coords.lng} near={landmarkInText(view)} campaign={`view-${view.slug}-photos`} mode="listview" />
+      <HotelMap lat={view.coords.lat} lng={view.coords.lng} near={landmarkInText(view)} campaign={`view-${view.slug}`} />
     )}
 
     <TripExtras items={liveExtras(view)} />

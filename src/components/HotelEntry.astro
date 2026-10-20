@@ -1,14 +1,34 @@
 ---
 import LevelPill from './LevelPill.astro';
 import { goHref, monthLabel, pricesButton, starsLabel, type Hotel } from '../lib/views';
+import { site } from '../data/site';
 
 interface Props {
   hotel: Hotel;
   checked: string;
   n: number;
+  city: string;
+  country: string;
+  campaign: string;
 }
 
-const { hotel, checked, n } = Astro.props;
+const { hotel, checked, n, city, country, campaign } = Astro.props;
+
+// Stay22 list centred on the hotel's own address at the closest zoom: the first card is this hotel, with its photos and prices
+// (owner checked Arc de Triomphe and Eiffel Tower on /lab/hotel-photos/, 19 Oct 2026). City and country are added when the address lacks them.
+const has = (t: string) => hotel.where.toLowerCase().includes(t.toLowerCase());
+const address = [hotel.where, has(city) ? '' : city, has(country) ? '' : country].filter(Boolean).join(', ');
+const photosSrc = site.stay22Aid
+  ? `https://www.stay22.com/embed/gm?${new URLSearchParams({
+      aid: site.stay22Aid,
+      address,
+      zoom: '18',
+      viewmode: 'listview',
+      limit: '5',
+      campaign,
+      maincolor: '1c2633',
+    }).toString()}`
+  : '';
 const facts = [hotel.distance, starsLabel(hotel.stars)].filter(Boolean).join(', ');
 
 // "a, b and c" with official sources linked.
@@ -40,6 +60,13 @@ const lastIndex = sources.length - 1;
       </ul>
       <a class="btn" href={goHref(hotel.id)} rel="sponsored nofollow noopener" target="_blank">{pricesButton}</a>
     </section>
+
+    {photosSrc && (
+      <div class="photos">
+        <p class="small">Photos and prices from our partner Stay22, around this address. Bookings made here may earn us a commission.</p>
+        <iframe src={photosSrc} title={`Photos and prices for ${hotel.name}, from Stay22`} loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    )}
 
     {hotel.skip && hotel.skip.length > 0 && (
       <details class="skip">
@@ -141,6 +168,18 @@ const lastIndex = sources.length - 1;
   }
   .book .btn {
     margin-top: 22px;
+  }
+  .photos {
+    margin-top: 18px;
+  }
+  .photos iframe {
+    display: block;
+    width: 100%;
+    height: 460px;
+    margin-top: 8px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--sky);
   }
   .skip {
     margin-top: 16px;

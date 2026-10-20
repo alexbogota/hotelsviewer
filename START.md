@@ -43,7 +43,7 @@
 - Правила автора `docs/view-writer.md`, настройки `data/view-writer.json`, тесты `npm run test:views`, решение и итоги `docs/decisions.md`.
 
 ## План дальше (подробно `docs/next-steps.md`)
-1. Привести людей: Pinterest (решение 19 октября, обсуждать в отдельном чате «Pinterest для hotelsviewer»). 10 видов опубликованы 19 октября (ok владельца): empire-state-building, taipei-101, cologne-cathedral, golden-gate-bridge, arc-de-triomphe, alhambra, brooklyn-bridge, milan-cathedral, chrysler-building, pantheon. Фото подтянет деплой.
+1. Привести людей: Pinterest (решение 19 октября, обсуждать в отдельном чате «Pinterest для hotelsviewer»). 10 видов опубликованы 19 октября (ok владельца): empire-state-building, taipei-101, cologne-cathedral, golden-gate-bridge, arc-de-triomphe, alhambra, brooklyn-bridge, milan-cathedral, chrysler-building, pantheon. Фото подтянет деплой. Фото отелей (19 октября, владелец проверил на двух видах): у каждого проверенного отеля внутри карточки список Stay22 по его адресу, первая карточка = этот отель, с фото и ценой (`HotelEntry.astro`); тест-страница `/lab/hotel-photos/`.
 2. Потом: Pinterest-пины по видам, страница «Coming next», партнёрские ссылки вместо поиска Booking.
 3. Дальше по блоку «After the window» (пилот сделан, см. выше): остальные виды, «Как добраться» с трансфером и eSIM на странице города, статья на наших данных про ярлыки «garden view» у сайтов бронирования. Подробно в `docs/next-steps.md` и `docs/decisions.md`.
 
