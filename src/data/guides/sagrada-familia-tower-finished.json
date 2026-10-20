@@ -1,0 +1,77 @@
+{
+  "slug": "sagrada-familia-tower-finished",
+  "view": "sagrada-familia",
+  "date": "2026-10-19",
+  "title": "The Sagrada Família's central tower is finished. Which Barcelona hotel rooms can actually see it?",
+  "description": "The cross went up on the Tower of Jesus Christ in February 2026. Three hotels near the basilica, and the exact room names that name the view, and the ones that don't.",
+  "dek": "In February the last piece of the central tower went up. Plenty of hotels now say \"Sagrada Família view\". Few rooms actually have one.",
+  "sections": [
+    {
+      "h": "What just happened",
+      "p": [
+        "On 20 February 2026 the upper arm of the cross was fitted on the Tower of Jesus Christ. That finished the outside of the basilica's central tower, 172.5 metres high and the highest point of the church. With it, the six central towers of the Sagrada Família are complete from the outside. Work inside the tower continues through 2027 and 2028, and a sculpture of the Agnus Dei is still to be installed in the upper arm."
+      ]
+    },
+    {
+      "h": "Why it matters if you are booking a room",
+      "p": [
+        "The church you see from a window is now the finished outline of the centre. That makes the question sharper: does your room see it at all? Hotels near the basilica use the name freely. We read three hotels' own room lists and found three different promises."
+      ]
+    },
+    {
+      "h": "Three hotels, three kinds of promise",
+      "p": [
+        "Sercotel Rosellón puts the view in the room name. The categories to book are Classic Double Room (Sagrada Familia View) and Classic Twin Room (Sagrada Familia View). The hotel says many rooms have the view, but its room list names it for only those two, and the Basic Room is sold with a view of an inner courtyard. A Classic Double Room without the church in the name is a different booking.",
+        "Eurostars Monumental sits across the Diagonal, about 400 m from the church according to Barcelona Turisme. Book Double or Twin Sagrada Familia View, or the individual-use version, which Hotels.com calls Double or Twin room Sacred Family View. That is the same church. A Double Room, Terrace is not the same thing: Hotels.com lists one with a city view and another with no view named.",
+        "Boutique Hostemplo Sagrada Familia is the careful one. No category is sold with the church in its name. What to Do in Barcelona says the Junior Suites on the upper level see it from the balcony, and a Hotels.com guest review mentions the view for the suites. Book the Junior Suite and ask which floor you will get. A balcony or a terrace on its own does not name a view."
+      ]
+    },
+    {
+      "h": "Check any room name in 30 seconds",
+      "p": [
+        "Look for the landmark in the room name itself. \"Terrace\", \"balcony\" and \"city view\" describe the room, not what is outside the window. If only the hotel's description mentions the church and the room name doesn't, write to the hotel and ask which category faces it, and ask for the answer in writing. Names in other languages count: Sacred Family is the same church."
+      ]
+    },
+    {
+      "h": "The full list",
+      "p": [
+        "Our page for the Sagrada Família has the three hotels with every room to book and every look-alike to skip, with the sources and the month we checked."
+      ]
+    }
+  ],
+  "cta": {
+    "label": "See which room to book near the Sagrada Família",
+    "href": "/views/sagrada-familia/"
+  },
+  "sources": [
+    {
+      "label": "Vatican News: Sagrada Família cross completed on the Tower of Jesus Christ (February 2026)",
+      "url": "https://www.vaticannews.va/en/church/news/2026-02/basilica-sagrada-familia-cross-completed-tower-of-jesus-christ.html"
+    },
+    {
+      "label": "Sercotel Rosellón, the hotel's own site",
+      "url": "https://www.sercotelhoteles.com/en/sercotel/hotel-rosellon"
+    },
+    {
+      "label": "Barcelona Turisme: Eurostars Monumental",
+      "url": "https://www.bcn.travel/?p=222922"
+    },
+    {
+      "label": "What to Do in Barcelona: best hotels near La Sagrada Família",
+      "url": "https://whattodoinbarcelona.com/best-hotels-near-la-sagrada-familia/"
+    },
+    {
+      "label": "Third Eye Traveller: Sercotel Rosellón review",
+      "url": "https://thirdeyetraveller.com/sercotel-rosellon-barcelona-review/"
+    },
+    {
+      "label": "Hotels.com room lists (named, not linked)"
+    }
+  ],
+  "checked": "2026-10",
+  "hotels": [
+    "sercotel-rosellon",
+    "eurostars-monumental",
+    "boutique-hostemplo-sagrada-familia"
+  ]
+}

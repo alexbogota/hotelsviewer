@@ -1,0 +1,66 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ArchPhoto from '../../components/ArchPhoto.astro';
+import { guides, dateLabel } from '../../lib/guides';
+import { getView, photoFor } from '../../lib/views';
+---
+<Layout title="Guides: hotel rooms with a view, and what is new" description="Short guides on booking a hotel room that really sees the landmark: what the room names mean and what changed this month.">
+  <div class="wrap">
+    <header class="page-head">
+      <h1>Guides</h1>
+      <p class="dek measure">What changed at the landmarks, and what it means for the room you book.</p>
+    </header>
+    <ul class="list">
+      {guides.map((g) => (
+        <li>
+          <a class="thumb" href={`/guides/${g.slug}/`} aria-hidden="true" tabindex="-1">
+            <ArchPhoto photo={photoFor(g.view)} landmark={getView(g.view)?.landmark ?? ''} variant="thumb" />
+          </a>
+          <div>
+            <p class="small">{dateLabel(g.date)}</p>
+            <h2 class="room"><a href={`/guides/${g.slug}/`}>{g.title}</a></h2>
+            <p>{g.description}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Layout>
+
+<style>
+  .page-head {
+    padding-top: 40px;
+  }
+  .list {
+    list-style: none;
+    margin: 40px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 28px;
+  }
+  .list li {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 28px;
+    align-items: center;
+    padding: 20px;
+    background: var(--panel);
+    border: 1px solid var(--line-soft);
+    border-radius: var(--radius);
+  }
+  .list h2 {
+    font-size: 1.5rem;
+    margin: 4px 0 8px;
+  }
+  .list h2 a {
+    color: inherit;
+  }
+  @media (max-width: 640px) {
+    .list li {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .thumb {
+      max-width: 200px;
+    }
+  }
+</style>
