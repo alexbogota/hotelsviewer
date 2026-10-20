@@ -27,8 +27,8 @@ const src = `https://www.stay22.com/embed/gm?${params.toString()}`;
 ---
 {site.stay22Aid && (
   <section class={photos ? 'map photos' : 'map'} aria-labelledby={`${mode}-heading`}>
-    <h2 id={`${mode}-heading`}>{photos ? `Hotels near ${near}, with photos` : `More hotels near ${near}`}</h2>
-    <p class="measure">{photos ? 'These hotels come' : 'This map comes'} from our partner Stay22 and shows hotels around {near} with current prices. We haven't checked these hotels for a view.</p>
+    <h2 id={`${mode}-heading`}>{photos ? `Hotels near ${near}` : `More hotels near ${near}`}</h2>
+    <p class="measure">{photos ? `Photos and current prices from our partner Stay22. We haven't checked these for a view. The hotels we did check, with the room to book, are below.` : `This map comes from our partner Stay22 and shows hotels around ${near} with current prices. We haven't checked these hotels for a view.`}</p>
     <iframe
       src={src}
       title={`${photos ? 'Photos of hotels' : 'Map of hotels'} near ${near}, from Stay22`}
@@ -46,7 +46,7 @@ const src = `https://www.stay22.com/embed/gm?${params.toString()}`;
     margin-top: 56px;
   }
   .photos iframe {
-    height: 640px;
+    height: 720px;
   }
   .map p {
     margin-top: 12px;

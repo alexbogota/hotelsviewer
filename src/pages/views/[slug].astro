@@ -89,6 +89,10 @@ const month = monthLabel(view.checked);
       <p class="small disclose">Room names are copied exactly as the hotels sell them. Some links may earn us a commission; it never changes which rooms we list.</p>
     </section>
 
+    {view.coords && (
+      <HotelMap lat={view.coords.lat} lng={view.coords.lng} near={landmarkInText(view)} campaign={`view-${view.slug}`} mode="listview" />
+    )}
+
     <section class="hotels" aria-labelledby="hotels-heading">
       <h2 id="hotels-heading">{view.hotels.length} hotels, room by room</h2>
       {view.hotels.map((h, i) => <HotelEntry hotel={h} checked={view.checked} n={i + 1} city={view.city} country={view.country} campaign={`hotel-${h.id}`} />)}
@@ -113,10 +117,6 @@ const month = monthLabel(view.checked);
         <p class="measure">{a.text}</p>
       </section>
     ))}
-
-    {view.coords && (
-      <HotelMap lat={view.coords.lat} lng={view.coords.lng} near={landmarkInText(view)} campaign={`view-${view.slug}`} />
-    )}
 
     <TripExtras items={liveExtras(view)} />
 
