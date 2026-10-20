@@ -28,7 +28,7 @@ const src = `https://www.stay22.com/embed/gm?${params.toString()}`;
 {site.stay22Aid && (
   <section class={photos ? 'map photos' : 'map'} aria-labelledby={`${mode}-heading`}>
     <h2 id={`${mode}-heading`}>{photos ? `Hotels near ${near}, with photos` : `More hotels near ${near}`}</h2>
-    <p class="measure">{photos ? 'These hotels come' : 'This map comes'} from our partner Stay22 and shows hotels around {near} with current prices. We haven't checked these hotels for a view. Look for a room category that names the view, or start with the hotels on our view pages. Bookings made through the map may earn us a commission.</p>
+    <p class="measure">{photos ? 'These hotels come' : 'This map comes'} from our partner Stay22 and shows hotels around {near} with current prices. We haven't checked these hotels for a view.</p>
     <iframe
       src={src}
       title={`${photos ? 'Photos of hotels' : 'Map of hotels'} near ${near}, from Stay22`}
