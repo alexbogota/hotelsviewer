@@ -90,6 +90,14 @@ export function postLink(links, a, path, campaign) {
   return `${links.site}${path}?${marks(links, a, campaign)}`;
 }
 
+/** A post link to our hotel search for any place: https://hotelsviewer.com/hotels/?q=Portland%2C%20Oregon&utm_... (works for every city). */
+export function searchLink(links, a, place, campaign) {
+  const q = String(place ?? '').trim();
+  if (q.length < 2 || q.length > 80 || /[<>"\n]/.test(q)) throw new Error(`searchLink: bad place ${JSON.stringify(place)}`);
+  if (typeof campaign !== 'string' || !CAMPAIGN.test(campaign)) throw new Error(`searchLink: bad campaign ${JSON.stringify(campaign)}`);
+  return `${links.site}/hotels/?q=${encodeURIComponent(q)}&${marks(links, a, campaign)}`;
+}
+
 /** The lines for dist/go/.htaccess (comment + one RedirectMatch per enabled account). */
 export function profileBlock(links, list) {
   const on = list.filter((a) => a.enabled);

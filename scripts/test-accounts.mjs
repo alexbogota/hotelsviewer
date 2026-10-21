@@ -10,6 +10,7 @@ import {
   checkAccounts,
   loadAccounts,
   postLink,
+  searchLink,
   profileBlock,
   profileRedirectLine,
   profileTarget,
@@ -114,6 +115,9 @@ test('a post link carries the same mark as the profile link and refuses foreign 
     assert.throws(() => postLink(links, a, p, 'x'), /path must be/, p);
   }
   assert.throws(() => postLink(links, a, '/views/x/', 'Two Words'), /bad campaign/);
+  assert.equal(searchLink(links, a, 'Portland, Oregon', 'gem'), `${links.site}/hotels/?q=Portland%2C%20Oregon&utm_source=${a.subid}&utm_medium=${links.medium}&utm_campaign=gem`);
+  assert.throws(() => searchLink(links, a, 'x', 'gem'), /bad place/);
+  assert.throws(() => searchLink(links, a, 'Rome', 'Two Words'), /bad campaign/);
 });
 
 console.log(`\n${n} tests passed`);
