@@ -1,0 +1,15 @@
+{
+  "about": "Настройки автора постов: workflow «Post writer» (.github/workflows/post-writer.yml), программа scripts/post-tools.mjs, правила для автора docs/post-writer.md. Каждое утро программа читает свежие пункты из лент (feeds), автор (Claude по вашей подписке) пишет 3 треда для Bluesky разных форматов (question, gem, news), программа проверяет их и сама ставит ссылки с меткой. Треды лежат в Summary запуска и на ветке drafts в папке posts/; публикуете вы. Поля: enabled = включён ли автор; model = sonnet / haiku / opus; maxTurns = потолок шагов; freshDays = насколько свежими должны быть пункты лент (дни); account = ключ аккаунта из data/accounts.json, чья метка ставится в ссылки; formats = форматы тредов дня; maxTags = сколько хэштегов в треде максимум; feeds = ленты (id, name = как подписывать источник, url = адрес RSS); branch = ветка для готовых тредов.",
+  "enabled": true,
+  "model": "sonnet",
+  "maxTurns": 40,
+  "freshDays": 3,
+  "account": "bluesky",
+  "formats": ["question", "gem", "news"],
+  "maxTags": 3,
+  "branch": "drafts",
+  "feeds": [
+    { "id": "euronews-travel", "name": "Euronews", "url": "https://www.euronews.com/rss?format=mrss&level=vertical&name=travel" },
+    { "id": "atlas-obscura", "name": "Atlas Obscura", "url": "https://www.atlasobscura.com/feeds/latest" }
+  ]
+}

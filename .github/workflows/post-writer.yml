@@ -1,0 +1,91 @@
+name: Post writer
+
+# Every morning (and by hand: Actions -> "Post writer" -> Run workflow).
+# The program reads fresh items from the feeds in data/post-writer.json (Euronews Travel, Atlas Obscura), Claude (the owner's subscription
+# token, no paid API) writes today's 3 Bluesky threads (question, gem, news) by docs/post-writer.md, and the program checks them:
+# every fact quoted from a page opened in the run, room names only from our views, no URLs in the text, 300 characters per post.
+# The program adds the last post with our link and mark (scripts/lib/accounts.mjs). Nothing is posted: the threads are in the Summary
+# of the run and on the "drafts" branch in posts/<date>.md. The owner posts them.
+on:
+  schedule: [{ cron: '20 12 * * *' }] # 12:20 UTC = 07:20 Bogota
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-writer
+  cancel-in-progress: false
+
+jobs:
+  posts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Test the checks
+        run: npm run test:posts
+
+      - name: Read the feeds
+        id: gate
+        run: node scripts/post-tools.mjs sources
+
+      - name: Check the subscription token
+        if: steps.gate.outputs.run == 'true'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+            echo "::error::The secret CLAUDE_CODE_OAUTH_TOKEN is not set."
+            exit 1
+          fi
+
+      - name: Install Claude Code
+        if: steps.gate.outputs.run == 'true'
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Build the instructions for the writer
+        if: steps.gate.outputs.run == 'true'
+        run: node scripts/post-tools.mjs prompt
+
+      - name: Write the threads with Claude
+        if: steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        timeout-minutes: 20
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          MODEL: ${{ steps.gate.outputs.model }}
+          MAX_TURNS: ${{ steps.gate.outputs.maxTurns }}
+        run: |
+          mkdir -p drafts/posts
+          claude -p "$(cat drafts/posts-prompt.txt)" \
+            --model "$MODEL" \
+            --max-turns "$MAX_TURNS" \
+            --allowedTools "Read,Write,Edit,Glob,Grep,WebFetch,Bash(node scripts/post-tools.mjs check:*)" \
+            --output-format stream-json --verbose \
+            > drafts/posts-transcript.jsonl
+
+      - name: Check the threads and write the Summary
+        id: finish
+        if: always() && steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        run: node scripts/post-tools.mjs finish
+
+      - name: Save the threads on the drafts branch
+        if: always() && steps.gate.outputs.run == 'true' && steps.finish.outcome == 'success'
+        run: node scripts/post-tools.mjs save
+
+      - name: Stop with red if the threads failed
+        if: always() && steps.gate.outputs.run == 'true' && steps.finish.outcome == 'failure'
+        run: |
+          echo "::error::The threads did not pass the checks: see the Summary of this run."
+          exit 1
