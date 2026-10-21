@@ -104,3 +104,6 @@ Newest at the bottom. START.md keeps only the result.
 
 ## 20 Oct 2026: Guides and the guide writer
 The owner wants traffic from social networks, not from search, and a plain retelling of facts is ignored there. Decision: a Guides section where each guide hangs on a fresh news hook about a place that has one of our views, and ends with the room advice and booking buttons from our checked data. The guide writer (Haiku, owner's subscription) finds the news and writes a draft; checks refuse any outside fact without a quote from a page opened in the run; the owner says ok before publishing. First guide: Sagrada Familia tower finished (news of 20 Feb 2026).
+
+## 21 Oct 2026: daily Bluesky threads from travel feeds
+Few views, so posts are not limited to them: any fresh travel item (Euronews Travel, Atlas Obscura) can be a thread, and a place without a view links to our hotel search `/hotels/?q=<city>` (new `searchLink`). Formats from the research of 20 Oct (question, gem, news with a conclusion); the link is the last post. The post writer runs every morning; the owner posts by hand.
