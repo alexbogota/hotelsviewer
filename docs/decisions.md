@@ -107,3 +107,10 @@ The owner wants traffic from social networks, not from search, and a plain retel
 
 ## 21 Oct 2026: daily Bluesky threads from travel feeds
 Few views, so posts are not limited to them: any fresh travel item (Euronews Travel, Atlas Obscura) can be a thread, and a place without a view links to our hotel search `/hotels/?q=<city>` (new `searchLink`). Formats from the research of 20 Oct (question, gem, news with a conclusion); the link is the last post. The post writer runs every morning; the owner posts by hand.
+
+## 21 October 2026: social pictures redrawn (no arches)
+- The owner said the first set looked like headstones: an arch-topped shape alone on a dark ground, and a row of three arches of different heights as a banner. Correct: that silhouette reads as a cemetery. Dropped.
+- New set: a drawn view from a window at sunset (pale sky, brass sun on the horizon, calm sea with the sun's glitter, two soft ridges), light all over, no arch shapes, no dark ground. Banner: the name and the tagline in the sky, the sun at the right, the bottom left kept as calm water because Bluesky and Mastodon put the profile photo there. Checked in a round crop (300 to 28 px), a rounded square and under the profile photo.
+- JPEG instead of PNG: smooth gradients with light grain as PNG are over 1 MB, and Bluesky takes at most 1 MB per picture. The script refuses a file over 1 MB. Files now are about 100-140 KB.
+- Still no photos and no real landmarks, so nothing to credit. The arched window stays on the SITE (logo, photo frames, share picture): the owner only objected to the social pictures. `scripts/make-social.py` builds all four files from one scene function; texts and alt texts are in `docs/social-profiles.md`.
+

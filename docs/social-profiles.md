@@ -1,7 +1,7 @@
 # Social profiles: Bluesky, Mastodon, Quora (prepared 18 October 2026)
 
 Accounts are NOT created yet. The owner creates them (an account can't be made by Claude: sign-up, passwords and email codes are manual). Everything below is ready to paste.
-Pictures: `brand/social/`, made by `python3 scripts/make-social.py` (site fonts and colours, no photos, no landmarks, nothing to credit). Alt text is given for every picture.
+Pictures: `brand/social/`, made by `python3 scripts/make-social.py` (a drawn view from a window at sunset, site fonts and colours, no photos, no landmarks, nothing to credit). Alt text is given for every picture. 21 Oct 2026: the first set (arches on a dark ground, three arches in a row) was dropped, the owner said it looked like headstones; the new one is light, with no arch shapes. JPEG, not PNG: smooth gradients as PNG go over Bluesky's 1 MB.
 
 ## Name and handles
 One name everywhere: **HotelsViewer**. Tagline from the site: "See the view before you book."
@@ -38,10 +38,10 @@ HotelsViewer is a guide to hotel rooms with a view of a landmark. Hotels sell th
 
 **Quora Space (optional, only place on Quora with a cover):** name "Hotel Rooms With a View"; description "Which hotel room actually has the view? The exact room category to book for a landmark view, the look-alikes to skip, and where we checked. From HotelsViewer (hotelsviewer.com/go/quora)."
 
-**Alt text, avatar** (126/150): HotelsViewer logo: an arched window with a pale sky, a thin horizon and a small brass-colored sun, on a dark slate background.
-**Alt text, banner** (123/150): HotelsViewer banner: the name and the line “See the view before you book.” next to three arched windows showing a pale sky.
+**Alt text, avatar** (118/150): HotelsViewer logo: a calm sea at sunset, a golden sun resting on the horizon under a pale sky, soft hills on the left.
+**Alt text, banner** (144/150): HotelsViewer banner: the name and the line “See the view before you book.” over a pale sunset sky, with a golden sun on a calm sea at the right.
 
-Files: Bluesky and Mastodon take `avatar.png` and `banner.png`; Quora takes `avatar.png`; the Space takes `quora-space-icon.png` and `quora-space-cover.png`.
+Files: Bluesky and Mastodon take `avatar.jpg` and `banner.jpg`; Quora takes `avatar.jpg`; the Space takes `quora-space-icon.jpg` and `quora-space-cover.jpg`.
 
 ## Links with marks (19 October 2026)
 Every profile carries a SHORT link of its own, never the bare address, so the visits from each network can be told apart in Google Analytics:
