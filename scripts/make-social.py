@@ -9,7 +9,8 @@ Run: python3 scripts/make-social.py
 Uses the site's own fonts from node_modules (Newsreader, Public Sans), so run `npm install` first.
 
 The picture: the view from a window at sunset. Pale sky, a brass sun resting on the horizon, a calm sea with its
-glitter path, two soft ridges. Light all over, no dark ground and no arch shapes (the first version, 18 Oct 2026,
+glitter path, and on the horizon two soft ridges (the avatar) or a city skyline (the banner and the Quora cover: the
+owner asked for a more urban picture on 21 Oct 2026). Light all over, no dark ground and no arch shapes (the first version, 18 Oct 2026,
 was arches on a dark ground and the owner said it looked like headstones). Everything is drawn here: no photos and no
 real landmarks, so nothing needs a licence or a credit and nothing claims anything about a place.
 JPEG on purpose: a smooth gradient with light grain as PNG is over 1 MB, and Bluesky takes at most 1 MB.
@@ -35,6 +36,9 @@ GLINT = (255, 240, 210)
 WAVE = (226, 237, 246)
 RIDGE_FAR = (176, 193, 209)
 RIDGE_NEAR = (122, 148, 173)
+FAR_CITY = (176, 192, 208)   # hazy row of buildings far away
+NEAR_CITY = (92, 117, 144)   # the near row, darker
+WINDOW = (255, 216, 148)     # a lit window at sunset
 
 SS = 2  # draw at double size, then shrink: smooth edges
 MAX_BYTES = 1_000_000  # Bluesky: 1 MB per picture
@@ -73,8 +77,77 @@ def ridge(w, rng, amp, centre, spread):
     return amp * bump * (0.35 + 0.65 * waves)
 
 
-def scene(W, H, sun_x, sun_r, horizon, seed=7):
-    """The view as a float image of size (H*SS, W*SS, 3). sun_r is the sun radius as a share of the height."""
+def city(img, rng, w, h, hy):
+    """A skyline along the horizon: a hazy far row behind a darker near row with a few lit windows, and the near row's
+    reflection in the water. Tall towers stand at the left and right ends and low buildings in the middle, so the name
+    in the sky keeps its room. Plain boxes with setbacks and masts: no building that anyone could recognise."""
+
+    def curve(points):
+        xs, ys = zip(*points)
+        return lambda x: float(np.interp(x, xs, ys))
+
+    # heights as a share of the picture height, along x (0..1). Low where the name stands and where the sun sets.
+    far_h = curve([(0, 0.12), (0.30, 0.10), (0.50, 0.06), (0.70, 0.04), (0.80, 0.02), (0.88, 0.08), (1, 0.10)])
+    near_h = curve([(0, 0.22), (0.12, 0.30), (0.25, 0.18), (0.28, 0.07), (0.50, 0.05), (0.68, 0.045), (0.72, 0.02), (0.86, 0.02), (0.90, 0.20), (1, 0.14)])
+
+    def row(height_at, jitter):
+        """Buildings side by side along the whole width: (left, width, height, setback height, mast height)."""
+        out, x = [], -rng.uniform(0, 0.03 * h)
+        while x < w:
+            bw = rng.uniform(0.06, 0.16) * h
+            bh = height_at((x + bw / 2) / w) * h * rng.uniform(*jitter)
+            setback = bh * rng.uniform(0.12, 0.28) if rng.random() < 0.35 else 0.0
+            mast = h * rng.uniform(0.03, 0.07) if rng.random() < 0.30 and bh > 0.11 * h else 0.0  # none on low buildings: they stand under the text
+            out.append((x, bw, bh, setback, mast))
+            x += bw
+        return out
+
+    def paint(buildings, color):
+        layer = Image.new("L", (w, h), 0)
+        d = ImageDraw.Draw(layer)
+        for x, bw, bh, setback, mast in buildings:
+            d.rectangle((round(x), round(hy - bh), round(x + bw), hy), fill=255)
+            if setback:
+                d.rectangle((round(x + bw * 0.22), round(hy - bh - setback), round(x + bw * 0.78), round(hy - bh)), fill=255)
+            if mast:
+                cx = x + bw / 2
+                d.rectangle((round(cx - SS), round(hy - bh - setback - mast), round(cx + SS), round(hy - bh - setback)), fill=255)
+        mix(img, color, np.asarray(layer, dtype=np.float32) / 255)
+
+    far = row(far_h, (0.5, 1.0))
+    near = row(near_h, (0.6, 1.0))
+    paint(far, FAR_CITY)
+    paint(near, NEAR_CITY)
+
+    # a few lit windows on the taller near buildings
+    lights = Image.new("L", (w, h), 0)
+    d = ImageDraw.Draw(lights)
+    cell, ww, wh = 0.034 * h, 0.012 * h, 0.017 * h
+    for x, bw, bh, setback, mast in near:
+        if bh < 0.10 * h:
+            continue
+        cols, rows = int((bw - 0.5 * cell) // cell), int((bh - cell) // cell)
+        for c in range(cols):
+            for r in range(rows):
+                if rng.random() < 0.30:
+                    wx, wy = x + 0.5 * cell + c * cell, hy - bh + 0.6 * cell + r * cell
+                    d.rectangle((round(wx), round(wy), round(wx + ww), round(wy + wh)), fill=int(255 * rng.uniform(0.55, 0.9)))
+    mix(img, WINDOW, np.asarray(lights, dtype=np.float32) / 255)
+
+    # the reflection of the near row: soft, fading with depth
+    refl = Image.new("L", (w, h), 0)
+    d = ImageDraw.Draw(refl)
+    for x, bw, bh, setback, mast in near:
+        depth = int(0.9 * (bh + setback))
+        for k in range(0, depth, 2):
+            d.rectangle((round(x), hy + k, round(x + bw), hy + k + 2), fill=int(255 * 0.32 * (1 - k / depth)))
+    refl = refl.filter(ImageFilter.GaussianBlur(1.5 * SS))
+    mix(img, NEAR_CITY, np.asarray(refl, dtype=np.float32) / 255)
+
+
+def scene(W, H, sun_x, sun_r, horizon, seed=7, landscape="hills"):
+    """The view as a float image of size (H*SS, W*SS, 3). sun_r is the sun radius as a share of the height.
+    landscape: "hills" (two soft ridges, the avatar) or "city" (a skyline, the banner and the cover)."""
     rng = np.random.default_rng(seed)
     w, h = W * SS, H * SS
     hy = round(h * horizon)
@@ -97,12 +170,16 @@ def scene(W, H, sun_x, sun_r, horizon, seed=7):
     disc[hy:] = 0
     mix(img, SUN, disc)
 
-    # two ridges standing on the horizon: a far hazy one across, a nearer one on the left
-    for color, amp, centre, spread in ((RIDGE_FAR, 0.050 * h, 0.30, 0.55), (RIDGE_NEAR, 0.115 * h, 0.17, 0.20)):
-        top = hy - ridge(w, rng, amp, centre, spread)
-        cov = np.clip(yy - top[None, :] + 0.5, 0, 1)
-        cov[hy:] = 0
-        mix(img, color, cov)
+    if landscape == "city":
+        # its own random generator, so the glitter below does not depend on how many buildings there are
+        city(img, np.random.default_rng(seed + 100), w, h, hy)
+    else:
+        # two ridges standing on the horizon: a far hazy one across, a nearer one on the left
+        for color, amp, centre, spread in ((RIDGE_FAR, 0.050 * h, 0.30, 0.55), (RIDGE_NEAR, 0.115 * h, 0.17, 0.20)):
+            top = hy - ridge(w, rng, amp, centre, spread)
+            cov = np.clip(yy - top[None, :] + 0.5, 0, 1)
+            cov[hy:] = 0
+            mix(img, color, cov)
 
     # glitter path of the sun on the water, and a few waves elsewhere
     layer = Image.new("L", (w, h), 0)
@@ -157,7 +234,7 @@ def avatar(size):
 def banner(W, H):
     """Wide view. The name and the line stand in the sky, the sun at the right. The bottom left stays calm water:
     Bluesky and Mastodon put the profile photo over it."""
-    img = scene(W, H, sun_x=0.80, sun_r=0.085, horizon=0.64, seed=5)
+    img = scene(W, H, sun_x=0.79, sun_r=0.085, horizon=0.64, seed=5, landscape="city")
     d = ImageDraw.Draw(img)
     k = H / 500
     text_x = round(0.30 * W * SS)
