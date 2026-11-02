@@ -115,3 +115,8 @@ Few views, so posts are not limited to them: any fresh travel item (Euronews Tra
 - Still no photos and no real landmarks, so nothing to credit. The arched window stays on the SITE (logo, photo frames, share picture): the owner only objected to the social pictures. `scripts/make-social.py` builds all four files from one scene function; texts and alt texts are in `docs/social-profiles.md`.
 - Later the same day: the owner liked the new set but asked for a more urban picture than mountains, and to keep the avatar. The banner and the Quora Space cover now show a city skyline against the same sunset (a far hazy row, a darker near row with a few lit windows, its reflection in the water, tall at both ends and low in the middle so the name has room, the sun setting in the gap). Plain boxes with setbacks and masts: no real building is drawn. The avatar and the Space icon were checked byte for byte and did not change. Scene option `landscape="city"` in `scripts/make-social.py`.
 
+
+## 2 Nov 2026: morning post writer paused
+- The owner asked to stop everything that runs by itself in the morning until he is ready. `post-writer.yml`: the `schedule` line (12:20 UTC) is commented out, the by-hand button (`workflow_dispatch`) stays. Nothing else was changed: the view writer and the guide writer were already by hand only.
+- Still on a schedule: `candidates.yml` (Mondays 05:17 UTC, no Claude, no subscription limit, commit with `[skip ci]`). Left on because it is not a morning run and costs nothing; ask the owner before touching it.
+- To resume: remove the `#` before `schedule:` in `.github/workflows/post-writer.yml`. Threads written until 31 Oct are on branch `drafts` in `posts/`; nobody has posted them (no Bluesky or Mastodon address in `src/data/site.ts` yet).

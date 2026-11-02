@@ -1,13 +1,14 @@
 name: Post writer
 
-# Every morning (and by hand: Actions -> "Post writer" -> Run workflow).
+# PAUSED by the owner on 2 Nov 2026: no morning run. To turn it back on, remove the "#" before the "schedule" line below.
+# By hand it still works: Actions -> "Post writer" -> Run workflow. (When on, it runs every morning.)
 # The program reads fresh items from the feeds in data/post-writer.json (Euronews Travel, Atlas Obscura), Claude (the owner's subscription
 # token, no paid API) writes today's 3 Bluesky threads (question, gem, news) by docs/post-writer.md, and the program checks them:
 # every fact quoted from a page opened in the run, room names only from our views, no URLs in the text, 300 characters per post.
 # The program adds the last post with our link and mark (scripts/lib/accounts.mjs). Nothing is posted: the threads are in the Summary
 # of the run and on the "drafts" branch in posts/<date>.md. The owner posts them.
 on:
-  schedule: [{ cron: '20 12 * * *' }] # 12:20 UTC = 07:20 Bogota
+#  schedule: [{ cron: '20 12 * * *' }] # 12:20 UTC = 07:20 Bogota
   workflow_dispatch:
 
 permissions:
